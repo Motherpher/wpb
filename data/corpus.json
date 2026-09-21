@@ -1,0 +1,737 @@
+{
+  "schema_version": "1.0",
+  "updated": "2026-09-21",
+  "completeness": "reconstructed-not-exhaustive",
+  "works": [
+    {
+      "id": "2013-kultura-zombie-boy",
+      "date": "2013",
+      "title": "Zombie Boy: moda a ciało modela",
+      "outlet": "Kultura Współczesna",
+      "language": "pl",
+      "type": "academic/cultural analysis",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://nck.pl/upload/archiwum_kw_files/artykuly/6._weronika_perez_borjas_-_zombie_boy_moda_a_cialo_modela.pdf",
+      "themes": [
+        "body",
+        "fashion",
+        "representation",
+        "normality-deviance"
+      ],
+      "phase": "body-fashion-research",
+      "featured": true,
+      "note": "Early key text on Rick Genest/Zombie Boy, fashion and the institutional framing of bodily difference."
+    },
+    {
+      "id": "2014-fspc-flayed",
+      "date": "2014-08-01",
+      "title": "Turning the flesh inside-out: Uncovering the muscles and showing the veins in Jean Paul Gaultier’s scene costume Flayed",
+      "outlet": "Fashion, Style & Popular Culture",
+      "language": "en",
+      "type": "peer-reviewed academic article",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://intellectdiscover.com/content/journals/10.1386/fspc.1.3.459_1",
+      "themes": [
+        "body",
+        "fashion",
+        "anatomy",
+        "visual-culture"
+      ],
+      "phase": "body-fashion-research",
+      "featured": true,
+      "note": "Stockholm University affiliation; anatomy, clothing and visual representation."
+    },
+    {
+      "id": "2015-forumist-jukebox",
+      "date": "2015",
+      "title": "Jukebox Melodies in Vogue",
+      "outlet": "The Forumist",
+      "language": "en",
+      "type": "fashion/cultural journalism",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://theforumist.com/jukebox-melodies-in-vogue/",
+      "themes": [
+        "fashion",
+        "visual-culture",
+        "Stockholm"
+      ],
+      "phase": "cultural-journalism",
+      "featured": false,
+      "note": "Stockholm Fashion Week criticism."
+    },
+    {
+      "id": "2015-forumist-hayden-james",
+      "date": "2015",
+      "title": "Australian Feel Good – Hayden James",
+      "outlet": "The Forumist",
+      "language": "en",
+      "type": "interview",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://theforumist.com/australian-feel-good-hayden-james/",
+      "themes": [
+        "music",
+        "place",
+        "identity"
+      ],
+      "phase": "cultural-journalism",
+      "featured": false,
+      "note": "Interview on music, place and creative process."
+    },
+    {
+      "id": "2015-forumist-wir-sind-berliner",
+      "date": "2015",
+      "title": "Wir Sind Berliner",
+      "outlet": "The Forumist",
+      "language": "en",
+      "type": "cultural journalism",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://theforumist.com/wir-sind-berliner/",
+      "themes": [
+        "urban-life",
+        "music",
+        "identity",
+        "Berlin"
+      ],
+      "phase": "cultural-journalism",
+      "featured": false,
+      "note": "Berlin, creativity and urban cultural identity."
+    },
+    {
+      "id": "2015-forumist-talking-to-los-muertos",
+      "date": "2015",
+      "title": "Talking to Los Muertos",
+      "outlet": "The Forumist",
+      "language": "en",
+      "type": "art criticism/personal essay",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://theforumist.com/talking-to-los-muertos/",
+      "themes": [
+        "Cuba",
+        "spirituality",
+        "body",
+        "death",
+        "art",
+        "diaspora"
+      ],
+      "phase": "cultural-journalism",
+      "featured": true,
+      "note": "Andrés Serrano, death, Catholic imagery, Afro-Cuban spirituality and family memory."
+    },
+    {
+      "id": "2015-forumist-rnb-poltergeist",
+      "date": "2015",
+      "title": "The R’n’B Poltergeist",
+      "outlet": "The Forumist",
+      "language": "en",
+      "type": "music journalism",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://theforumist.com/the-rnb-poltergeist/",
+      "themes": [
+        "music",
+        "identity",
+        "creative-process"
+      ],
+      "phase": "cultural-journalism",
+      "featured": false,
+      "note": "Profile/interview centred on artistic identity."
+    },
+    {
+      "id": "2015-forumist-wildbirds",
+      "date": "2015",
+      "title": "Wildbirds & Peacedrums – Taking Care of Each Other",
+      "outlet": "The Forumist",
+      "language": "en",
+      "type": "music interview",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://theforumist.com/wildbirds-peacedrums-taking-care-of-each-other/",
+      "themes": [
+        "music",
+        "collaboration",
+        "relationships"
+      ],
+      "phase": "cultural-journalism",
+      "featured": false,
+      "note": "Creative collaboration and relationship dynamics."
+    },
+    {
+      "id": "2015-forumist-nadya",
+      "date": "2015",
+      "title": "Exclusive New Track from Nadya",
+      "outlet": "The Forumist",
+      "language": "en",
+      "type": "music/cultural journalism",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://theforumist.com/exclusive-new-track-from-nadya/",
+      "themes": [
+        "music",
+        "migration",
+        "race",
+        "identity"
+      ],
+      "phase": "cultural-journalism",
+      "featured": false,
+      "note": "Music framed through refugee identity, politics and race."
+    },
+    {
+      "id": "2015-forumist-av-av-av",
+      "date": "2015",
+      "title": "Av Av Av – Good Vibes That Hurt",
+      "outlet": "The Forumist",
+      "language": "en",
+      "type": "music journalism",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://theforumist.com/av-av-av-good-vibes-that-hurt/",
+      "themes": [
+        "music",
+        "Copenhagen",
+        "place"
+      ],
+      "phase": "cultural-journalism",
+      "featured": false,
+      "note": "Electronic music and place."
+    },
+    {
+      "id": "2015-forumist-moto-boy",
+      "date": "2015",
+      "title": "Moto Boy / MADE by Björk",
+      "outlet": "The Forumist",
+      "language": "en",
+      "type": "music/cultural journalism",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://theforumist.com/moto-boymade-by-bjork/",
+      "themes": [
+        "music",
+        "gender",
+        "androgyny",
+        "identity"
+      ],
+      "phase": "cultural-journalism",
+      "featured": false,
+      "note": "Music, performance, androgyny and gender norms."
+    },
+    {
+      "id": "2015-forumist-zhala-makode",
+      "date": "2015",
+      "title": "Release Your Body with Zhala and Makode",
+      "outlet": "The Forumist",
+      "language": "en",
+      "type": "cultural journalism",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://theforumist.com/release-your-body-with-zhala-and-makode/",
+      "themes": [
+        "body",
+        "music",
+        "art",
+        "race",
+        "identity"
+      ],
+      "phase": "cultural-journalism",
+      "featured": false,
+      "note": "Body, music and art in a Swedish cultural context."
+    },
+    {
+      "id": "2015-forumist-tales-unexpected",
+      "date": "2015",
+      "title": "Tales of the Unexpected",
+      "outlet": "The Forumist",
+      "language": "en",
+      "type": "cultural journalism",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://theforumist.com/tales-of-the-unexpected/",
+      "themes": [
+        "music",
+        "creative-process"
+      ],
+      "phase": "cultural-journalism",
+      "featured": false,
+      "note": "Creative process and cultural production."
+    },
+    {
+      "id": "2015-totally-hokarangen",
+      "date": "2015",
+      "title": "Hökarängen",
+      "outlet": "Totally Stockholm",
+      "language": "en",
+      "type": "urban/cultural journalism",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://www.totallystockholm.se/hokarangen/",
+      "themes": [
+        "Stockholm",
+        "urban-life",
+        "community",
+        "place"
+      ],
+      "phase": "cultural-journalism",
+      "featured": false,
+      "note": "Neighbourhood reporting focused on lived place and local culture."
+    },
+    {
+      "id": "2015-totally-tensta",
+      "date": "2015",
+      "title": "Tensta International",
+      "outlet": "Totally Stockholm",
+      "language": "en",
+      "type": "urban/cultural journalism",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://www.totallystockholm.se/tensta-international/",
+      "themes": [
+        "Stockholm",
+        "migration",
+        "community",
+        "diaspora",
+        "place"
+      ],
+      "phase": "cultural-journalism",
+      "featured": true,
+      "note": "Tensta through local institutions, migration, food, culture and community initiatives."
+    },
+    {
+      "id": "krull-fatoumata-diawara",
+      "date": null,
+      "title": "Fatoumata Diawara",
+      "outlet": "Krull Magazine",
+      "language": "en",
+      "type": "interview",
+      "evidence": "A",
+      "status": "verified-title-url",
+      "url": "https://krullmag.com/blog/fatoumata-diawara/",
+      "themes": [
+        "music",
+        "Mali",
+        "Africa",
+        "women",
+        "diaspora"
+      ],
+      "phase": "cultural-journalism",
+      "featured": false,
+      "note": "Interview on music, roots, women and African identity."
+    },
+    {
+      "id": "krull-henry-rude",
+      "date": null,
+      "title": "Henry Rude – Max of Wax",
+      "outlet": "Krull Magazine",
+      "language": "en",
+      "type": "fashion/cultural journalism",
+      "evidence": "A",
+      "status": "verified-title-url",
+      "url": "https://krullmag.com/blog/henry-rude/",
+      "themes": [
+        "fashion",
+        "Africa",
+        "representation",
+        "production"
+      ],
+      "phase": "cultural-journalism",
+      "featured": false,
+      "note": "African textiles, Sweden/Africa links and representation."
+    },
+    {
+      "id": "krull-joanna-lemnelius",
+      "date": null,
+      "title": "Joanna Lemnelius – Mixed Grill, Motherhood and Business",
+      "outlet": "Krull Magazine",
+      "language": "en",
+      "type": "interview",
+      "evidence": "A",
+      "status": "verified-title-url",
+      "url": "https://krullmag.com/blog/joanna-lemnelius-mixed-grill-motherhood-and-business/",
+      "themes": [
+        "fashion",
+        "production",
+        "Gambia",
+        "labour",
+        "entrepreneurship"
+      ],
+      "phase": "cultural-journalism",
+      "featured": false,
+      "note": "Ethical production, design and business."
+    },
+    {
+      "id": "krull-all-that-jazz",
+      "date": null,
+      "title": "All That Jazz",
+      "outlet": "Krull Magazine",
+      "language": "en",
+      "type": "music journalism",
+      "evidence": "A",
+      "status": "verified-title-url",
+      "url": "https://krullmag.com/blog/all-that-jazz/",
+      "themes": [
+        "music",
+        "Stockholm",
+        "diaspora"
+      ],
+      "phase": "cultural-journalism",
+      "featured": false,
+      "note": "Stockholm Jazz Festival and global music."
+    },
+    {
+      "id": "krull-stockholm-film-festival",
+      "date": null,
+      "title": "The 27th Edition of Stockholm Film Festival",
+      "outlet": "Krull Magazine",
+      "language": "en",
+      "type": "film/cultural journalism",
+      "evidence": "A",
+      "status": "verified-title-url",
+      "url": "https://krullmag.com/blog/stockholm-film-festival-tips/",
+      "themes": [
+        "film",
+        "migration",
+        "sexuality",
+        "marginality"
+      ],
+      "phase": "cultural-journalism",
+      "featured": false,
+      "note": "Festival curation with recurring themes of migration and marginality."
+    },
+    {
+      "id": "krull-mali-blues",
+      "date": null,
+      "title": "Saving Music in Mali – an Interview with Lutz Gregor",
+      "outlet": "Krull Magazine",
+      "language": "en",
+      "type": "interview",
+      "evidence": "A",
+      "status": "verified-title-url",
+      "url": "https://krullmag.com/blog/saving-music-in-mali-an-interview-with-lutz-gregor/",
+      "themes": [
+        "Mali",
+        "music",
+        "culture",
+        "documentary"
+      ],
+      "phase": "cultural-journalism",
+      "featured": false,
+      "note": "Cultural preservation, documentary film and Mali."
+    },
+    {
+      "id": "krull-tempo",
+      "date": null,
+      "title": "Tempo Documentary Festival Tips",
+      "outlet": "Krull Magazine",
+      "language": "en",
+      "type": "film/cultural journalism",
+      "evidence": "A",
+      "status": "verified-title-url",
+      "url": "https://krullmag.com/blog/tempo-documentary-festival-tips/",
+      "themes": [
+        "documentary",
+        "migration",
+        "identity",
+        "dance"
+      ],
+      "phase": "cultural-journalism",
+      "featured": false,
+      "note": "Documentary festival selection."
+    },
+    {
+      "id": "2016-vice-makode",
+      "date": "2016-01-29",
+      "title": "Shock, Race and Fairytales: A Conversation With Makode Linde",
+      "outlet": "VICE",
+      "language": "en",
+      "type": "interview/reporting",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://www.vice.com/sv/article/makode-linde-strikes-back-345/",
+      "themes": [
+        "race",
+        "art",
+        "Sweden",
+        "representation",
+        "identity"
+      ],
+      "phase": "social-observational-reporting",
+      "featured": true,
+      "note": "Race, blackface, Swedish cultural politics and representation."
+    },
+    {
+      "id": "2016-vice-harmony",
+      "date": "2016-04-12",
+      "title": "We Asked People at a Spiritual Fair to Give Us Their Best Tips on How to Become More Harmonious",
+      "outlet": "VICE",
+      "language": "en",
+      "type": "field reporting",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://www.vice.com/sv/article/we-asked-people-at-a-spiritual-fair-how-we-could-get-more-harmonious-098/",
+      "themes": [
+        "spirituality",
+        "subculture",
+        "Stockholm"
+      ],
+      "phase": "social-observational-reporting",
+      "featured": false,
+      "note": "Observational reporting from Harmoni-Expo."
+    },
+    {
+      "id": "2016-vice-eurovision",
+      "date": "2016-05-15",
+      "title": "Getting Drunk and Hugging It Out With Eurovision Fans in Stockholm",
+      "outlet": "VICE",
+      "language": "en",
+      "type": "field reporting",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://www.vice.com/en/article/partying-the-night-away-with-eurovision-fans-in-stockholm-124/",
+      "themes": [
+        "Stockholm",
+        "national-identity",
+        "popular-culture",
+        "music"
+      ],
+      "phase": "social-observational-reporting",
+      "featured": false,
+      "note": "Participant observation at Eurovision in Stockholm."
+    },
+    {
+      "id": "2016-vice-parental-nudity",
+      "date": "2016-05-19",
+      "title": "Zapytaliśmy młodych Polaków i Polki, jak często widywali swoich rodziców nago",
+      "outlet": "VICE Polska",
+      "language": "pl",
+      "type": "social/cultural reporting",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://www.vice.com/pl/article/zapytalismy-mlodych-polakow-jak-czesto-widywali-swoich-rodzicow-nago/",
+      "themes": [
+        "body",
+        "family",
+        "Poland",
+        "Scandinavia",
+        "social-norms"
+      ],
+      "phase": "social-observational-reporting",
+      "featured": false,
+      "note": "Family nudity used as a comparative lens on cultural norms."
+    },
+    {
+      "id": "2016-vice-instamatki",
+      "date": "2016-06-24",
+      "title": "Postanowiłam sprawdzić, kim są polskie instamatki",
+      "outlet": "VICE Polska",
+      "language": "pl",
+      "type": "social reporting",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://www.vice.com/pl/article/postanowilam-sprawdzic-kim-sa-polskie-instamatki/",
+      "themes": [
+        "motherhood",
+        "children",
+        "social-media",
+        "privacy"
+      ],
+      "phase": "social-observational-reporting",
+      "featured": false,
+      "note": "Motherhood, social media, children and privacy."
+    },
+    {
+      "id": "2016-vice-miss-crash",
+      "date": "2016-06-29",
+      "title": "Fetysz, równowaga i podwieszanie na hakach z Miss Crash",
+      "outlet": "VICE Polska",
+      "language": "pl",
+      "type": "interview/reporting",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://www.vice.com/pl/tag/fetysz/page/2/",
+      "themes": [
+        "body",
+        "performance",
+        "fetish",
+        "subculture"
+      ],
+      "phase": "social-observational-reporting",
+      "featured": false,
+      "note": "Body suspension, fetish performance and bodily boundaries. Registry currently links to VICE tag archive; recover direct article URL."
+    },
+    {
+      "id": "2016-vice-opener",
+      "date": "2016-06-30",
+      "title": "Pięć typów ludzi, którzy wkurzają na Openerze",
+      "outlet": "VICE Polska",
+      "language": "pl",
+      "type": "cultural commentary",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://www.vice.com/pl/article/piec-typow-ludzi-ktorzy-wkurzaja-na-openerze/",
+      "themes": [
+        "music",
+        "festival",
+        "social-observation"
+      ],
+      "phase": "social-observational-reporting",
+      "featured": false,
+      "note": "Light-form festival social observation."
+    },
+    {
+      "id": "2016-vice-polish-migration",
+      "date": "2016-07-20",
+      "title": "Pytamy różne pokolenia Polaków na emigracji, dlaczego wyjechali z Polski i co teraz o niej myślą",
+      "outlet": "VICE Polska",
+      "language": "pl",
+      "type": "migration reportage",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://www.vice.com/pl/article/pytamy-rozne-pokolenia-polakow-na-emigracji-dlaczego-wyjechali-z-polski-i-co-teraz-o-niej-mysla/",
+      "themes": [
+        "migration",
+        "Poland",
+        "Sweden",
+        "belonging",
+        "memory"
+      ],
+      "phase": "social-observational-reporting",
+      "featured": true,
+      "note": "Intergenerational Polish migration to Sweden; an important bridge toward later long-form social reporting."
+    },
+    {
+      "id": "2016-vice-jarva-pride",
+      "date": "2016-07-31",
+      "title": "Rainbows and Racism Marched Together in Sweden During LGBT Pride Week",
+      "outlet": "VICE",
+      "language": "en",
+      "type": "political/social reportage",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://www.vice.com/sv/article/sweden-jarva-pride-parade-immigration-protest/",
+      "themes": [
+        "LGBT",
+        "race",
+        "migration",
+        "Sweden",
+        "far-right",
+        "politics"
+      ],
+      "phase": "social-observational-reporting",
+      "featured": true,
+      "note": "Järva Pride and the collision of LGBT politics, anti-racism and nationalist anti-immigration politics."
+    },
+    {
+      "id": "2018-duzy-format-russia",
+      "date": "2018-06-25",
+      "title": "A jeśli nadejdą Rosjanie? Szwedzi szykują się na wojnę",
+      "outlet": "Duży Format / Gazeta Wyborcza",
+      "language": "pl",
+      "type": "long-form reportage",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://wyborcza.pl/duzyformat/0,0.html?str=112_20526749",
+      "themes": [
+        "Sweden",
+        "Russia",
+        "security",
+        "civil-defence",
+        "institutions"
+      ],
+      "phase": "long-form-social-reportage",
+      "featured": true,
+      "note": "Swedish civil defence and public preparation for conflict."
+    },
+    {
+      "id": "2019-duzy-format-nonbinary",
+      "date": "2019-04-15",
+      "title": "Nie ona i nie on. Osoby, które nie czują się ani mężczyzną, ani kobietą, chcą zalegalizować trzecią płeć",
+      "outlet": "Duży Format / Gazeta Wyborcza",
+      "language": "pl",
+      "type": "long-form social reportage",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://wyborcza.pl/0,128956.html?autor=Weronika&str=31",
+      "themes": [
+        "gender",
+        "nonbinary",
+        "law",
+        "language",
+        "identity",
+        "institutions"
+      ],
+      "phase": "long-form-social-reportage",
+      "featured": true,
+      "note": "Identity, language and legal/administrative classification."
+    },
+    {
+      "id": "2020-duzy-format-nurses",
+      "date": "2020-02-24",
+      "title": "Szwedzkie pielęgniarki znikają. \"Kocham mój zawód, ale po studiach zarabiam 26 500 koron. Na mieszkanie nie odłożę\"",
+      "outlet": "Duży Format / Gazeta Wyborcza",
+      "language": "pl",
+      "type": "long-form social reportage",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://wyborcza.pl/duzyformat/7,127290,25716547,szwedzkie-pielegniarki-znikaja-kocham-moj-zawod-ale-po.html",
+      "themes": [
+        "healthcare",
+        "labour",
+        "Sweden",
+        "institutions",
+        "workers"
+      ],
+      "phase": "long-form-social-reportage",
+      "featured": true,
+      "note": "Healthcare system strain made visible through nurses' working conditions."
+    },
+    {
+      "id": "2020-newsweek-abortion",
+      "date": "2020-11-20",
+      "title": "Szwedki przez lata przyjeżdżały po aborcję do Polski. Dziś chcą pomagać potrzebującym zabiegu Polkom",
+      "outlet": "Newsweek Polska",
+      "language": "pl",
+      "type": "long-form social/history reportage",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://www.newsweek.pl/polska/spoleczenstwo/aborcja-w-szwecji-koszt-pomoc-mozliwosci-jak-dawniej-szwedki-robily-aborcje-w-polsce/fb4hejt",
+      "themes": [
+        "abortion",
+        "Poland",
+        "Sweden",
+        "reproductive-rights",
+        "law",
+        "history"
+      ],
+      "phase": "long-form-social-reportage",
+      "featured": true,
+      "note": "Historical reversal of abortion travel between Sweden and Poland."
+    },
+    {
+      "id": "2020-onet-five-cubans",
+      "date": "2020-11-29",
+      "title": "Pięciu Kubańczyków, cztery miesiące w niewoli",
+      "outlet": "Onet Wiadomości",
+      "language": "pl",
+      "type": "long-form migration reportage",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://wiadomosci.onet.pl/tylko-w-onecie/pieciu-kubanczykow-cztery-miesiace-w-niewoli/r8d3v4r",
+      "themes": [
+        "Cuba",
+        "migration",
+        "borders",
+        "detention",
+        "institutions",
+        "family",
+        "Europe"
+      ],
+      "phase": "long-form-social-reportage",
+      "featured": true,
+      "note": "Central mature work: a family search across transnational detention and border systems, with the reporter becoming part of the information chain."
+    }
+  ]
+}
