@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "updated": "2026-09-21",
+  "records": [
+    {
+      "id": "stockholm-film-festival-press-office",
+      "role": "press-office / press-secretary context",
+      "evidence": "B",
+      "authorship": false,
+      "note": "Stockholm Film Festival press materials list Pérez Borjas in press-office roles. Do not classify the releases themselves as authored work without byline evidence."
+    },
+    {
+      "id": "isern-bear-translation",
+      "work": "Susanna Isern — Niedźwiedź łowca motyli",
+      "role": "Polish translation credit",
+      "evidence": "B",
+      "authorship": false,
+      "note": "Translation credit; keep separate from original authored corpus."
+    },
+    {
+      "id": "stolen-fish-imdb",
+      "work": "Stolen Fish (2021)",
+      "role": "unresolved",
+      "evidence": "C",
+      "authorship": null,
+      "note": "Name association found in public film metadata; role not established in current research."
+    }
+  ]
+}
