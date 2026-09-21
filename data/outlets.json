@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "outlets": [
+    {
+      "name": "Kultura Współczesna",
+      "kind": "academic/cultural journal",
+      "country": "Poland"
+    },
+    {
+      "name": "Fashion, Style & Popular Culture",
+      "kind": "peer-reviewed academic journal",
+      "country": "United Kingdom"
+    },
+    {
+      "name": "The Forumist",
+      "kind": "independent culture magazine",
+      "country": "Sweden"
+    },
+    {
+      "name": "Krull Magazine",
+      "kind": "culture/fashion magazine",
+      "country": "Sweden"
+    },
+    {
+      "name": "Totally Stockholm",
+      "kind": "city/culture magazine",
+      "country": "Sweden"
+    },
+    {
+      "name": "VICE / VICE Sverige / VICE Polska",
+      "kind": "digital magazine",
+      "country": "international"
+    },
+    {
+      "name": "Duży Format / Gazeta Wyborcza",
+      "kind": "long-form reportage supplement",
+      "country": "Poland"
+    },
+    {
+      "name": "Newsweek Polska",
+      "kind": "news magazine",
+      "country": "Poland"
+    },
+    {
+      "name": "Onet Wiadomości",
+      "kind": "digital news outlet",
+      "country": "Poland"
+    }
+  ]
+}
