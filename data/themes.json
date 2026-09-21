@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "themes": [
+    {
+      "id": "body",
+      "label": "Body & embodiment",
+      "description": "The body as a site of representation, norm, deviance, gender, sexuality and institutional meaning."
+    },
+    {
+      "id": "identity",
+      "label": "Identity & categorisation",
+      "description": "People and experiences that challenge established cultural, linguistic or administrative categories."
+    },
+    {
+      "id": "migration",
+      "label": "Migration & belonging",
+      "description": "Cross-border movement, diaspora, memory, home and the institutional consequences of mobility."
+    },
+    {
+      "id": "institutions",
+      "label": "Institutions & boundary conditions",
+      "description": "How systems behave where law, bureaucracy, labour, borders and lived experience meet."
+    },
+    {
+      "id": "sweden-poland",
+      "label": "Sweden–Poland",
+      "description": "A recurring comparative axis across social norms, migration, labour, law, healthcare and reproductive rights."
+    },
+    {
+      "id": "race",
+      "label": "Race, diaspora & representation",
+      "description": "Race, Afro-European cultural production, anti-racism, representation and nationalist politics."
+    },
+    {
+      "id": "culture",
+      "label": "Culture, art & music",
+      "description": "Cultural production as both subject and entry point into wider social questions."
+    },
+    {
+      "id": "cuba",
+      "label": "Cuba & transnational identity",
+      "description": "Cuba as family memory, cultural field, spiritual reference and migration context."
+    }
+  ]
+}
