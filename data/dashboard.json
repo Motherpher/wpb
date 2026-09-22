@@ -9,7 +9,9 @@
     "outlets": "data/outlets.json",
     "unresolved": "sources/unresolved-records.md",
     "harvester": "harvest/harvest_wpb.py",
-    "visuals": "visuals/"
+    "visuals": "visuals/",
+    "discovery_scope": "data/discovery-scope.json",
+    "harvest_protocol": "docs/HARVEST_PROTOCOL.md"
   },
   "project": {
     "status": "active-reconstruction",
@@ -20,7 +22,9 @@
     "site_status": "framework-neutral-not-built",
     "official_status": "independent-working-archive",
     "corpus_completeness_claim": "reconstructed-not-exhaustive",
-    "harvest_status": "repeatable-metadata-harvester-installed"
+    "harvest_status": "repeatable-metadata-harvester-installed",
+    "discovery_coverage_layers": 12,
+    "exhaustiveness_status": "systematic-public-discovery-in-progress"
   },
   "corpus": {
     "total_works": 38,
