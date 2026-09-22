@@ -1,0 +1,42 @@
+name: Sync derived WPB outputs
+
+on:
+  push:
+    paths:
+      - "data/corpus.json"
+      - "data/credits.json"
+      - "data/article-metadata.json"
+      - "scripts/build_outputs.py"
+      - ".github/workflows/sync-derived.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wpb-derived-sync
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Rebuild derived archive outputs
+        run: python scripts/build_outputs.py
+      - name: Commit synchronized outputs
+        run: |
+          if git diff --quiet -- data/dashboard.json bibliography/master-bibliography.md DASHBOARD.md visuals/dashboard.svg; then
+            echo "Derived outputs already synchronized."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/dashboard.json bibliography/master-bibliography.md DASHBOARD.md visuals/dashboard.svg
+          git commit -m "Sync derived WPB dashboard outputs"
+          git push
