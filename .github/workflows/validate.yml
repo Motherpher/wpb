@@ -1,0 +1,45 @@
+name: Validate WPB archive
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install harvester dependencies
+        run: pip install -r harvest/requirements.txt
+      - name: Python syntax
+        run: python -m py_compile harvest/harvest_wpb.py scripts/build_outputs.py
+      - name: Validate JSON, corpus integrity and SVG
+        run: |
+          python - <<'PY'
+          import json, xml.etree.ElementTree as ET
+          from pathlib import Path
+          root=Path(".")
+          for p in ["data/corpus.json","data/credits.json","data/dashboard.json","data/article-metadata.json","data/themes.json","data/outlets.json","harvest/seeds.json"]:
+              json.loads((root/p).read_text(encoding="utf-8"))
+              print("JSON OK",p)
+          corpus=json.loads((root/"data/corpus.json").read_text(encoding="utf-8"))
+          meta=json.loads((root/"data/article-metadata.json").read_text(encoding="utf-8"))
+          ids=[w["id"] for w in corpus["works"]]
+          assert len(ids)==len(set(ids)), "duplicate corpus ids"
+          missing=[x for x in ids if x not in meta["records"]]
+          assert not missing, f"article metadata missing corpus records: {missing}"
+          for w in corpus["works"]:
+              assert w.get("evidence") in {"A","B","C"}
+              assert w.get("url")
+              assert "dashboard" in w
+          for p in (root/"visuals").glob("*.svg"):
+              ET.parse(p)
+              print("SVG OK",p)
+          print("Corpus works",len(ids))
+          PY
