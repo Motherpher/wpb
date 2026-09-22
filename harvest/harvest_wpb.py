@@ -136,7 +136,7 @@ def extract(session, robots, url, names, domains, delay):
             return record, []
         if "xml" in ctype or "rss" in ctype or "atom" in ctype:
             # Feed/sitemap discovery: collect links and dates as metadata, never full content.
-            soup=BeautifulSoup(r.text,"xml")
+            soup=BeautifulSoup(r.text,"html.parser")
             links=[]
             feed_entries=[]
             for item in soup.find_all(["item","entry"]):
