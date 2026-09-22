@@ -1,0 +1,958 @@
+{
+  "schema_version": "1.0",
+  "updated": "2026-09-22",
+  "description": "Article-level metadata enrichment. Canonical bibliography remains data/corpus.json. This file records publisher metadata, credits and discovery evidence without reproducing full copyrighted text.",
+  "records": {
+    "2013-kultura-zombie-boy": {
+      "canonical_url": "https://nck.pl/upload/archiwum_kw_files/artykuly/6._weronika_perez_borjas_-_zombie_boy_moda_a_cialo_modela.pdf",
+      "metadata_status": "seeded-from-corpus",
+      "retrieved_on": null,
+      "publication": {
+        "date": "2013",
+        "date_precision": "year"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [],
+      "platform": {},
+      "academic": {},
+      "discovery_evidence": [
+        "https://nck.pl/upload/archiwum_kw_files/artykuly/6._weronika_perez_borjas_-_zombie_boy_moda_a_cialo_modela.pdf"
+      ]
+    },
+    "2014-fspc-flayed": {
+      "canonical_url": "https://intellectdiscover.com/content/journals/10.1386/fspc.1.3.459_1",
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-09-22",
+      "publication": {
+        "date": "2014-08-01",
+        "date_precision": "exact-day",
+        "published_online": "2014-08-01",
+        "volume": 1,
+        "issue": 3,
+        "pages": "459-469"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [],
+      "platform": {},
+      "academic": {
+        "doi": "10.1386/fspc.1.3.459_1",
+        "affiliation": "Stockholm University",
+        "keywords": [
+          "anatomical fashion",
+          "anatomy",
+          "body and fashion",
+          "dissection",
+          "Flayed",
+          "Jean Paul Gaultier"
+        ]
+      },
+      "discovery_evidence": [
+        "https://intellectdiscover.com/content/journals/10.1386/fspc.1.3.459_1"
+      ]
+    },
+    "2015-forumist-a-world-beyond": {
+      "canonical_url": "https://theforumist.com/a-world-beyond/",
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-09-22",
+      "publication": {
+        "date": "2015",
+        "date_precision": "year"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [
+        {
+          "role": "photography",
+          "names": [
+            "Felix Swensson"
+          ]
+        },
+        {
+          "role": "styling",
+          "names": [
+            "Fiffi Jenkins"
+          ]
+        },
+        {
+          "role": "make-up",
+          "names": [
+            "Josefina Zarmén"
+          ]
+        },
+        {
+          "role": "hair",
+          "names": [
+            "Karolina Danielson"
+          ]
+        }
+      ],
+      "platform": {
+        "subject": "Zhala",
+        "publisher_label": "The Forumist"
+      },
+      "academic": {},
+      "discovery_evidence": [
+        "https://theforumist.com/a-world-beyond/"
+      ]
+    },
+    "2015-forumist-hayden-james": {
+      "canonical_url": "https://theforumist.com/australian-feel-good-hayden-james/",
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-09-22",
+      "publication": {
+        "date": "2015",
+        "date_precision": "year"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [
+        {
+          "role": "photography",
+          "names": [
+            "Clara Uddman"
+          ]
+        }
+      ],
+      "platform": {},
+      "academic": {},
+      "discovery_evidence": [
+        "https://theforumist.com/australian-feel-good-hayden-james/"
+      ]
+    },
+    "2015-forumist-av-av-av": {
+      "canonical_url": "https://theforumist.com/av-av-av-good-vibes-that-hurt/",
+      "metadata_status": "seeded-from-corpus",
+      "retrieved_on": null,
+      "publication": {
+        "date": "2015",
+        "date_precision": "year"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [],
+      "platform": {},
+      "academic": {},
+      "discovery_evidence": [
+        "https://theforumist.com/av-av-av-good-vibes-that-hurt/"
+      ]
+    },
+    "2015-forumist-nadya": {
+      "canonical_url": "https://theforumist.com/exclusive-new-track-from-nadya/",
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-09-22",
+      "publication": {
+        "date": "2015",
+        "date_precision": "year"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [
+        {
+          "role": "photography",
+          "names": [
+            "Clara Uddman"
+          ]
+        }
+      ],
+      "platform": {},
+      "academic": {},
+      "discovery_evidence": [
+        "https://theforumist.com/exclusive-new-track-from-nadya/"
+      ]
+    },
+    "2015-totally-hokarangen": {
+      "canonical_url": "https://www.totallystockholm.se/hokarangen/",
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-09-22",
+      "publication": {
+        "date": "2015",
+        "date_precision": "year"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [
+        {
+          "role": "photography",
+          "names": [
+            "Carolina Garcia"
+          ]
+        }
+      ],
+      "platform": {},
+      "academic": {},
+      "discovery_evidence": [
+        "https://www.totallystockholm.se/hokarangen/"
+      ]
+    },
+    "2015-forumist-jukebox": {
+      "canonical_url": "https://theforumist.com/jukebox-melodies-in-vogue/",
+      "metadata_status": "seeded-from-corpus",
+      "retrieved_on": null,
+      "publication": {
+        "date": "2015",
+        "date_precision": "year"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [],
+      "platform": {},
+      "academic": {},
+      "discovery_evidence": [
+        "https://theforumist.com/jukebox-melodies-in-vogue/"
+      ]
+    },
+    "2015-forumist-moto-boy": {
+      "canonical_url": "https://theforumist.com/moto-boymade-by-bjork/",
+      "metadata_status": "seeded-from-corpus",
+      "retrieved_on": null,
+      "publication": {
+        "date": "2015",
+        "date_precision": "year"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [],
+      "platform": {},
+      "academic": {},
+      "discovery_evidence": [
+        "https://theforumist.com/moto-boymade-by-bjork/"
+      ]
+    },
+    "2015-forumist-zhala-makode": {
+      "canonical_url": "https://theforumist.com/release-your-body-with-zhala-and-makode/",
+      "metadata_status": "seeded-from-corpus",
+      "retrieved_on": null,
+      "publication": {
+        "date": "2015",
+        "date_precision": "year"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [],
+      "platform": {},
+      "academic": {},
+      "discovery_evidence": [
+        "https://theforumist.com/release-your-body-with-zhala-and-makode/"
+      ]
+    },
+    "2015-forumist-tales-unexpected": {
+      "canonical_url": "https://theforumist.com/tales-of-the-unexpected/",
+      "metadata_status": "seeded-from-corpus",
+      "retrieved_on": null,
+      "publication": {
+        "date": "2015",
+        "date_precision": "year"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [],
+      "platform": {},
+      "academic": {},
+      "discovery_evidence": [
+        "https://theforumist.com/tales-of-the-unexpected/"
+      ]
+    },
+    "2015-forumist-talking-to-los-muertos": {
+      "canonical_url": "https://theforumist.com/talking-to-los-muertos/",
+      "metadata_status": "seeded-from-corpus",
+      "retrieved_on": null,
+      "publication": {
+        "date": "2015",
+        "date_precision": "year"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [],
+      "platform": {},
+      "academic": {},
+      "discovery_evidence": [
+        "https://theforumist.com/talking-to-los-muertos/"
+      ]
+    },
+    "2015-totally-tensta": {
+      "canonical_url": "https://www.totallystockholm.se/tensta-international/",
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-09-22",
+      "publication": {
+        "date": "2015",
+        "date_precision": "year"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [
+        {
+          "role": "photography",
+          "names": [
+            "Carolina García"
+          ]
+        }
+      ],
+      "platform": {},
+      "academic": {},
+      "discovery_evidence": [
+        "https://www.totallystockholm.se/tensta-international/"
+      ]
+    },
+    "2015-forumist-rnb-poltergeist": {
+      "canonical_url": "https://theforumist.com/the-rnb-poltergeist/",
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-09-22",
+      "publication": {
+        "date": "2015",
+        "date_precision": "year"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [
+        {
+          "role": "photography",
+          "names": [
+            "Anti Wendel"
+          ]
+        },
+        {
+          "role": "styling",
+          "names": [
+            "Fiffi Jenkins"
+          ]
+        },
+        {
+          "role": "make-up and hair",
+          "names": [
+            "Rosanna Osorio Clavijo"
+          ]
+        }
+      ],
+      "platform": {},
+      "academic": {},
+      "discovery_evidence": [
+        "https://theforumist.com/the-rnb-poltergeist/amp/"
+      ]
+    },
+    "2015-forumist-wildbirds": {
+      "canonical_url": "https://theforumist.com/wildbirds-peacedrums-taking-care-of-each-other/",
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-09-22",
+      "publication": {
+        "date": "2015",
+        "date_precision": "year"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [
+        {
+          "role": "photography",
+          "names": [
+            "Clara Uddman"
+          ]
+        }
+      ],
+      "platform": {},
+      "academic": {},
+      "discovery_evidence": [
+        "https://theforumist.com/wildbirds-peacedrums-taking-care-of-each-other/"
+      ]
+    },
+    "2015-forumist-wir-sind-berliner": {
+      "canonical_url": "https://theforumist.com/wir-sind-berliner/",
+      "metadata_status": "seeded-from-corpus",
+      "retrieved_on": null,
+      "publication": {
+        "date": "2015",
+        "date_precision": "year"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [],
+      "platform": {},
+      "academic": {},
+      "discovery_evidence": [
+        "https://theforumist.com/wir-sind-berliner/"
+      ]
+    },
+    "krull-all-that-jazz": {
+      "canonical_url": "https://krullmag.com/blog/all-that-jazz/",
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-09-22",
+      "publication": {
+        "date": "2016",
+        "date_precision": "year"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [
+        {
+          "role": "photography",
+          "names": [
+            "Andrea Davis Kronlund"
+          ]
+        }
+      ],
+      "platform": {
+        "event_context": "Stockholm Jazz Festival 2016"
+      },
+      "academic": {},
+      "discovery_evidence": [
+        "https://krullmag.com/blog/all-that-jazz/"
+      ]
+    },
+    "krull-fatoumata-diawara": {
+      "canonical_url": "https://krullmag.com/blog/fatoumata-diawara/",
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-09-22",
+      "publication": {
+        "date": "2016",
+        "date_precision": "year"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [
+        {
+          "role": "photography",
+          "names": [
+            "Andrea Davis Kronlund"
+          ]
+        }
+      ],
+      "platform": {
+        "event_context": "Stockholm Jazz Festival 2016"
+      },
+      "academic": {},
+      "discovery_evidence": [
+        "https://krullmag.com/blog/fatoumata-diawara/"
+      ]
+    },
+    "krull-mali-blues": {
+      "canonical_url": "https://krullmag.com/blog/saving-music-in-mali-an-interview-with-lutz-gregor/",
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-09-22",
+      "publication": {
+        "date": "2016",
+        "date_precision": "year"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [
+        {
+          "role": "photography",
+          "names": [
+            "Konrad Waldmann"
+          ]
+        },
+        {
+          "role": "press pictures",
+          "names": [
+            "Stockholm Film Festival",
+            "Lutz Gregor"
+          ]
+        }
+      ],
+      "platform": {
+        "event_context": "Stockholm Film Festival 2016"
+      },
+      "academic": {},
+      "discovery_evidence": [
+        "https://krullmag.com/blog/saving-music-in-mali-an-interview-with-lutz-gregor/"
+      ]
+    },
+    "krull-stockholm-film-festival": {
+      "canonical_url": "https://krullmag.com/blog/stockholm-film-festival-tips/",
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-09-22",
+      "publication": {
+        "date": "2016",
+        "date_precision": "year"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [
+        {
+          "role": "pictures",
+          "names": [
+            "Stockholm Film Festival"
+          ]
+        }
+      ],
+      "platform": {
+        "event_context": "27th Stockholm International Film Festival, starting 2016-11-09"
+      },
+      "academic": {},
+      "discovery_evidence": [
+        "https://krullmag.com/blog/stockholm-film-festival-tips/"
+      ]
+    },
+    "2016-vice-makode": {
+      "canonical_url": "https://www.vice.com/sv/article/makode-linde-strikes-back-345/",
+      "metadata_status": "seeded-from-corpus",
+      "retrieved_on": null,
+      "publication": {
+        "date": "2016-01-29",
+        "date_precision": "exact-day"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [],
+      "platform": {},
+      "academic": {},
+      "discovery_evidence": [
+        "https://www.vice.com/sv/article/makode-linde-strikes-back-345/"
+      ]
+    },
+    "2016-vice-harmony": {
+      "canonical_url": "https://www.vice.com/sv/article/we-asked-people-at-a-spiritual-fair-how-we-could-get-more-harmonious-098/",
+      "metadata_status": "seeded-from-corpus",
+      "retrieved_on": null,
+      "publication": {
+        "date": "2016-04-12",
+        "date_precision": "exact-day"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [],
+      "platform": {},
+      "academic": {},
+      "discovery_evidence": [
+        "https://www.vice.com/sv/article/we-asked-people-at-a-spiritual-fair-how-we-could-get-more-harmonious-098/"
+      ]
+    },
+    "2016-vice-eurovision": {
+      "canonical_url": "https://www.vice.com/en/article/partying-the-night-away-with-eurovision-fans-in-stockholm-124/",
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-09-22",
+      "publication": {
+        "date": "2016-05-15",
+        "date_precision": "exact-day",
+        "published_at_local": "2016-05-15 20:00"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [
+        {
+          "role": "photography",
+          "names": [
+            "Liam Warton",
+            "Weronika Pérez Borjas"
+          ]
+        }
+      ],
+      "platform": {
+        "publisher_label": "VICE",
+        "edition": "international"
+      },
+      "academic": {},
+      "discovery_evidence": [
+        "https://www.vice.com/en/article/partying-the-night-away-with-eurovision-fans-in-stockholm-124/"
+      ]
+    },
+    "2016-vice-parental-nudity": {
+      "canonical_url": "https://www.vice.com/pl/article/zapytalismy-mlodych-polakow-jak-czesto-widywali-swoich-rodzicow-nago/",
+      "metadata_status": "seeded-from-corpus",
+      "retrieved_on": null,
+      "publication": {
+        "date": "2016-05-19",
+        "date_precision": "exact-day"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [],
+      "platform": {},
+      "academic": {},
+      "discovery_evidence": [
+        "https://www.vice.com/pl/article/zapytalismy-mlodych-polakow-jak-czesto-widywali-swoich-rodzicow-nago/"
+      ]
+    },
+    "2016-vice-instamatki": {
+      "canonical_url": "https://www.vice.com/pl/article/postanowilam-sprawdzic-kim-sa-polskie-instamatki/",
+      "metadata_status": "seeded-from-corpus",
+      "retrieved_on": null,
+      "publication": {
+        "date": "2016-06-24",
+        "date_precision": "exact-day"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [],
+      "platform": {},
+      "academic": {},
+      "discovery_evidence": [
+        "https://www.vice.com/pl/article/postanowilam-sprawdzic-kim-sa-polskie-instamatki/"
+      ]
+    },
+    "2016-vice-miss-crash": {
+      "canonical_url": "https://www.vice.com/pl/article/kwm34a/fetysz-rownowaga-i-podwieszanie-na-hakach-z-miss-crash/",
+      "metadata_status": "manually-enriched-from-publisher/archive",
+      "retrieved_on": "2026-09-22",
+      "publication": {
+        "date": "2016-06-29",
+        "date_precision": "exact-day"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [
+        {
+          "role": "photography",
+          "names": [
+            "Kamila Burzymowska"
+          ]
+        }
+      ],
+      "platform": {
+        "publisher_label": "VICE Polska"
+      },
+      "academic": {},
+      "discovery_evidence": [
+        "https://www.vice.com/pl/tag/wystep/",
+        "https://www.vice.com/pl/article/kwm34a/fetysz-rownowaga-i-podwieszanie-na-hakach-z-miss-crash/"
+      ]
+    },
+    "2016-vice-opener": {
+      "canonical_url": "https://www.vice.com/pl/article/piec-typow-ludzi-ktorzy-wkurzaja-na-openerze/",
+      "metadata_status": "seeded-from-corpus",
+      "retrieved_on": null,
+      "publication": {
+        "date": "2016-06-30",
+        "date_precision": "exact-day"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [],
+      "platform": {},
+      "academic": {},
+      "discovery_evidence": [
+        "https://www.vice.com/pl/article/piec-typow-ludzi-ktorzy-wkurzaja-na-openerze/"
+      ]
+    },
+    "2016-vice-masculinity": {
+      "canonical_url": "https://www.vice.com/pl/article/jak-byc-prawdziwym-facetem-radza-pokolenia-mezczyzn/",
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-09-22",
+      "publication": {
+        "date": "2016-07-14",
+        "date_precision": "exact-day",
+        "published_at_local": "2016-07-14 03:10"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [
+        {
+          "role": "illustration",
+          "names": [
+            "Aleksandra Lampart"
+          ]
+        }
+      ],
+      "platform": {
+        "publisher_label": "VICE Polska",
+        "sponsorship_tag_present": true,
+        "series": "VICE Guide to Guys x AXE"
+      },
+      "academic": {},
+      "discovery_evidence": [
+        "https://www.vice.com/pl/article/jak-byc-prawdziwym-facetem-radza-pokolenia-mezczyzn/"
+      ]
+    },
+    "2016-vice-polish-migration": {
+      "canonical_url": "https://www.vice.com/pl/article/pytamy-rozne-pokolenia-polakow-na-emigracji-dlaczego-wyjechali-z-polski-i-co-teraz-o-niej-mysla/",
+      "metadata_status": "seeded-from-corpus",
+      "retrieved_on": null,
+      "publication": {
+        "date": "2016-07-20",
+        "date_precision": "exact-day"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [],
+      "platform": {},
+      "academic": {},
+      "discovery_evidence": [
+        "https://www.vice.com/pl/article/pytamy-rozne-pokolenia-polakow-na-emigracji-dlaczego-wyjechali-z-polski-i-co-teraz-o-niej-mysla/"
+      ]
+    },
+    "2016-vice-jarva-pride": {
+      "canonical_url": "https://www.vice.com/sv/article/sweden-jarva-pride-parade-immigration-protest/",
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-09-22",
+      "publication": {
+        "date": "2016-07-31",
+        "date_precision": "exact-day",
+        "published_at_english_edition": "2016-07-30 04:55",
+        "swedish_archive_date": "2016-07-31",
+        "date_variance_note": "VICE English and Swedish edition/archive surfaces show a one-day date difference."
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [
+        {
+          "role": "photography",
+          "names": [
+            "Maximilliam Gernhardt"
+          ]
+        }
+      ],
+      "platform": {
+        "publisher_label": "VICE",
+        "original_edition": "VICE Sweden"
+      },
+      "academic": {},
+      "discovery_evidence": [
+        "https://www.vice.com/en/article/sweden-jarva-pride-parade-immigration-protest/",
+        "https://www.vice.com/sv/tag/lgbt-pride/"
+      ]
+    },
+    "krull-tempo": {
+      "canonical_url": "https://krullmag.com/blog/tempo-documentary-festival-tips/",
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-09-22",
+      "publication": {
+        "date": "2017",
+        "date_precision": "year"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [
+        {
+          "role": "pictures",
+          "names": [
+            "Tempo Documentary Festival"
+          ]
+        }
+      ],
+      "platform": {
+        "event_context": "Tempo Documentary Festival, 7–12 March 2017",
+        "source_note": "Article states it is based on Tempo Documentary Festival press materials."
+      },
+      "academic": {},
+      "discovery_evidence": [
+        "https://krullmag.com/blog/tempo-documentary-festival-tips/"
+      ]
+    },
+    "2018-duzy-format-russia": {
+      "canonical_url": "https://wyborcza.pl/duzyformat/0,0.html?str=112_20526749",
+      "metadata_status": "seeded-from-corpus",
+      "retrieved_on": null,
+      "publication": {
+        "date": "2018-06-25",
+        "date_precision": "exact-day"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [],
+      "platform": {},
+      "academic": {},
+      "discovery_evidence": [
+        "https://wyborcza.pl/duzyformat/0,0.html?str=112_20526749"
+      ]
+    },
+    "2019-duzy-format-nonbinary": {
+      "canonical_url": "https://wyborcza.pl/0,128956.html?autor=Weronika&str=31",
+      "metadata_status": "seeded-from-corpus",
+      "retrieved_on": null,
+      "publication": {
+        "date": "2019-04-15",
+        "date_precision": "exact-day"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [],
+      "platform": {},
+      "academic": {},
+      "discovery_evidence": [
+        "https://wyborcza.pl/0,128956.html?autor=Weronika&str=31"
+      ]
+    },
+    "2020-duzy-format-nurses": {
+      "canonical_url": "https://wyborcza.pl/duzyformat/7,127290,25716547,szwedzkie-pielegniarki-znikaja-kocham-moj-zawod-ale-po.html",
+      "metadata_status": "seeded-from-corpus",
+      "retrieved_on": null,
+      "publication": {
+        "date": "2020-02-24",
+        "date_precision": "exact-day"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [],
+      "platform": {},
+      "academic": {},
+      "discovery_evidence": [
+        "https://wyborcza.pl/duzyformat/7,127290,25716547,szwedzkie-pielegniarki-znikaja-kocham-moj-zawod-ale-po.html"
+      ]
+    },
+    "2020-newsweek-abortion": {
+      "canonical_url": "https://www.newsweek.pl/polska/spoleczenstwo/aborcja-w-szwecji-koszt-pomoc-mozliwosci-jak-dawniej-szwedki-robily-aborcje-w-polsce/fb4hejt",
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-09-22",
+      "publication": {
+        "date": "2020-11-20",
+        "date_precision": "exact-day",
+        "published_at_local": "2020-11-20 08:00"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [],
+      "platform": {
+        "publisher_label": "Newsweek Polska",
+        "read_time_minutes": 6,
+        "audio_version_available_on_current_page": true
+      },
+      "academic": {},
+      "discovery_evidence": [
+        "https://www.newsweek.pl/polska/spoleczenstwo/aborcja-w-szwecji-koszt-pomoc-mozliwosci-jak-dawniej-szwedki-robily-aborcje-w-polsce/fb4hejt"
+      ]
+    },
+    "2020-onet-five-cubans": {
+      "canonical_url": "https://wiadomosci.onet.pl/tylko-w-onecie/pieciu-kubanczykow-cztery-miesiace-w-niewoli/r8d3v4r",
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-09-22",
+      "publication": {
+        "date": "2020-11-29",
+        "date_precision": "exact-day",
+        "published_at_local": "2020-11-29 14:13"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [],
+      "platform": {
+        "publisher_label": "Onet Wiadomości",
+        "section": "Tylko w Onecie"
+      },
+      "academic": {},
+      "discovery_evidence": [
+        "https://wiadomosci.onet.pl/tylko-w-onecie/pieciu-kubanczykow-cztery-miesiace-w-niewoli/r8d3v4r"
+      ]
+    },
+    "krull-henry-rude": {
+      "canonical_url": "https://krullmag.com/blog/henry-rude/",
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-09-22",
+      "publication": {
+        "date": null,
+        "date_precision": "unknown"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [
+        {
+          "role": "photography",
+          "names": [
+            "Åsa Haleby",
+            "Johan Nilsson",
+            "Melina Reid"
+          ]
+        },
+        {
+          "role": "retouch",
+          "names": [
+            "Åsa T Eriksson"
+          ]
+        }
+      ],
+      "platform": {},
+      "academic": {},
+      "discovery_evidence": [
+        "https://krullmag.com/blog/henry-rude/"
+      ]
+    },
+    "krull-joanna-lemnelius": {
+      "canonical_url": "https://krullmag.com/blog/joanna-lemnelius-mixed-grill-motherhood-and-business/",
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-09-22",
+      "publication": {
+        "date": null,
+        "date_precision": "unknown"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [
+        {
+          "role": "pictures",
+          "names": [
+            "Joanna Lemnelius"
+          ]
+        }
+      ],
+      "platform": {},
+      "academic": {},
+      "discovery_evidence": [
+        "https://krullmag.com/blog/joanna-lemnelius-mixed-grill-motherhood-and-business/"
+      ]
+    }
+  }
+}
