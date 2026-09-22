@@ -1,5 +1,7 @@
 # Start here, Weronika
 
+![WPB Archive Dashboard](visuals/dashboard.svg)
+
 This repository is a working archive of your published work.
 
 It was created to bring together material that is currently scattered across different publications, countries, languages and older web archives — and to turn that material into something you can actually use.
@@ -10,14 +12,22 @@ Later, if you want, the same repository can also become the content base for a *
 
 ---
 
-## See the archive visually
+## Reading the dashboard
 
-If you want the quickest overview before reading files, open:
+The dashboard at the top is designed as the quickest way to understand the project. It combines everything that was previously shown in separate charts:
 
-- **[DASHBOARD.md](DASHBOARD.md)** — what has been found, what remains unresolved and how ready the archive is for a portfolio
-- **[visuals/README.md](visuals/README.md)** — diagrams showing the publication timeline, career arc, metadata coverage and how the archive can become a site
+- **38 verified works** and the current metadata/portfolio status
+- the four analytical phases in the writing, with **one line per verified work**
+- the real publication timeline from the recovered corpus
+- metadata completeness and unresolved gaps
+- the research path from discovery to publication
+- the decisions still required before a public portfolio is ready
 
-The repository also now contains a **repeatable metadata-harvesting system**. It can search public sources, old author pages, archive captures and scholarly indexes for missing work and publication details. It records evidence for review rather than automatically deciding that every name-match is your work.
+It is not a manually maintained poster. It is generated from the same structured data that powers the archive, so when reviewed data changes the dashboard changes with it.
+
+For more explanation, open **[DASHBOARD.md](DASHBOARD.md)**.
+
+The repository also contains a **repeatable metadata-harvesting system**. It can search public sources, old author pages, archive captures and scholarly indexes for missing work and publication details. It records evidence for review rather than automatically deciding that every name-match is your work.
 
 You do not need to run or understand that system yourself.
 
