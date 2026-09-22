@@ -25,7 +25,9 @@
     "ikp.uw.edu.pl",
     "news.cision.com",
     "cision.com",
-    "researchgate.net"
+    "researchgate.net",
+    "wip.pbp.poznan.pl",
+    "mb.cision.com"
   ],
   "search_queries": [
     "\"Weronika Pérez Borjas\"",
@@ -38,6 +40,28 @@
     "\"Weronika Pérez Borjas\" migration",
     "\"Weronika Pérez Borjas\" VICE",
     "\"Weronika Pérez Borjas\" Forumist",
-    "\"Weronika Pérez Borjas\" Krull"
+    "\"Weronika Pérez Borjas\" Krull",
+    "\"Weronika Pérez Borjas\" translator",
+    "\"Weronika Pérez Borjas\" tłumacz",
+    "\"Weronika Pérez Borjas\" styling",
+    "\"Weronika Pérez Borjas\" editor",
+    "\"Weronika Pérez Borjas\" press assistant",
+    "\"Weronika Pérez Borjas\" press secretary",
+    "\"Weronika Pérez Borjas\" film",
+    "\"Weronika Pérez Borjas\" interview",
+    "\"Weronika Pérez Borjas\" PDF",
+    "\"Weronika Pérez Borjas\" portfolio",
+    "\"Weronika Pérez Borjas\" CV",
+    "site:vice.com \"Weronika Pérez Borjas\"",
+    "site:theforumist.com \"Weronika Pérez Borjas\"",
+    "site:krullmag.com \"Weronika Pérez Borjas\"",
+    "site:totallystockholm.se \"Weronika Pérez Borjas\"",
+    "site:wyborcza.pl \"Weronika Pérez Borjas\"",
+    "site:newsweek.pl \"Weronika Pérez Borjas\"",
+    "site:onet.pl \"Weronika Pérez Borjas\""
+  ],
+  "author_feeds": [
+    "https://theforumist.com/tag/weronika-perez-borjas/feed/",
+    "https://krullmag.com/blog/tag/weronika-perez-borjas/feed/"
   ]
 }
