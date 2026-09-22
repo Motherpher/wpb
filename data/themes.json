@@ -1,45 +1,134 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "themes": [
     {
       "id": "body",
       "label": "Body & embodiment",
-      "description": "The body as a site of representation, norm, deviance, gender, sexuality and institutional meaning."
+      "description": "The body as a site of representation, norm, deviance, gender, sexuality and institutional meaning.",
+      "dashboard": {
+        "exact_tag_use_count": 6,
+        "work_ids": [
+          "2013-kultura-zombie-boy",
+          "2014-fspc-flayed",
+          "2015-forumist-talking-to-los-muertos",
+          "2015-forumist-zhala-makode",
+          "2016-vice-parental-nudity",
+          "2016-vice-miss-crash"
+        ],
+        "taxonomy_status": "canonical",
+        "note": "Count reflects exact canonical-ID tag use only; descriptive/free-form tags are not silently mapped."
+      }
     },
     {
       "id": "identity",
       "label": "Identity & categorisation",
-      "description": "People and experiences that challenge established cultural, linguistic or administrative categories."
+      "description": "People and experiences that challenge established cultural, linguistic or administrative categories.",
+      "dashboard": {
+        "exact_tag_use_count": 9,
+        "work_ids": [
+          "2015-forumist-hayden-james",
+          "2015-forumist-wir-sind-berliner",
+          "2015-forumist-rnb-poltergeist",
+          "2015-forumist-nadya",
+          "2015-forumist-moto-boy",
+          "2015-forumist-zhala-makode",
+          "krull-tempo",
+          "2016-vice-makode",
+          "2019-duzy-format-nonbinary"
+        ],
+        "taxonomy_status": "canonical",
+        "note": "Count reflects exact canonical-ID tag use only; descriptive/free-form tags are not silently mapped."
+      }
     },
     {
       "id": "migration",
       "label": "Migration & belonging",
-      "description": "Cross-border movement, diaspora, memory, home and the institutional consequences of mobility."
+      "description": "Cross-border movement, diaspora, memory, home and the institutional consequences of mobility.",
+      "dashboard": {
+        "exact_tag_use_count": 7,
+        "work_ids": [
+          "2015-forumist-nadya",
+          "2015-totally-tensta",
+          "krull-stockholm-film-festival",
+          "krull-tempo",
+          "2016-vice-polish-migration",
+          "2016-vice-jarva-pride",
+          "2020-onet-five-cubans"
+        ],
+        "taxonomy_status": "canonical",
+        "note": "Count reflects exact canonical-ID tag use only; descriptive/free-form tags are not silently mapped."
+      }
     },
     {
       "id": "institutions",
       "label": "Institutions & boundary conditions",
-      "description": "How systems behave where law, bureaucracy, labour, borders and lived experience meet."
+      "description": "How systems behave where law, bureaucracy, labour, borders and lived experience meet.",
+      "dashboard": {
+        "exact_tag_use_count": 4,
+        "work_ids": [
+          "2018-duzy-format-russia",
+          "2019-duzy-format-nonbinary",
+          "2020-duzy-format-nurses",
+          "2020-onet-five-cubans"
+        ],
+        "taxonomy_status": "canonical",
+        "note": "Count reflects exact canonical-ID tag use only; descriptive/free-form tags are not silently mapped."
+      }
     },
     {
       "id": "sweden-poland",
       "label": "Sweden–Poland",
-      "description": "A recurring comparative axis across social norms, migration, labour, law, healthcare and reproductive rights."
+      "description": "A recurring comparative axis across social norms, migration, labour, law, healthcare and reproductive rights.",
+      "dashboard": {
+        "exact_tag_use_count": 0,
+        "work_ids": [],
+        "taxonomy_status": "canonical",
+        "note": "Count reflects exact canonical-ID tag use only; descriptive/free-form tags are not silently mapped."
+      }
     },
     {
       "id": "race",
       "label": "Race, diaspora & representation",
-      "description": "Race, Afro-European cultural production, anti-racism, representation and nationalist politics."
+      "description": "Race, Afro-European cultural production, anti-racism, representation and nationalist politics.",
+      "dashboard": {
+        "exact_tag_use_count": 4,
+        "work_ids": [
+          "2015-forumist-nadya",
+          "2015-forumist-zhala-makode",
+          "2016-vice-makode",
+          "2016-vice-jarva-pride"
+        ],
+        "taxonomy_status": "canonical",
+        "note": "Count reflects exact canonical-ID tag use only; descriptive/free-form tags are not silently mapped."
+      }
     },
     {
       "id": "culture",
       "label": "Culture, art & music",
-      "description": "Cultural production as both subject and entry point into wider social questions."
+      "description": "Cultural production as both subject and entry point into wider social questions.",
+      "dashboard": {
+        "exact_tag_use_count": 1,
+        "work_ids": [
+          "krull-mali-blues"
+        ],
+        "taxonomy_status": "canonical",
+        "note": "Count reflects exact canonical-ID tag use only; descriptive/free-form tags are not silently mapped."
+      }
     },
     {
       "id": "cuba",
       "label": "Cuba & transnational identity",
-      "description": "Cuba as family memory, cultural field, spiritual reference and migration context."
+      "description": "Cuba as family memory, cultural field, spiritual reference and migration context.",
+      "dashboard": {
+        "exact_tag_use_count": 2,
+        "work_ids": [
+          "2015-forumist-talking-to-los-muertos",
+          "2020-onet-five-cubans"
+        ],
+        "taxonomy_status": "canonical",
+        "note": "Count reflects exact canonical-ID tag use only; descriptive/free-form tags are not silently mapped."
+      }
     }
-  ]
+  ],
+  "updated": "2026-09-22"
 }
