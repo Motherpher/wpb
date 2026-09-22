@@ -1,14 +1,42 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1300" height="740" viewBox="0 0 1300 740">
-<style>.title{font:700 38px Arial,sans-serif;fill:#191919}.sub{font:18px Arial,sans-serif;fill:#68645D}.btitle{font:700 18px Arial,sans-serif;fill:#191919}.btxt{font:14px Arial,sans-serif;fill:#68645D}.tag{font:700 13px Arial,sans-serif;fill:#fff}</style>
+<style>
+.title{font:700 38px Arial,sans-serif;fill:#191919}.sub{font:18px Arial,sans-serif;fill:#68645D}
+.btitle{font:700 18px Arial,sans-serif;fill:#191919}.btxt{font:14px Arial,sans-serif;fill:#68645D}
+.tag{font:700 13px Arial,sans-serif;fill:#fff}
+</style>
 <defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="3.5" orient="auto"><polygon points="0 0,8 3.5,0 7" fill="#191919"/></marker></defs>
 <rect width="1300" height="740" fill="#F7F4EE"/>
 <text x="70" y="75" class="title">Archive → evidence → portfolio</text>
 <text x="70" y="110" class="sub">One source-of-truth system; public presentation is derived from reviewed archive data</text>
-<rect x="70" y="220" width="205" height="180" rx="10" fill="#fff" stroke="#D8D2C8" stroke-width="2"/><rect x="88" y="238" width="82" height="26" rx="13" fill="#365E73"/><text x="129" y="256" text-anchor="middle" class="tag">DISCOVER</text><text x="88" y="298" class="btitle">Public web</text><foreignObject x="88" y="315" width="170" height="68"><div xmlns="http://www.w3.org/1999/xhtml" style="font:14px Arial;color:#68645D;line-height:1.35">Publisher pages · author indexes · archive captures · scholarly registries</div></foreignObject><line x1="275" y1="310" x2="305" y2="310" stroke="#191919" stroke-width="2" marker-end="url(#a)"/><rect x="310" y="220" width="205" height="180" rx="10" fill="#fff" stroke="#D8D2C8" stroke-width="2"/><rect x="328" y="238" width="82" height="26" rx="13" fill="#365E73"/><text x="369" y="256" text-anchor="middle" class="tag">VERIFY</text><text x="328" y="298" class="btitle">Evidence gate</text><foreignObject x="328" y="315" width="170" height="68"><div xmlns="http://www.w3.org/1999/xhtml" style="font:14px Arial;color:#68645D;line-height:1.35">Byline · date · outlet · role · A/B/C evidence grade</div></foreignObject><line x1="515" y1="310" x2="545" y2="310" stroke="#191919" stroke-width="2" marker-end="url(#a)"/><rect x="550" y="220" width="205" height="180" rx="10" fill="#fff" stroke="#D8D2C8" stroke-width="2"/><rect x="568" y="238" width="82" height="26" rx="13" fill="#365E73"/><text x="609" y="256" text-anchor="middle" class="tag">STRUCTURE</text><text x="568" y="298" class="btitle">Canonical data</text><foreignObject x="568" y="315" width="170" height="68"><div xmlns="http://www.w3.org/1999/xhtml" style="font:14px Arial;color:#68645D;line-height:1.35">corpus.json · article-metadata.json · credits.json</div></foreignObject><line x1="755" y1="310" x2="785" y2="310" stroke="#191919" stroke-width="2" marker-end="url(#a)"/><rect x="790" y="220" width="205" height="180" rx="10" fill="#fff" stroke="#D8D2C8" stroke-width="2"/><rect x="808" y="238" width="82" height="26" rx="13" fill="#365E73"/><text x="849" y="256" text-anchor="middle" class="tag">INTERPRET</text><text x="808" y="298" class="btitle">Analysis/content</text><foreignObject x="808" y="315" width="170" height="68"><div xmlns="http://www.w3.org/1999/xhtml" style="font:14px Arial;color:#68645D;line-height:1.35">Themes · chronology · dossier · selected-work candidates</div></foreignObject><line x1="995" y1="310" x2="1025" y2="310" stroke="#191919" stroke-width="2" marker-end="url(#a)"/><rect x="1030" y="220" width="205" height="180" rx="10" fill="#fff" stroke="#D8D2C8" stroke-width="2"/><rect x="1048" y="238" width="82" height="26" rx="13" fill="#B55236"/><text x="1089" y="256" text-anchor="middle" class="tag">PUBLISH</text><text x="1048" y="298" class="btitle">Public layer</text><foreignObject x="1048" y="315" width="170" height="68"><div xmlns="http://www.w3.org/1999/xhtml" style="font:14px Arial;color:#68645D;line-height:1.35">Dashboard · infographics · future portfolio site</div></foreignObject>
+
+<rect x="70" y="220" width="205" height="180" rx="10" fill="#fff" stroke="#D8D2C8" stroke-width="2"/>
+<rect x="88" y="238" width="82" height="26" rx="13" fill="#365E73"/><text x="129" y="256" text-anchor="middle" class="tag">DISCOVER</text>
+<text x="88" y="298" class="btitle">Public web</text><text x="88" y="328" class="btxt">Publisher pages</text><text x="88" y="350" class="btxt">Author indexes</text><text x="88" y="372" class="btxt">Archive + scholarly sources</text>
+<line x1="275" y1="310" x2="305" y2="310" stroke="#191919" stroke-width="2" marker-end="url(#a)"/>
+
+<rect x="310" y="220" width="205" height="180" rx="10" fill="#fff" stroke="#D8D2C8" stroke-width="2"/>
+<rect x="328" y="238" width="82" height="26" rx="13" fill="#365E73"/><text x="369" y="256" text-anchor="middle" class="tag">VERIFY</text>
+<text x="328" y="298" class="btitle">Evidence gate</text><text x="328" y="328" class="btxt">Byline · date · outlet</text><text x="328" y="350" class="btxt">Role · provenance</text><text x="328" y="372" class="btxt">A / B / C evidence</text>
+<line x1="515" y1="310" x2="545" y2="310" stroke="#191919" stroke-width="2" marker-end="url(#a)"/>
+
+<rect x="550" y="220" width="205" height="180" rx="10" fill="#fff" stroke="#D8D2C8" stroke-width="2"/>
+<rect x="568" y="238" width="92" height="26" rx="13" fill="#365E73"/><text x="614" y="256" text-anchor="middle" class="tag">STRUCTURE</text>
+<text x="568" y="298" class="btitle">Canonical data</text><text x="568" y="328" class="btxt">corpus.json</text><text x="568" y="350" class="btxt">article-metadata.json</text><text x="568" y="372" class="btxt">credits.json</text>
+<line x1="755" y1="310" x2="785" y2="310" stroke="#191919" stroke-width="2" marker-end="url(#a)"/>
+
+<rect x="790" y="220" width="205" height="180" rx="10" fill="#fff" stroke="#D8D2C8" stroke-width="2"/>
+<rect x="808" y="238" width="92" height="26" rx="13" fill="#365E73"/><text x="854" y="256" text-anchor="middle" class="tag">INTERPRET</text>
+<text x="808" y="298" class="btitle">Analysis &amp; content</text><text x="808" y="328" class="btxt">Themes · chronology</text><text x="808" y="350" class="btxt">Writer dossier</text><text x="808" y="372" class="btxt">Selected-work candidates</text>
+<line x1="995" y1="310" x2="1025" y2="310" stroke="#191919" stroke-width="2" marker-end="url(#a)"/>
+
+<rect x="1030" y="220" width="205" height="180" rx="10" fill="#fff" stroke="#D8D2C8" stroke-width="2"/>
+<rect x="1048" y="238" width="82" height="26" rx="13" fill="#B55236"/><text x="1089" y="256" text-anchor="middle" class="tag">PUBLISH</text>
+<text x="1048" y="298" class="btitle">Public layer</text><text x="1048" y="328" class="btxt">Dashboard</text><text x="1048" y="350" class="btxt">Infographics</text><text x="1048" y="372" class="btxt">Future portfolio</text>
+
 <rect x="310" y="500" width="685" height="120" rx="10" fill="#E8E2D8"/>
 <text x="335" y="537" class="btitle">Repeatable harvest layer</text>
-<text x="335" y="568" class="btxt">robots-aware crawling · author-page link discovery · Wayback CDX · Crossref · OpenAlex · optional Brave Search</text>
-<text x="335" y="594" class="btxt">Metadata and provenance only — no paywall bypass and no full copyrighted article mirror.</text>
+<text x="335" y="568" class="btxt">robots-aware crawling · author-page discovery · Wayback CDX · Crossref · OpenAlex</text>
+<text x="335" y="592" class="btxt">optional search discovery · metadata and provenance only · no paywall bypass or full-text mirror</text>
 <path d="M 430 500 C 430 450, 170 455, 170 400" fill="none" stroke="#B55236" stroke-width="2" marker-end="url(#a)"/>
-<path d="M 875 500 C 875 450, 892 455, 892 400" fill="none" stroke="#B55236" stroke-width="2" marker-end="url(#a)"/>
+<path d="M 875 500 C 875 450, 652 455, 652 400" fill="none" stroke="#B55236" stroke-width="2" marker-end="url(#a)"/>
 </svg>
