@@ -1,33 +1,29 @@
-# WPB visuals
+# WPB visual system
 
-These are repository-generated, data-driven research visuals. They are **not yet the final portfolio visual identity**.
+## Canonical dashboard
 
-## Current infographics
+![WPB Archive Dashboard](dashboard.svg)
 
-### Corpus timeline
-![Corpus timeline](corpus-timeline.svg)
+The repository now uses **one integrated data visual**: `visuals/dashboard.svg`.
 
-Shows the year distribution of the 38-work canonical corpus.
+It combines corpus scale, editorial phases, metadata coverage, publication chronology, the research-to-publication pipeline and portfolio readiness in a single editorial dashboard. Separate public charts have been retired to avoid competing versions of the same data.
 
-### Career arc
-![Career arc](career-arc.svg)
+## Design direction
 
-Shows the repository's analytical four-phase reading of the writing trajectory. The phases overlap and are not presented as the writer's own labels.
+The dashboard uses an editorial information-design language: generous off-white space, serif-led typography, restrained mustard/rose/teal accents, thin rules, and a flowing line structure where **one curve represents one verified work**.
 
-### Archive → portfolio
-![Archive to portfolio](archive-to-portfolio.svg)
+The visual is intentionally research-facing rather than a final portfolio identity. A later site can adapt the same visual grammar without changing the underlying data model.
 
-Shows how public-source discovery, evidence grading, canonical metadata, analysis and eventual public presentation relate.
+## Automation
 
-### Metadata coverage
-![Metadata coverage](metadata-coverage.svg)
+Do **not** hand-edit `dashboard.svg` for data changes.
 
-Shows current archive metadata state without turning incompleteness into a misleading quality score.
+Its canonical generator is:
 
-## Editable/source forms
+`scripts/build_outputs.py`
 
-- SVG files are plain-text vector graphics and can be edited directly.
-- `research-pipeline.mmd` provides an editable Mermaid source for the archive/portfolio pipeline.
-- `career-arc.mmd` provides an editable Mermaid source for the career arc.
+The automatic synchronization workflow is:
 
-Future portfolio artwork can replace these while preserving the same underlying data model.
+`.github/workflows/sync-derived.yml`
+
+Canonical inputs are the repository JSON data. Git history preserves earlier separate visual experiments.
