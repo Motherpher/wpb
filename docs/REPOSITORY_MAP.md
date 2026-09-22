@@ -1,8 +1,12 @@
 # Repository map
 
 ## Dashboard
-- `DASHBOARD.md` — human-readable status dashboard
+- `visuals/dashboard.svg` — **single canonical integrated data visual**
+- `DASHBOARD.md` — human-readable explanation of the dashboard
 - `data/dashboard.json` — aggregate machine-readable dashboard metadata
+- `scripts/build_outputs.py` — generator for all derived dashboard outputs
+- `.github/workflows/sync-derived.yml` — automatic regeneration/commit workflow
+- `.github/workflows/validate.yml` — integrity and derived-output drift checks
 - `docs/DASHBOARD_SCHEMA.md` — dashboard field definitions and semantics
 
 ## Canonical data
@@ -45,11 +49,10 @@
 - `harvest/output/` — review-only run artifacts
 
 ## Visuals
-- `visuals/corpus-timeline.svg`
-- `visuals/career-arc.svg`
-- `visuals/archive-to-portfolio.svg`
-- `visuals/metadata-coverage.svg`
-- editable Mermaid sources in `visuals/*.mmd`
+- `visuals/dashboard.svg` — the only current public data visual
+- `visuals/README.md` — design and automation notes
+
+Earlier standalone charts remain available through Git history but are intentionally retired from the current branch.
 
 ## Future site
 - `site/` remains framework-neutral until scope, visual identity and rights are settled.
