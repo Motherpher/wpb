@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.2",
+  "schema_version": "1.3",
   "generated": "2026-09-22",
   "source_of_truth": {
     "corpus": "data/corpus.json",
@@ -11,7 +11,9 @@
     "harvester": "harvest/harvest_wpb.py",
     "visuals": "visuals/",
     "discovery_scope": "data/discovery-scope.json",
-    "harvest_protocol": "docs/HARVEST_PROTOCOL.md"
+    "harvest_protocol": "docs/HARVEST_PROTOCOL.md",
+    "dashboard_visual": "visuals/dashboard.svg",
+    "builder": "scripts/build_outputs.py"
   },
   "project": {
     "status": "active-reconstruction",
@@ -24,7 +26,8 @@
     "corpus_completeness_claim": "reconstructed-not-exhaustive",
     "harvest_status": "repeatable-metadata-harvester-installed",
     "discovery_coverage_layers": 12,
-    "exhaustiveness_status": "systematic-public-discovery-in-progress"
+    "exhaustiveness_status": "systematic-public-discovery-in-progress",
+    "dashboard_status": "single-integrated-automated"
   },
   "corpus": {
     "total_works": 38,
@@ -75,8 +78,8 @@
       "unknown": 2
     },
     "unresolved_dates": 2,
-    "manually_enriched_article_metadata_records": 33,
-    "article_metadata_records": 38
+    "article_metadata_records": 38,
+    "manually_enriched_article_metadata_records": 33
   },
   "portfolio": {
     "candidate_count": 12,

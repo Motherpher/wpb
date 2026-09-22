@@ -46,7 +46,5 @@ Generated from `data/corpus.json`. The JSON file is canonical; this file is the 
 ## Notes
 - Current canonical count: **38** works.
 - Missing dates remain unresolved rather than estimated.
-- Event-year context may establish a year while the exact publication day remains unresolved.
-- Evidence grades are defined in `docs/EVIDENCE_MODEL.md`.
-- Detailed publisher metadata and creative credits live in `data/article-metadata.json`.
-- This is a reconstructed bibliography and is not claimed to be exhaustive.
+- Detailed publisher metadata lives in `data/article-metadata.json`.
+- This bibliography is reconstructed and not claimed to be exhaustive.
