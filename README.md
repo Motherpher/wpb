@@ -4,6 +4,8 @@
 
 # WPB — Weronika Pérez Borjas
 
+![WPB corpus timeline](visuals/corpus-timeline.svg)
+
 Independent research archive and reconstructed corpus of the published work of writer and reporter **Weronika Pérez Borjas**.
 
 This repository is being built for two connected purposes:
@@ -14,6 +16,12 @@ This repository is being built for two connected purposes:
 ## Repository status
 
 **Active reconstruction.** The corpus is substantial but not claimed to be exhaustive. Older publication archives are incomplete, some author pages have lost historical entries, and some material may survive only in print or migrated web archives.
+
+## Research dashboard
+
+- [Dashboard](DASHBOARD.md) — corpus status, metadata coverage and portfolio readiness
+- [Visuals](visuals/README.md) — timeline, career arc, pipeline and metadata infographic
+- [Metadata harvester](harvest/README.md) — repeatable public-web discovery workflow
 
 ## What is here
 
