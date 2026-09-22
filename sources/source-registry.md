@@ -54,3 +54,25 @@ See individual URLs in `data/corpus.json`.
 
 ## Contextual/professional evidence
 Stockholm Film Festival press materials list Pérez Borjas in press-office roles. These are **B evidence** for professional context, not A evidence for authorship of the releases themselves.
+
+
+## Additional verified bylines and metadata — 2026-09-22
+- The Forumist — *A World Beyond*  
+  https://theforumist.com/a-world-beyond/
+- VICE Polska — *Mężczyźni od lat 16 do 72 radzą, jak kochać, być silnym i czuć się mężczyzną*  
+  https://www.vice.com/pl/article/jak-byc-prawdziwym-facetem-radza-pokolenia-mezczyzn/
+- VICE Polska — *Fetysz, równowaga i podwieszanie na hakach z Miss Crash* — direct article URL recovered  
+  https://www.vice.com/pl/article/kwm34a/fetysz-rownowaga-i-podwieszanie-na-hakach-z-miss-crash/
+- Krull Magazine — *WHAT’S IN STORE?* — verified **styling** credit, not article authorship  
+  https://krullmag.com/blog/whats-in-store/
+
+## Biographical / academic evidence
+- University of Warsaw / IKP publication biography — Scandinavian Studies at University of Gdańsk; Fashion Studies at Stockholm University; 2013 anatomical-fashion MA; Fashion Studies teaching at Folkuniversitet  
+  https://ikp.uw.edu.pl/wp-content/uploads/2015/07/utopie-i-fantazje-w-modzie-i-dizajnie-publikacja.pdf
+- NCK / *Kultura Współczesna* author bio — 2012 *Zombie Boy* thesis and June 2013 MA in anatomical fashion  
+  https://nck.pl/upload/archiwum_kw_files/artykuly/6._weronika_perez_borjas_-_zombie_boy_moda_a_cialo_modela.pdf
+
+## Professional-context evidence
+- Stockholm Film Festival / Cision, 2015 — press assistant / press secretary listings. These remain B-grade professional-context evidence, not presumed authorship.
+  https://news.cision.com/stockholms-filmfestival/r/invitation-to-stockholm-film-festival-s-press-conference-october-20,c9845121
+  https://news.cision.com/stockholms-filmfestival/r/stockholm-film-festival-gives-accredited-journalists-access-to-all-film-screenings,c9863054
