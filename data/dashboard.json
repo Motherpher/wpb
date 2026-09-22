@@ -71,7 +71,7 @@
       "unknown": 2
     },
     "unresolved_dates": 2,
-    "manually_enriched_article_metadata_records": 21
+    "manually_enriched_article_metadata_records": 33
   },
   "portfolio": {
     "candidate_count": 12,
@@ -147,7 +147,7 @@
       }
     ],
     "article_metadata_records": 38,
-    "article_metadata_manually_enriched": 21,
+    "article_metadata_manually_enriched": 33,
     "rights_status": "not-assessed-at-record-level",
     "asset_status": "not-assessed-at-record-level",
     "taxonomy_note": "Theme arrays include canonical IDs and descriptive free-form tags; no silent normalization."
