@@ -1,5 +1,7 @@
 > **Weronika:** If you are opening this repository for the first time, start with [START_HERE.md](START_HERE.md). It explains what this archive is, what has been reconstructed, what you can change, and how it can later become a portfolio site.
 
+> **Repository dashboard:** [DASHBOARD.md](DASHBOARD.md) — current corpus, metadata quality, portfolio readiness and open work.
+
 # WPB — Weronika Pérez Borjas
 
 Independent research archive and reconstructed corpus of the published work of writer and reporter **Weronika Pérez Borjas**.
