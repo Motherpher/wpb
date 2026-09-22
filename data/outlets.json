@@ -1,50 +1,160 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "outlets": [
     {
       "name": "Kultura Współczesna",
       "kind": "academic/cultural journal",
-      "country": "Poland"
+      "country": "Poland",
+      "dashboard": {
+        "work_count": 1,
+        "featured_candidate_count": 1,
+        "languages": [
+          "pl"
+        ],
+        "phases": [
+          "body-fashion-research"
+        ],
+        "unresolved_date_count": 0,
+        "metadata_status": "represented-in-corpus"
+      }
     },
     {
       "name": "Fashion, Style & Popular Culture",
       "kind": "peer-reviewed academic journal",
-      "country": "United Kingdom"
+      "country": "United Kingdom",
+      "dashboard": {
+        "work_count": 1,
+        "featured_candidate_count": 1,
+        "languages": [
+          "en"
+        ],
+        "phases": [
+          "body-fashion-research"
+        ],
+        "unresolved_date_count": 0,
+        "metadata_status": "represented-in-corpus"
+      }
     },
     {
       "name": "The Forumist",
       "kind": "independent culture magazine",
-      "country": "Sweden"
+      "country": "Sweden",
+      "dashboard": {
+        "work_count": 11,
+        "featured_candidate_count": 1,
+        "languages": [
+          "en"
+        ],
+        "phases": [
+          "cultural-journalism"
+        ],
+        "unresolved_date_count": 0,
+        "metadata_status": "represented-in-corpus"
+      }
     },
     {
       "name": "Krull Magazine",
       "kind": "culture/fashion magazine",
-      "country": "Sweden"
+      "country": "Sweden",
+      "dashboard": {
+        "work_count": 7,
+        "featured_candidate_count": 0,
+        "languages": [
+          "en"
+        ],
+        "phases": [
+          "cultural-journalism"
+        ],
+        "unresolved_date_count": 7,
+        "metadata_status": "represented-in-corpus"
+      }
     },
     {
       "name": "Totally Stockholm",
       "kind": "city/culture magazine",
-      "country": "Sweden"
+      "country": "Sweden",
+      "dashboard": {
+        "work_count": 2,
+        "featured_candidate_count": 1,
+        "languages": [
+          "en"
+        ],
+        "phases": [
+          "cultural-journalism"
+        ],
+        "unresolved_date_count": 0,
+        "metadata_status": "represented-in-corpus"
+      }
     },
     {
       "name": "VICE / VICE Sverige / VICE Polska",
       "kind": "digital magazine",
-      "country": "international"
+      "country": "international",
+      "dashboard": {
+        "work_count": 9,
+        "featured_candidate_count": 3,
+        "languages": [
+          "en",
+          "pl"
+        ],
+        "phases": [
+          "social-observational-reporting"
+        ],
+        "unresolved_date_count": 0,
+        "metadata_status": "represented-in-corpus"
+      }
     },
     {
       "name": "Duży Format / Gazeta Wyborcza",
       "kind": "long-form reportage supplement",
-      "country": "Poland"
+      "country": "Poland",
+      "dashboard": {
+        "work_count": 3,
+        "featured_candidate_count": 3,
+        "languages": [
+          "pl"
+        ],
+        "phases": [
+          "long-form-social-reportage"
+        ],
+        "unresolved_date_count": 0,
+        "metadata_status": "represented-in-corpus"
+      }
     },
     {
       "name": "Newsweek Polska",
       "kind": "news magazine",
-      "country": "Poland"
+      "country": "Poland",
+      "dashboard": {
+        "work_count": 1,
+        "featured_candidate_count": 1,
+        "languages": [
+          "pl"
+        ],
+        "phases": [
+          "long-form-social-reportage"
+        ],
+        "unresolved_date_count": 0,
+        "metadata_status": "represented-in-corpus"
+      }
     },
     {
       "name": "Onet Wiadomości",
       "kind": "digital news outlet",
-      "country": "Poland"
+      "country": "Poland",
+      "dashboard": {
+        "work_count": 1,
+        "featured_candidate_count": 1,
+        "languages": [
+          "pl"
+        ],
+        "phases": [
+          "long-form-social-reportage"
+        ],
+        "unresolved_date_count": 0,
+        "metadata_status": "represented-in-corpus"
+      }
     }
-  ]
+  ],
+  "updated": "2026-09-22"
 }
