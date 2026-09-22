@@ -10,6 +10,19 @@ Later, if you want, the same repository can also become the content base for a *
 
 ---
 
+## See the archive visually
+
+If you want the quickest overview before reading files, open:
+
+- **[DASHBOARD.md](DASHBOARD.md)** — what has been found, what remains unresolved and how ready the archive is for a portfolio
+- **[visuals/README.md](visuals/README.md)** — diagrams showing the publication timeline, career arc, metadata coverage and how the archive can become a site
+
+The repository also now contains a **repeatable metadata-harvesting system**. It can search public sources, old author pages, archive captures and scholarly indexes for missing work and publication details. It records evidence for review rather than automatically deciding that every name-match is your work.
+
+You do not need to run or understand that system yourself.
+
+---
+
 ## What has been collected so far
 
 The archive currently brings together verified work from different parts of your writing history, including:
@@ -77,7 +90,7 @@ There is already a structured corpus in:
 
 `data/corpus.json`
 
-That file is the main source of truth for published work.
+That file is the main source of truth for published work. A second file, `data/article-metadata.json`, stores deeper details such as publication timestamps, creative credits, DOI information and source evidence when those details are available.
 
 You do not need to edit JSON yourself if you do not want to. The repository can be updated for you from a simple list, document, link collection or even notes.
 
