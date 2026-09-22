@@ -1,6 +1,6 @@
 {
-  "schema_version": "1.0",
-  "updated": "2026-09-21",
+  "schema_version": "1.1",
+  "updated": "2026-09-22",
   "completeness": "reconstructed-not-exhaustive",
   "works": [
     {
@@ -21,7 +21,38 @@
       ],
       "phase": "body-fashion-research",
       "featured": true,
-      "note": "Early key text on Rick Genest/Zombie Boy, fashion and the institutional framing of bodily difference."
+      "note": "Early key text on Rick Genest/Zombie Boy, fashion and the institutional framing of bodily difference.",
+      "dashboard": {
+        "date_precision": "year",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": true,
+          "readiness": "candidate-needs-editorial-and-rights-review",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [
+            "body"
+          ],
+          "descriptive_theme_tags": [
+            "fashion",
+            "representation",
+            "normality-deviance"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": [
+          "portfolio-candidate"
+        ]
+      }
     },
     {
       "id": "2014-fspc-flayed",
@@ -41,7 +72,38 @@
       ],
       "phase": "body-fashion-research",
       "featured": true,
-      "note": "Stockholm University affiliation; anatomy, clothing and visual representation."
+      "note": "Stockholm University affiliation; anatomy, clothing and visual representation.",
+      "dashboard": {
+        "date_precision": "exact-day",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": true,
+          "readiness": "candidate-needs-editorial-and-rights-review",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [
+            "body"
+          ],
+          "descriptive_theme_tags": [
+            "fashion",
+            "anatomy",
+            "visual-culture"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": [
+          "portfolio-candidate"
+        ]
+      }
     },
     {
       "id": "2015-forumist-jukebox",
@@ -60,7 +122,34 @@
       ],
       "phase": "cultural-journalism",
       "featured": false,
-      "note": "Stockholm Fashion Week criticism."
+      "note": "Stockholm Fashion Week criticism.",
+      "dashboard": {
+        "date_precision": "year",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [],
+          "descriptive_theme_tags": [
+            "fashion",
+            "visual-culture",
+            "Stockholm"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": []
+      }
     },
     {
       "id": "2015-forumist-hayden-james",
@@ -79,7 +168,35 @@
       ],
       "phase": "cultural-journalism",
       "featured": false,
-      "note": "Interview on music, place and creative process."
+      "note": "Interview on music, place and creative process.",
+      "dashboard": {
+        "date_precision": "year",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [
+            "identity"
+          ],
+          "descriptive_theme_tags": [
+            "music",
+            "place"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": []
+      }
     },
     {
       "id": "2015-forumist-wir-sind-berliner",
@@ -99,7 +216,36 @@
       ],
       "phase": "cultural-journalism",
       "featured": false,
-      "note": "Berlin, creativity and urban cultural identity."
+      "note": "Berlin, creativity and urban cultural identity.",
+      "dashboard": {
+        "date_precision": "year",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [
+            "identity"
+          ],
+          "descriptive_theme_tags": [
+            "urban-life",
+            "music",
+            "Berlin"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": []
+      }
     },
     {
       "id": "2015-forumist-talking-to-los-muertos",
@@ -121,7 +267,40 @@
       ],
       "phase": "cultural-journalism",
       "featured": true,
-      "note": "Andrés Serrano, death, Catholic imagery, Afro-Cuban spirituality and family memory."
+      "note": "Andrés Serrano, death, Catholic imagery, Afro-Cuban spirituality and family memory.",
+      "dashboard": {
+        "date_precision": "year",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": true,
+          "readiness": "candidate-needs-editorial-and-rights-review",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [
+            "Cuba",
+            "body"
+          ],
+          "descriptive_theme_tags": [
+            "spirituality",
+            "death",
+            "art",
+            "diaspora"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": [
+          "portfolio-candidate"
+        ]
+      }
     },
     {
       "id": "2015-forumist-rnb-poltergeist",
@@ -140,7 +319,35 @@
       ],
       "phase": "cultural-journalism",
       "featured": false,
-      "note": "Profile/interview centred on artistic identity."
+      "note": "Profile/interview centred on artistic identity.",
+      "dashboard": {
+        "date_precision": "year",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [
+            "identity"
+          ],
+          "descriptive_theme_tags": [
+            "music",
+            "creative-process"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": []
+      }
     },
     {
       "id": "2015-forumist-wildbirds",
@@ -159,7 +366,34 @@
       ],
       "phase": "cultural-journalism",
       "featured": false,
-      "note": "Creative collaboration and relationship dynamics."
+      "note": "Creative collaboration and relationship dynamics.",
+      "dashboard": {
+        "date_precision": "year",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [],
+          "descriptive_theme_tags": [
+            "music",
+            "collaboration",
+            "relationships"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": []
+      }
     },
     {
       "id": "2015-forumist-nadya",
@@ -179,7 +413,36 @@
       ],
       "phase": "cultural-journalism",
       "featured": false,
-      "note": "Music framed through refugee identity, politics and race."
+      "note": "Music framed through refugee identity, politics and race.",
+      "dashboard": {
+        "date_precision": "year",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [
+            "migration",
+            "race",
+            "identity"
+          ],
+          "descriptive_theme_tags": [
+            "music"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": []
+      }
     },
     {
       "id": "2015-forumist-av-av-av",
@@ -198,7 +461,34 @@
       ],
       "phase": "cultural-journalism",
       "featured": false,
-      "note": "Electronic music and place."
+      "note": "Electronic music and place.",
+      "dashboard": {
+        "date_precision": "year",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [],
+          "descriptive_theme_tags": [
+            "music",
+            "Copenhagen",
+            "place"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": []
+      }
     },
     {
       "id": "2015-forumist-moto-boy",
@@ -218,7 +508,36 @@
       ],
       "phase": "cultural-journalism",
       "featured": false,
-      "note": "Music, performance, androgyny and gender norms."
+      "note": "Music, performance, androgyny and gender norms.",
+      "dashboard": {
+        "date_precision": "year",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [
+            "identity"
+          ],
+          "descriptive_theme_tags": [
+            "music",
+            "gender",
+            "androgyny"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": []
+      }
     },
     {
       "id": "2015-forumist-zhala-makode",
@@ -239,7 +558,37 @@
       ],
       "phase": "cultural-journalism",
       "featured": false,
-      "note": "Body, music and art in a Swedish cultural context."
+      "note": "Body, music and art in a Swedish cultural context.",
+      "dashboard": {
+        "date_precision": "year",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [
+            "body",
+            "race",
+            "identity"
+          ],
+          "descriptive_theme_tags": [
+            "music",
+            "art"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": []
+      }
     },
     {
       "id": "2015-forumist-tales-unexpected",
@@ -257,7 +606,33 @@
       ],
       "phase": "cultural-journalism",
       "featured": false,
-      "note": "Creative process and cultural production."
+      "note": "Creative process and cultural production.",
+      "dashboard": {
+        "date_precision": "year",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [],
+          "descriptive_theme_tags": [
+            "music",
+            "creative-process"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": []
+      }
     },
     {
       "id": "2015-totally-hokarangen",
@@ -277,7 +652,35 @@
       ],
       "phase": "cultural-journalism",
       "featured": false,
-      "note": "Neighbourhood reporting focused on lived place and local culture."
+      "note": "Neighbourhood reporting focused on lived place and local culture.",
+      "dashboard": {
+        "date_precision": "year",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [],
+          "descriptive_theme_tags": [
+            "Stockholm",
+            "urban-life",
+            "community",
+            "place"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": []
+      }
     },
     {
       "id": "2015-totally-tensta",
@@ -298,7 +701,39 @@
       ],
       "phase": "cultural-journalism",
       "featured": true,
-      "note": "Tensta through local institutions, migration, food, culture and community initiatives."
+      "note": "Tensta through local institutions, migration, food, culture and community initiatives.",
+      "dashboard": {
+        "date_precision": "year",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": true,
+          "readiness": "candidate-needs-editorial-and-rights-review",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [
+            "migration"
+          ],
+          "descriptive_theme_tags": [
+            "Stockholm",
+            "community",
+            "diaspora",
+            "place"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": [
+          "portfolio-candidate"
+        ]
+      }
     },
     {
       "id": "krull-fatoumata-diawara",
@@ -319,7 +754,39 @@
       ],
       "phase": "cultural-journalism",
       "featured": false,
-      "note": "Interview on music, roots, women and African identity."
+      "note": "Interview on music, roots, women and African identity.",
+      "dashboard": {
+        "date_precision": "unknown",
+        "source_completeness": "verified-partial-metadata",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [],
+          "descriptive_theme_tags": [
+            "music",
+            "Mali",
+            "Africa",
+            "women",
+            "diaspora"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": [
+          "missing-date",
+          "partial-publication-metadata"
+        ]
+      }
     },
     {
       "id": "krull-henry-rude",
@@ -339,7 +806,38 @@
       ],
       "phase": "cultural-journalism",
       "featured": false,
-      "note": "African textiles, Sweden/Africa links and representation."
+      "note": "African textiles, Sweden/Africa links and representation.",
+      "dashboard": {
+        "date_precision": "unknown",
+        "source_completeness": "verified-partial-metadata",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [],
+          "descriptive_theme_tags": [
+            "fashion",
+            "Africa",
+            "representation",
+            "production"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": [
+          "missing-date",
+          "partial-publication-metadata"
+        ]
+      }
     },
     {
       "id": "krull-joanna-lemnelius",
@@ -360,7 +858,39 @@
       ],
       "phase": "cultural-journalism",
       "featured": false,
-      "note": "Ethical production, design and business."
+      "note": "Ethical production, design and business.",
+      "dashboard": {
+        "date_precision": "unknown",
+        "source_completeness": "verified-partial-metadata",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [],
+          "descriptive_theme_tags": [
+            "fashion",
+            "production",
+            "Gambia",
+            "labour",
+            "entrepreneurship"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": [
+          "missing-date",
+          "partial-publication-metadata"
+        ]
+      }
     },
     {
       "id": "krull-all-that-jazz",
@@ -379,7 +909,37 @@
       ],
       "phase": "cultural-journalism",
       "featured": false,
-      "note": "Stockholm Jazz Festival and global music."
+      "note": "Stockholm Jazz Festival and global music.",
+      "dashboard": {
+        "date_precision": "unknown",
+        "source_completeness": "verified-partial-metadata",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [],
+          "descriptive_theme_tags": [
+            "music",
+            "Stockholm",
+            "diaspora"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": [
+          "missing-date",
+          "partial-publication-metadata"
+        ]
+      }
     },
     {
       "id": "krull-stockholm-film-festival",
@@ -399,7 +959,39 @@
       ],
       "phase": "cultural-journalism",
       "featured": false,
-      "note": "Festival curation with recurring themes of migration and marginality."
+      "note": "Festival curation with recurring themes of migration and marginality.",
+      "dashboard": {
+        "date_precision": "unknown",
+        "source_completeness": "verified-partial-metadata",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [
+            "migration"
+          ],
+          "descriptive_theme_tags": [
+            "film",
+            "sexuality",
+            "marginality"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": [
+          "missing-date",
+          "partial-publication-metadata"
+        ]
+      }
     },
     {
       "id": "krull-mali-blues",
@@ -419,7 +1011,39 @@
       ],
       "phase": "cultural-journalism",
       "featured": false,
-      "note": "Cultural preservation, documentary film and Mali."
+      "note": "Cultural preservation, documentary film and Mali.",
+      "dashboard": {
+        "date_precision": "unknown",
+        "source_completeness": "verified-partial-metadata",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [
+            "culture"
+          ],
+          "descriptive_theme_tags": [
+            "Mali",
+            "music",
+            "documentary"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": [
+          "missing-date",
+          "partial-publication-metadata"
+        ]
+      }
     },
     {
       "id": "krull-tempo",
@@ -439,7 +1063,39 @@
       ],
       "phase": "cultural-journalism",
       "featured": false,
-      "note": "Documentary festival selection."
+      "note": "Documentary festival selection.",
+      "dashboard": {
+        "date_precision": "unknown",
+        "source_completeness": "verified-partial-metadata",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [
+            "migration",
+            "identity"
+          ],
+          "descriptive_theme_tags": [
+            "documentary",
+            "dance"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": [
+          "missing-date",
+          "partial-publication-metadata"
+        ]
+      }
     },
     {
       "id": "2016-vice-makode",
@@ -460,7 +1116,39 @@
       ],
       "phase": "social-observational-reporting",
       "featured": true,
-      "note": "Race, blackface, Swedish cultural politics and representation."
+      "note": "Race, blackface, Swedish cultural politics and representation.",
+      "dashboard": {
+        "date_precision": "exact-day",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": true,
+          "readiness": "candidate-needs-editorial-and-rights-review",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [
+            "race",
+            "identity"
+          ],
+          "descriptive_theme_tags": [
+            "art",
+            "Sweden",
+            "representation"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": [
+          "portfolio-candidate"
+        ]
+      }
     },
     {
       "id": "2016-vice-harmony",
@@ -479,7 +1167,34 @@
       ],
       "phase": "social-observational-reporting",
       "featured": false,
-      "note": "Observational reporting from Harmoni-Expo."
+      "note": "Observational reporting from Harmoni-Expo.",
+      "dashboard": {
+        "date_precision": "exact-day",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [],
+          "descriptive_theme_tags": [
+            "spirituality",
+            "subculture",
+            "Stockholm"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": []
+      }
     },
     {
       "id": "2016-vice-eurovision",
@@ -499,7 +1214,35 @@
       ],
       "phase": "social-observational-reporting",
       "featured": false,
-      "note": "Participant observation at Eurovision in Stockholm."
+      "note": "Participant observation at Eurovision in Stockholm.",
+      "dashboard": {
+        "date_precision": "exact-day",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [],
+          "descriptive_theme_tags": [
+            "Stockholm",
+            "national-identity",
+            "popular-culture",
+            "music"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": []
+      }
     },
     {
       "id": "2016-vice-parental-nudity",
@@ -520,7 +1263,37 @@
       ],
       "phase": "social-observational-reporting",
       "featured": false,
-      "note": "Family nudity used as a comparative lens on cultural norms."
+      "note": "Family nudity used as a comparative lens on cultural norms.",
+      "dashboard": {
+        "date_precision": "exact-day",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [
+            "body"
+          ],
+          "descriptive_theme_tags": [
+            "family",
+            "Poland",
+            "Scandinavia",
+            "social-norms"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": []
+      }
     },
     {
       "id": "2016-vice-instamatki",
@@ -540,7 +1313,35 @@
       ],
       "phase": "social-observational-reporting",
       "featured": false,
-      "note": "Motherhood, social media, children and privacy."
+      "note": "Motherhood, social media, children and privacy.",
+      "dashboard": {
+        "date_precision": "exact-day",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [],
+          "descriptive_theme_tags": [
+            "motherhood",
+            "children",
+            "social-media",
+            "privacy"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": []
+      }
     },
     {
       "id": "2016-vice-miss-crash",
@@ -560,7 +1361,36 @@
       ],
       "phase": "social-observational-reporting",
       "featured": false,
-      "note": "Body suspension, fetish performance and bodily boundaries. Registry currently links to VICE tag archive; recover direct article URL."
+      "note": "Body suspension, fetish performance and bodily boundaries. Registry currently links to VICE tag archive; recover direct article URL.",
+      "dashboard": {
+        "date_precision": "exact-day",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [
+            "body"
+          ],
+          "descriptive_theme_tags": [
+            "performance",
+            "fetish",
+            "subculture"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": []
+      }
     },
     {
       "id": "2016-vice-opener",
@@ -579,7 +1409,34 @@
       ],
       "phase": "social-observational-reporting",
       "featured": false,
-      "note": "Light-form festival social observation."
+      "note": "Light-form festival social observation.",
+      "dashboard": {
+        "date_precision": "exact-day",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [],
+          "descriptive_theme_tags": [
+            "music",
+            "festival",
+            "social-observation"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": []
+      }
     },
     {
       "id": "2016-vice-polish-migration",
@@ -600,7 +1457,39 @@
       ],
       "phase": "social-observational-reporting",
       "featured": true,
-      "note": "Intergenerational Polish migration to Sweden; an important bridge toward later long-form social reporting."
+      "note": "Intergenerational Polish migration to Sweden; an important bridge toward later long-form social reporting.",
+      "dashboard": {
+        "date_precision": "exact-day",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": true,
+          "readiness": "candidate-needs-editorial-and-rights-review",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [
+            "migration"
+          ],
+          "descriptive_theme_tags": [
+            "Poland",
+            "Sweden",
+            "belonging",
+            "memory"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": [
+          "portfolio-candidate"
+        ]
+      }
     },
     {
       "id": "2016-vice-jarva-pride",
@@ -622,7 +1511,40 @@
       ],
       "phase": "social-observational-reporting",
       "featured": true,
-      "note": "Järva Pride and the collision of LGBT politics, anti-racism and nationalist anti-immigration politics."
+      "note": "Järva Pride and the collision of LGBT politics, anti-racism and nationalist anti-immigration politics.",
+      "dashboard": {
+        "date_precision": "exact-day",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": true,
+          "readiness": "candidate-needs-editorial-and-rights-review",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [
+            "race",
+            "migration"
+          ],
+          "descriptive_theme_tags": [
+            "LGBT",
+            "Sweden",
+            "far-right",
+            "politics"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": [
+          "portfolio-candidate"
+        ]
+      }
     },
     {
       "id": "2018-duzy-format-russia",
@@ -643,7 +1565,39 @@
       ],
       "phase": "long-form-social-reportage",
       "featured": true,
-      "note": "Swedish civil defence and public preparation for conflict."
+      "note": "Swedish civil defence and public preparation for conflict.",
+      "dashboard": {
+        "date_precision": "exact-day",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": true,
+          "readiness": "candidate-needs-editorial-and-rights-review",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [
+            "institutions"
+          ],
+          "descriptive_theme_tags": [
+            "Sweden",
+            "Russia",
+            "security",
+            "civil-defence"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": [
+          "portfolio-candidate"
+        ]
+      }
     },
     {
       "id": "2019-duzy-format-nonbinary",
@@ -665,7 +1619,40 @@
       ],
       "phase": "long-form-social-reportage",
       "featured": true,
-      "note": "Identity, language and legal/administrative classification."
+      "note": "Identity, language and legal/administrative classification.",
+      "dashboard": {
+        "date_precision": "exact-day",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": true,
+          "readiness": "candidate-needs-editorial-and-rights-review",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [
+            "identity",
+            "institutions"
+          ],
+          "descriptive_theme_tags": [
+            "gender",
+            "nonbinary",
+            "law",
+            "language"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": [
+          "portfolio-candidate"
+        ]
+      }
     },
     {
       "id": "2020-duzy-format-nurses",
@@ -686,7 +1673,39 @@
       ],
       "phase": "long-form-social-reportage",
       "featured": true,
-      "note": "Healthcare system strain made visible through nurses' working conditions."
+      "note": "Healthcare system strain made visible through nurses' working conditions.",
+      "dashboard": {
+        "date_precision": "exact-day",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": true,
+          "readiness": "candidate-needs-editorial-and-rights-review",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [
+            "institutions"
+          ],
+          "descriptive_theme_tags": [
+            "healthcare",
+            "labour",
+            "Sweden",
+            "workers"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": [
+          "portfolio-candidate"
+        ]
+      }
     },
     {
       "id": "2020-newsweek-abortion",
@@ -708,7 +1727,39 @@
       ],
       "phase": "long-form-social-reportage",
       "featured": true,
-      "note": "Historical reversal of abortion travel between Sweden and Poland."
+      "note": "Historical reversal of abortion travel between Sweden and Poland.",
+      "dashboard": {
+        "date_precision": "exact-day",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": true,
+          "readiness": "candidate-needs-editorial-and-rights-review",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [],
+          "descriptive_theme_tags": [
+            "abortion",
+            "Poland",
+            "Sweden",
+            "reproductive-rights",
+            "law",
+            "history"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": [
+          "portfolio-candidate"
+        ]
+      }
     },
     {
       "id": "2020-onet-five-cubans",
@@ -731,7 +1782,41 @@
       ],
       "phase": "long-form-social-reportage",
       "featured": true,
-      "note": "Central mature work: a family search across transnational detention and border systems, with the reporter becoming part of the information chain."
+      "note": "Central mature work: a family search across transnational detention and border systems, with the reporter becoming part of the information chain.",
+      "dashboard": {
+        "date_precision": "exact-day",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": true,
+          "readiness": "candidate-needs-editorial-and-rights-review",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [
+            "Cuba",
+            "migration",
+            "institutions"
+          ],
+          "descriptive_theme_tags": [
+            "borders",
+            "detention",
+            "family",
+            "Europe"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": [
+          "portfolio-candidate"
+        ]
+      }
     }
   ]
 }
