@@ -1,76 +1,41 @@
-# WPB Dashboard
+# WPB Archive Dashboard
 
-> Machine-readable source: [`data/dashboard.json`](data/dashboard.json) · Article metadata: [`data/article-metadata.json`](data/article-metadata.json) · Harvest system: [`harvest/`](harvest/)
+![WPB Archive Dashboard](visuals/dashboard.svg)
 
-This dashboard summarizes the current state of the WPB archive and future portfolio content system.
+## What you can see
 
-![WPB corpus timeline](visuals/corpus-timeline.svg)
+The dashboard is the **single visual surface** for the repository. It is generated from the canonical archive data rather than maintained as a separate illustration.
 
-## Snapshot
+It combines six views in one composition:
 
-| Metric | Current state |
-|---|---:|
-| Canonical authored/research works | **38** |
-| A-grade records | **38** |
-| Portfolio candidates | **12** |
-| Exact-day dates | **16** |
-| Year-only dates | **20** |
-| Missing dates | **2** |
-| Strongly verified publication records | **31** |
-| Partial publication metadata | **7** |
-| Article metadata records | **38** |
-| Manually enriched publisher records | **33** |
-| Contextual/non-authorship credits | **4** |
+- **Archive size and readiness** — 38 verified works, 33 enriched article-metadata records, 12 portfolio candidates, 4 contextual credits, 2 unresolved dates and 38 A-grade authorship records.
+- **Editorial structure** — every verified work is represented as one curve flowing into four analytical phases: 2 body/fashion research, 21 cultural journalism, 10 social-observational reporting and 5 long-form social reportage.
+- **Metadata coverage** — 87% of works have additional publisher-level metadata enrichment; A-grade evidence covers 100% of the authored/research corpus; 5% still lack a resolved publication date.
+- **Publication timeline** — the actual known-year distribution from 2013–2020, with undated records disclosed separately.
+- **Research pipeline** — Discover → Verify → Structure → Interpret → Publish.
+- **Portfolio readiness** — writer review, rights review, visual-asset review and site implementation remain explicit human decisions.
 
-## Visual overview
+### Source of truth
 
-- [Corpus timeline](visuals/corpus-timeline.svg)
-- [Career arc](visuals/career-arc.svg)
-- [Archive → portfolio research pipeline](visuals/archive-to-portfolio.svg)
-- [Metadata coverage](visuals/metadata-coverage.svg)
+The dashboard is derived from:
 
-## Corpus by phase
+- `data/corpus.json`
+- `data/article-metadata.json`
+- `data/credits.json`
+- `data/dashboard.json`
 
-- **body-fashion-research:** 2
-- **cultural-journalism:** 21
-- **social-observational-reporting:** 10
-- **long-form-social-reportage:** 5
+The visual itself is `visuals/dashboard.svg`.
 
-## Corpus by language
+### Automation
 
-- **pl:** 12
-- **en:** 26
+`scripts/build_outputs.py` rebuilds the aggregate dashboard metadata, human-readable bibliography, this page and the integrated SVG.
 
-## Date completeness
+`.github/workflows/sync-derived.yml` automatically runs that builder when canonical data changes and commits changed derived outputs. `.github/workflows/validate.yml` checks JSON integrity, corpus/metadata alignment, SVG validity and whether derived outputs are synchronized.
 
-- Missing exact year/date: **Henry Rude – Max of Wax** — Krull Magazine (`krull-henry-rude`)
-- Missing exact year/date: **Joanna Lemnelius – Mixed Grill, Motherhood and Business** — Krull Magazine (`krull-joanna-lemnelius`)
+The public dashboard therefore has **one visual, one data lineage and one update path**.
 
-## Article-level metadata
+## Important interpretation note
 
-`data/article-metadata.json` now provides a separate enrichment layer for bylines, publication timestamps, creative credits, DOI/academic fields, event context and discovery evidence. It does not duplicate full article text.
+The four editorial phases are repository analysis, not labels attributed to Weronika Pérez Borjas. A portfolio candidate is not the same thing as a writer-approved selection. Unknown rights or asset status means **not yet assessed**, not unavailable.
 
-## Harvest capability
-
-The repository now includes a repeatable public-web metadata harvester. It can combine the canonical corpus, author/tag pages, robots-aware allowlisted crawling, Internet Archive CDX, Crossref, OpenAlex and optional Brave Search discovery.
-
-Generated harvest results are **review inputs**, not automatic corpus truth.
-
-## Portfolio readiness
-
-- Final writer-approved selection: **pending**
-- Final writer-approved biography: **pending**
-- Rights review: **not yet performed**
-- Visual asset review: **not yet performed**
-- Frontend implementation: **not started**
-- Site architecture: **framework-neutral**
-
-## Data-quality cautions
-
-- Theme tags still mix canonical taxonomy IDs and descriptive free-form tags.
-- 2 records still lack a resolved publication date.
-- 7 records remain partial at publication-metadata level.
-- Rights and reusable visual assets remain deliberately unassessed until explicit review.
-- The corpus is reconstructed and substantial, but not claimed to be exhaustive.
-
-See [`docs/DASHBOARD_SCHEMA.md`](docs/DASHBOARD_SCHEMA.md) and [`harvest/README.md`](harvest/README.md).
+For the deeper archive, continue to [START_HERE.md](START_HERE.md), [the master bibliography](bibliography/master-bibliography.md), or [the writer dossier](analysis/writer-dossier.md).
