@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-09-22 — Single integrated automated dashboard
+- replaced multiple public data charts with one canonical `visuals/dashboard.svg`
+- moved the integrated dashboard to the very top of the repository README and Weronika's start page
+- made each central flow curve represent one verified corpus work
+- integrated archive KPIs, editorial phases, metadata coverage, actual publication timeline, research pipeline and portfolio readiness
+- added `scripts/build_outputs.py` generation for dashboard JSON, bibliography, dashboard page and SVG
+- added automatic derived-output synchronization and drift validation workflows
+- retained research/rights decisions as human-reviewed canonical inputs rather than automating evidence promotion
+
+
 ## 2026-09-22 — Corpus enrichment, visuals and harvesting
 - expanded canonical corpus from 36 to 38 verified authored/research works
 - added the previously missing VICE masculinity article and Forumist `A World Beyond`
