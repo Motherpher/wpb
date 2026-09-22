@@ -131,8 +131,8 @@
     },
     "2015-forumist-av-av-av": {
       "canonical_url": "https://theforumist.com/av-av-av-good-vibes-that-hurt/",
-      "metadata_status": "seeded-from-corpus",
-      "retrieved_on": null,
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-09-22",
       "publication": {
         "date": "2015",
         "date_precision": "year"
@@ -141,7 +141,14 @@
         "name": "Weronika Pérez Borjas",
         "verified": true
       },
-      "credits": [],
+      "credits": [
+        {
+          "role": "photography",
+          "names": [
+            "Clara Uddman"
+          ]
+        }
+      ],
       "platform": {},
       "academic": {},
       "discovery_evidence": [
@@ -202,8 +209,8 @@
     },
     "2015-forumist-jukebox": {
       "canonical_url": "https://theforumist.com/jukebox-melodies-in-vogue/",
-      "metadata_status": "seeded-from-corpus",
-      "retrieved_on": null,
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-09-22",
       "publication": {
         "date": "2015",
         "date_precision": "year"
@@ -213,7 +220,9 @@
         "verified": true
       },
       "credits": [],
-      "platform": {},
+      "platform": {
+        "context": "Stockholm Fashion Week / graduation collections"
+      },
       "academic": {},
       "discovery_evidence": [
         "https://theforumist.com/jukebox-melodies-in-vogue/"
@@ -240,8 +249,8 @@
     },
     "2015-forumist-zhala-makode": {
       "canonical_url": "https://theforumist.com/release-your-body-with-zhala-and-makode/",
-      "metadata_status": "seeded-from-corpus",
-      "retrieved_on": null,
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-09-22",
       "publication": {
         "date": "2015",
         "date_precision": "year"
@@ -251,7 +260,13 @@
         "verified": true
       },
       "credits": [],
-      "platform": {},
+      "platform": {
+        "subjects": [
+          "Zhala",
+          "Makode Linde"
+        ],
+        "context": "Release Body event / Grolsch Studios"
+      },
       "academic": {},
       "discovery_evidence": [
         "https://theforumist.com/release-your-body-with-zhala-and-makode/"
@@ -259,8 +274,8 @@
     },
     "2015-forumist-tales-unexpected": {
       "canonical_url": "https://theforumist.com/tales-of-the-unexpected/",
-      "metadata_status": "seeded-from-corpus",
-      "retrieved_on": null,
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-09-22",
       "publication": {
         "date": "2015",
         "date_precision": "year"
@@ -269,7 +284,26 @@
         "name": "Weronika Pérez Borjas",
         "verified": true
       },
-      "credits": [],
+      "credits": [
+        {
+          "role": "photography",
+          "names": [
+            "Oskar Gyllenswärd"
+          ]
+        },
+        {
+          "role": "styling",
+          "names": [
+            "Pejman Biroun Vand"
+          ]
+        },
+        {
+          "role": "hair and make-up",
+          "names": [
+            "Oscar Svensson at Mikas"
+          ]
+        }
+      ],
       "platform": {},
       "academic": {},
       "discovery_evidence": [
@@ -278,8 +312,8 @@
     },
     "2015-forumist-talking-to-los-muertos": {
       "canonical_url": "https://theforumist.com/talking-to-los-muertos/",
-      "metadata_status": "seeded-from-corpus",
-      "retrieved_on": null,
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-09-22",
       "publication": {
         "date": "2015",
         "date_precision": "year"
@@ -288,8 +322,17 @@
         "name": "Weronika Pérez Borjas",
         "verified": true
       },
-      "credits": [],
-      "platform": {},
+      "credits": [
+        {
+          "role": "images",
+          "names": [
+            "Andres Serrano"
+          ]
+        }
+      ],
+      "platform": {
+        "venue_context": "Fotografiska Museum"
+      },
       "academic": {},
       "discovery_evidence": [
         "https://theforumist.com/talking-to-los-muertos/"
@@ -387,8 +430,8 @@
     },
     "2015-forumist-wir-sind-berliner": {
       "canonical_url": "https://theforumist.com/wir-sind-berliner/",
-      "metadata_status": "seeded-from-corpus",
-      "retrieved_on": null,
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-09-22",
       "publication": {
         "date": "2015",
         "date_precision": "year"
@@ -397,7 +440,26 @@
         "name": "Weronika Pérez Borjas",
         "verified": true
       },
-      "credits": [],
+      "credits": [
+        {
+          "role": "photography",
+          "names": [
+            "Harling & Darsell"
+          ]
+        },
+        {
+          "role": "styling",
+          "names": [
+            "Andrea Horn"
+          ]
+        },
+        {
+          "role": "hair and make-up",
+          "names": [
+            "Velta Berzina"
+          ]
+        }
+      ],
       "platform": {},
       "academic": {},
       "discovery_evidence": [
