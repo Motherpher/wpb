@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "updated": "2026-09-22",
   "completeness": "reconstructed-not-exhaustive",
   "works": [
@@ -106,23 +106,28 @@
       }
     },
     {
-      "id": "2015-forumist-jukebox",
+      "id": "2015-forumist-a-world-beyond",
       "date": "2015",
-      "title": "Jukebox Melodies in Vogue",
+      "title": "A World Beyond",
       "outlet": "The Forumist",
       "language": "en",
-      "type": "fashion/cultural journalism",
+      "type": "music/cultural interview",
       "evidence": "A",
       "status": "verified",
-      "url": "https://theforumist.com/jukebox-melodies-in-vogue/",
+      "url": "https://theforumist.com/a-world-beyond/",
       "themes": [
-        "fashion",
-        "visual-culture",
-        "Stockholm"
+        "identity",
+        "migration",
+        "music",
+        "spirituality",
+        "diaspora",
+        "Sweden",
+        "Kurdistan",
+        "visual-culture"
       ],
       "phase": "cultural-journalism",
       "featured": false,
-      "note": "Stockholm Fashion Week criticism.",
+      "note": "Interview/profile with Zhala on spirituality, Kurdish roots, immigrant-Swedish identity, visual expression and music. Direct page credits words to Weronika Pérez Borjas.",
       "dashboard": {
         "date_precision": "year",
         "source_completeness": "verified",
@@ -140,11 +145,17 @@
           "missing_required_fields": []
         },
         "taxonomy": {
-          "canonical_theme_tags": [],
+          "canonical_theme_tags": [
+            "identity",
+            "migration"
+          ],
           "descriptive_theme_tags": [
-            "fashion",
-            "visual-culture",
-            "Stockholm"
+            "music",
+            "spirituality",
+            "diaspora",
+            "Sweden",
+            "Kurdistan",
+            "visual-culture"
           ],
           "normalization_status": "mixed-taxonomy"
         },
@@ -199,174 +210,23 @@
       }
     },
     {
-      "id": "2015-forumist-wir-sind-berliner",
+      "id": "2015-forumist-av-av-av",
       "date": "2015",
-      "title": "Wir Sind Berliner",
-      "outlet": "The Forumist",
-      "language": "en",
-      "type": "cultural journalism",
-      "evidence": "A",
-      "status": "verified",
-      "url": "https://theforumist.com/wir-sind-berliner/",
-      "themes": [
-        "urban-life",
-        "music",
-        "identity",
-        "Berlin"
-      ],
-      "phase": "cultural-journalism",
-      "featured": false,
-      "note": "Berlin, creativity and urban cultural identity.",
-      "dashboard": {
-        "date_precision": "year",
-        "source_completeness": "verified",
-        "evidence_grade": "A",
-        "portfolio": {
-          "candidate": false,
-          "readiness": "archive-not-selected",
-          "rights_status": "not-assessed",
-          "visual_asset_status": "not-assessed",
-          "public_copy_status": "working-copy"
-        },
-        "metadata": {
-          "required_fields_present": 12,
-          "required_fields_total": 12,
-          "missing_required_fields": []
-        },
-        "taxonomy": {
-          "canonical_theme_tags": [
-            "identity"
-          ],
-          "descriptive_theme_tags": [
-            "urban-life",
-            "music",
-            "Berlin"
-          ],
-          "normalization_status": "mixed-taxonomy"
-        },
-        "flags": []
-      }
-    },
-    {
-      "id": "2015-forumist-talking-to-los-muertos",
-      "date": "2015",
-      "title": "Talking to Los Muertos",
-      "outlet": "The Forumist",
-      "language": "en",
-      "type": "art criticism/personal essay",
-      "evidence": "A",
-      "status": "verified",
-      "url": "https://theforumist.com/talking-to-los-muertos/",
-      "themes": [
-        "Cuba",
-        "spirituality",
-        "body",
-        "death",
-        "art",
-        "diaspora"
-      ],
-      "phase": "cultural-journalism",
-      "featured": true,
-      "note": "Andrés Serrano, death, Catholic imagery, Afro-Cuban spirituality and family memory.",
-      "dashboard": {
-        "date_precision": "year",
-        "source_completeness": "verified",
-        "evidence_grade": "A",
-        "portfolio": {
-          "candidate": true,
-          "readiness": "candidate-needs-editorial-and-rights-review",
-          "rights_status": "not-assessed",
-          "visual_asset_status": "not-assessed",
-          "public_copy_status": "working-copy"
-        },
-        "metadata": {
-          "required_fields_present": 12,
-          "required_fields_total": 12,
-          "missing_required_fields": []
-        },
-        "taxonomy": {
-          "canonical_theme_tags": [
-            "Cuba",
-            "body"
-          ],
-          "descriptive_theme_tags": [
-            "spirituality",
-            "death",
-            "art",
-            "diaspora"
-          ],
-          "normalization_status": "mixed-taxonomy"
-        },
-        "flags": [
-          "portfolio-candidate"
-        ]
-      }
-    },
-    {
-      "id": "2015-forumist-rnb-poltergeist",
-      "date": "2015",
-      "title": "The R’n’B Poltergeist",
+      "title": "Av Av Av – Good Vibes That Hurt",
       "outlet": "The Forumist",
       "language": "en",
       "type": "music journalism",
       "evidence": "A",
       "status": "verified",
-      "url": "https://theforumist.com/the-rnb-poltergeist/",
+      "url": "https://theforumist.com/av-av-av-good-vibes-that-hurt/",
       "themes": [
         "music",
-        "identity",
-        "creative-process"
+        "Copenhagen",
+        "place"
       ],
       "phase": "cultural-journalism",
       "featured": false,
-      "note": "Profile/interview centred on artistic identity.",
-      "dashboard": {
-        "date_precision": "year",
-        "source_completeness": "verified",
-        "evidence_grade": "A",
-        "portfolio": {
-          "candidate": false,
-          "readiness": "archive-not-selected",
-          "rights_status": "not-assessed",
-          "visual_asset_status": "not-assessed",
-          "public_copy_status": "working-copy"
-        },
-        "metadata": {
-          "required_fields_present": 12,
-          "required_fields_total": 12,
-          "missing_required_fields": []
-        },
-        "taxonomy": {
-          "canonical_theme_tags": [
-            "identity"
-          ],
-          "descriptive_theme_tags": [
-            "music",
-            "creative-process"
-          ],
-          "normalization_status": "mixed-taxonomy"
-        },
-        "flags": []
-      }
-    },
-    {
-      "id": "2015-forumist-wildbirds",
-      "date": "2015",
-      "title": "Wildbirds & Peacedrums – Taking Care of Each Other",
-      "outlet": "The Forumist",
-      "language": "en",
-      "type": "music interview",
-      "evidence": "A",
-      "status": "verified",
-      "url": "https://theforumist.com/wildbirds-peacedrums-taking-care-of-each-other/",
-      "themes": [
-        "music",
-        "collaboration",
-        "relationships"
-      ],
-      "phase": "cultural-journalism",
-      "featured": false,
-      "note": "Creative collaboration and relationship dynamics.",
+      "note": "Electronic music and place.",
       "dashboard": {
         "date_precision": "year",
         "source_completeness": "verified",
@@ -387,8 +247,8 @@
           "canonical_theme_tags": [],
           "descriptive_theme_tags": [
             "music",
-            "collaboration",
-            "relationships"
+            "Copenhagen",
+            "place"
           ],
           "normalization_status": "mixed-taxonomy"
         },
@@ -445,23 +305,24 @@
       }
     },
     {
-      "id": "2015-forumist-av-av-av",
+      "id": "2015-totally-hokarangen",
       "date": "2015",
-      "title": "Av Av Av – Good Vibes That Hurt",
-      "outlet": "The Forumist",
+      "title": "Hökarängen",
+      "outlet": "Totally Stockholm",
       "language": "en",
-      "type": "music journalism",
+      "type": "urban/cultural journalism",
       "evidence": "A",
       "status": "verified",
-      "url": "https://theforumist.com/av-av-av-good-vibes-that-hurt/",
+      "url": "https://www.totallystockholm.se/hokarangen/",
       "themes": [
-        "music",
-        "Copenhagen",
+        "Stockholm",
+        "urban-life",
+        "community",
         "place"
       ],
       "phase": "cultural-journalism",
       "featured": false,
-      "note": "Electronic music and place.",
+      "note": "Neighbourhood reporting focused on lived place and local culture.",
       "dashboard": {
         "date_precision": "year",
         "source_completeness": "verified",
@@ -481,9 +342,56 @@
         "taxonomy": {
           "canonical_theme_tags": [],
           "descriptive_theme_tags": [
-            "music",
-            "Copenhagen",
+            "Stockholm",
+            "urban-life",
+            "community",
             "place"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": []
+      }
+    },
+    {
+      "id": "2015-forumist-jukebox",
+      "date": "2015",
+      "title": "Jukebox Melodies in Vogue",
+      "outlet": "The Forumist",
+      "language": "en",
+      "type": "fashion/cultural journalism",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://theforumist.com/jukebox-melodies-in-vogue/",
+      "themes": [
+        "fashion",
+        "visual-culture",
+        "Stockholm"
+      ],
+      "phase": "cultural-journalism",
+      "featured": false,
+      "note": "Stockholm Fashion Week criticism.",
+      "dashboard": {
+        "date_precision": "year",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [],
+          "descriptive_theme_tags": [
+            "fashion",
+            "visual-culture",
+            "Stockholm"
           ],
           "normalization_status": "mixed-taxonomy"
         },
@@ -635,31 +543,33 @@
       }
     },
     {
-      "id": "2015-totally-hokarangen",
+      "id": "2015-forumist-talking-to-los-muertos",
       "date": "2015",
-      "title": "Hökarängen",
-      "outlet": "Totally Stockholm",
+      "title": "Talking to Los Muertos",
+      "outlet": "The Forumist",
       "language": "en",
-      "type": "urban/cultural journalism",
+      "type": "art criticism/personal essay",
       "evidence": "A",
       "status": "verified",
-      "url": "https://www.totallystockholm.se/hokarangen/",
+      "url": "https://theforumist.com/talking-to-los-muertos/",
       "themes": [
-        "Stockholm",
-        "urban-life",
-        "community",
-        "place"
+        "Cuba",
+        "spirituality",
+        "body",
+        "death",
+        "art",
+        "diaspora"
       ],
       "phase": "cultural-journalism",
-      "featured": false,
-      "note": "Neighbourhood reporting focused on lived place and local culture.",
+      "featured": true,
+      "note": "Andrés Serrano, death, Catholic imagery, Afro-Cuban spirituality and family memory.",
       "dashboard": {
         "date_precision": "year",
         "source_completeness": "verified",
         "evidence_grade": "A",
         "portfolio": {
-          "candidate": false,
-          "readiness": "archive-not-selected",
+          "candidate": true,
+          "readiness": "candidate-needs-editorial-and-rights-review",
           "rights_status": "not-assessed",
           "visual_asset_status": "not-assessed",
           "public_copy_status": "working-copy"
@@ -670,16 +580,21 @@
           "missing_required_fields": []
         },
         "taxonomy": {
-          "canonical_theme_tags": [],
+          "canonical_theme_tags": [
+            "Cuba",
+            "body"
+          ],
           "descriptive_theme_tags": [
-            "Stockholm",
-            "urban-life",
-            "community",
-            "place"
+            "spirituality",
+            "death",
+            "art",
+            "diaspora"
           ],
           "normalization_status": "mixed-taxonomy"
         },
-        "flags": []
+        "flags": [
+          "portfolio-candidate"
+        ]
       }
     },
     {
@@ -736,8 +651,198 @@
       }
     },
     {
+      "id": "2015-forumist-rnb-poltergeist",
+      "date": "2015",
+      "title": "The R’n’B Poltergeist",
+      "outlet": "The Forumist",
+      "language": "en",
+      "type": "music journalism",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://theforumist.com/the-rnb-poltergeist/",
+      "themes": [
+        "music",
+        "identity",
+        "creative-process"
+      ],
+      "phase": "cultural-journalism",
+      "featured": false,
+      "note": "Profile/interview centred on artistic identity.",
+      "dashboard": {
+        "date_precision": "year",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [
+            "identity"
+          ],
+          "descriptive_theme_tags": [
+            "music",
+            "creative-process"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": []
+      }
+    },
+    {
+      "id": "2015-forumist-wildbirds",
+      "date": "2015",
+      "title": "Wildbirds & Peacedrums – Taking Care of Each Other",
+      "outlet": "The Forumist",
+      "language": "en",
+      "type": "music interview",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://theforumist.com/wildbirds-peacedrums-taking-care-of-each-other/",
+      "themes": [
+        "music",
+        "collaboration",
+        "relationships"
+      ],
+      "phase": "cultural-journalism",
+      "featured": false,
+      "note": "Creative collaboration and relationship dynamics.",
+      "dashboard": {
+        "date_precision": "year",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [],
+          "descriptive_theme_tags": [
+            "music",
+            "collaboration",
+            "relationships"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": []
+      }
+    },
+    {
+      "id": "2015-forumist-wir-sind-berliner",
+      "date": "2015",
+      "title": "Wir Sind Berliner",
+      "outlet": "The Forumist",
+      "language": "en",
+      "type": "cultural journalism",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://theforumist.com/wir-sind-berliner/",
+      "themes": [
+        "urban-life",
+        "music",
+        "identity",
+        "Berlin"
+      ],
+      "phase": "cultural-journalism",
+      "featured": false,
+      "note": "Berlin, creativity and urban cultural identity.",
+      "dashboard": {
+        "date_precision": "year",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [
+            "identity"
+          ],
+          "descriptive_theme_tags": [
+            "urban-life",
+            "music",
+            "Berlin"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": []
+      }
+    },
+    {
+      "id": "krull-all-that-jazz",
+      "date": "2016",
+      "title": "All That Jazz",
+      "outlet": "Krull Magazine",
+      "language": "en",
+      "type": "music journalism",
+      "evidence": "A",
+      "status": "verified-title-url",
+      "url": "https://krullmag.com/blog/all-that-jazz/",
+      "themes": [
+        "music",
+        "Stockholm",
+        "diaspora"
+      ],
+      "phase": "cultural-journalism",
+      "featured": false,
+      "note": "Stockholm Jazz Festival and global music. Publication year established from dated festival/event context in the article; exact publication day remains unresolved.",
+      "dashboard": {
+        "date_precision": "year",
+        "source_completeness": "verified-partial-metadata",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [],
+          "descriptive_theme_tags": [
+            "music",
+            "Stockholm",
+            "diaspora"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": [
+          "partial-publication-metadata"
+        ]
+      }
+    },
+    {
       "id": "krull-fatoumata-diawara",
-      "date": null,
+      "date": "2016",
       "title": "Fatoumata Diawara",
       "outlet": "Krull Magazine",
       "language": "en",
@@ -754,9 +859,9 @@
       ],
       "phase": "cultural-journalism",
       "featured": false,
-      "note": "Interview on music, roots, women and African identity.",
+      "note": "Interview on music, roots, women and African identity. Publication year established from dated festival/event context in the article; exact publication day remains unresolved.",
       "dashboard": {
-        "date_precision": "unknown",
+        "date_precision": "year",
         "source_completeness": "verified-partial-metadata",
         "evidence_grade": "A",
         "portfolio": {
@@ -783,219 +888,13 @@
           "normalization_status": "mixed-taxonomy"
         },
         "flags": [
-          "missing-date",
-          "partial-publication-metadata"
-        ]
-      }
-    },
-    {
-      "id": "krull-henry-rude",
-      "date": null,
-      "title": "Henry Rude – Max of Wax",
-      "outlet": "Krull Magazine",
-      "language": "en",
-      "type": "fashion/cultural journalism",
-      "evidence": "A",
-      "status": "verified-title-url",
-      "url": "https://krullmag.com/blog/henry-rude/",
-      "themes": [
-        "fashion",
-        "Africa",
-        "representation",
-        "production"
-      ],
-      "phase": "cultural-journalism",
-      "featured": false,
-      "note": "African textiles, Sweden/Africa links and representation.",
-      "dashboard": {
-        "date_precision": "unknown",
-        "source_completeness": "verified-partial-metadata",
-        "evidence_grade": "A",
-        "portfolio": {
-          "candidate": false,
-          "readiness": "archive-not-selected",
-          "rights_status": "not-assessed",
-          "visual_asset_status": "not-assessed",
-          "public_copy_status": "working-copy"
-        },
-        "metadata": {
-          "required_fields_present": 12,
-          "required_fields_total": 12,
-          "missing_required_fields": []
-        },
-        "taxonomy": {
-          "canonical_theme_tags": [],
-          "descriptive_theme_tags": [
-            "fashion",
-            "Africa",
-            "representation",
-            "production"
-          ],
-          "normalization_status": "mixed-taxonomy"
-        },
-        "flags": [
-          "missing-date",
-          "partial-publication-metadata"
-        ]
-      }
-    },
-    {
-      "id": "krull-joanna-lemnelius",
-      "date": null,
-      "title": "Joanna Lemnelius – Mixed Grill, Motherhood and Business",
-      "outlet": "Krull Magazine",
-      "language": "en",
-      "type": "interview",
-      "evidence": "A",
-      "status": "verified-title-url",
-      "url": "https://krullmag.com/blog/joanna-lemnelius-mixed-grill-motherhood-and-business/",
-      "themes": [
-        "fashion",
-        "production",
-        "Gambia",
-        "labour",
-        "entrepreneurship"
-      ],
-      "phase": "cultural-journalism",
-      "featured": false,
-      "note": "Ethical production, design and business.",
-      "dashboard": {
-        "date_precision": "unknown",
-        "source_completeness": "verified-partial-metadata",
-        "evidence_grade": "A",
-        "portfolio": {
-          "candidate": false,
-          "readiness": "archive-not-selected",
-          "rights_status": "not-assessed",
-          "visual_asset_status": "not-assessed",
-          "public_copy_status": "working-copy"
-        },
-        "metadata": {
-          "required_fields_present": 12,
-          "required_fields_total": 12,
-          "missing_required_fields": []
-        },
-        "taxonomy": {
-          "canonical_theme_tags": [],
-          "descriptive_theme_tags": [
-            "fashion",
-            "production",
-            "Gambia",
-            "labour",
-            "entrepreneurship"
-          ],
-          "normalization_status": "mixed-taxonomy"
-        },
-        "flags": [
-          "missing-date",
-          "partial-publication-metadata"
-        ]
-      }
-    },
-    {
-      "id": "krull-all-that-jazz",
-      "date": null,
-      "title": "All That Jazz",
-      "outlet": "Krull Magazine",
-      "language": "en",
-      "type": "music journalism",
-      "evidence": "A",
-      "status": "verified-title-url",
-      "url": "https://krullmag.com/blog/all-that-jazz/",
-      "themes": [
-        "music",
-        "Stockholm",
-        "diaspora"
-      ],
-      "phase": "cultural-journalism",
-      "featured": false,
-      "note": "Stockholm Jazz Festival and global music.",
-      "dashboard": {
-        "date_precision": "unknown",
-        "source_completeness": "verified-partial-metadata",
-        "evidence_grade": "A",
-        "portfolio": {
-          "candidate": false,
-          "readiness": "archive-not-selected",
-          "rights_status": "not-assessed",
-          "visual_asset_status": "not-assessed",
-          "public_copy_status": "working-copy"
-        },
-        "metadata": {
-          "required_fields_present": 12,
-          "required_fields_total": 12,
-          "missing_required_fields": []
-        },
-        "taxonomy": {
-          "canonical_theme_tags": [],
-          "descriptive_theme_tags": [
-            "music",
-            "Stockholm",
-            "diaspora"
-          ],
-          "normalization_status": "mixed-taxonomy"
-        },
-        "flags": [
-          "missing-date",
-          "partial-publication-metadata"
-        ]
-      }
-    },
-    {
-      "id": "krull-stockholm-film-festival",
-      "date": null,
-      "title": "The 27th Edition of Stockholm Film Festival",
-      "outlet": "Krull Magazine",
-      "language": "en",
-      "type": "film/cultural journalism",
-      "evidence": "A",
-      "status": "verified-title-url",
-      "url": "https://krullmag.com/blog/stockholm-film-festival-tips/",
-      "themes": [
-        "film",
-        "migration",
-        "sexuality",
-        "marginality"
-      ],
-      "phase": "cultural-journalism",
-      "featured": false,
-      "note": "Festival curation with recurring themes of migration and marginality.",
-      "dashboard": {
-        "date_precision": "unknown",
-        "source_completeness": "verified-partial-metadata",
-        "evidence_grade": "A",
-        "portfolio": {
-          "candidate": false,
-          "readiness": "archive-not-selected",
-          "rights_status": "not-assessed",
-          "visual_asset_status": "not-assessed",
-          "public_copy_status": "working-copy"
-        },
-        "metadata": {
-          "required_fields_present": 12,
-          "required_fields_total": 12,
-          "missing_required_fields": []
-        },
-        "taxonomy": {
-          "canonical_theme_tags": [
-            "migration"
-          ],
-          "descriptive_theme_tags": [
-            "film",
-            "sexuality",
-            "marginality"
-          ],
-          "normalization_status": "mixed-taxonomy"
-        },
-        "flags": [
-          "missing-date",
           "partial-publication-metadata"
         ]
       }
     },
     {
       "id": "krull-mali-blues",
-      "date": null,
+      "date": "2016",
       "title": "Saving Music in Mali – an Interview with Lutz Gregor",
       "outlet": "Krull Magazine",
       "language": "en",
@@ -1011,9 +910,9 @@
       ],
       "phase": "cultural-journalism",
       "featured": false,
-      "note": "Cultural preservation, documentary film and Mali.",
+      "note": "Cultural preservation, documentary film and Mali. Publication year established from dated festival/event context in the article; exact publication day remains unresolved.",
       "dashboard": {
-        "date_precision": "unknown",
+        "date_precision": "year",
         "source_completeness": "verified-partial-metadata",
         "evidence_grade": "A",
         "portfolio": {
@@ -1040,32 +939,31 @@
           "normalization_status": "mixed-taxonomy"
         },
         "flags": [
-          "missing-date",
           "partial-publication-metadata"
         ]
       }
     },
     {
-      "id": "krull-tempo",
-      "date": null,
-      "title": "Tempo Documentary Festival Tips",
+      "id": "krull-stockholm-film-festival",
+      "date": "2016",
+      "title": "The 27th Edition of Stockholm Film Festival",
       "outlet": "Krull Magazine",
       "language": "en",
       "type": "film/cultural journalism",
       "evidence": "A",
       "status": "verified-title-url",
-      "url": "https://krullmag.com/blog/tempo-documentary-festival-tips/",
+      "url": "https://krullmag.com/blog/stockholm-film-festival-tips/",
       "themes": [
-        "documentary",
+        "film",
         "migration",
-        "identity",
-        "dance"
+        "sexuality",
+        "marginality"
       ],
       "phase": "cultural-journalism",
       "featured": false,
-      "note": "Documentary festival selection.",
+      "note": "Festival curation with recurring themes of migration and marginality. Publication year established from dated festival/event context in the article; exact publication day remains unresolved.",
       "dashboard": {
-        "date_precision": "unknown",
+        "date_precision": "year",
         "source_completeness": "verified-partial-metadata",
         "evidence_grade": "A",
         "portfolio": {
@@ -1082,17 +980,16 @@
         },
         "taxonomy": {
           "canonical_theme_tags": [
-            "migration",
-            "identity"
+            "migration"
           ],
           "descriptive_theme_tags": [
-            "documentary",
-            "dance"
+            "film",
+            "sexuality",
+            "marginality"
           ],
           "normalization_status": "mixed-taxonomy"
         },
         "flags": [
-          "missing-date",
           "partial-publication-metadata"
         ]
       }
@@ -1352,7 +1249,7 @@
       "type": "interview/reporting",
       "evidence": "A",
       "status": "verified",
-      "url": "https://www.vice.com/pl/tag/fetysz/page/2/",
+      "url": "https://www.vice.com/pl/article/kwm34a/fetysz-rownowaga-i-podwieszanie-na-hakach-z-miss-crash/",
       "themes": [
         "body",
         "performance",
@@ -1361,7 +1258,7 @@
       ],
       "phase": "social-observational-reporting",
       "featured": false,
-      "note": "Body suspension, fetish performance and bodily boundaries. Registry currently links to VICE tag archive; recover direct article URL.",
+      "note": "Body suspension, fetish performance and bodily boundaries. Direct VICE article URL recovered; VICE archive credits Weronika Pérez Borjas and photographer Kamila Burzymowska.",
       "dashboard": {
         "date_precision": "exact-day",
         "source_completeness": "verified",
@@ -1432,6 +1329,57 @@
             "music",
             "festival",
             "social-observation"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": []
+      }
+    },
+    {
+      "id": "2016-vice-masculinity",
+      "date": "2016-07-14",
+      "title": "Mężczyźni od lat 16 do 72 radzą, jak kochać, być silnym i czuć się mężczyzną",
+      "outlet": "VICE Polska",
+      "language": "pl",
+      "type": "social/cultural reporting",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://www.vice.com/pl/article/jak-byc-prawdziwym-facetem-radza-pokolenia-mezczyzn/",
+      "themes": [
+        "identity",
+        "gender",
+        "masculinity",
+        "social-norms",
+        "Poland"
+      ],
+      "phase": "social-observational-reporting",
+      "featured": false,
+      "note": "Multi-generational reporting on masculinity. VICE page directly credits Weronika Pérez Borjas and dates the article July 14, 2016.",
+      "dashboard": {
+        "date_precision": "exact-day",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [
+            "identity"
+          ],
+          "descriptive_theme_tags": [
+            "gender",
+            "masculinity",
+            "social-norms",
+            "Poland"
           ],
           "normalization_status": "mixed-taxonomy"
         },
@@ -1543,6 +1491,57 @@
         },
         "flags": [
           "portfolio-candidate"
+        ]
+      }
+    },
+    {
+      "id": "krull-tempo",
+      "date": "2017",
+      "title": "Tempo Documentary Festival Tips",
+      "outlet": "Krull Magazine",
+      "language": "en",
+      "type": "film/cultural journalism",
+      "evidence": "A",
+      "status": "verified-title-url",
+      "url": "https://krullmag.com/blog/tempo-documentary-festival-tips/",
+      "themes": [
+        "documentary",
+        "migration",
+        "identity",
+        "dance"
+      ],
+      "phase": "cultural-journalism",
+      "featured": false,
+      "note": "Documentary festival selection. Publication year established from dated festival/event context in the article; exact publication day remains unresolved.",
+      "dashboard": {
+        "date_precision": "year",
+        "source_completeness": "verified-partial-metadata",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [
+            "migration",
+            "identity"
+          ],
+          "descriptive_theme_tags": [
+            "documentary",
+            "dance"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": [
+          "partial-publication-metadata"
         ]
       }
     },
@@ -1815,6 +1814,110 @@
         },
         "flags": [
           "portfolio-candidate"
+        ]
+      }
+    },
+    {
+      "id": "krull-henry-rude",
+      "date": null,
+      "title": "Henry Rude – Max of Wax",
+      "outlet": "Krull Magazine",
+      "language": "en",
+      "type": "fashion/cultural journalism",
+      "evidence": "A",
+      "status": "verified-title-url",
+      "url": "https://krullmag.com/blog/henry-rude/",
+      "themes": [
+        "fashion",
+        "Africa",
+        "representation",
+        "production"
+      ],
+      "phase": "cultural-journalism",
+      "featured": false,
+      "note": "African textiles, Sweden/Africa links and representation.",
+      "dashboard": {
+        "date_precision": "unknown",
+        "source_completeness": "verified-partial-metadata",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [],
+          "descriptive_theme_tags": [
+            "fashion",
+            "Africa",
+            "representation",
+            "production"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": [
+          "missing-date",
+          "partial-publication-metadata"
+        ]
+      }
+    },
+    {
+      "id": "krull-joanna-lemnelius",
+      "date": null,
+      "title": "Joanna Lemnelius – Mixed Grill, Motherhood and Business",
+      "outlet": "Krull Magazine",
+      "language": "en",
+      "type": "interview",
+      "evidence": "A",
+      "status": "verified-title-url",
+      "url": "https://krullmag.com/blog/joanna-lemnelius-mixed-grill-motherhood-and-business/",
+      "themes": [
+        "fashion",
+        "production",
+        "Gambia",
+        "labour",
+        "entrepreneurship"
+      ],
+      "phase": "cultural-journalism",
+      "featured": false,
+      "note": "Ethical production, design and business.",
+      "dashboard": {
+        "date_precision": "unknown",
+        "source_completeness": "verified-partial-metadata",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": false,
+          "readiness": "archive-not-selected",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [],
+          "descriptive_theme_tags": [
+            "fashion",
+            "production",
+            "Gambia",
+            "labour",
+            "entrepreneurship"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": [
+          "missing-date",
+          "partial-publication-metadata"
         ]
       }
     }
