@@ -11,6 +11,7 @@
 - `data/themes.json` — thematic taxonomy
 - `data/outlets.json` — outlet registry
 - `data/credits.json` — contextual, translation and unresolved non-authorship credits
+- `data/discovery-scope.json` — exhaustive-discovery coverage model
 
 ## Human-readable archive
 - `bibliography/master-bibliography.md`
@@ -34,6 +35,7 @@
 - `docs/EDITORIAL_POLICY.md`
 - `docs/CONTENT_MODEL.md`
 - `docs/site-roadmap.md`
+- `docs/HARVEST_PROTOCOL.md` — exhaustive discovery protocol
 - `CONTRIBUTING.md`
 
 ## Harvesting
