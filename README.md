@@ -1,10 +1,14 @@
-> **Weronika:** If you are opening this repository for the first time, start with [START_HERE.md](START_HERE.md). It explains what this archive is, what has been reconstructed, what you can change, and how it can later become a portfolio site.
+![WPB Archive Dashboard](visuals/dashboard.svg)
 
-> **Repository dashboard:** [DASHBOARD.md](DASHBOARD.md) — current corpus, metadata quality, portfolio readiness and open work.
+### What this shows
+
+The dashboard above is the repository's **single integrated data visual**. It is generated from the archive itself and combines corpus size, editorial phases, metadata completeness, publication chronology, research workflow and portfolio readiness. One curve in the central field represents one verified work.
+
+> **Weronika:** start with [START_HERE.md](START_HERE.md). It explains what this archive is, what you can correct or add, and how the same structure can later become your portfolio.
+
+> **Detailed dashboard notes:** [DASHBOARD.md](DASHBOARD.md) · **Discovery system:** [harvest/README.md](harvest/README.md)
 
 # WPB — Weronika Pérez Borjas
-
-![WPB corpus timeline](visuals/corpus-timeline.svg)
 
 Independent research archive and reconstructed corpus of the published work of writer and reporter **Weronika Pérez Borjas**.
 
@@ -19,9 +23,11 @@ This repository is being built for two connected purposes:
 
 ## Research dashboard
 
-- [Dashboard](DASHBOARD.md) — corpus status, metadata coverage and portfolio readiness
-- [Visuals](visuals/README.md) — timeline, career arc, pipeline and metadata infographic
+- [Integrated dashboard](DASHBOARD.md) — the one public data-visual surface, generated from canonical metadata
+- [Visual system](visuals/README.md) — design and automation notes for the integrated SVG
 - [Metadata harvester](harvest/README.md) — repeatable public-web discovery workflow
+
+The dashboard is regenerated automatically when canonical corpus, article-metadata or credit data changes.
 
 ## What is here
 
