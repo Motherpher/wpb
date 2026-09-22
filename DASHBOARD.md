@@ -19,7 +19,7 @@ This dashboard summarizes the current state of the WPB archive and future portfo
 | Strongly verified publication records | **31** |
 | Partial publication metadata | **7** |
 | Article metadata records | **38** |
-| Manually enriched publisher records | **21** |
+| Manually enriched publisher records | **33** |
 | Contextual/non-authorship credits | **4** |
 
 ## Visual overview
