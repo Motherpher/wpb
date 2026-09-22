@@ -1,5 +1,18 @@
 # Changelog
 
+## 2026-09-22 — Corpus enrichment, visuals and harvesting
+- expanded canonical corpus from 36 to 38 verified authored/research works
+- added the previously missing VICE masculinity article and Forumist `A World Beyond`
+- recovered the direct VICE URL for the Miss Crash article
+- resolved several Krull publication years from event context while preserving unresolved exact dates
+- reclassified Krull `WHAT’S IN STORE?` as a verified styling credit rather than authored journalism
+- added `data/article-metadata.json` for publisher metadata, DOI fields, timestamps and creative credits
+- added four SVG research infographics plus editable Mermaid sources
+- installed a robots-aware public metadata harvester with Wayback, Crossref, OpenAlex and optional search discovery
+- added a manual GitHub Actions workflow for harvest runs
+- refreshed dashboard and bibliography
+
+
 ## 2026-09-22 — Dashboard metadata layer
 - added per-work dashboard metadata across the canonical corpus
 - added dashboard metadata to contextual/non-authorship credits
