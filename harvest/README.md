@@ -21,6 +21,7 @@ It can collect:
 - visible credit lines
 - word counts and content fingerprints for deduplication
 - internal links from known author/archive pages
+- RSS/Atom author feeds where legacy WordPress publishers expose them
 - Internet Archive CDX captures
 - Crossref and OpenAlex records
 - optional Brave Search discovery results
@@ -44,8 +45,11 @@ python harvest/harvest_wpb.py --wayback --crossref --openalex
 
 This uses:
 1. every URL already present in `data/corpus.json`,
-2. curated author/tag pages in `harvest/seeds.json`,
-3. one-hop links found on positive author/archive pages.
+2. professional/translation credit sources in `data/credits.json`,
+3. discovery-evidence URLs in `data/article-metadata.json`,
+4. every public URL in `sources/source-registry.md`,
+5. curated author/tag pages and author RSS feeds in `harvest/seeds.json`,
+6. one-hop links discovered from those archive surfaces.
 
 ## Deep domain discovery
 
