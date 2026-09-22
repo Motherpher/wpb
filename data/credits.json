@@ -7,13 +7,33 @@
       "role": "press-office / press-secretary context",
       "evidence": "B",
       "authorship": false,
-      "note": "Stockholm Film Festival press materials list Pérez Borjas in press-office roles. Do not classify the releases themselves as authored work without byline evidence.",
+      "note": "Stockholm Film Festival press materials identify Pérez Borjas first as press assistant and later as press secretary during the 2015 festival cycle. These records establish professional communications work, not authorship of the releases.",
       "dashboard": {
         "corpus_inclusion": "keep-separate-from-authored-corpus",
         "verification_status": "context-verified",
         "portfolio_relevance": "possible-professional-context",
         "rights_status": "not-assessed"
-      }
+      },
+      "period": "2015",
+      "roles": [
+        {
+          "role": "press assistant",
+          "evidence_date_examples": [
+            "2015-10-09",
+            "2015-10-15"
+          ]
+        },
+        {
+          "role": "press secretary",
+          "evidence_date_examples": [
+            "2015-11-07"
+          ]
+        }
+      ],
+      "source_urls": [
+        "https://news.cision.com/stockholms-filmfestival/r/invitation-to-stockholm-film-festival-s-press-conference-october-20,c9845121",
+        "https://news.cision.com/stockholms-filmfestival/r/stockholm-film-festival-gives-accredited-journalists-access-to-all-film-screenings,c9863054"
+      ]
     },
     {
       "id": "isern-bear-translation",
@@ -21,13 +41,25 @@
       "role": "Polish translation credit",
       "evidence": "B",
       "authorship": false,
-      "note": "Translation credit; keep separate from original authored corpus.",
+      "note": "Verified Polish translation credit for Susanna Isern's book. Library catalogue also records Marjorie Pourchet as illustrator and the listed ISBNs. This is translation work, not original article authorship.",
       "dashboard": {
         "corpus_inclusion": "keep-separate-from-authored-corpus",
         "verification_status": "context-verified",
         "portfolio_relevance": "possible-other-work",
         "rights_status": "not-assessed"
-      }
+      },
+      "title_original": "Oso cazamariposas",
+      "author": "Susanna Isern",
+      "illustrator": "Marjorie Pourchet",
+      "publisher_records": [
+        "Tako Tomasz Klejna",
+        "Stowarzyszenie Pomocy Osobom Niepełnosprawnym Larix"
+      ],
+      "isbns": [
+        "978-83-62737-17-8",
+        "978-83-65480-65-1"
+      ],
+      "source_url": "https://wip.pbp.poznan.pl/587780/Nied%C5%BAwied%C5%BA%2B%C5%82owca%2Bmotyli?review=30537"
     },
     {
       "id": "stolen-fish-imdb",
