@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "updated": "2026-09-22",
   "records": [
     {
@@ -40,6 +40,21 @@
         "corpus_inclusion": "keep-separate-from-authored-corpus",
         "verification_status": "unresolved",
         "portfolio_relevance": "unresolved",
+        "rights_status": "not-assessed"
+      }
+    },
+    {
+      "id": "krull-whats-in-store-styling",
+      "work": "WHAT’S IN STORE?",
+      "source_url": "https://krullmag.com/blog/whats-in-store/",
+      "role": "styling",
+      "evidence": "B",
+      "authorship": false,
+      "note": "Direct Krull page credits styling to Weronika Pérez Borjas; photography by Andrea Davis Kronlund. This is a creative/professional credit, not article authorship.",
+      "dashboard": {
+        "corpus_inclusion": "keep-separate-from-authored-corpus",
+        "verification_status": "context-verified",
+        "portfolio_relevance": "possible-other-work",
         "rights_status": "not-assessed"
       }
     }
