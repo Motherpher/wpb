@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "generated": "2026-09-22",
   "source_of_truth": {
     "corpus": "data/corpus.json",
@@ -75,7 +75,8 @@
       "unknown": 2
     },
     "unresolved_dates": 2,
-    "manually_enriched_article_metadata_records": 33
+    "manually_enriched_article_metadata_records": 33,
+    "article_metadata_records": 38
   },
   "portfolio": {
     "candidate_count": 12,
@@ -156,12 +157,6 @@
     "asset_status": "not-assessed-at-record-level",
     "taxonomy_note": "Theme arrays include canonical IDs and descriptive free-form tags; no silent normalization."
   },
-  "visuals": [
-    "visuals/corpus-timeline.svg",
-    "visuals/career-arc.svg",
-    "visuals/archive-to-portfolio.svg",
-    "visuals/metadata-coverage.svg"
-  ],
   "workflow": {
     "open_workstreams": [
       {
@@ -184,5 +179,12 @@
       "Review image/excerpt rights",
       "Choose site framework after editorial/visual decisions"
     ]
+  },
+  "visual": {
+    "canonical": "visuals/dashboard.svg",
+    "generated_by": "scripts/build_outputs.py",
+    "automation": ".github/workflows/sync-derived.yml",
+    "mode": "single-integrated-dashboard",
+    "separate_public_visuals": false
   }
 }
