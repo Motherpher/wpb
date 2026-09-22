@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "outlets": [
     {
       "name": "Kultura Współczesna",
@@ -40,7 +40,7 @@
       "kind": "independent culture magazine",
       "country": "Sweden",
       "dashboard": {
-        "work_count": 11,
+        "work_count": 12,
         "featured_candidate_count": 1,
         "languages": [
           "en"
@@ -65,7 +65,7 @@
         "phases": [
           "cultural-journalism"
         ],
-        "unresolved_date_count": 7,
+        "unresolved_date_count": 2,
         "metadata_status": "represented-in-corpus"
       }
     },
@@ -91,7 +91,7 @@
       "kind": "digital magazine",
       "country": "international",
       "dashboard": {
-        "work_count": 9,
+        "work_count": 10,
         "featured_candidate_count": 3,
         "languages": [
           "en",
