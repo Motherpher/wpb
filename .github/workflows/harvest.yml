@@ -1,0 +1,41 @@
+name: WPB metadata harvest
+
+on:
+  workflow_dispatch:
+    inputs:
+      deep:
+        description: "Deep-crawl allowlisted domains"
+        required: false
+        type: boolean
+        default: false
+      max_pages:
+        description: "Maximum pages to fetch"
+        required: false
+        default: "300"
+
+permissions:
+  contents: read
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r harvest/requirements.txt
+      - name: Run metadata harvest
+        env:
+          BRAVE_SEARCH_API_KEY: ${{ secrets.BRAVE_SEARCH_API_KEY }}
+        run: |
+          EXTRA=""
+          if [ "${{ inputs.deep }}" = "true" ]; then EXTRA="--deep"; fi
+          SEARCH=""
+          if [ -n "$BRAVE_SEARCH_API_KEY" ]; then SEARCH="--brave-search"; fi
+          python harvest/harvest_wpb.py $EXTRA $SEARCH --max-pages "${{ inputs.max_pages }}" --wayback --crossref --openalex
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wpb-harvest-${{ github.run_id }}
+          path: harvest/output/
+          retention-days: 30
