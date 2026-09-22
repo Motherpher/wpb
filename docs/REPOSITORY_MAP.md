@@ -1,5 +1,10 @@
 # Repository map
 
+## Dashboard
+- `DASHBOARD.md` — human-readable status dashboard
+- `data/dashboard.json` — aggregate machine-readable dashboard metadata
+- `docs/DASHBOARD_SCHEMA.md` — dashboard field definitions and semantics
+
 ## Canonical data
 - `data/corpus.json` — publication corpus
 - `data/themes.json` — thematic taxonomy
