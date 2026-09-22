@@ -587,30 +587,40 @@
     },
     "2016-vice-makode": {
       "canonical_url": "https://www.vice.com/sv/article/makode-linde-strikes-back-345/",
-      "metadata_status": "seeded-from-corpus",
-      "retrieved_on": null,
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-09-22",
       "publication": {
         "date": "2016-01-29",
-        "date_precision": "exact-day"
+        "date_precision": "exact-day",
+        "published_at_local": "2016-01-29 11:15"
       },
       "byline": {
         "name": "Weronika Pérez Borjas",
         "verified": true
       },
-      "credits": [],
+      "credits": [
+        {
+          "role": "photo",
+          "names": [
+            "Makode Linde / courtesy"
+          ]
+        }
+      ],
       "platform": {},
       "academic": {},
       "discovery_evidence": [
-        "https://www.vice.com/sv/article/makode-linde-strikes-back-345/"
+        "https://www.vice.com/sv/article/makode-linde-strikes-back-345/",
+        "https://www.vice.com/en/article/makode-linde-strikes-back-345/"
       ]
     },
     "2016-vice-harmony": {
       "canonical_url": "https://www.vice.com/sv/article/we-asked-people-at-a-spiritual-fair-how-we-could-get-more-harmonious-098/",
-      "metadata_status": "seeded-from-corpus",
-      "retrieved_on": null,
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-09-22",
       "publication": {
         "date": "2016-04-12",
-        "date_precision": "exact-day"
+        "date_precision": "exact-day",
+        "published_at_local": "2016-04-12 09:00"
       },
       "byline": {
         "name": "Weronika Pérez Borjas",
@@ -656,11 +666,12 @@
     },
     "2016-vice-parental-nudity": {
       "canonical_url": "https://www.vice.com/pl/article/zapytalismy-mlodych-polakow-jak-czesto-widywali-swoich-rodzicow-nago/",
-      "metadata_status": "seeded-from-corpus",
-      "retrieved_on": null,
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-09-22",
       "publication": {
         "date": "2016-05-19",
-        "date_precision": "exact-day"
+        "date_precision": "exact-day",
+        "published_at_local": "2016-05-19 01:38"
       },
       "byline": {
         "name": "Weronika Pérez Borjas",
@@ -675,11 +686,12 @@
     },
     "2016-vice-instamatki": {
       "canonical_url": "https://www.vice.com/pl/article/postanowilam-sprawdzic-kim-sa-polskie-instamatki/",
-      "metadata_status": "seeded-from-corpus",
-      "retrieved_on": null,
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-09-22",
       "publication": {
         "date": "2016-06-24",
-        "date_precision": "exact-day"
+        "date_precision": "exact-day",
+        "published_at_local": "2016-06-24 05:05"
       },
       "byline": {
         "name": "Weronika Pérez Borjas",
@@ -723,17 +735,26 @@
     },
     "2016-vice-opener": {
       "canonical_url": "https://www.vice.com/pl/article/piec-typow-ludzi-ktorzy-wkurzaja-na-openerze/",
-      "metadata_status": "seeded-from-corpus",
-      "retrieved_on": null,
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-09-22",
       "publication": {
         "date": "2016-06-30",
-        "date_precision": "exact-day"
+        "date_precision": "exact-day",
+        "published_at_local": "2016-06-30 11:38"
       },
       "byline": {
         "name": "Weronika Pérez Borjas",
         "verified": true
       },
-      "credits": [],
+      "credits": [
+        {
+          "role": "photography/source image",
+          "names": [
+            "Kuba Kempiński",
+            "Paula Sobuń"
+          ]
+        }
+      ],
       "platform": {},
       "academic": {},
       "discovery_evidence": [
@@ -773,11 +794,12 @@
     },
     "2016-vice-polish-migration": {
       "canonical_url": "https://www.vice.com/pl/article/pytamy-rozne-pokolenia-polakow-na-emigracji-dlaczego-wyjechali-z-polski-i-co-teraz-o-niej-mysla/",
-      "metadata_status": "seeded-from-corpus",
-      "retrieved_on": null,
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-09-22",
       "publication": {
         "date": "2016-07-20",
-        "date_precision": "exact-day"
+        "date_precision": "exact-day",
+        "published_at_local": "2016-07-20 09:22"
       },
       "byline": {
         "name": "Weronika Pérez Borjas",
