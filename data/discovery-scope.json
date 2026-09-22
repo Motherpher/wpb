@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.0",
+  "updated": "2026-09-22",
+  "objective": "Maximise public-source discovery and provenance for Weronika Pérez Borjas while distinguishing authorship, professional credits, mentions and unresolved associations.",
+  "layers": [
+    {
+      "id": "publisher-direct",
+      "label": "Direct publisher pages",
+      "status": "active-reviewed",
+      "examples": [
+        "VICE",
+        "The Forumist",
+        "Krull Magazine",
+        "Totally Stockholm",
+        "Gazeta Wyborcza",
+        "Newsweek Polska",
+        "Onet",
+        "Intellect",
+        "NCK"
+      ],
+      "canonical_use": "A-grade authorship/publication metadata"
+    },
+    {
+      "id": "publisher-indexes",
+      "label": "Publisher author/tag/archive indexes",
+      "status": "active-reviewed",
+      "examples": [
+        "VICE contributor/tag archives",
+        "Forumist author tag",
+        "Krull author tag"
+      ],
+      "canonical_use": "discovery + corroboration"
+    },
+    {
+      "id": "publisher-machine",
+      "label": "Publisher machine-readable metadata",
+      "status": "harvester-enabled",
+      "examples": [
+        "JSON-LD",
+        "OpenGraph",
+        "canonical links",
+        "RSS/HTML metadata"
+      ],
+      "canonical_use": "dates, authors, images, sections, keywords"
+    },
+    {
+      "id": "general-search",
+      "label": "General web search",
+      "status": "manual-active-and-api-optional",
+      "examples": [
+        "exact-name queries",
+        "byline phrases",
+        "domain-restricted queries",
+        "Brave Search API"
+      ],
+      "canonical_use": "candidate discovery only"
+    },
+    {
+      "id": "web-archive",
+      "label": "Internet Archive / historical URLs",
+      "status": "harvester-enabled-not-yet-reviewed-at-scale",
+      "examples": [
+        "Wayback CDX"
+      ],
+      "canonical_use": "recover migrated/disappeared URLs and snapshots"
+    },
+    {
+      "id": "scholarly",
+      "label": "Scholarly registries",
+      "status": "active-and-harvester-enabled",
+      "examples": [
+        "Crossref",
+        "OpenAlex",
+        "publisher DOI metadata",
+        "ResearchGate as secondary lead"
+      ],
+      "canonical_use": "academic publication metadata"
+    },
+    {
+      "id": "libraries",
+      "label": "Library/catalogue records",
+      "status": "manual-active",
+      "examples": [
+        "public library catalogues",
+        "ISBN records"
+      ],
+      "canonical_use": "translations/books/editions"
+    },
+    {
+      "id": "professional-context",
+      "label": "Institutional/professional records",
+      "status": "manual-active",
+      "examples": [
+        "Stockholm Film Festival / Cision"
+      ],
+      "canonical_use": "B-grade professional context, not automatic authorship"
+    },
+    {
+      "id": "credit-graph",
+      "label": "Collaborator and credit graph",
+      "status": "partially-enriched",
+      "examples": [
+        "photographers",
+        "stylists",
+        "illustrators",
+        "festival press materials"
+      ],
+      "canonical_use": "creative credits and reverse-discovery leads"
+    },
+    {
+      "id": "visual-assets",
+      "label": "Public visual references",
+      "status": "discovery-only-rights-pending",
+      "examples": [
+        "publisher images",
+        "portraits",
+        "article lead images"
+      ],
+      "canonical_use": "asset inventory only until rights review"
+    },
+    {
+      "id": "writer-supplied",
+      "label": "Writer-supplied archive",
+      "status": "pending-writer-review",
+      "examples": [
+        "CV",
+        "clips",
+        "PDFs",
+        "print scans",
+        "unpublished commissions",
+        "talks",
+        "audio/film work"
+      ],
+      "canonical_use": "highest-value path to gaps unavailable on public web"
+    },
+    {
+      "id": "full-text",
+      "label": "Full copyrighted article mirror",
+      "status": "excluded-by-design",
+      "examples": [],
+      "canonical_use": "not stored unless rights are explicitly established"
+    }
+  ],
+  "completion_definition": [
+    "All discoverable direct bylines are captured or explicitly rejected with evidence.",
+    "All publisher author/tag pages have been enumerated and reconciled against the corpus.",
+    "Known URLs have archive-capture evidence where available.",
+    "Scholarly and library identity searches have been reviewed.",
+    "Professional credits are separated from authored work.",
+    "Remaining unknowns are documented, not silently omitted.",
+    "Writer review is used to test the public-web archive for missing print, unpublished or non-indexed work."
+  ]
+}
