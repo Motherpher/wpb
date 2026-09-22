@@ -131,7 +131,30 @@ def extract(session, robots, url, names, domains, delay):
             "etag":r.headers.get("etag"),
             "last_modified":r.headers.get("last-modified"),
         })
-        if not r.ok or "html" not in (r.headers.get("content-type") or "").lower():
+        ctype=(r.headers.get("content-type") or "").lower()
+        if not r.ok:
+            return record, []
+        if "xml" in ctype or "rss" in ctype or "atom" in ctype:
+            # Feed/sitemap discovery: collect links and dates as metadata, never full content.
+            soup=BeautifulSoup(r.text,"xml")
+            links=[]
+            feed_entries=[]
+            for item in soup.find_all(["item","entry"]):
+                link=item.find("link")
+                href=(link.get("href") if link and link.get("href") else (link.get_text(strip=True) if link else None))
+                if href:
+                    href=norm_url(urljoin(r.url,href))
+                    if allowed(href,domains): links.append(href)
+                title_node=item.find("title")
+                date_node=item.find(["pubDate","published","updated"])
+                feed_entries.append({
+                    "title":title_node.get_text(" ",strip=True) if title_node else None,
+                    "url":href,
+                    "published":date_node.get_text(" ",strip=True) if date_node else None
+                })
+            record.update({"feed_entries":feed_entries,"feed_entry_count":len(feed_entries),"status":"feed-discovery"})
+            return record,list(dict.fromkeys(links))
+        if "html" not in ctype:
             return record, []
         soup=BeautifulSoup(r.text,"html.parser")
         title=(soup.title.get_text(" ",strip=True) if soup.title else None)
@@ -241,6 +264,8 @@ def main():
     OUT.mkdir(parents=True,exist_ok=True)
     seeds=load_json(HARVEST/"seeds.json")
     corpus=load_json(ROOT/"data"/"corpus.json")
+    credits=load_json(ROOT/"data"/"credits.json")
+    article_meta=load_json(ROOT/"data"/"article-metadata.json")
     names=seeds["identity_variants"]
     domains=set(seeds["allow_domains"])
 
@@ -248,7 +273,22 @@ def main():
     session.headers.update({"User-Agent":USER_AGENT,"Accept-Language":"en,sv,pl;q=0.8,*;q=0.5"})
     robots=Robots(session)
 
+    # Seed from every reviewed research layer, not only authored articles.
     start=[w["url"] for w in corpus["works"] if w.get("url")] + seeds["author_pages"]
+
+    for rec in credits.get("records",[]):
+        if rec.get("source_url"): start.append(rec["source_url"])
+        start.extend(rec.get("source_urls",[]) or [])
+
+    for rec in article_meta.get("records",{}).values():
+        start.extend(rec.get("discovery_evidence",[]) or [])
+
+    registry=(ROOT/"sources"/"source-registry.md")
+    if registry.exists():
+        start.extend(re.findall(r'https?://[^\\s)>]+', registry.read_text(encoding="utf-8")))
+
+    # RSS/Atom author feeds are useful discovery seeds even when legacy author pages are incomplete.
+    start.extend(seeds.get("author_feeds",[]))
     search_rows=[]
     if args.brave_search:
         search_rows=brave_search(session,seeds["search_queries"])
@@ -270,7 +310,7 @@ def main():
             positives.append(rec)
             candidates.add(rec.get("canonical_url") or rec.get("final_url") or url)
         # Follow one hop from author/tag pages even without deep mode; deep mode follows all allowlisted pages.
-        if args.deep or hostname(url) in seed_hosts or url in seeds["author_pages"]:
+        if args.deep or hostname(url) in seed_hosts or url in seeds["author_pages"] or url in seeds.get("author_feeds",[]):
             for link in links:
                 if link not in seen: q.append(link)
 
