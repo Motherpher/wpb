@@ -1,13 +1,19 @@
 {
-  "schema_version": "1.0",
-  "updated": "2026-09-21",
+  "schema_version": "1.1",
+  "updated": "2026-09-22",
   "records": [
     {
       "id": "stockholm-film-festival-press-office",
       "role": "press-office / press-secretary context",
       "evidence": "B",
       "authorship": false,
-      "note": "Stockholm Film Festival press materials list Pérez Borjas in press-office roles. Do not classify the releases themselves as authored work without byline evidence."
+      "note": "Stockholm Film Festival press materials list Pérez Borjas in press-office roles. Do not classify the releases themselves as authored work without byline evidence.",
+      "dashboard": {
+        "corpus_inclusion": "keep-separate-from-authored-corpus",
+        "verification_status": "context-verified",
+        "portfolio_relevance": "possible-professional-context",
+        "rights_status": "not-assessed"
+      }
     },
     {
       "id": "isern-bear-translation",
@@ -15,7 +21,13 @@
       "role": "Polish translation credit",
       "evidence": "B",
       "authorship": false,
-      "note": "Translation credit; keep separate from original authored corpus."
+      "note": "Translation credit; keep separate from original authored corpus.",
+      "dashboard": {
+        "corpus_inclusion": "keep-separate-from-authored-corpus",
+        "verification_status": "context-verified",
+        "portfolio_relevance": "possible-other-work",
+        "rights_status": "not-assessed"
+      }
     },
     {
       "id": "stolen-fish-imdb",
@@ -23,7 +35,13 @@
       "role": "unresolved",
       "evidence": "C",
       "authorship": null,
-      "note": "Name association found in public film metadata; role not established in current research."
+      "note": "Name association found in public film metadata; role not established in current research.",
+      "dashboard": {
+        "corpus_inclusion": "keep-separate-from-authored-corpus",
+        "verification_status": "unresolved",
+        "portfolio_relevance": "unresolved",
+        "rights_status": "not-assessed"
+      }
     }
   ]
 }
