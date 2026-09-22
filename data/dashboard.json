@@ -1,16 +1,15 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "generated": "2026-09-22",
   "source_of_truth": {
     "corpus": "data/corpus.json",
+    "article_metadata": "data/article-metadata.json",
     "credits": "data/credits.json",
     "themes": "data/themes.json",
     "outlets": "data/outlets.json",
     "unresolved": "sources/unresolved-records.md",
-    "issues": [
-      "#1 Corpus completion",
-      "#2 Portfolio site Phase 1"
-    ]
+    "harvester": "harvest/harvest_wpb.py",
+    "visuals": "visuals/"
   },
   "project": {
     "status": "active-reconstruction",
@@ -20,365 +19,59 @@
     ],
     "site_status": "framework-neutral-not-built",
     "official_status": "independent-working-archive",
-    "corpus_completeness_claim": "reconstructed-not-exhaustive"
+    "corpus_completeness_claim": "reconstructed-not-exhaustive",
+    "harvest_status": "repeatable-metadata-harvester-installed"
   },
   "corpus": {
-    "total_works": 36,
+    "total_works": 38,
     "featured_candidates": 12,
     "evidence": {
-      "A": 36
+      "A": 38
     },
     "languages": {
-      "pl": 11,
-      "en": 25
+      "pl": 12,
+      "en": 26
     },
     "phases": {
       "body-fashion-research": 2,
-      "cultural-journalism": 20,
-      "social-observational-reporting": 9,
+      "cultural-journalism": 21,
+      "social-observational-reporting": 10,
       "long-form-social-reportage": 5
     },
     "outlets": {
       "Kultura Współczesna": 1,
       "Fashion, Style & Popular Culture": 1,
-      "The Forumist": 11,
+      "The Forumist": 12,
       "Totally Stockholm": 2,
       "Krull Magazine": 7,
       "VICE": 4,
-      "VICE Polska": 5,
+      "VICE Polska": 6,
       "Duży Format / Gazeta Wyborcza": 3,
       "Newsweek Polska": 1,
       "Onet Wiadomości": 1
     },
     "date_precision": {
-      "year": 14,
-      "exact-day": 15,
-      "unknown": 7
+      "year": 20,
+      "exact-day": 16,
+      "unknown": 2
     },
     "source_completeness": {
-      "verified": 29,
+      "verified": 31,
       "verified-partial-metadata": 7
     },
     "years": {
       "2013": 1,
       "2014": 1,
-      "2015": 13,
-      "2016": 9,
+      "2015": 14,
+      "2016": 14,
+      "2017": 1,
       "2018": 1,
       "2019": 1,
       "2020": 3,
-      "unknown": 7
+      "unknown": 2
     },
-    "unresolved_dates": 7,
-    "records_with_partial_publication_metadata": 7
-  },
-  "taxonomy": {
-    "canonical_theme_count": 8,
-    "raw_distinct_theme_tags": 75,
-    "works_with_mixed_taxonomy": 36,
-    "note": "Corpus theme arrays currently contain both canonical theme IDs and descriptive free-form tags. Dashboard consumers must not assume all tags belong to the canonical taxonomy.",
-    "raw_theme_frequency": [
-      {
-        "tag": "music",
-        "count": 14
-      },
-      {
-        "tag": "identity",
-        "count": 9
-      },
-      {
-        "tag": "migration",
-        "count": 7
-      },
-      {
-        "tag": "body",
-        "count": 6
-      },
-      {
-        "tag": "Stockholm",
-        "count": 6
-      },
-      {
-        "tag": "Sweden",
-        "count": 6
-      },
-      {
-        "tag": "fashion",
-        "count": 5
-      },
-      {
-        "tag": "diaspora",
-        "count": 4
-      },
-      {
-        "tag": "institutions",
-        "count": 4
-      },
-      {
-        "tag": "place",
-        "count": 4
-      },
-      {
-        "tag": "race",
-        "count": 4
-      },
-      {
-        "tag": "art",
-        "count": 3
-      },
-      {
-        "tag": "Poland",
-        "count": 3
-      },
-      {
-        "tag": "representation",
-        "count": 3
-      },
-      {
-        "tag": "Africa",
-        "count": 2
-      },
-      {
-        "tag": "community",
-        "count": 2
-      },
-      {
-        "tag": "creative-process",
-        "count": 2
-      },
-      {
-        "tag": "Cuba",
-        "count": 2
-      },
-      {
-        "tag": "documentary",
-        "count": 2
-      },
-      {
-        "tag": "family",
-        "count": 2
-      },
-      {
-        "tag": "gender",
-        "count": 2
-      },
-      {
-        "tag": "labour",
-        "count": 2
-      },
-      {
-        "tag": "law",
-        "count": 2
-      },
-      {
-        "tag": "Mali",
-        "count": 2
-      },
-      {
-        "tag": "production",
-        "count": 2
-      },
-      {
-        "tag": "spirituality",
-        "count": 2
-      },
-      {
-        "tag": "subculture",
-        "count": 2
-      },
-      {
-        "tag": "urban-life",
-        "count": 2
-      },
-      {
-        "tag": "visual-culture",
-        "count": 2
-      },
-      {
-        "tag": "abortion",
-        "count": 1
-      },
-      {
-        "tag": "anatomy",
-        "count": 1
-      },
-      {
-        "tag": "androgyny",
-        "count": 1
-      },
-      {
-        "tag": "belonging",
-        "count": 1
-      },
-      {
-        "tag": "Berlin",
-        "count": 1
-      },
-      {
-        "tag": "borders",
-        "count": 1
-      },
-      {
-        "tag": "children",
-        "count": 1
-      },
-      {
-        "tag": "civil-defence",
-        "count": 1
-      },
-      {
-        "tag": "collaboration",
-        "count": 1
-      },
-      {
-        "tag": "Copenhagen",
-        "count": 1
-      },
-      {
-        "tag": "culture",
-        "count": 1
-      },
-      {
-        "tag": "dance",
-        "count": 1
-      },
-      {
-        "tag": "death",
-        "count": 1
-      },
-      {
-        "tag": "detention",
-        "count": 1
-      },
-      {
-        "tag": "entrepreneurship",
-        "count": 1
-      },
-      {
-        "tag": "Europe",
-        "count": 1
-      },
-      {
-        "tag": "far-right",
-        "count": 1
-      },
-      {
-        "tag": "festival",
-        "count": 1
-      },
-      {
-        "tag": "fetish",
-        "count": 1
-      },
-      {
-        "tag": "film",
-        "count": 1
-      },
-      {
-        "tag": "Gambia",
-        "count": 1
-      },
-      {
-        "tag": "healthcare",
-        "count": 1
-      },
-      {
-        "tag": "history",
-        "count": 1
-      },
-      {
-        "tag": "language",
-        "count": 1
-      },
-      {
-        "tag": "LGBT",
-        "count": 1
-      },
-      {
-        "tag": "marginality",
-        "count": 1
-      },
-      {
-        "tag": "memory",
-        "count": 1
-      },
-      {
-        "tag": "motherhood",
-        "count": 1
-      },
-      {
-        "tag": "national-identity",
-        "count": 1
-      },
-      {
-        "tag": "nonbinary",
-        "count": 1
-      },
-      {
-        "tag": "normality-deviance",
-        "count": 1
-      },
-      {
-        "tag": "performance",
-        "count": 1
-      },
-      {
-        "tag": "politics",
-        "count": 1
-      },
-      {
-        "tag": "popular-culture",
-        "count": 1
-      },
-      {
-        "tag": "privacy",
-        "count": 1
-      },
-      {
-        "tag": "relationships",
-        "count": 1
-      },
-      {
-        "tag": "reproductive-rights",
-        "count": 1
-      },
-      {
-        "tag": "Russia",
-        "count": 1
-      },
-      {
-        "tag": "Scandinavia",
-        "count": 1
-      },
-      {
-        "tag": "security",
-        "count": 1
-      },
-      {
-        "tag": "sexuality",
-        "count": 1
-      },
-      {
-        "tag": "social-media",
-        "count": 1
-      },
-      {
-        "tag": "social-norms",
-        "count": 1
-      },
-      {
-        "tag": "social-observation",
-        "count": 1
-      },
-      {
-        "tag": "women",
-        "count": 1
-      },
-      {
-        "tag": "workers",
-        "count": 1
-      }
-    ]
+    "unresolved_dates": 2,
+    "manually_enriched_article_metadata_records": 21
   },
   "portfolio": {
     "candidate_count": 12,
@@ -403,9 +96,9 @@
     "implementation_status": "not-started"
   },
   "contextual_credits": {
-    "total": 3,
+    "total": 4,
     "by_evidence": {
-      "B": 2,
+      "B": 3,
       "C": 1
     },
     "unresolved": 1
@@ -413,11 +106,6 @@
   "data_quality": {
     "missing_date_records": [
       {
-        "id": "krull-fatoumata-diawara",
-        "title": "Fatoumata Diawara",
-        "outlet": "Krull Magazine"
-      },
-      {
         "id": "krull-henry-rude",
         "title": "Henry Rude – Max of Wax",
         "outlet": "Krull Magazine"
@@ -425,72 +113,51 @@
       {
         "id": "krull-joanna-lemnelius",
         "title": "Joanna Lemnelius – Mixed Grill, Motherhood and Business",
-        "outlet": "Krull Magazine"
-      },
-      {
-        "id": "krull-all-that-jazz",
-        "title": "All That Jazz",
-        "outlet": "Krull Magazine"
-      },
-      {
-        "id": "krull-stockholm-film-festival",
-        "title": "The 27th Edition of Stockholm Film Festival",
-        "outlet": "Krull Magazine"
-      },
-      {
-        "id": "krull-mali-blues",
-        "title": "Saving Music in Mali – an Interview with Lutz Gregor",
-        "outlet": "Krull Magazine"
-      },
-      {
-        "id": "krull-tempo",
-        "title": "Tempo Documentary Festival Tips",
         "outlet": "Krull Magazine"
       }
     ],
     "partial_publication_metadata_records": [
       {
-        "id": "krull-fatoumata-diawara",
-        "title": "Fatoumata Diawara",
-        "status": "verified-partial-metadata"
-      },
-      {
-        "id": "krull-henry-rude",
-        "title": "Henry Rude – Max of Wax",
-        "status": "verified-partial-metadata"
-      },
-      {
-        "id": "krull-joanna-lemnelius",
-        "title": "Joanna Lemnelius – Mixed Grill, Motherhood and Business",
-        "status": "verified-partial-metadata"
-      },
-      {
         "id": "krull-all-that-jazz",
-        "title": "All That Jazz",
-        "status": "verified-partial-metadata"
+        "title": "All That Jazz"
       },
       {
-        "id": "krull-stockholm-film-festival",
-        "title": "The 27th Edition of Stockholm Film Festival",
-        "status": "verified-partial-metadata"
+        "id": "krull-fatoumata-diawara",
+        "title": "Fatoumata Diawara"
       },
       {
         "id": "krull-mali-blues",
-        "title": "Saving Music in Mali – an Interview with Lutz Gregor",
-        "status": "verified-partial-metadata"
+        "title": "Saving Music in Mali – an Interview with Lutz Gregor"
+      },
+      {
+        "id": "krull-stockholm-film-festival",
+        "title": "The 27th Edition of Stockholm Film Festival"
       },
       {
         "id": "krull-tempo",
-        "title": "Tempo Documentary Festival Tips",
-        "status": "verified-partial-metadata"
+        "title": "Tempo Documentary Festival Tips"
+      },
+      {
+        "id": "krull-henry-rude",
+        "title": "Henry Rude – Max of Wax"
+      },
+      {
+        "id": "krull-joanna-lemnelius",
+        "title": "Joanna Lemnelius – Mixed Grill, Motherhood and Business"
       }
     ],
-    "direct_url_exception_ids": [
-      "2016-vice-miss-crash"
-    ],
+    "article_metadata_records": 38,
+    "article_metadata_manually_enriched": 21,
     "rights_status": "not-assessed-at-record-level",
-    "asset_status": "not-assessed-at-record-level"
+    "asset_status": "not-assessed-at-record-level",
+    "taxonomy_note": "Theme arrays include canonical IDs and descriptive free-form tags; no silent normalization."
   },
+  "visuals": [
+    "visuals/corpus-timeline.svg",
+    "visuals/career-arc.svg",
+    "visuals/archive-to-portfolio.svg",
+    "visuals/metadata-coverage.svg"
+  ],
   "workflow": {
     "open_workstreams": [
       {
@@ -506,12 +173,12 @@
     ],
     "next_decisions": [
       "Writer review/corrections",
-      "Resolve missing and partial publication metadata",
-      "Normalize or map theme taxonomy",
-      "Decide official vs independent portfolio positioning",
+      "Run/review harvest results",
+      "Resolve missing publication dates",
+      "Normalize/map theme taxonomy",
       "Confirm final biography and featured works",
       "Review image/excerpt rights",
-      "Choose site framework only after content and visual decisions"
+      "Choose site framework after editorial/visual decisions"
     ]
   }
 }
