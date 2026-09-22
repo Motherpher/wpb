@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "themes": [
     {
       "id": "body",
@@ -10,13 +10,13 @@
         "work_ids": [
           "2013-kultura-zombie-boy",
           "2014-fspc-flayed",
-          "2015-forumist-talking-to-los-muertos",
           "2015-forumist-zhala-makode",
+          "2015-forumist-talking-to-los-muertos",
           "2016-vice-parental-nudity",
           "2016-vice-miss-crash"
         ],
         "taxonomy_status": "canonical",
-        "note": "Count reflects exact canonical-ID tag use only; descriptive/free-form tags are not silently mapped."
+        "note": "Exact canonical-ID usage only; descriptive tags are not silently mapped."
       }
     },
     {
@@ -24,20 +24,22 @@
       "label": "Identity & categorisation",
       "description": "People and experiences that challenge established cultural, linguistic or administrative categories.",
       "dashboard": {
-        "exact_tag_use_count": 9,
+        "exact_tag_use_count": 11,
         "work_ids": [
+          "2015-forumist-a-world-beyond",
           "2015-forumist-hayden-james",
-          "2015-forumist-wir-sind-berliner",
-          "2015-forumist-rnb-poltergeist",
           "2015-forumist-nadya",
           "2015-forumist-moto-boy",
           "2015-forumist-zhala-makode",
-          "krull-tempo",
+          "2015-forumist-rnb-poltergeist",
+          "2015-forumist-wir-sind-berliner",
           "2016-vice-makode",
+          "2016-vice-masculinity",
+          "krull-tempo",
           "2019-duzy-format-nonbinary"
         ],
         "taxonomy_status": "canonical",
-        "note": "Count reflects exact canonical-ID tag use only; descriptive/free-form tags are not silently mapped."
+        "note": "Exact canonical-ID usage only; descriptive tags are not silently mapped."
       }
     },
     {
@@ -45,18 +47,19 @@
       "label": "Migration & belonging",
       "description": "Cross-border movement, diaspora, memory, home and the institutional consequences of mobility.",
       "dashboard": {
-        "exact_tag_use_count": 7,
+        "exact_tag_use_count": 8,
         "work_ids": [
+          "2015-forumist-a-world-beyond",
           "2015-forumist-nadya",
           "2015-totally-tensta",
           "krull-stockholm-film-festival",
-          "krull-tempo",
           "2016-vice-polish-migration",
           "2016-vice-jarva-pride",
+          "krull-tempo",
           "2020-onet-five-cubans"
         ],
         "taxonomy_status": "canonical",
-        "note": "Count reflects exact canonical-ID tag use only; descriptive/free-form tags are not silently mapped."
+        "note": "Exact canonical-ID usage only; descriptive tags are not silently mapped."
       }
     },
     {
@@ -72,7 +75,7 @@
           "2020-onet-five-cubans"
         ],
         "taxonomy_status": "canonical",
-        "note": "Count reflects exact canonical-ID tag use only; descriptive/free-form tags are not silently mapped."
+        "note": "Exact canonical-ID usage only; descriptive tags are not silently mapped."
       }
     },
     {
@@ -83,7 +86,7 @@
         "exact_tag_use_count": 0,
         "work_ids": [],
         "taxonomy_status": "canonical",
-        "note": "Count reflects exact canonical-ID tag use only; descriptive/free-form tags are not silently mapped."
+        "note": "Exact canonical-ID usage only; descriptive tags are not silently mapped."
       }
     },
     {
@@ -99,7 +102,7 @@
           "2016-vice-jarva-pride"
         ],
         "taxonomy_status": "canonical",
-        "note": "Count reflects exact canonical-ID tag use only; descriptive/free-form tags are not silently mapped."
+        "note": "Exact canonical-ID usage only; descriptive tags are not silently mapped."
       }
     },
     {
@@ -112,7 +115,7 @@
           "krull-mali-blues"
         ],
         "taxonomy_status": "canonical",
-        "note": "Count reflects exact canonical-ID tag use only; descriptive/free-form tags are not silently mapped."
+        "note": "Exact canonical-ID usage only; descriptive tags are not silently mapped."
       }
     },
     {
@@ -126,7 +129,7 @@
           "2020-onet-five-cubans"
         ],
         "taxonomy_status": "canonical",
-        "note": "Count reflects exact canonical-ID tag use only; descriptive/free-form tags are not silently mapped."
+        "note": "Exact canonical-ID usage only; descriptive tags are not silently mapped."
       }
     }
   ],
