@@ -43,7 +43,7 @@ jobs:
               Path("CareerHub/profile/candidate.yaml"),
               Path("CareerHub/config/sources.yaml"),
               Path("CareerHub/config/search_profiles.yaml"),
-              Path(".github/ISSUE_TEMPLATE/careerhub-choose-job.yml"),
+              Path(".github/ISSUE_TEMPLATE/careerhub-analyse-job.yml"),
               Path(".github/ISSUE_TEMPLATE/careerhub-update-status.yml"),
           ]
           for p in yaml_files:
@@ -64,7 +64,7 @@ jobs:
       - name: CLI smoke test
         run: python CareerHub/scripts/careerhub.py --help
 
-      - name: Choose-job parser smoke test
+      - name: Analyse-job parser smoke test
         run: |
           cat > /tmp/careerhub-event.json <<'JSON'
           {
