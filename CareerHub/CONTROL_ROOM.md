@@ -109,6 +109,7 @@ Chosen jobs can be reminded automatically before the application deadline. GitHu
 - [Review what CareerHub knows](profile/PROFILE_REVIEW.md)
 - [Privacy / recommended private operating mode](PRIVACY.md)
 - [Setup and notification options](SETUP.md)
+- [Test OpenAI connection](https://github.com/Hybrismannen/wpb/actions/workflows/careerhub-openai-test.yml)
 - [Source matrix](docs/SOURCE_MATRIX.md)
 - [HRDM-R specification](hrdm/HRDM_R_v6.3.md)
 
