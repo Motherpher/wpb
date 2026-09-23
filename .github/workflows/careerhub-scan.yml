@@ -1,0 +1,74 @@
+name: CareerHub — Scan & Rank Jobs
+
+on:
+  workflow_dispatch:
+    inputs:
+      lane:
+        description: "Search lane"
+        required: true
+        type: choice
+        options:
+          - all
+          - core
+          - adjacent
+          - bridge
+        default: all
+      limit:
+        description: "Maximum ranked leads to keep"
+        required: true
+        default: "80"
+  schedule:
+    - cron: "20 5 * * 1-5"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: careerhub-scan-main
+  cancel-in-progress: true
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    env:
+      LANE: ${{ inputs.lane || 'all' }}
+      LIMIT: ${{ inputs.limit || '80' }}
+      ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+      ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+      JOOBLE_API_KEY: ${{ secrets.JOOBLE_API_KEY }}
+      JOOBLE_API_ENDPOINT: ${{ secrets.JOOBLE_API_ENDPOINT }}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install CareerHub
+        run: pip install -r CareerHub/requirements.txt
+
+      - name: Align with latest main
+        run: |
+          git fetch origin main
+          git checkout main
+          git reset --hard origin/main
+
+      - name: Source and rank jobs
+        run: python CareerHub/scripts/careerhub.py scan --lane "$LANE" --limit "$LIMIT"
+
+      - name: Commit refreshed control room
+        run: |
+          if git diff --quiet -- CareerHub/CONTROL_ROOM.md CareerHub/data/latest_jobs.json; then
+            echo "No lead-board changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add CareerHub/CONTROL_ROOM.md CareerHub/data/latest_jobs.json
+          git commit -m "CareerHub: refresh ranked job leads"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
