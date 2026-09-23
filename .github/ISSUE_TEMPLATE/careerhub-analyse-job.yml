@@ -1,0 +1,59 @@
+name: CareerHub — Analyse a job
+description: Paste a job link and let CareerHub analyse it and prepare the application pack.
+title: "[CareerHub Job] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Do you want to analyse this job?
+
+        Paste the job link below. CareerHub will create the case, run HRDM and prepare the application pack.
+
+        You do **not** need to understand HRDM, ranking or the case structure.
+
+  - type: input
+    id: job_url
+    attributes:
+      label: Job URL
+      placeholder: https://...
+    validations:
+      required: true
+
+  - type: input
+    id: role
+    attributes:
+      label: Role (optional)
+      description: Useful only if the job site blocks automated reading.
+
+  - type: input
+    id: employer
+    attributes:
+      label: Employer (optional)
+
+  - type: dropdown
+    id: lane
+    attributes:
+      label: What kind of job is this?
+      options:
+        - core — career-track role
+        - adjacent — transferable/adjacent role
+        - bridge — extra-income/flexible role
+    validations:
+      required: true
+
+  - type: input
+    id: deadline
+    attributes:
+      label: Deadline (optional)
+      placeholder: "2026-10-15"
+
+  - type: textarea
+    id: job_text
+    attributes:
+      label: Job text (optional)
+      description: Paste only if the job website blocks automated reading.
+
+  - type: markdown
+    attributes:
+      value: |
+        When the page is complete, click the green **Create issue** / **Submit new issue** button. That starts CareerHub automatically.
