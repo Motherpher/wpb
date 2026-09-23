@@ -54,6 +54,20 @@
 
 Earlier standalone charts remain available through Git history but are intentionally retired from the current branch.
 
+## CareerHub
+- `CareerHub/CONTROL_ROOM.md` — Weronika's job-search control room
+- `CareerHub/profile/candidate.yaml` — sanitized public-evidence candidate profile
+- `CareerHub/config/search_profiles.yaml` — core / adjacent / bridge search lanes
+- `CareerHub/config/sources.yaml` — provider registry
+- `CareerHub/hrdm/HRDM_R_v6.3.md` — canonical HRDM Reverse workflow
+- `CareerHub/scripts/careerhub.py` — CLI entrypoint
+- `CareerHub/src/careerhub/` — source, triage, HRDM, application and dashboard engine
+- `.github/workflows/careerhub-scan.yml` — manual + weekday sourcing/ranking refresh
+- `.github/workflows/careerhub-drill.yml` — one-job HRDM/research/application/DOCX pack
+- `.github/workflows/careerhub-validate.yml` — offline integrity and DOCX smoke tests
+- `CareerHub/docs/SOURCE_MATRIX.md` — provider/API strategy
+- `CareerHub/docs/WORKFLOW.md` — end-to-end operating model
+
 ## Future site
 - `site/` remains framework-neutral until scope, visual identity and rights are settled.
 
