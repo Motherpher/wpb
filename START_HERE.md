@@ -35,21 +35,26 @@ You do not need to run or understand that system yourself.
 
 ## CareerHub — finding work
 
-There is now a separate **[CareerHub](CareerHub/CONTROL_ROOM.md)** in the repository.
+There is a separate **[CareerHub](CareerHub/CONTROL_ROOM.md)** for the practical job search.
 
-It is designed for practical job hunting rather than archive research. It can:
+You only need to think about three steps:
 
-- search multiple job sources
-- separate career-track, adjacent and extra-income roles
-- rank leads for review
-- run the full HRDM-R analysis on a selected job
-- research the role/employer when configured
-- build candidate positioning and application strategy
-- generate editable Word application drafts
+### 1 — Find jobs
+Open CareerHub and look at the current shortlist. Jobs refresh automatically on weekdays. If you trigger a manual refresh, new results normally appear after about **30–90 seconds**.
 
-The public repository only stores public-safe profile information and job-lead metadata. Application drafts are generated separately and are not committed.
+### 2 — Choose job
+Press **Choose →** on a job you want to pursue. CareerHub saves it, ranks it, remembers the deadline and prepares the HRDM/application pack.
 
-You can use the CareerHub without understanding the code.
+### 3 — Apply
+Edit the Word draft, send the application and then follow the case through:
+
+**Applied → Contacted → Portfolio/Test → Interview/Meeting 1–5 → Offer / Denied**
+
+CareerHub also keeps a historic Job Vault, so jobs do not disappear just because a new sourcing run has replaced the shortlist.
+
+For chosen jobs, deadline reminders can be sent in GitHub and optionally by email or SMS.
+
+You do **not** need to understand GitHub Actions, HRDM, APIs, YAML or JSON to use it.
 
 ---
 
