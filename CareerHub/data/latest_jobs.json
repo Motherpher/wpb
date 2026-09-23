@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T16:06:34.116515+00:00",
+  "generated_at": "2026-09-23T16:10:27.388665+00:00",
   "count": 80,
   "jobs": [
     {
@@ -223,7 +223,7 @@
       "salary": "",
       "provider_id": "31428095",
       "lane": "core",
-      "matched_query": "journalist",
+      "matched_query": "reporter",
       "triage_score": 84.9,
       "triage_reasons": [
         "title/role fit 100%",
@@ -276,13 +276,13 @@
       "provider_id": "31507756",
       "lane": "core",
       "matched_query": "pressekreterare",
-      "triage_score": 83.6,
+      "triage_score": 83.5,
       "triage_reasons": [
         "title/role fit 100%",
         "candidate-evidence support 9%",
         "arrangement fit 72%",
         "geography/remote fit 100%",
-        "recency signal 100%"
+        "recency signal 99%"
       ],
       "review_flags": [],
       "id": "41d79eb9c71d67e2",
@@ -461,7 +461,7 @@
       "salary": "",
       "provider_id": "31483440",
       "lane": "core",
-      "matched_query": "journalist",
+      "matched_query": "reporter",
       "triage_score": 81.9,
       "triage_reasons": [
         "title/role fit 100%",
@@ -515,7 +515,7 @@
       "salary": "",
       "provider_id": "31490511",
       "lane": "adjacent",
-      "matched_query": "project coordinator",
+      "matched_query": "projektkoordinator",
       "triage_score": 81.8,
       "triage_reasons": [
         "title/role fit 100%",
@@ -541,7 +541,7 @@
       "salary": "",
       "provider_id": "31484839",
       "lane": "adjacent",
-      "matched_query": "project coordinator",
+      "matched_query": "projektkoordinator",
       "triage_score": 81.7,
       "triage_reasons": [
         "title/role fit 100%",
@@ -1039,7 +1039,7 @@
       "salary": "",
       "provider_id": "31507069",
       "lane": "adjacent",
-      "matched_query": "project coordinator",
+      "matched_query": "projektkoordinator",
       "triage_score": 78.2,
       "triage_reasons": [
         "title/role fit 100%",
@@ -1543,7 +1543,7 @@
       "salary": "",
       "provider_id": "31481372",
       "lane": "adjacent",
-      "matched_query": "project coordinator",
+      "matched_query": "projektkoordinator",
       "triage_score": 74.9,
       "triage_reasons": [
         "title/role fit 80%",
@@ -1673,7 +1673,7 @@
       "salary": "",
       "provider_id": "31481350",
       "lane": "adjacent",
-      "matched_query": "project coordinator",
+      "matched_query": "projektkoordinator",
       "triage_score": 73.5,
       "triage_reasons": [
         "title/role fit 80%",
@@ -1725,7 +1725,7 @@
       "salary": "",
       "provider_id": "31502660",
       "lane": "core",
-      "matched_query": "skribent",
+      "matched_query": "pressekreterare",
       "triage_score": 72.7,
       "triage_reasons": [
         "title/role fit 80%",

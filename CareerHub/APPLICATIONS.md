@@ -4,8 +4,8 @@ One chosen job becomes one CareerHub case. This is the process monitor after the
 
 ## Active cases
 
-| Priority | Role | Employer | Status | Deadline | Next action | Case |
-|---|---|---|---|---|---|---|
+| Priority | Role | Employer | Status | Deadline | Next action | Next date | Case |
+|---|---|---|---|---|---|---|---|
 
 ## Closed cases
 
