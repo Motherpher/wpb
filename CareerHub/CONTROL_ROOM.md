@@ -1,66 +1,103 @@
 # CareerHub
 
-## Find a job. Click **Analyze**. Edit the Word draft.
+## Find a job. Click Analyze. Edit the Word draft.
 
-**Status:** ready · jobs refresh automatically on weekdays
-
-You normally only need to do one of these two things:
-
-### I want to see jobs CareerHub found
-The live job board will appear here after the first scheduled/manual refresh.
-
-**[Refresh jobs now →](https://github.com/Hybrismannen/wpb/actions/workflows/careerhub-scan.yml)**
+**Last refreshed:** 2026-09-23 15:39 UTC · **80 current leads**  
+Jobs refresh automatically on weekdays. You normally do **not** need to run anything yourself.
 
 ### I already found a job somewhere else
-**[Analyze any job →](https://github.com/Hybrismannen/wpb/issues/new?template=careerhub-analyze-job.yml)**
 
-Paste the link, choose why you are considering the job, and press **Submit new issue**.
+**[Analyze any job →](https://github.com/Hybrismannen/wpb/issues/new?template=careerhub-analyze-job.yml)**  
+Paste the job link, choose why you are considering it, and submit. CareerHub does the rest.
 
-CareerHub then handles the HRDM analysis, employer/role research and Word draft in the background.
+## Quick shortlist
+
+Six places to start without reading the whole board:
+
+| Role | Employer | Type | Action |
+|---|---|---|---|
+| [Research assistant](https://arbetsformedlingen.se/platsbanken/annonser/31459310) | Chalmers Tekniska Högskola Aktiebolag | Career-track | **[Analyze →](https://github.com/Hybrismannen/wpb/issues/new?title=%5BCareerHub%20Drill%5D%20Chalmers%20Tekniska%20H%C3%B6gskola%20Aktiebolag%20%E2%80%94%20Research%20assistant&body=%23%23%23%20Job%20URL%0Ahttps%3A//arbetsformedlingen.se/platsbanken/annonser/31459310%0A%0A%23%23%23%20Lane%0Acore%0A%0A%23%23%23%20Job%20text%20%28optional%29%0A_Leave%20blank%20unless%20the%20site%20blocks%20automated%20retrieval._%0A%0A%23%23%23%20Note%20to%20self%20%28optional%29%0AFound%20by%20CareerHub%20via%20platsbanken.)** |
+| [Product and Technical Communications](https://arbetsformedlingen.se/platsbanken/annonser/31491531) | Lovable Labs Sweden AB | Career-track | **[Analyze →](https://github.com/Hybrismannen/wpb/issues/new?title=%5BCareerHub%20Drill%5D%20Lovable%20Labs%20Sweden%20AB%20%E2%80%94%20Product%20and%20Technical%20Communications&body=%23%23%23%20Job%20URL%0Ahttps%3A//arbetsformedlingen.se/platsbanken/annonser/31491531%0A%0A%23%23%23%20Lane%0Acore%0A%0A%23%23%23%20Job%20text%20%28optional%29%0A_Leave%20blank%20unless%20the%20site%20blocks%20automated%20retrieval._%0A%0A%23%23%23%20Note%20to%20self%20%28optional%29%0AFound%20by%20CareerHub%20via%20platsbanken.)** |
+| [Research Coordinator](https://arbetsformedlingen.se/platsbanken/annonser/31496388) | Sveriges Lantbruksuniversitet | Adjacent | **[Analyze →](https://github.com/Hybrismannen/wpb/issues/new?title=%5BCareerHub%20Drill%5D%20Sveriges%20Lantbruksuniversitet%20%E2%80%94%20Research%20Coordinator&body=%23%23%23%20Job%20URL%0Ahttps%3A//arbetsformedlingen.se/platsbanken/annonser/31496388%0A%0A%23%23%23%20Lane%0Aadjacent%0A%0A%23%23%23%20Job%20text%20%28optional%29%0A_Leave%20blank%20unless%20the%20site%20blocks%20automated%20retrieval._%0A%0A%23%23%23%20Note%20to%20self%20%28optional%29%0AFound%20by%20CareerHub%20via%20platsbanken.)** |
+| [Demand Generation Specialist](https://weworkremotely.com/remote-jobs/c4media-inc-demand-generation-specialist) | C4Media Inc. | Adjacent | **[Analyze →](https://github.com/Hybrismannen/wpb/issues/new?title=%5BCareerHub%20Drill%5D%20C4Media%20Inc.%20%E2%80%94%20Demand%20Generation%20Specialist&body=%23%23%23%20Job%20URL%0Ahttps%3A//weworkremotely.com/remote-jobs/c4media-inc-demand-generation-specialist%0A%0A%23%23%23%20Lane%0Aadjacent%0A%0A%23%23%23%20Job%20text%20%28optional%29%0A_Leave%20blank%20unless%20the%20site%20blocks%20automated%20retrieval._%0A%0A%23%23%23%20Note%20to%20self%20%28optional%29%0AFound%20by%20CareerHub%20via%20weworkremotely.)** |
 
 ---
 
-## What happens after **Analyze**
+## Career-track roles
 
-1. CareerHub reads the public job advertisement.
-2. It runs the full HRDM-R analysis.
-3. It compares the role only with verified/supplied candidate evidence.
+Closest to writing, reporting, research, editorial and communications strengths.
+
+| Priority | Role | Employer | Location | Why it surfaced | Action |
+|---|---|---|---|---|---|
+| **Top lead** | [Research assistant](https://arbetsformedlingen.se/platsbanken/annonser/31459310) | Chalmers Tekniska Högskola Aktiebolag | Göteborg, Västra Götalands län | Arbete på plats · matches research assistant | **[Analyze →](https://github.com/Hybrismannen/wpb/issues/new?title=%5BCareerHub%20Drill%5D%20Chalmers%20Tekniska%20H%C3%B6gskola%20Aktiebolag%20%E2%80%94%20Research%20assistant&body=%23%23%23%20Job%20URL%0Ahttps%3A//arbetsformedlingen.se/platsbanken/annonser/31459310%0A%0A%23%23%23%20Lane%0Acore%0A%0A%23%23%23%20Job%20text%20%28optional%29%0A_Leave%20blank%20unless%20the%20site%20blocks%20automated%20retrieval._%0A%0A%23%23%23%20Note%20to%20self%20%28optional%29%0AFound%20by%20CareerHub%20via%20platsbanken.)** |
+| **Top lead** | [Product and Technical Communications](https://arbetsformedlingen.se/platsbanken/annonser/31491531) | Lovable Labs Sweden AB | Stockholm, Stockholms län | Arbete på plats · matches communications NGO | **[Analyze →](https://github.com/Hybrismannen/wpb/issues/new?title=%5BCareerHub%20Drill%5D%20Lovable%20Labs%20Sweden%20AB%20%E2%80%94%20Product%20and%20Technical%20Communications&body=%23%23%23%20Job%20URL%0Ahttps%3A//arbetsformedlingen.se/platsbanken/annonser/31491531%0A%0A%23%23%23%20Lane%0Acore%0A%0A%23%23%23%20Job%20text%20%28optional%29%0A_Leave%20blank%20unless%20the%20site%20blocks%20automated%20retrieval._%0A%0A%23%23%23%20Note%20to%20self%20%28optional%29%0AFound%20by%20CareerHub%20via%20platsbanken.)** |
+| **Top lead** | [Account Executive 3](https://weworkremotely.com/remote-jobs/twilio-account-executive-3) | Twilio | Remote | remote · matches press officer | **[Analyze →](https://github.com/Hybrismannen/wpb/issues/new?title=%5BCareerHub%20Drill%5D%20Twilio%20%E2%80%94%20Account%20Executive%203&body=%23%23%23%20Job%20URL%0Ahttps%3A//weworkremotely.com/remote-jobs/twilio-account-executive-3%0A%0A%23%23%23%20Lane%0Acore%0A%0A%23%23%23%20Job%20text%20%28optional%29%0A_Leave%20blank%20unless%20the%20site%20blocks%20automated%20retrieval._%0A%0A%23%23%23%20Note%20to%20self%20%28optional%29%0AFound%20by%20CareerHub%20via%20weworkremotely.)** |
+| **Top lead** | [Researcher](https://arbetsformedlingen.se/platsbanken/annonser/31429604) | Göteborgs Universitet | Göteborg, Västra Götalands län | Arbete på plats · matches researcher | **[Analyze →](https://github.com/Hybrismannen/wpb/issues/new?title=%5BCareerHub%20Drill%5D%20G%C3%B6teborgs%20Universitet%20%E2%80%94%20Researcher&body=%23%23%23%20Job%20URL%0Ahttps%3A//arbetsformedlingen.se/platsbanken/annonser/31429604%0A%0A%23%23%23%20Lane%0Acore%0A%0A%23%23%23%20Job%20text%20%28optional%29%0A_Leave%20blank%20unless%20the%20site%20blocks%20automated%20retrieval._%0A%0A%23%23%23%20Note%20to%20self%20%28optional%29%0AFound%20by%20CareerHub%20via%20platsbanken.)** |
+| **Top lead** | [Global PR & Communications Manager to H&M HOME](https://arbetsformedlingen.se/platsbanken/annonser/31417247) | H & M Hennes & Mauritz GBC AB | Stockholm, Stockholms län | Arbete på plats · matches communications NGO | **[Analyze →](https://github.com/Hybrismannen/wpb/issues/new?title=%5BCareerHub%20Drill%5D%20H%20%26%20M%20Hennes%20%26%20Mauritz%20GBC%20AB%20%E2%80%94%20Global%20PR%20%26%20Communications%20Manager%20to%20H%26M%20HOME&body=%23%23%23%20Job%20URL%0Ahttps%3A//arbetsformedlingen.se/platsbanken/annonser/31417247%0A%0A%23%23%23%20Lane%0Acore%0A%0A%23%23%23%20Job%20text%20%28optional%29%0A_Leave%20blank%20unless%20the%20site%20blocks%20automated%20retrieval._%0A%0A%23%23%23%20Note%20to%20self%20%28optional%29%0AFound%20by%20CareerHub%20via%20platsbanken.)** |
+| **Good option** | [Corporate Communications & Public Affairs](https://arbetsformedlingen.se/platsbanken/annonser/31491509) | Lovable Labs Sweden AB | Stockholm, Stockholms län | Arbete på plats · matches communications NGO | **[Analyze →](https://github.com/Hybrismannen/wpb/issues/new?title=%5BCareerHub%20Drill%5D%20Lovable%20Labs%20Sweden%20AB%20%E2%80%94%20Corporate%20Communications%20%26%20Public%20Affairs&body=%23%23%23%20Job%20URL%0Ahttps%3A//arbetsformedlingen.se/platsbanken/annonser/31491509%0A%0A%23%23%23%20Lane%0Acore%0A%0A%23%23%23%20Job%20text%20%28optional%29%0A_Leave%20blank%20unless%20the%20site%20blocks%20automated%20retrieval._%0A%0A%23%23%23%20Note%20to%20self%20%28optional%29%0AFound%20by%20CareerHub%20via%20platsbanken.)** |
+| **Good option** | [Global PR & Communications Manager to H&M HOME](https://arbetsformedlingen.se/platsbanken/annonser/31403250) | H & M Hennes & Mauritz GBC AB | Stockholm, Stockholms län | Arbete på plats · matches communications NGO | **[Analyze →](https://github.com/Hybrismannen/wpb/issues/new?title=%5BCareerHub%20Drill%5D%20H%20%26%20M%20Hennes%20%26%20Mauritz%20GBC%20AB%20%E2%80%94%20Global%20PR%20%26%20Communications%20Manager%20to%20H%26M%20HOME&body=%23%23%23%20Job%20URL%0Ahttps%3A//arbetsformedlingen.se/platsbanken/annonser/31403250%0A%0A%23%23%23%20Lane%0Acore%0A%0A%23%23%23%20Job%20text%20%28optional%29%0A_Leave%20blank%20unless%20the%20site%20blocks%20automated%20retrieval._%0A%0A%23%23%23%20Note%20to%20self%20%28optional%29%0AFound%20by%20CareerHub%20via%20platsbanken.)** |
+| **Good option** | [Data Analyst Assistant](https://remoteOK.com/remote-jobs/remote-data-analyst-assistant-arabian-private-holdings-1136217) | Arabian Private Holdings | Ø¯Ø¨Ù, Ø¯Ø¨Ù Ø¯Ø¨Ù Ø§ÙØ¥ÙØ§Ø±Ø§Øª Ø§ÙØ¹Ø±Ø¨ÙØ© Ø§ÙÙØªØ­Ø¯Ø© | remote · matches research assistant | **[Analyze →](https://github.com/Hybrismannen/wpb/issues/new?title=%5BCareerHub%20Drill%5D%20Arabian%20Private%20Holdings%20%E2%80%94%20Data%20Analyst%20Assistant&body=%23%23%23%20Job%20URL%0Ahttps%3A//remoteOK.com/remote-jobs/remote-data-analyst-assistant-arabian-private-holdings-1136217%0A%0A%23%23%23%20Lane%0Acore%0A%0A%23%23%23%20Job%20text%20%28optional%29%0A_Leave%20blank%20unless%20the%20site%20blocks%20automated%20retrieval._%0A%0A%23%23%23%20Note%20to%20self%20%28optional%29%0AFound%20by%20CareerHub%20via%20remoteok.)** |
+| **Good option** | [Internal Communications Lead](https://arbetsformedlingen.se/platsbanken/annonser/31491517) | Lovable Labs Sweden AB | Stockholm, Stockholms län | Arbete på plats · matches communications NGO | **[Analyze →](https://github.com/Hybrismannen/wpb/issues/new?title=%5BCareerHub%20Drill%5D%20Lovable%20Labs%20Sweden%20AB%20%E2%80%94%20Internal%20Communications%20Lead&body=%23%23%23%20Job%20URL%0Ahttps%3A//arbetsformedlingen.se/platsbanken/annonser/31491517%0A%0A%23%23%23%20Lane%0Acore%0A%0A%23%23%23%20Job%20text%20%28optional%29%0A_Leave%20blank%20unless%20the%20site%20blocks%20automated%20retrieval._%0A%0A%23%23%23%20Note%20to%20self%20%28optional%29%0AFound%20by%20CareerHub%20via%20platsbanken.)** |
+| **Good option** | [Technical Writer / Teknisk skribent](https://arbetsformedlingen.se/platsbanken/annonser/31177880) | Hitachi Energy Sweden AB | Ludvika, Dalarnas län | matches skribent | **[Analyze →](https://github.com/Hybrismannen/wpb/issues/new?title=%5BCareerHub%20Drill%5D%20Hitachi%20Energy%20Sweden%20AB%20%E2%80%94%20Technical%20Writer%20/%20Teknisk%20skribent&body=%23%23%23%20Job%20URL%0Ahttps%3A//arbetsformedlingen.se/platsbanken/annonser/31177880%0A%0A%23%23%23%20Lane%0Acore%0A%0A%23%23%23%20Job%20text%20%28optional%29%0A_Leave%20blank%20unless%20the%20site%20blocks%20automated%20retrieval._%0A%0A%23%23%23%20Note%20to%20self%20%28optional%29%0AFound%20by%20CareerHub%20via%20platsbanken.)** |
+| **Good option** | [Vikarierande kommunikatör](https://arbetsformedlingen.se/platsbanken/annonser/31507714) | Inspektionen För Vård och Omsorg | Stockholm, Stockholms län | matches kommunikatör | **[Analyze →](https://github.com/Hybrismannen/wpb/issues/new?title=%5BCareerHub%20Drill%5D%20Inspektionen%20F%C3%B6r%20V%C3%A5rd%20och%20Omsorg%20%E2%80%94%20Vikarierande%20kommunikat%C3%B6r&body=%23%23%23%20Job%20URL%0Ahttps%3A//arbetsformedlingen.se/platsbanken/annonser/31507714%0A%0A%23%23%23%20Lane%0Acore%0A%0A%23%23%23%20Job%20text%20%28optional%29%0A_Leave%20blank%20unless%20the%20site%20blocks%20automated%20retrieval._%0A%0A%23%23%23%20Note%20to%20self%20%28optional%29%0AFound%20by%20CareerHub%20via%20platsbanken.)** |
+| **Explore** | [General Counsel](https://weworkremotely.com/remote-jobs/legion-general-counsel) | Legion | Remote | remote · matches press officer | **[Analyze →](https://github.com/Hybrismannen/wpb/issues/new?title=%5BCareerHub%20Drill%5D%20Legion%20%E2%80%94%20General%20Counsel&body=%23%23%23%20Job%20URL%0Ahttps%3A//weworkremotely.com/remote-jobs/legion-general-counsel%0A%0A%23%23%23%20Lane%0Acore%0A%0A%23%23%23%20Job%20text%20%28optional%29%0A_Leave%20blank%20unless%20the%20site%20blocks%20automated%20retrieval._%0A%0A%23%23%23%20Note%20to%20self%20%28optional%29%0AFound%20by%20CareerHub%20via%20weworkremotely.)** |
+| **Explore** | [Enterprise Account Executive, West](https://weworkremotely.com/remote-jobs/legion-enterprise-account-executive-west) | Legion | Remote | remote · matches communications NGO | **[Analyze →](https://github.com/Hybrismannen/wpb/issues/new?title=%5BCareerHub%20Drill%5D%20Legion%20%E2%80%94%20Enterprise%20Account%20Executive%2C%20West&body=%23%23%23%20Job%20URL%0Ahttps%3A//weworkremotely.com/remote-jobs/legion-enterprise-account-executive-west%0A%0A%23%23%23%20Lane%0Acore%0A%0A%23%23%23%20Job%20text%20%28optional%29%0A_Leave%20blank%20unless%20the%20site%20blocks%20automated%20retrieval._%0A%0A%23%23%23%20Note%20to%20self%20%28optional%29%0AFound%20by%20CareerHub%20via%20weworkremotely.)** |
+| **Explore** | [People Operations Generalist](https://weworkremotely.com/remote-jobs/salesloft-people-operations-generalist) | Salesloft | Remote | remote · matches communications officer | **[Analyze →](https://github.com/Hybrismannen/wpb/issues/new?title=%5BCareerHub%20Drill%5D%20Salesloft%20%E2%80%94%20People%20Operations%20Generalist&body=%23%23%23%20Job%20URL%0Ahttps%3A//weworkremotely.com/remote-jobs/salesloft-people-operations-generalist%0A%0A%23%23%23%20Lane%0Acore%0A%0A%23%23%23%20Job%20text%20%28optional%29%0A_Leave%20blank%20unless%20the%20site%20blocks%20automated%20retrieval._%0A%0A%23%23%23%20Note%20to%20self%20%28optional%29%0AFound%20by%20CareerHub%20via%20weworkremotely.)** |
+| **Explore** | [Partner Manager, Gusto Pro](https://weworkremotely.com/remote-jobs/gusto-inc-partner-manager-gusto-pro) | Gusto, Inc. | Remote | remote · matches press officer | **[Analyze →](https://github.com/Hybrismannen/wpb/issues/new?title=%5BCareerHub%20Drill%5D%20Gusto%2C%20Inc.%20%E2%80%94%20Partner%20Manager%2C%20Gusto%20Pro&body=%23%23%23%20Job%20URL%0Ahttps%3A//weworkremotely.com/remote-jobs/gusto-inc-partner-manager-gusto-pro%0A%0A%23%23%23%20Lane%0Acore%0A%0A%23%23%23%20Job%20text%20%28optional%29%0A_Leave%20blank%20unless%20the%20site%20blocks%20automated%20retrieval._%0A%0A%23%23%23%20Note%20to%20self%20%28optional%29%0AFound%20by%20CareerHub%20via%20weworkremotely.)** |
+| **Explore** | [HR Operations Specialist](https://remoteOK.com/remote-jobs/remote-hr-operations-specialist-law-offices-of-sabrina-li-1137386) | Law Offices of Sabrina Li | Remote | remote · matches content writer | **[Analyze →](https://github.com/Hybrismannen/wpb/issues/new?title=%5BCareerHub%20Drill%5D%20Law%20Offices%20of%20Sabrina%20Li%20%E2%80%94%20HR%20Operations%20Specialist&body=%23%23%23%20Job%20URL%0Ahttps%3A//remoteOK.com/remote-jobs/remote-hr-operations-specialist-law-offices-of-sabrina-li-1137386%0A%0A%23%23%23%20Lane%0Acore%0A%0A%23%23%23%20Job%20text%20%28optional%29%0A_Leave%20blank%20unless%20the%20site%20blocks%20automated%20retrieval._%0A%0A%23%23%23%20Note%20to%20self%20%28optional%29%0AFound%20by%20CareerHub%20via%20remoteok.)** |
+| **Explore** | [Grävande journalist (extrajobb)](https://arbetsformedlingen.se/platsbanken/annonser/31428095) | Cigarrklubben CK Sverige AB | Stockholm, Stockholms län | Arbete på plats · matches journalist | **[Analyze →](https://github.com/Hybrismannen/wpb/issues/new?title=%5BCareerHub%20Drill%5D%20Cigarrklubben%20CK%20Sverige%20AB%20%E2%80%94%20Gr%C3%A4vande%20journalist%20%28extrajobb%29&body=%23%23%23%20Job%20URL%0Ahttps%3A//arbetsformedlingen.se/platsbanken/annonser/31428095%0A%0A%23%23%23%20Lane%0Acore%0A%0A%23%23%23%20Job%20text%20%28optional%29%0A_Leave%20blank%20unless%20the%20site%20blocks%20automated%20retrieval._%0A%0A%23%23%23%20Note%20to%20self%20%28optional%29%0AFound%20by%20CareerHub%20via%20platsbanken.)** |
+| **Explore** | [Billing Systems Architect](https://weworkremotely.com/remote-jobs/platform-sh-billing-systems-architect) | Platform.sh | Remote | remote · matches communications NGO | **[Analyze →](https://github.com/Hybrismannen/wpb/issues/new?title=%5BCareerHub%20Drill%5D%20Platform.sh%20%E2%80%94%20Billing%20Systems%20Architect&body=%23%23%23%20Job%20URL%0Ahttps%3A//weworkremotely.com/remote-jobs/platform-sh-billing-systems-architect%0A%0A%23%23%23%20Lane%0Acore%0A%0A%23%23%23%20Job%20text%20%28optional%29%0A_Leave%20blank%20unless%20the%20site%20blocks%20automated%20retrieval._%0A%0A%23%23%23%20Note%20to%20self%20%28optional%29%0AFound%20by%20CareerHub%20via%20weworkremotely.)** |
+
+## Adjacent roles
+
+Transferable work in content, coordination, research support and communications.
+
+| Priority | Role | Employer | Location | Why it surfaced | Action |
+|---|---|---|---|---|---|
+| **Top lead** | [Research Coordinator](https://arbetsformedlingen.se/platsbanken/annonser/31496388) | Sveriges Lantbruksuniversitet | Uppsala, Uppsala län | Arbete på plats · matches communications coordinator | **[Analyze →](https://github.com/Hybrismannen/wpb/issues/new?title=%5BCareerHub%20Drill%5D%20Sveriges%20Lantbruksuniversitet%20%E2%80%94%20Research%20Coordinator&body=%23%23%23%20Job%20URL%0Ahttps%3A//arbetsformedlingen.se/platsbanken/annonser/31496388%0A%0A%23%23%23%20Lane%0Aadjacent%0A%0A%23%23%23%20Job%20text%20%28optional%29%0A_Leave%20blank%20unless%20the%20site%20blocks%20automated%20retrieval._%0A%0A%23%23%23%20Note%20to%20self%20%28optional%29%0AFound%20by%20CareerHub%20via%20platsbanken.)** |
+| **Top lead** | [Demand Generation Specialist](https://weworkremotely.com/remote-jobs/c4media-inc-demand-generation-specialist) | C4Media Inc. | Remote | remote · matches content specialist | **[Analyze →](https://github.com/Hybrismannen/wpb/issues/new?title=%5BCareerHub%20Drill%5D%20C4Media%20Inc.%20%E2%80%94%20Demand%20Generation%20Specialist&body=%23%23%23%20Job%20URL%0Ahttps%3A//weworkremotely.com/remote-jobs/c4media-inc-demand-generation-specialist%0A%0A%23%23%23%20Lane%0Aadjacent%0A%0A%23%23%23%20Job%20text%20%28optional%29%0A_Leave%20blank%20unless%20the%20site%20blocks%20automated%20retrieval._%0A%0A%23%23%23%20Note%20to%20self%20%28optional%29%0AFound%20by%20CareerHub%20via%20weworkremotely.)** |
+| **Top lead** | [Human Resources Coordinator](https://remoteOK.com/remote-jobs/remote-human-resources-coordinator-pacific-health-group-1135783) | Pacific Health Group | San Diego, San Diego, California, United States | remote · matches communications coordinator | **[Analyze →](https://github.com/Hybrismannen/wpb/issues/new?title=%5BCareerHub%20Drill%5D%20Pacific%20Health%20Group%20%E2%80%94%20Human%20Resources%20Coordinator&body=%23%23%23%20Job%20URL%0Ahttps%3A//remoteOK.com/remote-jobs/remote-human-resources-coordinator-pacific-health-group-1135783%0A%0A%23%23%23%20Lane%0Aadjacent%0A%0A%23%23%23%20Job%20text%20%28optional%29%0A_Leave%20blank%20unless%20the%20site%20blocks%20automated%20retrieval._%0A%0A%23%23%23%20Note%20to%20self%20%28optional%29%0AFound%20by%20CareerHub%20via%20remoteok.)** |
+| **Top lead** | [Senior Specialist Global QMS](https://remoteOK.com/remote-jobs/remote-senior-specialist-global-qms-orca-bio-1137072) | Orca Bio | Remote | remote · matches content specialist | **[Analyze →](https://github.com/Hybrismannen/wpb/issues/new?title=%5BCareerHub%20Drill%5D%20Orca%20Bio%20%E2%80%94%20Senior%20Specialist%20Global%20QMS&body=%23%23%23%20Job%20URL%0Ahttps%3A//remoteOK.com/remote-jobs/remote-senior-specialist-global-qms-orca-bio-1137072%0A%0A%23%23%23%20Lane%0Aadjacent%0A%0A%23%23%23%20Job%20text%20%28optional%29%0A_Leave%20blank%20unless%20the%20site%20blocks%20automated%20retrieval._%0A%0A%23%23%23%20Note%20to%20self%20%28optional%29%0AFound%20by%20CareerHub%20via%20remoteok.)** |
+| **Top lead** | [Membership Coordinator](https://weworkremotely.com/remote-jobs/coaching-com-membership-coordinator-1) | Coaching.com | Remote | remote · matches communications coordinator | **[Analyze →](https://github.com/Hybrismannen/wpb/issues/new?title=%5BCareerHub%20Drill%5D%20Coaching.com%20%E2%80%94%20Membership%20Coordinator&body=%23%23%23%20Job%20URL%0Ahttps%3A//weworkremotely.com/remote-jobs/coaching-com-membership-coordinator-1%0A%0A%23%23%23%20Lane%0Aadjacent%0A%0A%23%23%23%20Job%20text%20%28optional%29%0A_Leave%20blank%20unless%20the%20site%20blocks%20automated%20retrieval._%0A%0A%23%23%23%20Note%20to%20self%20%28optional%29%0AFound%20by%20CareerHub%20via%20weworkremotely.)** |
+| **Good option** | [Marketing Specialist – Paid Social & Content](https://arbetsformedlingen.se/platsbanken/annonser/31444510) | Keystone Education Group AB | Stockholm, Stockholms län | Arbete på plats · matches content specialist | **[Analyze →](https://github.com/Hybrismannen/wpb/issues/new?title=%5BCareerHub%20Drill%5D%20Keystone%20Education%20Group%20AB%20%E2%80%94%20Marketing%20Specialist%20%E2%80%93%20Paid%20Social%20%26%20Content&body=%23%23%23%20Job%20URL%0Ahttps%3A//arbetsformedlingen.se/platsbanken/annonser/31444510%0A%0A%23%23%23%20Lane%0Aadjacent%0A%0A%23%23%23%20Job%20text%20%28optional%29%0A_Leave%20blank%20unless%20the%20site%20blocks%20automated%20retrieval._%0A%0A%23%23%23%20Note%20to%20self%20%28optional%29%0AFound%20by%20CareerHub%20via%20platsbanken.)** |
+| **Good option** | [Account Manager (US)](https://weworkremotely.com/remote-jobs/pagerduty-account-manager-us) | PagerDuty | Remote | remote · matches community manager | **[Analyze →](https://github.com/Hybrismannen/wpb/issues/new?title=%5BCareerHub%20Drill%5D%20PagerDuty%20%E2%80%94%20Account%20Manager%20%28US%29&body=%23%23%23%20Job%20URL%0Ahttps%3A//weworkremotely.com/remote-jobs/pagerduty-account-manager-us%0A%0A%23%23%23%20Lane%0Aadjacent%0A%0A%23%23%23%20Job%20text%20%28optional%29%0A_Leave%20blank%20unless%20the%20site%20blocks%20automated%20retrieval._%0A%0A%23%23%23%20Note%20to%20self%20%28optional%29%0AFound%20by%20CareerHub%20via%20weworkremotely.)** |
+| **Good option** | [Director, Intellectual Property](https://weworkremotely.com/remote-jobs/reddit-director-intellectual-property) | Reddit | Remote | remote · matches community manager | **[Analyze →](https://github.com/Hybrismannen/wpb/issues/new?title=%5BCareerHub%20Drill%5D%20Reddit%20%E2%80%94%20Director%2C%20Intellectual%20Property&body=%23%23%23%20Job%20URL%0Ahttps%3A//weworkremotely.com/remote-jobs/reddit-director-intellectual-property%0A%0A%23%23%23%20Lane%0Aadjacent%0A%0A%23%23%23%20Job%20text%20%28optional%29%0A_Leave%20blank%20unless%20the%20site%20blocks%20automated%20retrieval._%0A%0A%23%23%23%20Note%20to%20self%20%28optional%29%0AFound%20by%20CareerHub%20via%20weworkremotely.)** |
+| **Good option** | [Security Operations Analyst](https://weworkremotely.com/remote-jobs/huntress-security-operations-analyst) | Huntress | Remote | remote · matches community manager | **[Analyze →](https://github.com/Hybrismannen/wpb/issues/new?title=%5BCareerHub%20Drill%5D%20Huntress%20%E2%80%94%20Security%20Operations%20Analyst&body=%23%23%23%20Job%20URL%0Ahttps%3A//weworkremotely.com/remote-jobs/huntress-security-operations-analyst%0A%0A%23%23%23%20Lane%0Aadjacent%0A%0A%23%23%23%20Job%20text%20%28optional%29%0A_Leave%20blank%20unless%20the%20site%20blocks%20automated%20retrieval._%0A%0A%23%23%23%20Note%20to%20self%20%28optional%29%0AFound%20by%20CareerHub%20via%20weworkremotely.)** |
+| **Good option** | [People Operations Coordinator](https://remoteOK.com/remote-jobs/remote-people-operations-coordinator-ashby-1137412) | Ashby | Remote | remote · matches project coordinator | **[Analyze →](https://github.com/Hybrismannen/wpb/issues/new?title=%5BCareerHub%20Drill%5D%20Ashby%20%E2%80%94%20People%20Operations%20Coordinator&body=%23%23%23%20Job%20URL%0Ahttps%3A//remoteOK.com/remote-jobs/remote-people-operations-coordinator-ashby-1137412%0A%0A%23%23%23%20Lane%0Aadjacent%0A%0A%23%23%23%20Job%20text%20%28optional%29%0A_Leave%20blank%20unless%20the%20site%20blocks%20automated%20retrieval._%0A%0A%23%23%23%20Note%20to%20self%20%28optional%29%0AFound%20by%20CareerHub%20via%20remoteok.)** |
+
+## Extra-income / flexible roles
+
+Practical part-time, temporary and lower-barrier work.
+
+No current leads in this lane.
+
+---
+
+## What happens when I click Analyze?
+
+1. A pre-filled CareerHub request opens. Press **Submit new issue**.
+2. CareerHub reads the public job ad and runs the full HRDM-R analysis.
+3. It researches the employer/role when full automation is enabled.
 4. It creates an application strategy and editable Word draft.
-5. A comment appears on the request with a link to the finished pack.
+5. A comment appears on the request with a link to the finished download.
 
-**You do not need to open GitHub Actions or understand the technical files.**
-
-## The three kinds of jobs CareerHub looks for
-
-| Type | What it means |
-|---|---|
-| **Career-track** | Writing, journalism, editorial, communications, press, research, cultural/NGO work |
-| **Adjacent** | Content, coordination, research support, project/communications work, translation/localisation |
-| **Extra-income / flexible** | Part-time, temporary, admin, support, reception, event/cultural venue and other practical work |
-
-A lower-seniority role is not treated as a bad match simply because it is below the ceiling of Weronika's experience. The system evaluates it according to **why she is considering it**.
+You do not need to open GitHub Actions or understand the HRDM files.
 
 ## My profile
 
-CareerHub currently uses the verified WPB archive plus a public-safe candidate profile.
-
-**[Review what CareerHub currently knows →](profile/PROFILE_REVIEW.md)**
-
-Several current details still need Weronika's confirmation, especially languages, current status, tools, availability and preferred geography.
-
----
+CareerHub currently uses the verified WPB archive plus the public-safe candidate profile.  
+**[Review what CareerHub knows →](profile/PROFILE_REVIEW.md)**
 
 <details>
-<summary><strong>Advanced / maintainer controls</strong></summary>
+<summary><strong>Advanced controls & system status</strong></summary>
 
-- [Refresh jobs manually](https://github.com/Hybrismannen/wpb/actions/workflows/careerhub-scan.yml)
-- [Direct HRDM drill workflow](https://github.com/Hybrismannen/wpb/actions/workflows/careerhub-drill.yml)
-- [One-time setup / optional APIs](SETUP.md)
-- [Provider/source matrix](docs/SOURCE_MATRIX.md)
-- [Full workflow](docs/WORKFLOW.md)
-- [HRDM-R specification](hrdm/HRDM_R_v6.3.md)
+- [Refresh jobs now](https://github.com/Hybrismannen/wpb/actions/workflows/careerhub-scan.yml)
+- [Open the old direct drill workflow](https://github.com/Hybrismannen/wpb/actions/workflows/careerhub-drill.yml)
+- [Setup / optional APIs](SETUP.md)
+- [Source matrix](docs/SOURCE_MATRIX.md)
+- [How HRDM works](hrdm/HRDM_R_v6.3.md)
 - [Privacy rules](PRIVACY.md)
 
-The numeric sourcing score is intentionally hidden from the normal interface. It is only an internal shortlist heuristic. The real role analysis happens after **Analyze**.
+The numeric triage score is retained in the data layer but intentionally hidden from the main board. It is only a sourcing heuristic; the real analysis happens after a job is selected.
 
 </details>
