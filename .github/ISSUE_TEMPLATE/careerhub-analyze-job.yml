@@ -44,7 +44,7 @@ body:
     attributes:
       label: Note to self (optional)
       description: Anything you want to remember about this role.
-      placeholder: Example: looks interesting because it is 60% and remote.
+      placeholder: "Example: looks interesting because it is 60% and remote."
 
   - type: checkboxes
     id: public_safe
