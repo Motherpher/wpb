@@ -1,5 +1,36 @@
 {
   "schema_version": "1.0",
-  "updated_at": null,
-  "cases": []
+  "updated_at": "2026-09-23T16:57:17.939535+00:00",
+  "cases": [
+    {
+      "job_id": "4ab816e3062d736d",
+      "issue_number": 5,
+      "issue_url": "https://github.com/Hybrismannen/wpb/issues/5",
+      "title": "Sök lediga jobb i Platsbanken - Arbetsförmedlingen",
+      "company": "H & M Hennes & Mauritz GBC AB",
+      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31417247",
+      "lane": "core",
+      "deadline": "2026-09-30T23:59:59",
+      "location": "",
+      "priority": 5,
+      "status": "ready",
+      "chosen_at": "2026-09-23T16:57:17.939464+00:00",
+      "status_updated_at": "2026-09-23T16:57:17.939464+00:00",
+      "next_action": "Review application pack and submit application",
+      "next_action_date": "2026-09-30T23:59:59",
+      "notification_log": [],
+      "history": [
+        {
+          "at": "2026-09-23T16:57:17.939464+00:00",
+          "status": "saved",
+          "event": "Job chosen"
+        },
+        {
+          "at": "2026-09-23T16:57:17.939464+00:00",
+          "status": "ready",
+          "event": "Application pack prepared"
+        }
+      ]
+    }
+  ]
 }
