@@ -5,6 +5,7 @@ on:
     paths:
       - "CareerHub/**"
       - ".github/workflows/careerhub-*.yml"
+      - ".github/ISSUE_TEMPLATE/careerhub-analyze-job.yml"
   pull_request:
     paths:
       - "CareerHub/**"
