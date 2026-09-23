@@ -1,6 +1,10 @@
 name: CareerHub — Scan & Rank Jobs
 
 on:
+  push:
+    paths:
+      - "CareerHub/config/search_profiles.yaml"
+      - "CareerHub/profile/candidate.yaml"
   workflow_dispatch:
     inputs:
       lane:
