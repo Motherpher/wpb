@@ -8,7 +8,7 @@
 CareerHub searches enabled sources, ranks the strongest leads and keeps every discovered job in a historic vault.
 
 ### 2. Choose job
-Press **Choose →** on a job worth pursuing. CareerHub turns it into a case, records its priority and deadline, runs HRDM-R, researches the role/employer and prepares the application pack.
+When a job looks interesting, answer one question: **Do you want to analyse this job?** If yes, press **YES — Analyse this job**. CareerHub then creates the case, runs HRDM-R, researches the role/employer and prepares the application pack.
 
 ### 3. Apply
 Edit the Word draft, submit the application and follow the case through **Applied → Contacted → Portfolio/Test → Interview/Meeting 1–5 → Offer / Denied**.
@@ -42,7 +42,7 @@ Chosen jobs use a simple 1–5 priority:
 - **2 — Low**
 - **1 — Maybe**
 
-A job found outside CareerHub can be added through **Choose a job** without waiting for the sourcing workflow.
+A job found outside CareerHub can be added through **Analyse a job I found elsewhere** without waiting for the sourcing workflow.
 
 ## Apply and monitor
 
