@@ -41,6 +41,7 @@ jobs:
               root/"profile/candidate.yaml",
               root/"config/sources.yaml",
               root/"config/search_profiles.yaml",
+              Path(".github/ISSUE_TEMPLATE/careerhub-analyze-job.yml"),
           ]:
               yaml.safe_load(p.read_text(encoding="utf-8"))
               print("YAML OK",p)
@@ -54,6 +55,22 @@ jobs:
 
       - name: CLI smoke test
         run: python CareerHub/scripts/careerhub.py --help
+
+      - name: Issue-request parser smoke test
+        run: |
+          cat > /tmp/careerhub-event.json <<'JSON'
+          {
+            "issue": {
+              "number": 99,
+              "title": "[CareerHub Drill] Example",
+              "user": {"login": "tester"},
+              "body": "### Job URL\nhttps://example.invalid/job\n\n### Lane\nadjacent — transferable/adjacent role\n\n### Job text (optional)\nCommunications coordinator. Part time. Research and writing.\n\n### Note to self (optional)\nTest"
+            }
+          }
+          JSON
+          python CareerHub/scripts/issue_request.py --event /tmp/careerhub-event.json --out /tmp/careerhub-request
+          test "$(cat /tmp/careerhub-request/lane.txt)" = "adjacent"
+          grep -q "Communications coordinator" /tmp/careerhub-request/job_text.txt
 
       - name: Offline drill + DOCX smoke test
         run: |
