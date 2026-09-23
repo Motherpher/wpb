@@ -1,5 +1,20 @@
 # Changelog
 
+## 2026-09-23 — CareerHub job-hunting control room
+- added a separate CareerHub inside the WPB repository
+- created a sanitized public-evidence candidate profile with LinkedIn reconciliation path
+- implemented three job-search lanes: core career, adjacent capability and bridge/extra-income
+- added Platsbanken/JobSearch, Remotive, Remote OK and We Work Remotely sourcing adapters
+- staged credentialed Adzuna and Jooble adapters
+- added manual/URL-drill workflow for Indeed, Monster, Ideella Jobb, Jobbland and LinkedIn Jobs
+- implemented deterministic triage ranking separate from HRDM
+- implemented canonical HRDM-R v6.3 packets, structured output schema and optional OpenAI Responses API runner
+- added company/role web-research capability for HRDM when an API key is configured
+- added evidence-bounded application drafting and editable DOCX generation
+- added manual + weekday scan workflow, one-job drill workflow and validation/smoke-test workflow
+- added public-repository privacy rules so application drafts and private profile data are not committed
+
+
 ## 2026-09-22 — Single integrated automated dashboard
 - replaced multiple public data charts with one canonical `visuals/dashboard.svg`
 - moved the integrated dashboard to the very top of the repository README and Weronika's start page
