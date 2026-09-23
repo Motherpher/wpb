@@ -1,0 +1,12 @@
+careerhub:
+  instance_id: weronika-perez-borjas
+  engine:
+    repository: Motherpher/CareerHubZero
+    version: 0.2.2-alpha
+profile:
+  path: profile/candidate.yaml
+search:
+  path: config/search_profiles.yaml
+state:
+  job_vault: data/job_vault.json
+  applications: data/applications.json
