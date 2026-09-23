@@ -1,0 +1,55 @@
+name: CareerHub — Analyze a job
+description: Paste a job link and get an HRDM analysis + editable Word application pack.
+title: "[CareerHub Drill] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## One job in, finished application pack out
+
+        Paste the job link below. CareerHub will do the technical work in the background.
+
+        **Do not include private personal information here.** This repository is public.
+
+  - type: input
+    id: job_url
+    attributes:
+      label: Job URL
+      description: Link to the public job advertisement.
+      placeholder: https://...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: lane
+    attributes:
+      label: Lane
+      description: Why are you considering this job?
+      options:
+        - core — career-track role
+        - adjacent — transferable/adjacent role
+        - bridge — extra-income/flexible role
+    validations:
+      required: true
+
+  - type: textarea
+    id: job_text
+    attributes:
+      label: Job text (optional)
+      description: Only paste the ad text if the website blocks automated reading.
+      placeholder: Leave blank in most cases.
+
+  - type: textarea
+    id: note
+    attributes:
+      label: Note to self (optional)
+      description: Anything you want to remember about this role.
+      placeholder: Example: looks interesting because it is 60% and remote.
+
+  - type: checkboxes
+    id: public_safe
+    attributes:
+      label: Public-safe request
+      options:
+        - label: I have not included private contact details, passwords, references or other sensitive information.
+          required: true
