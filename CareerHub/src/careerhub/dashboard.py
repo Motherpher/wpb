@@ -21,11 +21,11 @@ def save_public_jobs(path: Path, jobs: list[Job]):
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
-def priority_label(score: float) -> str:
-    if score >= 72:
-        return "Strong lead"
-    if score >= 56:
-        return "Worth a look"
+def priority_label(index: int) -> str:
+    if index < 5:
+        return "Top lead"
+    if index < 11:
+        return "Good option"
     return "Explore"
 
 
@@ -55,7 +55,7 @@ def analyze_link(job: Job) -> str:
         "### Job text (optional)\n"
         "_Leave blank unless the site blocks automated retrieval._\n\n"
         "### Note to self (optional)\n"
-        f"Found by CareerHub via {job.source}. Priority: {priority_label(job.triage_score)}."
+        f"Found by CareerHub via {job.source}."
     )
     return (
         f"https://github.com/{REPO}/issues/new"
@@ -87,14 +87,14 @@ def render_lane(lines: list[str], lane: str, jobs: list[Job]):
         "| Priority | Role | Employer | Location | Why it surfaced | Action |",
         "|---|---|---|---|---|---|",
     ]
-    for job in jobs[:18]:
+    for index, job in enumerate(jobs[:18]):
         role = job.title.replace("|", "\\|")
         company = (job.company or "—").replace("|", "\\|")
         location = (job.location or job.work_mode or "—").replace("|", "\\|")
         why = why_short(job).replace("|", "\\|")
         source_link = f"[{role}]({job.url})" if job.url else role
         lines.append(
-            f"| **{priority_label(job.triage_score)}** | {source_link} | {company} | "
+            f"| **{priority_label(index)}** | {source_link} | {company} | "
             f"{location} | {why} | **[Analyze →]({analyze_link(job)})** |"
         )
     lines.append("")
@@ -119,11 +119,31 @@ def render_control_room(path: Path, jobs: list[Job], lane: str):
         "### I already found a job somewhere else",
         "",
         "**[Analyze any job →](https://github.com/Hybrismannen/wpb/issues/new?template=careerhub-analyze-job.yml)**  ",
-        "Paste the job link, choose what kind of job it is, and submit. CareerHub will create the HRDM/application pack.",
-        "",
-        "---",
+        "Paste the job link, choose why you are considering it, and submit. CareerHub does the rest.",
         "",
     ]
+
+    top_picks = []
+    for lane_name in ["core", "adjacent", "bridge"]:
+        top_picks.extend(by_lane[lane_name][:2])
+    top_picks = sorted(top_picks, key=lambda j: -j.triage_score)
+
+    if top_picks:
+        lines += [
+            "## Quick shortlist",
+            "",
+            "Six places to start without reading the whole board:",
+            "",
+            "| Role | Employer | Type | Action |",
+            "|---|---|---|---|",
+        ]
+        for job in top_picks[:6]:
+            role = job.title.replace("|", "\\|")
+            company = (job.company or "—").replace("|", "\\|")
+            source_link = f"[{role}]({job.url})" if job.url else role
+            lane_label = {"core":"Career-track","adjacent":"Adjacent","bridge":"Extra-income"}.get(job.lane, job.lane)
+            lines.append(f"| {source_link} | {company} | {lane_label} | **[Analyze →]({analyze_link(job)})** |")
+        lines += ["", "---", ""]
 
     for lane_name in ["core", "adjacent", "bridge"]:
         if lane == "all" or lane == lane_name:
