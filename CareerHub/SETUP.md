@@ -2,6 +2,16 @@
 
 > Weronika should not normally need this page. Her normal interface is [CONTROL_ROOM.md](CONTROL_ROOM.md).
 
+## Recommended production architecture
+
+For regular use, run CareerHub in a **private repository** and keep this public WPB repository as the archival/public-safe layer.
+
+A private CareerHub makes job targets, application case files, workflow history and generated documents private while preserving exactly the same one-click user flow.
+
+The current public implementation is functional, but it should be treated as **public-safe mode**.
+
+See [PRIVACY.md](PRIVACY.md).
+
 ## Minimum setup
 
 No external job API keys are required for the basic job board.
@@ -18,11 +28,13 @@ Immediately available:
 
 ## Let Weronika use the one-click Analyze flow
 
-Because the repository is public and the workflow can use private API credentials, automatic issue-based analysis is restricted to the repository owner, members and collaborators.
+Automatic issue-based analysis is restricted to the repository owner, members and collaborators.
 
-**One-time action:** add Weronika as a repository collaborator.
+**One-time action:** add Weronika as a collaborator to whichever repository hosts CareerHub.
 
-After that she can use the **Analyze** links without accessing any secret.
+She can then use **Analyze** without seeing or handling API credentials.
+
+For the public WPB repository, remind her that the issue itself is public. In a private CareerHub repository, the same interaction becomes the recommended production workflow.
 
 ## Enable full AI-assisted HRDM + drafting
 
