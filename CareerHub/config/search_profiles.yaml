@@ -1,0 +1,83 @@
+schema_version: "1.0"
+updated: "2026-09-23"
+
+defaults:
+  country: "SE"
+  location: "Stockholm"
+  max_per_query: 20
+  max_total: 120
+  max_age_days: 45
+  remote_allowed: true
+
+lanes:
+  core:
+    description: "Direct use of strongest verified writer/reporting/communications evidence."
+    weight: 1.0
+    queries:
+      - "journalist"
+      - "reporter"
+      - "skribent"
+      - "redaktör"
+      - "kommunikatör"
+      - "pressekreterare"
+      - "press officer"
+      - "communications officer"
+      - "content writer"
+      - "editor"
+      - "researcher"
+      - "research assistant"
+      - "communications NGO"
+      - "kultur kommunikation"
+
+  adjacent:
+    description: "Transferable communication, research, coordination and editorial capability."
+    weight: 0.9
+    queries:
+      - "communications coordinator"
+      - "content specialist"
+      - "copywriter"
+      - "editorial producer"
+      - "project coordinator"
+      - "projektkoordinator"
+      - "research coordinator"
+      - "community manager"
+      - "media monitoring"
+      - "communications assistant"
+      - "translator"
+      - "localisation"
+
+  bridge:
+    description: "Flexible / extra-income roles with a lower entry barrier or reduced scope."
+    weight: 0.75
+    queries:
+      - "administratör deltid"
+      - "administrative assistant part time"
+      - "kundtjänst deltid"
+      - "customer support remote"
+      - "receptionist deltid"
+      - "eventpersonal"
+      - "museivärd"
+      - "servicevärd"
+      - "butiksmedarbetare deltid"
+      - "booking coordinator"
+      - "data entry remote"
+      - "content moderation remote"
+      - "virtual assistant remote"
+      - "transcription remote"
+
+preference_flags:
+  positive:
+    - "part time"
+    - "deltid"
+    - "remote"
+    - "distans"
+    - "hybrid"
+    - "temporary"
+    - "tidsbegränsad"
+    - "freelance"
+  review:
+    - "native Swedish required"
+    - "fluent Swedish required"
+    - "driver's licence required"
+    - "security clearance"
+    - "professional licence"
