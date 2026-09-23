@@ -1,0 +1,63 @@
+name: Validate CareerHub
+
+on:
+  push:
+    paths:
+      - "CareerHub/**"
+      - ".github/workflows/careerhub-*.yml"
+  pull_request:
+    paths:
+      - "CareerHub/**"
+      - ".github/workflows/careerhub-*.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r CareerHub/requirements.txt
+
+      - name: Compile Python
+        run: |
+          python -m py_compile CareerHub/scripts/careerhub.py
+          find CareerHub/src -name '*.py' -print0 | xargs -0 -n1 python -m py_compile
+
+      - name: Validate YAML and JSON
+        run: |
+          python - <<'PY'
+          import json, yaml
+          from pathlib import Path
+          root=Path("CareerHub")
+          for p in [
+              root/"profile/candidate.yaml",
+              root/"config/sources.yaml",
+              root/"config/search_profiles.yaml",
+          ]:
+              yaml.safe_load(p.read_text(encoding="utf-8"))
+              print("YAML OK",p)
+          for p in [
+              root/"hrdm/hrdm_result.schema.json",
+              root/"data/latest_jobs.json",
+          ]:
+              json.loads(p.read_text(encoding="utf-8"))
+              print("JSON OK",p)
+          PY
+
+      - name: CLI smoke test
+        run: python CareerHub/scripts/careerhub.py --help
+
+      - name: Offline drill + DOCX smoke test
+        run: |
+          python CareerHub/scripts/careerhub.py drill             --url "https://example.invalid/job"             --text "Communications coordinator. Part time. Research, writing, stakeholder communication and project coordination."             --lane adjacent             --out /tmp/careerhub-smoke
+          test -f /tmp/careerhub-smoke/HRDM_input_packet.json
+          test -f /tmp/careerhub-smoke/HRDM_result.json
+          ls /tmp/careerhub-smoke/*.docx >/dev/null
