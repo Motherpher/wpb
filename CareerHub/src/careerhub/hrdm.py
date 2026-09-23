@@ -80,7 +80,7 @@ def run_ai_hrdm(packet: dict, schema_path: Path) -> dict | None:
         return None
 
     schema = json.loads(schema_path.read_text(encoding="utf-8"))
-    model = os.getenv("CAREERHUB_MODEL", "gpt-5.4")
+    model = os.getenv("CAREERHUB_MODEL") or "gpt-5.4"
     client = OpenAI()
     response = client.responses.create(
         model=model,
