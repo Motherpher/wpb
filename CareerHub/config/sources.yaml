@@ -1,0 +1,128 @@
+schema_version: "1.0"
+updated: "2026-09-23"
+
+providers:
+  platsbanken:
+    enabled: true
+    mode: "public_api"
+    label: "Arbetsförmedlingen JobSearch / Platsbanken"
+    endpoint: "https://jobsearch.api.jobtechdev.se/search"
+    credentials: []
+    attribution_required: false
+    notes:
+      - "Official open JobSearch data."
+      - "Public API; no API key required."
+      - "Current and historical Platsbanken job-ad dataset is published as open data."
+
+  remotive:
+    enabled: true
+    mode: "public_api"
+    label: "Remotive"
+    endpoint: "https://remotive.com/api/remote-jobs"
+    credentials: []
+    attribution_required: true
+    max_requests_per_day: 4
+    notes:
+      - "Public remote-jobs API; listings are delayed by approximately 24 hours."
+      - "Always retain Remotive attribution and original application URL."
+
+  remoteok:
+    enabled: true
+    mode: "public_json"
+    label: "Remote OK"
+    endpoint: "https://remoteok.com/api"
+    credentials: []
+    attribution_required: true
+    notes:
+      - "Public JSON feed; retain source attribution and original URL."
+
+  weworkremotely:
+    enabled: true
+    mode: "rss"
+    label: "We Work Remotely"
+    endpoint: "https://weworkremotely.com/remote-jobs.rss"
+    credentials: []
+    attribution_required: true
+    notes:
+      - "Public RSS feed; retain attribution and link back."
+
+  adzuna:
+    enabled: false
+    mode: "api_key"
+    label: "Adzuna"
+    endpoint_template: "https://api.adzuna.com/v1/api/jobs/{country}/search/1"
+    credentials:
+      - ADZUNA_APP_ID
+      - ADZUNA_APP_KEY
+    attribution_required: true
+    notes:
+      - "Enable after API registration."
+      - "API terms explicitly permit personal research within documented limits."
+
+  jooble:
+    enabled: false
+    mode: "regional_api_key"
+    label: "Jooble"
+    endpoint_env: "JOOBLE_API_ENDPOINT"
+    credentials:
+      - JOOBLE_API_KEY
+      - JOOBLE_API_ENDPOINT
+    attribution_required: true
+    notes:
+      - "API keys are regional/domain-specific."
+      - "Do not default a Swedish search to the US Jooble endpoint."
+
+  indeed:
+    enabled: false
+    mode: "partner_or_manual"
+    label: "Indeed"
+    search_url: "https://se.indeed.com/jobs"
+    notes:
+      - "Indeed developer APIs are partner-oriented; do not scrape search results."
+      - "Use browser search + drill a selected public ad URL, or add a partner integration later."
+
+  monster:
+    enabled: false
+    mode: "manual"
+    label: "Monster"
+    search_url: "https://www.monster.com/jobs"
+    notes:
+      - "No general public job-seeker search API is assumed."
+      - "Use browser search + public job URL drill."
+
+  ideellajobb:
+    enabled: false
+    mode: "manual"
+    label: "Ideella Jobb"
+    search_url: "https://ideellajobb.se/"
+    notes:
+      - "No public API is assumed."
+      - "High-priority manual source for Swedish nonprofit/civil-society roles."
+
+  jobbland:
+    enabled: false
+    mode: "manual"
+    label: "Jobbland"
+    search_url: "https://jobbland.se/"
+    notes:
+      - "No public API is assumed."
+      - "Use browser search + public job URL drill."
+
+  linkedin_jobs:
+    enabled: false
+    mode: "manual"
+    label: "LinkedIn Jobs"
+    search_url: "https://www.linkedin.com/jobs/"
+    notes:
+      - "No scraping or login automation."
+      - "Paste selected job URL into Drill workflow."
+
+generic_public_url:
+  obey_robots: true
+  bypass_authentication: false
+  bypass_paywalls: false
+  extract:
+    - "JSON-LD JobPosting"
+    - "OpenGraph metadata"
+    - "page title"
+    - "public visible job text"
