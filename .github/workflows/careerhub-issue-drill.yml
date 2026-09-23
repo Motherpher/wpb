@@ -25,6 +25,7 @@ jobs:
     env:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       CAREERHUB_MODEL: ${{ secrets.CAREERHUB_MODEL }}
+      CAREERHUB_REQUIRE_AI: "true"
       GH_TOKEN: ${{ github.token }}
 
     steps:
@@ -49,6 +50,13 @@ jobs:
         run: |
           mkdir -p /tmp/careerhub-request
           python CareerHub/scripts/issue_request.py             --event "$GITHUB_EVENT_PATH"             --out /tmp/careerhub-request
+
+      - name: Verify OpenAI is configured
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo "::error::CareerHub cannot run HRDM yet because the repository secret OPENAI_API_KEY is missing."
+            exit 1
+          fi
 
       - name: Build HRDM and application pack
         run: |
@@ -115,7 +123,8 @@ jobs:
           EOF
           )"
 
-      - name: Explain retrieval failures
+      - name: Explain failures
         if: failure()
         run: |
-          gh issue comment "${{ github.event.issue.number }}" --repo "${{ github.repository }}" --body "CareerHub could not finish this job automatically. A common reason is that the job board blocks automated reading. Open a new **Choose job** request and paste the public job-ad text into **Job text (optional)**."
+          TEST_URL="${{ github.server_url }}/${{ github.repository }}/actions/workflows/careerhub-openai-test.yml"
+          gh issue comment "${{ github.event.issue.number }}" --repo "${{ github.repository }}" --body "CareerHub could not finish the analysis. First run **[Test OpenAI connection]($TEST_URL)**. If that passes, the next most common cause is a job board that blocks automated reading; in that case create a new **Analyse job** request and paste the public job-ad text into **Job text (optional)**."
