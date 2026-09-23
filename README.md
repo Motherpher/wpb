@@ -6,7 +6,7 @@ The dashboard above is the repository's **single integrated data visual**. It is
 
 > **Weronika:** start with [START_HERE.md](START_HERE.md). It explains what this archive is, what you can correct or add, and how the same structure can later become your portfolio.
 
-> **Detailed dashboard notes:** [DASHBOARD.md](DASHBOARD.md) · **Discovery system:** [harvest/README.md](harvest/README.md)
+> **Detailed dashboard notes:** [DASHBOARD.md](DASHBOARD.md) · **Discovery system:** [harvest/README.md](harvest/README.md) · **Job hunting:** [CareerHub Control Room](CareerHub/CONTROL_ROOM.md)
 
 # WPB — Weronika Pérez Borjas
 
@@ -37,6 +37,7 @@ The dashboard is regenerated automatically when canonical corpus, article-metada
 - `sources/` — evidence model, source registry and unresolved records
 - `docs/` — repository rules, editorial policy and future site architecture
 - `reports/` — durable research reports and export notes
+- `CareerHub/` — job sourcing, triage, HRDM-R matching, application drafting and Word-document workflow
 
 ## Working interpretation
 
