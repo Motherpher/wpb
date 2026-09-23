@@ -1,17 +1,22 @@
-name: CareerHub — Analyze Job Request
+name: CareerHub — Choose Job & Prepare Pack
 
 on:
   issues:
     types: [opened]
 
 permissions:
-  contents: read
+  contents: write
   issues: write
 
+concurrency:
+  group: careerhub-state-main
+  cancel-in-progress: false
+
 jobs:
-  analyze:
+  choose:
     if: >-
-      startsWith(github.event.issue.title, '[CareerHub Drill]') &&
+      (startsWith(github.event.issue.title, '[CareerHub Job]') ||
+       startsWith(github.event.issue.title, '[CareerHub Drill]')) &&
       (github.event.issue.author_association == 'OWNER' ||
        github.event.issue.author_association == 'MEMBER' ||
        github.event.issue.author_association == 'COLLABORATOR')
@@ -24,6 +29,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
@@ -32,7 +39,13 @@ jobs:
       - name: Install CareerHub
         run: pip install -r CareerHub/requirements.txt
 
-      - name: Read CareerHub request
+      - name: Align with latest main
+        run: |
+          git fetch origin main
+          git checkout main
+          git reset --hard origin/main
+
+      - name: Read chosen-job request
         run: |
           mkdir -p /tmp/careerhub-request
           python CareerHub/scripts/issue_request.py             --event "$GITHUB_EVENT_PATH"             --out /tmp/careerhub-request
@@ -41,11 +54,33 @@ jobs:
         run: |
           JOB_URL="$(cat /tmp/careerhub-request/job_url.txt)"
           LANE="$(cat /tmp/careerhub-request/lane.txt)"
+          ROLE="$(cat /tmp/careerhub-request/role.txt)"
+          EMPLOYER="$(cat /tmp/careerhub-request/employer.txt)"
+          DEADLINE="$(cat /tmp/careerhub-request/deadline.txt)"
           OUT="CareerHub/output/issue-${{ github.event.issue.number }}"
 
-          python CareerHub/scripts/careerhub.py drill             --url "$JOB_URL"             --text-file /tmp/careerhub-request/job_text.txt             --lane "$LANE"             --out "$OUT"
+          python CareerHub/scripts/careerhub.py drill             --url "$JOB_URL"             --text-file /tmp/careerhub-request/job_text.txt             --title "$ROLE"             --company "$EMPLOYER"             --deadline "$DEADLINE"             --lane "$LANE"             --out "$OUT"
 
           cp /tmp/careerhub-request/request.json "$OUT/request.json"
+
+      - name: Register chosen job and refresh CareerHub
+        run: |
+          PRIORITY="$(cat /tmp/careerhub-request/priority.txt)"
+          python CareerHub/scripts/careerhub.py track             --action choose             --job-json "CareerHub/output/issue-${{ github.event.issue.number }}/job.json"             --issue-number "${{ github.event.issue.number }}"             --issue-url "${{ github.event.issue.html_url }}"             --priority "$PRIORITY"
+
+      - name: Commit CareerHub state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add             CareerHub/data/applications.json             CareerHub/CONTROL_ROOM.md             CareerHub/APPLICATIONS.md             CareerHub/JOB_VAULT.md             CareerHub/visuals/careerhub-journey.svg
+          if git diff --cached --quiet; then
+            echo "No state changes."
+          else
+            git commit -m "CareerHub: choose job #${{ github.event.issue.number }}"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
 
       - name: Upload finished pack
         uses: actions/upload-artifact@v4
@@ -55,35 +90,32 @@ jobs:
           retention-days: 14
           if-no-files-found: error
 
-      - name: Tell the user it is ready
+      - name: Tell the user Step 3 is ready
         if: success()
         run: |
           RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          UPDATE_URL="${{ github.server_url }}/${{ github.repository }}/issues/new?template=careerhub-update-status.yml"
           gh issue comment "${{ github.event.issue.number }}" --repo "${{ github.repository }}" --body "$(cat <<EOF
-          ## ✅ CareerHub pack ready
+          ## Step 3 — Apply
 
-          **[Open the finished run and download the application pack →]($RUN_URL)**
+          The job is now **chosen**, ranked and stored in CareerHub. The HRDM/application pack is ready.
 
-          Download the artifact named **CareerHub-${{ github.event.issue.number }}-application-pack**.
+          **[Download the application pack →]($RUN_URL)**
 
-          The pack contains:
-          - editable application Word document
-          - editable HRDM brief Word document
-          - HRDM analysis JSON
-          - application strategy / claims check
+          Download **CareerHub-${{ github.event.issue.number }}-application-pack**.
 
-          ### Next
-          - [ ] Read the Word draft
-          - [ ] Correct anything that does not sound like you
-          - [ ] Verify every factual claim
-          - [ ] Send the application
-          - [ ] Add a comment here if you get an interview
+          Then:
+          1. edit the Word application,
+          2. submit it to the employer,
+          3. return to CareerHub and mark the case **Applied**.
 
-          This issue can now act as the case file for this application.
+          **[Update application status →]($UPDATE_URL)**
+
+          CareerHub will keep the job in the historic vault even after it disappears from the live sourcing list.
           EOF
           )"
 
       - name: Explain retrieval failures
         if: failure()
         run: |
-          gh issue comment "${{ github.event.issue.number }}" --repo "${{ github.repository }}" --body "CareerHub could not complete this job automatically. The most common reason is that the job board blocks automated reading. Edit the request and paste the public job-ad text into **Job text (optional)**, then open a new CareerHub Analyze request."
+          gh issue comment "${{ github.event.issue.number }}" --repo "${{ github.repository }}" --body "CareerHub could not finish this job automatically. A common reason is that the job board blocks automated reading. Open a new **Choose job** request and paste the public job-ad text into **Job text (optional)**."
