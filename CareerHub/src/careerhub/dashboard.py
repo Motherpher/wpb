@@ -87,7 +87,9 @@ def render_lane(lines: list[str], lane: str, jobs: list[Job]):
         "| Priority | Role | Employer | Location | Why it surfaced | Action |",
         "|---|---|---|---|---|---|",
     ]
-    for index, job in enumerate(jobs[:18]):
+    visible = jobs[:10]
+    lines += [f"_Showing top {len(visible)} of {len(jobs)} leads in this group._", ""]
+    for index, job in enumerate(visible):
         role = job.title.replace("|", "\\|")
         company = (job.company or "—").replace("|", "\\|")
         location = (job.location or job.work_mode or "—").replace("|", "\\|")
@@ -113,8 +115,8 @@ def render_control_room(path: Path, jobs: list[Job], lane: str):
         "",
         "## Find a job. Click Analyze. Edit the Word draft.",
         "",
-        f"**Last refreshed:** {now} · **{len(jobs)} current leads**  ",
-        "Jobs refresh automatically on weekdays. You normally do **not** need to run anything yourself.",
+        f"**Last refreshed:** {now} · **{len(jobs)} leads screened**  ",
+        "Jobs refresh automatically on weekdays. The control room shows only the strongest shortlist by default.",
         "",
         "### I already found a job somewhere else",
         "",
@@ -125,7 +127,11 @@ def render_control_room(path: Path, jobs: list[Job], lane: str):
 
     top_picks = []
     for lane_name in ["core", "adjacent", "bridge"]:
-        top_picks.extend(by_lane[lane_name][:2])
+        clean = [j for j in by_lane[lane_name] if not j.review_flags]
+        selected = clean[:2]
+        if len(selected) < 2:
+            selected += [j for j in by_lane[lane_name] if j not in selected][:2-len(selected)]
+        top_picks.extend(selected)
     top_picks = sorted(top_picks, key=lambda j: -j.triage_score)
 
     if top_picks:
