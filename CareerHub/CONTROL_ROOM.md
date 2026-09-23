@@ -7,7 +7,7 @@
 ## Quick actions
 
 ### 1. Refresh job leads
-Go to **Actions → CareerHub — Scan & Rank Jobs → Run workflow**.
+[Open **CareerHub — Scan & Rank Jobs**](https://github.com/Hybrismannen/wpb/actions/workflows/careerhub-scan.yml) and choose **Run workflow**.
 
 Use a search lane:
 - `core`
@@ -18,7 +18,7 @@ Use a search lane:
 The workflow updates this control room and `data/latest_jobs.json`.
 
 ### 2. Drill one job
-Go to **Actions → CareerHub — Drill & Application Pack → Run workflow**.
+[Open **CareerHub — Drill & Application Pack**](https://github.com/Hybrismannen/wpb/actions/workflows/careerhub-drill.yml) and choose **Run workflow**.
 
 Paste a job-ad URL. The workflow:
 1. ingests the ad,
@@ -30,6 +30,9 @@ Paste a job-ad URL. The workflow:
 
 ### 3. Broaden the profile
 Review [profile/candidate.yaml](profile/candidate.yaml) and [profile/LINKEDIN_IMPORT.md](profile/LINKEDIN_IMPORT.md).
+
+### 4. Enable full automation
+Read [SETUP.md](SETUP.md) for optional AI/API credentials and operating setup.
 
 ## Search lanes
 
