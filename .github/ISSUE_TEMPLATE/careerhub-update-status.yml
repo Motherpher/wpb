@@ -1,0 +1,55 @@
+name: CareerHub — Update an application
+description: Update a chosen job through applied, contacted, interviews, portfolio, offer or denied.
+title: "[CareerHub Update] "
+body:
+  - type: input
+    id: case_issue
+    attributes:
+      label: CareerHub case issue
+      description: The issue number for the chosen job, for example 12.
+      placeholder: "12"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: New status
+      options:
+        - applied
+        - contacted
+        - portfolio
+        - interview_1
+        - interview_2
+        - interview_3
+        - interview_4
+        - interview_5
+        - meeting_1
+        - meeting_2
+        - meeting_3
+        - meeting_4
+        - meeting_5
+        - offer
+        - denied
+        - withdrawn
+        - archived
+    validations:
+      required: true
+
+  - type: input
+    id: date
+    attributes:
+      label: Date
+      description: Optional. Use YYYY-MM-DD.
+
+  - type: input
+    id: next_action
+    attributes:
+      label: Next action (optional)
+      placeholder: Prepare interview examples
+
+  - type: input
+    id: next_action_date
+    attributes:
+      label: Next action date (optional)
+      placeholder: "2026-10-02"
