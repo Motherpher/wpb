@@ -56,6 +56,7 @@ Earlier standalone charts remain available through Git history but are intention
 
 ## CareerHub
 - `CareerHub/CONTROL_ROOM.md` — Weronika's job-search control room
+- `CareerHub/SETUP.md` — optional API/AI setup and operating instructions
 - `CareerHub/profile/candidate.yaml` — sanitized public-evidence candidate profile
 - `CareerHub/config/search_profiles.yaml` — core / adjacent / bridge search lanes
 - `CareerHub/config/sources.yaml` — provider registry
