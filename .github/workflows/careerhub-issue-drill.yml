@@ -1,0 +1,89 @@
+name: CareerHub — Analyze Job Request
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  analyze:
+    if: >-
+      startsWith(github.event.issue.title, '[CareerHub Drill]') &&
+      (github.event.issue.author_association == 'OWNER' ||
+       github.event.issue.author_association == 'MEMBER' ||
+       github.event.issue.author_association == 'COLLABORATOR')
+    runs-on: ubuntu-latest
+
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      CAREERHUB_MODEL: ${{ secrets.CAREERHUB_MODEL }}
+      GH_TOKEN: ${{ github.token }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install CareerHub
+        run: pip install -r CareerHub/requirements.txt
+
+      - name: Read CareerHub request
+        run: |
+          mkdir -p /tmp/careerhub-request
+          python CareerHub/scripts/issue_request.py             --event "$GITHUB_EVENT_PATH"             --out /tmp/careerhub-request
+
+      - name: Build HRDM and application pack
+        run: |
+          JOB_URL="$(cat /tmp/careerhub-request/job_url.txt)"
+          LANE="$(cat /tmp/careerhub-request/lane.txt)"
+          OUT="CareerHub/output/issue-${{ github.event.issue.number }}"
+
+          python CareerHub/scripts/careerhub.py drill             --url "$JOB_URL"             --text-file /tmp/careerhub-request/job_text.txt             --lane "$LANE"             --out "$OUT"
+
+          cp /tmp/careerhub-request/request.json "$OUT/request.json"
+
+      - name: Upload finished pack
+        uses: actions/upload-artifact@v4
+        with:
+          name: CareerHub-${{ github.event.issue.number }}-application-pack
+          path: CareerHub/output/issue-${{ github.event.issue.number }}/
+          retention-days: 14
+          if-no-files-found: error
+
+      - name: Tell the user it is ready
+        if: success()
+        run: |
+          RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          gh issue comment "${{ github.event.issue.number }}" --repo "${{ github.repository }}" --body "$(cat <<EOF
+          ## ✅ CareerHub pack ready
+
+          **[Open the finished run and download the application pack →]($RUN_URL)**
+
+          Download the artifact named **CareerHub-${{ github.event.issue.number }}-application-pack**.
+
+          The pack contains:
+          - editable application Word document
+          - editable HRDM brief Word document
+          - HRDM analysis JSON
+          - application strategy / claims check
+
+          ### Next
+          - [ ] Read the Word draft
+          - [ ] Correct anything that does not sound like you
+          - [ ] Verify every factual claim
+          - [ ] Send the application
+          - [ ] Add a comment here if you get an interview
+
+          This issue can now act as the case file for this application.
+          EOF
+          )"
+
+      - name: Explain retrieval failures
+        if: failure()
+        run: |
+          gh issue comment "${{ github.event.issue.number }}" --repo "${{ github.repository }}" --body "CareerHub could not complete this job automatically. The most common reason is that the job board blocks automated reading. Edit the request and paste the public job-ad text into **Job text (optional)**, then open a new CareerHub Analyze request."
