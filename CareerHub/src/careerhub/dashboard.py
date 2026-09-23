@@ -185,8 +185,8 @@ def render_job_vault(path: Path, vault: dict, cases_data: dict):
         f"**{len(records)} jobs preserved** · {len(active)} in the latest scan · {len(historic)} historical", "",
         "Nothing disappears when a new sourcing run replaces the shortlist. The full machine-readable history is in CareerHub/data/job_vault.json.", "",
         "## Current / recently sourced", "",
-        "| Rank | Role | Employer | Deadline | First seen | Last seen | State |",
-        "|---|---|---|---|---|---|---|",
+        "| Rank | Role | Employer | Deadline | First seen | Last seen | State | Action |",
+        "|---|---|---|---|---|---|---|---|",
     ]
     for r in active[:100]:
         case = cases_by_job.get(r.get("id"))
@@ -195,14 +195,23 @@ def render_job_vault(path: Path, vault: dict, cases_data: dict):
         title = str(r.get("title") or "").replace("|", "\\|")
         company = str(r.get("company") or "").replace("|", "\\|")
         url = r.get("url") or "#"
-        lines.append(f"| {rank} | [{title}]({url}) | {company} | {deadline} | {str(r.get('first_seen',''))[:10]} | {str(r.get('last_seen',''))[:10]} | active |")
-    lines += ["", "## Historical / no longer in the latest shortlist", "", "| Role | Employer | Deadline | Last seen | State |", "|---|---|---|---|---|"]
+        if case:
+            action = f"[case #{case.get('issue_number')}]({case.get('issue_url')})"
+        else:
+            action = f"**[Choose →]({choose_link(Job.from_dict(r), 3)})**"
+        lines.append(f"| {rank} | [{title}]({url}) | {company} | {deadline} | {str(r.get('first_seen',''))[:10]} | {str(r.get('last_seen',''))[:10]} | active | {action} |")
+    lines += ["", "## Historical / no longer in the latest shortlist", "", "| Role | Employer | Deadline | Last seen | State | Action |", "|---|---|---|---|---|---|"]
     for r in historic[:180]:
         deadline, _ = deadline_info(r.get("deadline", ""))
         title = str(r.get("title") or "").replace("|", "\\|")
         company = str(r.get("company") or "").replace("|", "\\|")
         url = r.get("url") or "#"
-        lines.append(f"| [{title}]({url}) | {company} | {deadline} | {str(r.get('last_seen',''))[:10]} | {r.get('deadline_state') or 'historic'} |")
+        case = cases_by_job.get(r.get("id"))
+        if case:
+            action = f"[case #{case.get('issue_number')}]({case.get('issue_url')})"
+        else:
+            action = f"**[Choose →]({choose_link(Job.from_dict(r), 2)})**"
+        lines.append(f"| [{title}]({url}) | {company} | {deadline} | {str(r.get('last_seen',''))[:10]} | {r.get('deadline_state') or 'historic'} | {action} |")
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
