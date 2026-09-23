@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+<rect width="1200" height="560" fill="#F7F8F3"/>
+<path d="M-80 90 C160 40 250 230 420 175 C585 122 565 390 730 328 C880 272 930 120 1280 220"
+      fill="none" stroke="#2E50E8" stroke-width="92" stroke-linecap="round"/>
+<text x="68" y="68" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#111111" letter-spacing="2">CAREERHUB</text>
+<text x="68" y="480" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111111">A three-step job journey</text>
+<g transform="translate(110 122)">
+  <circle cx="0" cy="0" r="70" fill="#F7F8F3" stroke="#2E50E8" stroke-width="5"/>
+  <text x="0" y="-12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#111111">1 · FIND</text>
+  <text x="0" y="21" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800" fill="#2E50E8">80</text>
+  <text x="0" y="46" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#111111">live leads</text>
+</g>
+<g transform="translate(518 290)">
+  <circle cx="0" cy="0" r="78" fill="#C6D8E6" stroke="#2A72A3" stroke-width="5"/>
+  <text x="0" y="-16" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#111111">2 · CHOOSE</text>
+  <text x="0" y="23" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="800" fill="#2A72A3">0</text>
+  <text x="0" y="49" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#111111">active cases</text>
+</g>
+<g transform="translate(940 208)">
+  <circle cx="0" cy="0" r="78" fill="#F6AB16" stroke="#111111" stroke-width="4"/>
+  <text x="0" y="-16" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#111111">3 · APPLY</text>
+  <text x="0" y="23" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="800" fill="#111111">0</text>
+  <text x="0" y="49" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#111111">in process</text>
+</g>
+<g transform="translate(770 430)">
+  <rect x="0" y="0" rx="25" width="350" height="74" fill="#F97279"/>
+  <text x="24" y="31" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#111111">20 deadlines within 7 days</text>
+  <text x="24" y="54" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#111111">80 jobs preserved in the historic vault</text>
+</g>
+</svg>
