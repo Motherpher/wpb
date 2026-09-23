@@ -65,7 +65,10 @@ def cmd_drill(args):
         outdir = root / outdir
     outdir.mkdir(parents=True, exist_ok=True)
 
-    job = fetch_public_job(args.url, supplied_text=args.text or "")
+    supplied_text = args.text or ""
+    if args.text_file:
+        supplied_text = Path(args.text_file).read_text(encoding="utf-8")
+    job = fetch_public_job(args.url, supplied_text=supplied_text)
     packet = build_packet(job, profile, args.lane)
     (outdir / "HRDM_input_packet.json").write_text(json.dumps(packet, ensure_ascii=False, indent=2), encoding="utf-8")
     (outdir / "HRDM_prompt.md").write_text(packet_prompt(packet), encoding="utf-8")
@@ -101,6 +104,7 @@ def build_parser():
     drill = sub.add_parser("drill", help="Run HRDM/application workflow for one job")
     drill.add_argument("--url", required=True)
     drill.add_argument("--text", default="")
+    drill.add_argument("--text-file", default="")
     drill.add_argument("--lane", choices=["core", "adjacent", "bridge"], default="core")
     drill.add_argument("--out", default="CareerHub/output")
     drill.set_defaults(func=cmd_drill)
