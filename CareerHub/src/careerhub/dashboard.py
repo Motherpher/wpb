@@ -79,6 +79,8 @@ def why_short(job: Job) -> str:
 def choose_link(job: Job, default_priority: int = 3) -> str:
     title = f"[CareerHub Job] {job.company or 'Employer'} — {job.title}"
     body = (
+        "## CareerHub — Analyse this job\n\n"
+        "Everything is already filled in. To start the HRDM analysis, click the green **Create issue** / **Submit new issue** button at the bottom of the page.\n\n"
         "### Job URL\n"
         f"{job.url}\n\n"
         "### Job ID\n"
@@ -100,7 +102,7 @@ def choose_link(job: Job, default_priority: int = 3) -> str:
 
 
 def choose_any_link() -> str:
-    return f"https://github.com/{REPO}/issues/new?template=careerhub-choose-job.yml"
+    return f"https://github.com/{REPO}/issues/new?template=careerhub-analyse-job.yml"
 
 
 def status_update_link(case: dict, status: str) -> str:
@@ -198,7 +200,7 @@ def render_job_vault(path: Path, vault: dict, cases_data: dict):
         if case:
             action = f"[case #{case.get('issue_number')}]({case.get('issue_url')})"
         else:
-            action = f"**[Choose →]({choose_link(Job.from_dict(r), 3)})**"
+            action = f"**[YES — Analyse]({choose_link(Job.from_dict(r), 3)})**"
         lines.append(f"| {rank} | [{title}]({url}) | {company} | {deadline} | {str(r.get('first_seen',''))[:10]} | {str(r.get('last_seen',''))[:10]} | active | {action} |")
     lines += ["", "## Historical / no longer in the latest shortlist", "", "| Role | Employer | Deadline | Last seen | State | Action |", "|---|---|---|---|---|---|"]
     for r in historic[:180]:
@@ -210,7 +212,7 @@ def render_job_vault(path: Path, vault: dict, cases_data: dict):
         if case:
             action = f"[case #{case.get('issue_number')}]({case.get('issue_url')})"
         else:
-            action = f"**[Choose →]({choose_link(Job.from_dict(r), 2)})**"
+            action = f"**[YES — Analyse]({choose_link(Job.from_dict(r), 2)})**"
         lines.append(f"| [{title}]({url}) | {company} | {deadline} | {str(r.get('last_seen',''))[:10]} | {r.get('deadline_state') or 'historic'} | {action} |")
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
@@ -279,7 +281,7 @@ def render_lane(lines: list[str], lane: str, jobs: list[Job], cases_by_job: dict
     if not visible:
         lines += ["No current leads in this group.", ""]
         return
-    lines += ["| Priority | Role | Employer | Deadline | Why | Choose |", "|---|---|---|---|---|---|"]
+    lines += ["| Priority | Role | Employer | Deadline | Why | Analyse? |", "|---|---|---|---|---|---|"]
     for index, job in enumerate(visible):
         deadline, days = deadline_info(job.deadline)
         if days is not None and 0 <= days <= 3:
@@ -289,10 +291,10 @@ def render_lane(lines: list[str], lane: str, jobs: list[Job], cases_by_job: dict
         source_link = f"[{title_txt}]({job.url})" if job.url else title_txt
         if job.id in cases_by_job:
             c = cases_by_job[job.id]
-            choose = f"Chosen · [case #{c.get('issue_number')}]({c.get('issue_url')})"
+            choose = f"Analysed · [open case #{c.get('issue_number')}]({c.get('issue_url')})"
         else:
             default_priority = 5 if index < 2 else 4 if index < 5 else 3
-            choose = f"**[Choose →]({choose_link(job, default_priority)})**"
+            choose = f"**Do you want to analyse this job? [YES →]({choose_link(job, default_priority)})**"
         lines.append(f"| {priority_label(index)} | {source_link} | {company} | {deadline} | {why_short(job).replace('|','\\|')} | {choose} |")
     lines += ["", f"_Showing the top {len(visible)} of {len(jobs)} current leads in this group._", ""]
 
@@ -313,16 +315,16 @@ def render_control_room(path: Path, jobs: list[Job], lane: str, cases_data: dict
         "## 1 · Find jobs", "",
         f"**Last sourcing refresh:** {now} · **{len(jobs)} live leads** · **{vault.get('total_jobs_ever_seen', len(jobs))} jobs in the historic vault**", "",
         "**After pressing Refresh:** new results normally appear here in about **30–90 seconds**. The page changes only when the sourcing workflow has finished and committed the new shortlist.", "",
-        f"**[Refresh jobs now →](https://github.com/{REPO}/actions/workflows/careerhub-scan.yml)** · **[Open historic Job Vault →](JOB_VAULT.md)** · **[I found a job elsewhere →]({choose_any_link()})**", "",
+        f"**[Refresh jobs now →](https://github.com/{REPO}/actions/workflows/careerhub-scan.yml)** · **[Open historic Job Vault →](JOB_VAULT.md)** · **[Analyse a job I found elsewhere →]({choose_any_link()})**", "",
     ]
     for lane_name in ["core", "adjacent", "bridge"]:
         if lane == "all" or lane == lane_name:
             render_lane(lines, lane_name, by_lane[lane_name], cases_by_job)
     lines += [
         "---", "", "## 2 · Choose job", "",
-        "Choose only the jobs worth spending attention on. **Choose →** opens a pre-filled case. You normally do not need to edit it—just press **Submit new issue**.", "",
-        "CareerHub then gives the job a 1–5 priority, runs the full HRDM analysis and prepares the application pack.", "",
-        "Priority scale: **5 Must apply · 4 High · 3 Medium · 2 Low · 1 Maybe**", "",
+        "**The only question is: Do you want to analyse this job?**", "",
+        "If yes, press **YES — Analyse this job** beside the vacancy. CareerHub then handles the HRDM analysis, research, ranking, case creation and application pack in the background.", "",
+        "You do not need to decide how HRDM should run or understand the case structure.", "",
     ]
     if active_cases:
         lines += ["| Rank | Job | Status | Deadline | Quick action |", "|---|---|---|---|---|"]
@@ -335,7 +337,7 @@ def render_control_room(path: Path, jobs: list[Job], lane: str, cases_data: dict
             company = str(c.get("company") or "").replace("|", "\\|")
             lines.append(f"| **{c.get('priority',3)} / 5 · {rank_label(c.get('priority'))}** | [{title} — {company}]({issue_url}) | **{STATUS_LABELS.get(c.get('status'), c.get('status'))}** | {deadline} | {case_actions(c)} |")
     else:
-        lines += ["No jobs chosen yet. Use **Choose →** on any job above.", ""]
+        lines += ["No jobs analysed yet. Press **YES — Analyse this job** beside any vacancy above.", ""]
     lines += [
         "", f"**[Open full application/case monitor →](APPLICATIONS.md)**", "",
         "---", "", "## 3 · Apply", "",
