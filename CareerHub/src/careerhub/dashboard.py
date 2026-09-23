@@ -255,6 +255,7 @@ def case_actions(case: dict) -> str:
         actions.append(f"[Denied]({status_update_link(case, 'denied')})")
     if status in {"contacted", "portfolio"}:
         actions.append(f"[Interview 1]({status_update_link(case, 'interview_1')})")
+        actions.append(f"[Meeting 1]({status_update_link(case, 'meeting_1')})")
         actions.append(f"[Portfolio/Test]({status_update_link(case, 'portfolio')})")
     if str(status).startswith("interview_"):
         n = int(str(status).split("_")[1])
@@ -262,6 +263,12 @@ def case_actions(case: dict) -> str:
             actions.append(f"[Interview {n+1}]({status_update_link(case, f'interview_{n+1}')})")
         actions.append(f"[Offer]({status_update_link(case, 'offer')})")
         actions.append(f"[Denied]({status_update_link(case, 'denied')})")
+    if str(status).startswith("meeting_"):
+        n = int(str(status).split("_")[1])
+        if n < 5:
+            actions.append(f"[Meeting {n+1}]({status_update_link(case, f'meeting_{n+1}')})")
+        actions.append(f"[Interview 1]({status_update_link(case, 'interview_1')})")
+        actions.append(f"[Offer]({status_update_link(case, 'offer')})")
     return " · ".join(actions[:3]) or f"[Update status](https://github.com/{REPO}/issues/new?template=careerhub-update-status.yml)"
 
 
