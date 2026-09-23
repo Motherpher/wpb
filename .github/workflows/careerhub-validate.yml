@@ -5,11 +5,12 @@ on:
     paths:
       - "CareerHub/**"
       - ".github/workflows/careerhub-*.yml"
-      - ".github/ISSUE_TEMPLATE/careerhub-analyze-job.yml"
+      - ".github/ISSUE_TEMPLATE/careerhub-*.yml"
   pull_request:
     paths:
       - "CareerHub/**"
       - ".github/workflows/careerhub-*.yml"
+      - ".github/ISSUE_TEMPLATE/careerhub-*.yml"
 
 permissions:
   contents: read
@@ -17,6 +18,7 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
@@ -29,49 +31,71 @@ jobs:
 
       - name: Compile Python
         run: |
-          python -m py_compile CareerHub/scripts/careerhub.py
-          find CareerHub/src -name '*.py' -print0 | xargs -0 -n1 python -m py_compile
+          find CareerHub/src CareerHub/scripts -name '*.py' -print0 | xargs -0 -n1 python -m py_compile
 
       - name: Validate YAML and JSON
         run: |
           python - <<'PY'
           import json, yaml
           from pathlib import Path
-          root=Path("CareerHub")
-          for p in [
-              root/"profile/candidate.yaml",
-              root/"config/sources.yaml",
-              root/"config/search_profiles.yaml",
-              Path(".github/ISSUE_TEMPLATE/careerhub-analyze-job.yml"),
-          ]:
+
+          yaml_files = [
+              Path("CareerHub/profile/candidate.yaml"),
+              Path("CareerHub/config/sources.yaml"),
+              Path("CareerHub/config/search_profiles.yaml"),
+              Path(".github/ISSUE_TEMPLATE/careerhub-choose-job.yml"),
+              Path(".github/ISSUE_TEMPLATE/careerhub-update-status.yml"),
+          ]
+          for p in yaml_files:
               yaml.safe_load(p.read_text(encoding="utf-8"))
-              print("YAML OK",p)
-          for p in [
-              root/"hrdm/hrdm_result.schema.json",
-              root/"data/latest_jobs.json",
-          ]:
+              print("YAML OK", p)
+
+          json_files = [
+              Path("CareerHub/hrdm/hrdm_result.schema.json"),
+              Path("CareerHub/data/latest_jobs.json"),
+              Path("CareerHub/data/job_vault.json"),
+              Path("CareerHub/data/applications.json"),
+          ]
+          for p in json_files:
               json.loads(p.read_text(encoding="utf-8"))
-              print("JSON OK",p)
+              print("JSON OK", p)
           PY
 
       - name: CLI smoke test
         run: python CareerHub/scripts/careerhub.py --help
 
-      - name: Issue-request parser smoke test
+      - name: Choose-job parser smoke test
         run: |
           cat > /tmp/careerhub-event.json <<'JSON'
           {
             "issue": {
               "number": 99,
-              "title": "[CareerHub Drill] Example",
+              "title": "[CareerHub Job] Example",
               "user": {"login": "tester"},
-              "body": "### Job URL\nhttps://example.invalid/job\n\n### Lane\nadjacent — transferable/adjacent role\n\n### Job text (optional)\nCommunications coordinator. Part time. Research and writing.\n\n### Note to self (optional)\nTest"
+              "body": "### Job URL\nhttps://example.invalid/job\n\n### Role\nCommunications coordinator\n\n### Employer\nExample Org\n\n### Lane\nadjacent — transferable/adjacent role\n\n### Priority 1–5\n4 — High\n\n### Deadline\n2026-10-10\n\n### Job text (optional)\nCommunications coordinator. Part time. Research and writing."
             }
           }
           JSON
           python CareerHub/scripts/issue_request.py --event /tmp/careerhub-event.json --out /tmp/careerhub-request
           test "$(cat /tmp/careerhub-request/lane.txt)" = "adjacent"
+          test "$(cat /tmp/careerhub-request/priority.txt)" = "4"
+          test "$(cat /tmp/careerhub-request/deadline.txt)" = "2026-10-10"
           grep -q "Communications coordinator" /tmp/careerhub-request/job_text.txt
+
+      - name: Status-update parser smoke test
+        run: |
+          cat > /tmp/careerhub-update-event.json <<'JSON'
+          {
+            "issue": {
+              "number": 101,
+              "title": "[CareerHub Update] #99 — Applied",
+              "body": "### CareerHub case issue\n99\n\n### New status\napplied\n\n### Date\n2026-09-23\n\n### Next action (optional)\nFollow up\n\n### Next action date (optional)\n2026-10-01"
+            }
+          }
+          JSON
+          python CareerHub/scripts/update_request.py --event /tmp/careerhub-update-event.json --out /tmp/careerhub-update
+          test "$(cat /tmp/careerhub-update/case_issue_number.txt)" = "99"
+          test "$(cat /tmp/careerhub-update/status.txt)" = "applied"
 
       - name: Matching-quality regression test
         run: |
@@ -101,9 +125,33 @@ jobs:
           print("Matching-quality regression OK")
           PY
 
+      - name: State/vault regression test
+        run: |
+          PYTHONPATH=CareerHub/src python - <<'PY'
+          from pathlib import Path
+          from tempfile import TemporaryDirectory
+          from careerhub.models import Job
+          from careerhub.state import merge_job_vault, choose_case, update_case, load_cases
+
+          with TemporaryDirectory() as td:
+              root=Path(td)
+              vault_path=root/"vault.json"
+              cases_path=root/"cases.json"
+              job=Job(source="test", title="Reporter", company="Example", location="Stockholm", deadline="2026-10-15", url="https://example.invalid/reporter", lane="core")
+              vault=merge_job_vault(vault_path,[job])
+              assert vault["total_jobs_ever_seen"] == 1
+              case=choose_case(cases_path,job,12,"https://github.com/example/issues/12",5)
+              assert case["priority"] == 5 and case["status"] == "ready"
+              case=update_case(cases_path,12,"applied")
+              assert case["status"] == "applied"
+              assert load_cases(cases_path)["cases"][0]["history"]
+          print("State/vault regression OK")
+          PY
+
       - name: Offline drill + DOCX smoke test
         run: |
-          python CareerHub/scripts/careerhub.py drill             --url "https://example.invalid/job"             --text "Communications coordinator. Part time. Research, writing, stakeholder communication and project coordination."             --lane adjacent             --out /tmp/careerhub-smoke
+          python CareerHub/scripts/careerhub.py drill             --url "https://example.invalid/job"             --text "Communications coordinator. Part time. Research, writing, stakeholder communication and project coordination."             --title "Communications coordinator"             --company "Example Org"             --deadline "2026-10-10"             --lane adjacent             --out /tmp/careerhub-smoke
+          test -f /tmp/careerhub-smoke/job.json
           test -f /tmp/careerhub-smoke/HRDM_input_packet.json
           test -f /tmp/careerhub-smoke/HRDM_result.json
           ls /tmp/careerhub-smoke/*.docx >/dev/null
