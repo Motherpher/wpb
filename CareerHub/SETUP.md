@@ -50,13 +50,25 @@ Optional:
 
 `CAREERHUB_MODEL`
 
-If no model override is supplied, the current code uses its configured default.
+If no model override is supplied, CareerHub uses `gpt-5.6-sol`.
 
 Repository path:
 
 **Settings → Secrets and variables → Actions → New repository secret**
 
 Never put API credentials in tracked files.
+
+### After adding the secret
+
+Run:
+
+**[Test OpenAI connection →](https://github.com/Hybrismannen/wpb/actions/workflows/careerhub-openai-test.yml)**
+
+The workflow makes one very small Responses API request. It reports success/failure without printing the secret.
+
+If it succeeds, CareerHub is ready for:
+
+**YES — Analyse this job → HRDM-R → employer research → application strategy → Word pack**
 
 ## Optional extra job sources
 
