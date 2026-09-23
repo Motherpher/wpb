@@ -56,6 +56,11 @@ REMOTE_EU_PATTERNS = [
     "remote europe", "within europe", "based in europe"
 ]
 
+TITLE_LANGUAGE_TERMS = [
+    "danish", "german", "french", "finnish", "norwegian", "dutch",
+    "italian", "spanish", "portuguese", "arabic", "czech", "hungarian"
+]
+
 
 def load_yaml(path):
     with open(path, "r", encoding="utf-8") as f:
@@ -176,6 +181,11 @@ def triage(job: Job, lane_name: str, lane_cfg: dict, profile: dict, defaults: di
     recency = _recency(job)
 
     flags = list(geo_flags)
+
+    title_l = title.lower()
+    if any(lang in title_l for lang in TITLE_LANGUAGE_TERMS):
+        flags.append("language-title-requirement-unconfirmed")
+
     uncertainty_patterns = [
         ("language", ["native swedish", "modersmål svenska", "flytande svenska", "fluent swedish"]),
         ("licence", ["driver's licence", "körkort", "legitimation", "licensed"]),
@@ -208,6 +218,8 @@ def triage(job: Job, lane_name: str, lane_cfg: dict, profile: dict, defaults: di
         raw -= 28
     if any(f.endswith("requirement-needs-verification") for f in flags):
         raw -= 4
+    if "language-title-requirement-unconfirmed" in flags:
+        raw -= 25
 
     job.triage_score = round(max(0, min(100, raw)), 1)
     job.lane = lane_name
@@ -226,6 +238,8 @@ def _keep(job: Job, lane_name: str) -> bool:
     if "occupational-family-mismatch" in job.review_flags:
         return False
     if "remote-us-only-or-us-focused" in job.review_flags:
+        return False
+    if "language-title-requirement-unconfirmed" in job.review_flags:
         return False
     minimum = {"core": 55, "adjacent": 52, "bridge": 48}.get(lane_name, 52)
     return job.triage_score >= minimum
