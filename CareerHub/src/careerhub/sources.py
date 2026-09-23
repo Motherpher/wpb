@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import os
 import re
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import urlparse
 from urllib.robotparser import RobotFileParser
 
@@ -13,7 +14,7 @@ from bs4 import BeautifulSoup
 from .models import Job, clean_text
 
 UA = "WPB-CareerHub/0.1 (+https://github.com/Hybrismannen/wpb)"
-TIMEOUT = 25
+TIMEOUT = 15
 
 
 class SourceError(RuntimeError):
@@ -127,7 +128,9 @@ def remoteok_all() -> list[Job]:
 
 
 def wwr_all() -> list[Job]:
-    feed = feedparser.parse("https://weworkremotely.com/remote-jobs.rss")
+    r = session().get("https://weworkremotely.com/remote-jobs.rss", timeout=TIMEOUT)
+    r.raise_for_status()
+    feed = feedparser.loads(r.text)
     jobs = []
     for e in feed.entries:
         summary = e.get("summary") or e.get("description") or ""
@@ -228,23 +231,34 @@ def source_lane(queries: list[str], defaults: dict, sources_cfg: dict) -> list[J
     jobs = []
 
     if sources_cfg["providers"]["platsbanken"].get("enabled", True):
-        for q in queries:
-            try:
-                jobs.extend(platsbanken(q, max_per))
-            except Exception as e:
-                print(f"WARN platsbanken {q}: {e}")
+        with ThreadPoolExecutor(max_workers=min(6, max(1, len(queries)))) as pool:
+            future_to_query = {pool.submit(platsbanken, q, max_per): q for q in queries}
+            for future in as_completed(future_to_query):
+                q = future_to_query[future]
+                try:
+                    jobs.extend(future.result())
+                except Exception as e:
+                    print(f"WARN platsbanken {q}: {e}")
 
-    for name, fn in [("remotive", remotive_all), ("remoteok", remoteok_all), ("weworkremotely", wwr_all)]:
-        if not sources_cfg["providers"][name].get("enabled", True):
-            continue
-        try:
-            for job in fn():
-                ok, q = relevant_to_queries(job, queries)
-                if ok:
-                    job.matched_query = q
-                    jobs.append(job)
-        except Exception as e:
-            print(f"WARN {name}: {e}")
+    remote_sources = [
+        ("remotive", remotive_all),
+        ("remoteok", remoteok_all),
+        ("weworkremotely", wwr_all),
+    ]
+    enabled_remote = [(name, fn) for name, fn in remote_sources if sources_cfg["providers"][name].get("enabled", True)]
+    with ThreadPoolExecutor(max_workers=max(1, len(enabled_remote))) as pool:
+        future_to_source = {pool.submit(fn): name for name, fn in enabled_remote}
+        for future in as_completed(future_to_source):
+            name = future_to_source[future]
+            try:
+                pool_jobs = future.result()
+                for job in pool_jobs:
+                    ok, q = relevant_to_queries(job, queries)
+                    if ok:
+                        job.matched_query = q
+                        jobs.append(job)
+            except Exception as e:
+                print(f"WARN {name}: {e}")
 
     if sources_cfg["providers"]["adzuna"].get("enabled") and os.getenv("ADZUNA_APP_ID"):
         for q in queries[:8]:
