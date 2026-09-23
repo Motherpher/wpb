@@ -43,7 +43,7 @@ You only need to think about three steps:
 Open CareerHub and look at the current shortlist. Jobs refresh automatically on weekdays. If you trigger a manual refresh, new results normally appear after about **30–90 seconds**.
 
 ### 2 — Choose job
-Press **Choose →** on a job you want to pursue. CareerHub saves it, ranks it, remembers the deadline and prepares the HRDM/application pack.
+When a job looks interesting, CareerHub asks: **Do you want to analyse this job?** Press **YES — Analyse this job**. CareerHub then saves it, ranks it, remembers the deadline and prepares the HRDM/application pack.
 
 ### 3 — Apply
 Edit the Word draft, send the application and then follow the case through:
