@@ -10,6 +10,13 @@ def clean_text(value: Any) -> str:
     if value is None:
         return ""
     text = str(value)
+    if any(marker in text for marker in ["Ã", "Â", "Ø", "Ù", "â"]):
+        try:
+            repaired = text.encode("latin1").decode("utf-8")
+            if repaired.count("�") <= text.count("�"):
+                text = repaired
+        except Exception:
+            pass
     text = re.sub(r"<[^>]+>", " ", text)
     text = re.sub(r"\s+", " ", text).strip()
     return text
