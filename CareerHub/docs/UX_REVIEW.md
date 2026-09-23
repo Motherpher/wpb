@@ -86,3 +86,16 @@ This adds one **one-time** maintainer action—add Weronika as collaborator—bu
 - job-board relevance should be tuned after seeing real results
 
 No frontend application is required for the current workflow. If GitHub itself later becomes the dominant remaining friction, CareerHub can be promoted to a small authenticated web control room while keeping the same backend/data model.
+
+
+## Production privacy conclusion
+
+The UX target is now simple enough for regular use, but the public repository creates a structural privacy trade-off: an issue-based application request is visible publicly.
+
+The preferred long-term architecture is therefore:
+
+**public WPB archive → private CareerHub operating repository**
+
+The private repository can use the same control-room, issue and workflow model without exposing job targets or application history.
+
+This is not a redesign of CareerHub. It is a deployment decision that removes the last major usability/privacy compromise.
