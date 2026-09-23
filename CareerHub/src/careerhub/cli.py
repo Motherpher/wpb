@@ -5,10 +5,11 @@ import json
 from pathlib import Path
 
 from .application import fallback_application, run_ai_application, write_application_docx, write_hrdm_docx
-from .dashboard import render_control_room, save_public_jobs
+from .dashboard import render_applications, render_control_room, render_job_vault, render_visual, save_public_jobs
 from .hrdm import build_packet, fallback_hrdm, packet_prompt, run_ai_hrdm
 from .matching import load_yaml as load_match_yaml, rank_jobs
 from .sources import fetch_public_job, load_yaml as load_source_yaml, source_lane
+from .state import choose_case, load_cases, merge_job_vault, update_case, update_priority
 
 
 def root_from_here() -> Path:
@@ -49,9 +50,20 @@ def cmd_scan(args):
 
     ranked = sorted(best.values(), key=lambda j: -j.triage_score)[:args.limit]
     save_public_jobs(root / "CareerHub/data/latest_jobs.json", ranked)
-    render_control_room(root / "CareerHub/CONTROL_ROOM.md", ranked, args.lane)
+
+    vault_path = root / "CareerHub/data/job_vault.json"
+    cases_path = root / "CareerHub/data/applications.json"
+    vault = merge_job_vault(vault_path, ranked)
+    cases = load_cases(cases_path)
+
+    render_visual(root / "CareerHub/visuals/careerhub-journey.svg", ranked, cases, vault)
+    render_job_vault(root / "CareerHub/JOB_VAULT.md", vault, cases)
+    render_applications(root / "CareerHub/APPLICATIONS.md", cases)
+    render_control_room(root / "CareerHub/CONTROL_ROOM.md", ranked, args.lane, cases, vault)
+
     print(json.dumps({
         "jobs": len(ranked),
+        "jobs_ever_seen": vault.get("total_jobs_ever_seen"),
         "lane": args.lane,
         "top_score": ranked[0].triage_score if ranked else None,
     }, indent=2))
@@ -69,7 +81,9 @@ def cmd_drill(args):
     if args.text_file:
         supplied_text = Path(args.text_file).read_text(encoding="utf-8")
     job = fetch_public_job(args.url, supplied_text=supplied_text)
+    job.lane = args.lane
     packet = build_packet(job, profile, args.lane)
+    (outdir / "job.json").write_text(json.dumps(job.full_dict(), ensure_ascii=False, indent=2), encoding="utf-8")
     (outdir / "HRDM_input_packet.json").write_text(json.dumps(packet, ensure_ascii=False, indent=2), encoding="utf-8")
     (outdir / "HRDM_prompt.md").write_text(packet_prompt(packet), encoding="utf-8")
 
@@ -92,6 +106,66 @@ def cmd_drill(args):
     }, indent=2))
 
 
+
+
+def _load_latest_jobs(root: Path):
+    payload = json.loads((root / "CareerHub/data/latest_jobs.json").read_text(encoding="utf-8"))
+    from .models import Job
+    return [Job.from_dict(j) for j in payload.get("jobs", [])]
+
+
+def _render_all(root: Path):
+    jobs = _load_latest_jobs(root)
+    cases = load_cases(root / "CareerHub/data/applications.json")
+    vault_path = root / "CareerHub/data/job_vault.json"
+    if vault_path.exists():
+        vault = json.loads(vault_path.read_text(encoding="utf-8"))
+    else:
+        vault = merge_job_vault(vault_path, jobs)
+    render_visual(root / "CareerHub/visuals/careerhub-journey.svg", jobs, cases, vault)
+    render_job_vault(root / "CareerHub/JOB_VAULT.md", vault, cases)
+    render_applications(root / "CareerHub/APPLICATIONS.md", cases)
+    render_control_room(root / "CareerHub/CONTROL_ROOM.md", jobs, "all", cases, vault)
+
+
+def cmd_track(args):
+    root = root_from_here()
+    cases_path = root / "CareerHub/data/applications.json"
+
+    if args.action == "choose":
+        from .models import Job
+        data = json.loads(Path(args.job_json).read_text(encoding="utf-8"))
+        job = Job.from_dict(data)
+        case = choose_case(
+            cases_path,
+            job,
+            issue_number=args.issue_number,
+            issue_url=args.issue_url,
+            priority=args.priority,
+        )
+    elif args.action == "status":
+        case = update_case(
+            cases_path,
+            issue_number=args.issue_number,
+            status=args.status,
+            event_date=args.date or "",
+            next_action=args.next_action or "",
+            next_action_date=args.next_action_date or "",
+        )
+    elif args.action == "priority":
+        case = update_priority(cases_path, args.issue_number, args.priority)
+    else:
+        raise SystemExit(f"Unsupported tracking action: {args.action}")
+
+    _render_all(root)
+    print(json.dumps(case, ensure_ascii=False, indent=2))
+
+
+def cmd_render(args):
+    _render_all(root_from_here())
+    print("CareerHub surfaces rendered.")
+
+
 def build_parser():
     parser = argparse.ArgumentParser(prog="careerhub")
     sub = parser.add_subparsers(dest="command", required=True)
@@ -108,6 +182,21 @@ def build_parser():
     drill.add_argument("--lane", choices=["core", "adjacent", "bridge"], default="core")
     drill.add_argument("--out", default="CareerHub/output")
     drill.set_defaults(func=cmd_drill)
+
+    track = sub.add_parser("track", help="Create or update a CareerHub application case")
+    track.add_argument("--action", choices=["choose", "status", "priority"], required=True)
+    track.add_argument("--job-json", default="")
+    track.add_argument("--issue-number", type=int, required=True)
+    track.add_argument("--issue-url", default="")
+    track.add_argument("--priority", type=int, default=3)
+    track.add_argument("--status", default="")
+    track.add_argument("--date", default="")
+    track.add_argument("--next-action", default="")
+    track.add_argument("--next-action-date", default="")
+    track.set_defaults(func=cmd_track)
+
+    render = sub.add_parser("render", help="Regenerate CareerHub control surfaces")
+    render.set_defaults(func=cmd_render)
 
     return parser
 
