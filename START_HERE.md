@@ -33,6 +33,26 @@ You do not need to run or understand that system yourself.
 
 ---
 
+## CareerHub — finding work
+
+There is now a separate **[CareerHub](CareerHub/CONTROL_ROOM.md)** in the repository.
+
+It is designed for practical job hunting rather than archive research. It can:
+
+- search multiple job sources
+- separate career-track, adjacent and extra-income roles
+- rank leads for review
+- run the full HRDM-R analysis on a selected job
+- research the role/employer when configured
+- build candidate positioning and application strategy
+- generate editable Word application drafts
+
+The public repository only stores public-safe profile information and job-lead metadata. Application drafts are generated separately and are not committed.
+
+You can use the CareerHub without understanding the code.
+
+---
+
 ## What has been collected so far
 
 The archive currently brings together verified work from different parts of your writing history, including:
