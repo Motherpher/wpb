@@ -320,7 +320,8 @@ def render_control_room(path: Path, jobs: list[Job], lane: str, cases_data: dict
             render_lane(lines, lane_name, by_lane[lane_name], cases_by_job)
     lines += [
         "---", "", "## 2 · Choose job", "",
-        "Choose only the jobs worth spending attention on. Choosing a job creates a case, gives it a 1–5 priority, runs the full HRDM analysis and prepares the application pack.", "",
+        "Choose only the jobs worth spending attention on. **Choose →** opens a pre-filled case. You normally do not need to edit it—just press **Submit new issue**.", "",
+        "CareerHub then gives the job a 1–5 priority, runs the full HRDM analysis and prepares the application pack.", "",
         "Priority scale: **5 Must apply · 4 High · 3 Medium · 2 Low · 1 Maybe**", "",
     ]
     if active_cases:
