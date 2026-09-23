@@ -43,10 +43,11 @@ class Job:
 
     @property
     def search_blob(self) -> str:
-        return clean_text(" ".join([
+        values = [
             self.title, self.company, self.location, self.employment_type,
             self.work_mode, self.description
-        ])).lower()
+        ]
+        return clean_text(" ".join(clean_text(v) for v in values)).lower()
 
     def public_dict(self) -> dict[str, Any]:
         data = asdict(self)
