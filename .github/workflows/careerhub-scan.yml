@@ -28,7 +28,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: careerhub-scan-main
+  group: careerhub-state-main
   cancel-in-progress: true
 
 jobs:
