@@ -16,13 +16,15 @@ def _safe_name(value: str) -> str:
 
 def run_ai_application(job: dict, profile: dict, hrdm: dict, lane: str) -> dict | None:
     if not os.getenv("OPENAI_API_KEY"):
+        if os.getenv("CAREERHUB_REQUIRE_AI", "").lower() in {"1", "true", "yes"}:
+            raise RuntimeError("CareerHub AI is not configured: OPENAI_API_KEY is missing.")
         return None
     try:
         from openai import OpenAI
     except Exception:
         return None
 
-    model = os.getenv("CAREERHUB_MODEL") or "gpt-5.4"
+    model = os.getenv("CAREERHUB_MODEL") or "gpt-5.6-sol"
     client = OpenAI()
     schema = {
         "type": "object",
