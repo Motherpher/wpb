@@ -1,6 +1,6 @@
 schema_version: "1.0"
 updated: "2026-09-23T17:00:00+02:00"
-ux_version: "2.3"
+ux_version: "2.4"
 
 defaults:
   country: "SE"
