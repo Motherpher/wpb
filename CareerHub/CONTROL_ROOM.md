@@ -1,84 +1,66 @@
-# CareerHub Control Room
+# CareerHub
 
-> **Status:** installed · ready for first scan  
-> **Candidate profile:** public-evidence draft; LinkedIn reconciliation pending  
-> **Workflow:** Source → Triage → HRDM-R → Research → Draft → DOCX
+## Find a job. Click **Analyze**. Edit the Word draft.
 
-## Quick actions
+**Status:** ready · jobs refresh automatically on weekdays
 
-### 1. Refresh job leads
-[Open **CareerHub — Scan & Rank Jobs**](https://github.com/Hybrismannen/wpb/actions/workflows/careerhub-scan.yml) and choose **Run workflow**.
+You normally only need to do one of these two things:
 
-Use a search lane:
-- `core`
-- `adjacent`
-- `bridge`
-- `all`
+### I want to see jobs CareerHub found
+The live job board will appear here after the first scheduled/manual refresh.
 
-The workflow updates this control room and `data/latest_jobs.json`.
+**[Refresh jobs now →](https://github.com/Hybrismannen/wpb/actions/workflows/careerhub-scan.yml)**
 
-### 2. Drill one job
-[Open **CareerHub — Drill & Application Pack**](https://github.com/Hybrismannen/wpb/actions/workflows/careerhub-drill.yml) and choose **Run workflow**.
+### I already found a job somewhere else
+**[Analyze any job →](https://github.com/Hybrismannen/wpb/issues/new?template=careerhub-analyze-job.yml)**
 
-Paste a job-ad URL. The workflow:
-1. ingests the ad,
-2. creates a full HRDM-R packet,
-3. optionally performs web/company research when an AI API key is configured,
-4. creates candidate positioning and application strategy,
-5. produces editable Word documents,
-6. uploads the pack as a workflow artifact.
+Paste the link, choose why you are considering the job, and press **Submit new issue**.
 
-### 3. Broaden the profile
-Review [profile/candidate.yaml](profile/candidate.yaml) and [profile/LINKEDIN_IMPORT.md](profile/LINKEDIN_IMPORT.md).
+CareerHub then handles the HRDM analysis, employer/role research and Word draft in the background.
 
-### 4. Enable full automation
-Read [SETUP.md](SETUP.md) for optional AI/API credentials and operating setup.
+---
 
-## Search lanes
+## What happens after **Analyze**
 
-| Lane | Objective | Examples |
-|---|---|---|
-| Core | Direct use of strongest professional evidence | writer, journalist, editor, communications, press, research, NGO/culture |
-| Adjacent | Transferable capability | content, coordinator, research support, editorial production, community/media |
-| Bridge | Extra income / lower barrier / flexible | admin, customer support, reception, event/venue, service, temporary, remote support |
+1. CareerHub reads the public job advertisement.
+2. It runs the full HRDM-R analysis.
+3. It compares the role only with verified/supplied candidate evidence.
+4. It creates an application strategy and editable Word draft.
+5. A comment appears on the request with a link to the finished pack.
 
-## Job board
+**You do not need to open GitHub Actions or understand the technical files.**
 
-No scan has been run yet.
+## The three kinds of jobs CareerHub looks for
 
-After the first scan this section is regenerated automatically with the strongest current leads, source, location, work arrangement, lane, triage score, reasons and application deadline where available.
+| Type | What it means |
+|---|---|
+| **Career-track** | Writing, journalism, editorial, communications, press, research, cultural/NGO work |
+| **Adjacent** | Content, coordination, research support, project/communications work, translation/localisation |
+| **Extra-income / flexible** | Part-time, temporary, admin, support, reception, event/cultural venue and other practical work |
 
-## Drill queue
+A lower-seniority role is not treated as a bad match simply because it is below the ceiling of Weronika's experience. The system evaluates it according to **why she is considering it**.
 
-No jobs drilled yet.
+## My profile
 
-Application drafts are intentionally **not committed** to the public repository. They are generated as downloadable artifacts.
+CareerHub currently uses the verified WPB archive plus a public-safe candidate profile.
 
-## Source health
+**[Review what CareerHub currently knows →](profile/PROFILE_REVIEW.md)**
 
-| Source | Mode | Current setup |
-|---|---|---|
-| Platsbanken / JobSearch | Public API | Ready |
-| Remotive | Public API | Ready |
-| Remote OK | Public JSON | Ready |
-| We Work Remotely | Public RSS | Ready |
-| Adzuna | API key | Optional |
-| Jooble | Regional API key | Optional |
-| Indeed | Partner/manual | URL drill / browser search |
-| Monster | Manual | URL drill / browser search |
-| Ideella Jobb | Manual | URL drill / browser search |
-| Jobbland | Manual | URL drill / browser search |
-| LinkedIn Jobs | Manual | URL drill / browser search |
+Several current details still need Weronika's confirmation, especially languages, current status, tools, availability and preferred geography.
 
-## Human review gates
+---
 
-CareerHub can automate research and drafting, but these remain deliberate decisions:
+<details>
+<summary><strong>Advanced / maintainer controls</strong></summary>
 
-- Is the role actually worth applying to?
-- Is a gap acceptable or material?
-- Is the current candidate profile complete?
-- Are all application claims evidenced?
-- Should a bridge-income role use a simplified application rather than full career positioning?
-- Is the final letter in Weronika's own voice?
+- [Refresh jobs manually](https://github.com/Hybrismannen/wpb/actions/workflows/careerhub-scan.yml)
+- [Direct HRDM drill workflow](https://github.com/Hybrismannen/wpb/actions/workflows/careerhub-drill.yml)
+- [One-time setup / optional APIs](SETUP.md)
+- [Provider/source matrix](docs/SOURCE_MATRIX.md)
+- [Full workflow](docs/WORKFLOW.md)
+- [HRDM-R specification](hrdm/HRDM_R_v6.3.md)
+- [Privacy rules](PRIVACY.md)
 
-The generated document is a **draft for further fine-tuning**, never an auto-send.
+The numeric sourcing score is intentionally hidden from the normal interface. It is only an internal shortlist heuristic. The real role analysis happens after **Analyze**.
+
+</details>
