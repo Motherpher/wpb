@@ -73,6 +73,34 @@ jobs:
           test "$(cat /tmp/careerhub-request/lane.txt)" = "adjacent"
           grep -q "Communications coordinator" /tmp/careerhub-request/job_text.txt
 
+      - name: Matching-quality regression test
+        run: |
+          PYTHONPATH=CareerHub/src python - <<'PY'
+          import yaml
+          from careerhub.models import Job
+          from careerhub.matching import rank_jobs
+
+          profile=yaml.safe_load(open("CareerHub/profile/candidate.yaml", encoding="utf-8"))
+          search=yaml.safe_load(open("CareerHub/config/search_profiles.yaml", encoding="utf-8"))
+          core=search["lanes"]["core"]
+          bridge=search["lanes"]["bridge"]
+
+          good=Job(source="test", title="Communications Officer", company="NGO", location="Stockholm", description="Writing, media relations and stakeholder communication.")
+          bad=Job(source="test", title="Backend Software Engineer", company="TechCo", location="Remote", description="Build APIs and backend systems. Communication skills valued.")
+          us_only=Job(source="test", title="Content Writer", company="USCo", location="United States", work_mode="remote", description="Remote - United States only. Content writing.")
+          bridge_good=Job(source="test", title="Administratör deltid", company="Local", location="Stockholm", description="Deltid administration and reception.")
+
+          core_ranked=rank_jobs([good,bad,us_only], "core", core, profile, search["defaults"])
+          titles=[j.title for j in core_ranked]
+          assert "Communications Officer" in titles, titles
+          assert "Backend Software Engineer" not in titles, titles
+          assert "Content Writer" not in titles, titles
+
+          bridge_ranked=rank_jobs([bridge_good], "bridge", bridge, profile, search["defaults"])
+          assert bridge_ranked and bridge_ranked[0].title == "Administratör deltid"
+          print("Matching-quality regression OK")
+          PY
+
       - name: Offline drill + DOCX smoke test
         run: |
           python CareerHub/scripts/careerhub.py drill             --url "https://example.invalid/job"             --text "Communications coordinator. Part time. Research, writing, stakeholder communication and project coordination."             --lane adjacent             --out /tmp/careerhub-smoke
