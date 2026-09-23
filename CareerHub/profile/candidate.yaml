@@ -1,0 +1,122 @@
+schema_version: "1.0"
+updated: "2026-09-23"
+status: "public-evidence-draft-needs-writer-review"
+
+identity:
+  name: "Weronika Pérez Borjas"
+  linkedin_url: "https://www.linkedin.com/in/weronika-p%C3%A9rez-borjas-0aa68274/"
+  linkedin_ingestion: "manual-export-or-copy-required"
+  current_location: null
+  location_note: "Do not infer current residence from historical Stockholm-based work."
+
+positioning:
+  repository_working_description: "Transnational social and cultural reporter working at the intersection of identity, migration, lived experience and institutional systems."
+  attribution_status: "repository-analysis-not-writer-approved"
+  primary_public_roles:
+    - writer
+    - reporter
+    - cultural journalist
+    - long-form social reporter
+    - press/media communications
+    - translator
+  evidence_domains:
+    - journalism
+    - cultural criticism
+    - interviews
+    - long-form reportage
+    - migration and diaspora
+    - identity and gender
+    - labour and healthcare
+    - reproductive rights
+    - borders and institutions
+    - music, art and visual culture
+    - press/media relations
+    - translation
+
+verified_capabilities:
+  - id: research_reporting
+    label: "Research and reporting"
+    evidence: "38 verified authored/research works in the WPB corpus"
+  - id: long_form
+    label: "Long-form reportage"
+    evidence: "Verified Duży Format, Newsweek Polska and Onet work"
+  - id: interviewing
+    label: "Interviewing and profile writing"
+    evidence: "Verified cultural and music interview corpus"
+  - id: cross_cultural
+    label: "Cross-cultural / transnational reporting"
+    evidence: "Poland–Sweden, Cuba/diaspora and migration reporting"
+  - id: institutional_analysis
+    label: "Institutional and systems-facing reporting"
+    evidence: "Healthcare, borders, legal recognition, labour and reproductive-rights reporting"
+  - id: press_relations
+    label: "Press and media relations"
+    evidence: "Stockholm Film Festival press assistant / press secretary records, 2015"
+  - id: translation
+    label: "Translation"
+    evidence: "Verified Polish translation credit for Susanna Isern"
+  - id: academic_cultural_analysis
+    label: "Academic / cultural analysis"
+    evidence: "Fashion Studies and peer-reviewed/body-visual-culture publication record"
+
+education_public_evidence:
+  - area: "Fashion Studies"
+    institution: "Stockholm University"
+    status: "public-source-evidence"
+  - area: "Scandinavian Studies"
+    institution: "University of Gdańsk"
+    status: "public-source-evidence"
+
+language_evidence:
+  publication_languages:
+    - English
+    - Polish
+  translation_evidence:
+    - "Spanish-origin work translated into Polish"
+  spoken_proficiency:
+    status: "not-yet-confirmed"
+    note: "Do not score language requirements as satisfied until Weronika confirms proficiency."
+
+career_preferences:
+  employment_types:
+    - full_time
+    - part_time
+    - contract
+    - freelance
+    - temporary
+  work_modes:
+    - remote
+    - hybrid
+    - onsite
+  target_geographies:
+    - "Stockholm"
+    - "Sweden"
+    - "Remote Europe"
+    - "Remote worldwide where legally eligible"
+  lanes:
+    - core
+    - adjacent
+    - bridge
+  salary:
+    minimum: null
+    currency: "SEK"
+    note: "No salary floor entered yet."
+  availability: null
+
+evidence_sources:
+  - "../../content/profile.md"
+  - "../../analysis/writer-dossier.md"
+  - "../../data/corpus.json"
+  - "../../data/credits.json"
+
+verification_needed:
+  - current employment
+  - current location
+  - exact spoken-language proficiency
+  - full education chronology
+  - software/tools
+  - current availability
+  - salary expectations
+  - preferred sectors/employers
+  - roles or sectors to exclude
+  - current CV chronology
