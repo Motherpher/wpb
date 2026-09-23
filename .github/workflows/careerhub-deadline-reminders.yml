@@ -10,7 +10,7 @@ permissions:
   issues: write
 
 concurrency:
-  group: careerhub-deadline-reminders
+  group: careerhub-state-main
   cancel-in-progress: false
 
 jobs:
