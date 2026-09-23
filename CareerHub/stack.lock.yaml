@@ -1,0 +1,12 @@
+schema_version: "1.0"
+stack_id: careerhub
+instance_id: weronika-perez-borjas
+engine_repository: Motherpher/CareerHubZero
+engine_version: 0.2.2-alpha
+alignment: blocked
+blockers:
+  - CareerHub/src/careerhub
+  - CareerHub/scripts/careerhub.py
+  - CareerHub/hrdm/HRDM_R_v6.3.md
+generated_by: Motherpher/CareerHubZero
+note: Legacy local motor remains active pending central-motor cutover; this instance must not be treated as stack-current until removed.
