@@ -36,8 +36,14 @@ def session() -> requests.Session:
 def dedupe(jobs: list[Job]) -> list[Job]:
     seen = {}
     for job in jobs:
-        key = job.url.strip().lower() if job.url else f"{job.company}|{job.title}|{job.location}".lower()
-        if key not in seen or len(job.description) > len(seen[key].description):
+        title = re.sub(r"[^\wåäöé]+", " ", clean_text(job.title).lower()).strip()
+        company = re.sub(r"[^\wåäöé]+", " ", clean_text(job.company).lower()).strip()
+        location = re.sub(r"[^\wåäöé]+", " ", clean_text(job.location).lower()).strip()
+        if title and company:
+            key = f"{company}|{title}|{location}"
+        else:
+            key = (job.url or f"{company}|{title}|{location}").strip().lower()
+        if key not in seen or len(clean_text(job.description)) > len(clean_text(seen[key].description)):
             seen[key] = job
     return list(seen.values())
 
@@ -214,14 +220,19 @@ def jooble(query: str, location: str = "", limit: int = 20) -> list[Job]:
 
 def relevant_to_queries(job: Job, queries: list[str]) -> tuple[bool, str]:
     blob = job.search_blob
-    title = job.title.lower()
-    best, best_score = "", 0
+    title = clean_text(job.title).lower()
+    best, best_score, best_title_hits, best_body_hits = "", 0, 0, 0
     for q in queries:
         words = [w for w in re.findall(r"[\wåäöÅÄÖéÉ]+", q.lower()) if len(w) > 2]
-        score = sum(2 if w in title else 1 if w in blob else 0 for w in words)
+        title_hits = sum(1 for w in words if w in title)
+        body_hits = sum(1 for w in words if w in blob)
+        score = 4 * title_hits + body_hits
         if score > best_score:
             best_score, best = score, q
-    return best_score > 0, best
+            best_title_hits, best_body_hits = title_hits, body_hits
+    # Remote feeds are broad. Require a title signal, or at least two query terms
+    # in the body, before a job reaches the candidate-matching layer.
+    return (best_title_hits >= 1 or best_body_hits >= 2), best
 
 
 def source_lane(queries: list[str], defaults: dict, sources_cfg: dict) -> list[Job]:
