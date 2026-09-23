@@ -81,6 +81,12 @@ def cmd_drill(args):
     if args.text_file:
         supplied_text = Path(args.text_file).read_text(encoding="utf-8")
     job = fetch_public_job(args.url, supplied_text=supplied_text)
+    if args.title and not job.title:
+        job.title = args.title
+    if args.company and not job.company:
+        job.company = args.company
+    if args.deadline and not job.deadline:
+        job.deadline = args.deadline
     job.lane = args.lane
     packet = build_packet(job, profile, args.lane)
     (outdir / "job.json").write_text(json.dumps(job.full_dict(), ensure_ascii=False, indent=2), encoding="utf-8")
@@ -179,6 +185,9 @@ def build_parser():
     drill.add_argument("--url", required=True)
     drill.add_argument("--text", default="")
     drill.add_argument("--text-file", default="")
+    drill.add_argument("--title", default="")
+    drill.add_argument("--company", default="")
+    drill.add_argument("--deadline", default="")
     drill.add_argument("--lane", choices=["core", "adjacent", "bridge"], default="core")
     drill.add_argument("--out", default="CareerHub/output")
     drill.set_defaults(func=cmd_drill)
