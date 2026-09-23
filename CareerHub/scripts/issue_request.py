@@ -30,6 +30,11 @@ def pick(data: dict[str, str], *names: str) -> str:
     return ""
 
 
+def parse_priority(raw: str) -> int:
+    m = re.search(r"\b([1-5])\b", raw or "")
+    return int(m.group(1)) if m else 3
+
+
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--event", required=True)
@@ -51,6 +56,10 @@ def main():
         lane = "core"
 
     text = pick(data, "job text")
+    role = pick(data, "role", "job title")
+    employer = pick(data, "employer", "company")
+    deadline = pick(data, "deadline")
+    priority = parse_priority(pick(data, "priority", "rank"))
     note = pick(data, "note to self", "notes")
 
     if not url:
@@ -58,16 +67,29 @@ def main():
 
     outdir = Path(args.out)
     outdir.mkdir(parents=True, exist_ok=True)
-    (outdir / "job_url.txt").write_text(url + "\n", encoding="utf-8")
-    (outdir / "lane.txt").write_text(lane + "\n", encoding="utf-8")
-    (outdir / "job_text.txt").write_text(text, encoding="utf-8")
-    (outdir / "note.txt").write_text(note, encoding="utf-8")
+    values = {
+        "job_url.txt": url,
+        "lane.txt": lane,
+        "job_text.txt": text,
+        "role.txt": role,
+        "employer.txt": employer,
+        "deadline.txt": deadline,
+        "priority.txt": str(priority),
+        "note.txt": note,
+    }
+    for name, value in values.items():
+        (outdir / name).write_text(value, encoding="utf-8")
+
     (outdir / "request.json").write_text(json.dumps({
         "issue_number": issue.get("number"),
         "issue_title": issue.get("title"),
         "requester": (issue.get("user") or {}).get("login"),
         "job_url": url,
         "lane": lane,
+        "role": role,
+        "employer": employer,
+        "deadline": deadline,
+        "priority": priority,
         "job_text_supplied": bool(text),
         "note": note,
     }, ensure_ascii=False, indent=2), encoding="utf-8")
