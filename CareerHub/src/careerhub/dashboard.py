@@ -224,8 +224,8 @@ def render_applications(path: Path, cases_data: dict):
         "# Applications & Follow-up", "",
         "One chosen job becomes one CareerHub case. This is the process monitor after the job has left the sourcing board.", "",
         "## Active cases", "",
-        "| Priority | Role | Employer | Status | Deadline | Next action | Case |",
-        "|---|---|---|---|---|---|---|",
+        "| Priority | Role | Employer | Status | Deadline | Next action | Next date | Case |",
+        "|---|---|---|---|---|---|---|---|",
     ]
     for c in active:
         deadline, _ = deadline_info(c.get("deadline", ""))
@@ -234,7 +234,8 @@ def render_applications(path: Path, cases_data: dict):
         issue = c.get("issue_number")
         issue_url = c.get("issue_url") or f"https://github.com/{REPO}/issues/{issue}"
         next_action = str(c.get("next_action") or "—").replace("|", "\\|")
-        lines.append(f"| **{rank_label(c.get('priority'))}** | [{title}]({c.get('url') or issue_url}) | {company} | **{STATUS_LABELS.get(c.get('status'), c.get('status'))}** | {deadline} | {next_action} | [#{issue}]({issue_url}) |")
+        next_date = str(c.get("next_action_date") or "—")[:10]
+        lines.append(f"| **{rank_label(c.get('priority'))}** | [{title}]({c.get('url') or issue_url}) | {company} | **{STATUS_LABELS.get(c.get('status'), c.get('status'))}** | {deadline} | {next_action} | {next_date} | [#{issue}]({issue_url}) |")
     lines += ["", "## Closed cases", "", "| Role | Employer | Outcome | Updated |", "|---|---|---|---|"]
     for c in closed[-60:]:
         lines.append(f"| {str(c.get('title') or '').replace('|','\\|')} | {str(c.get('company') or '').replace('|','\\|')} | {STATUS_LABELS.get(c.get('status'), c.get('status'))} | {str(c.get('status_updated_at') or '')[:10]} |")
