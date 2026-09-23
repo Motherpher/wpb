@@ -73,6 +73,8 @@ PACKET:
 
 def run_ai_hrdm(packet: dict, schema_path: Path) -> dict | None:
     if not os.getenv("OPENAI_API_KEY"):
+        if os.getenv("CAREERHUB_REQUIRE_AI", "").lower() in {"1", "true", "yes"}:
+            raise RuntimeError("CareerHub AI is not configured: OPENAI_API_KEY is missing.")
         return None
     try:
         from openai import OpenAI
@@ -80,7 +82,7 @@ def run_ai_hrdm(packet: dict, schema_path: Path) -> dict | None:
         return None
 
     schema = json.loads(schema_path.read_text(encoding="utf-8"))
-    model = os.getenv("CAREERHUB_MODEL") or "gpt-5.4"
+    model = os.getenv("CAREERHUB_MODEL") or "gpt-5.6-sol"
     client = OpenAI()
     response = client.responses.create(
         model=model,
