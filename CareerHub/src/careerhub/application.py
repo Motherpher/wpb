@@ -22,7 +22,7 @@ def run_ai_application(job: dict, profile: dict, hrdm: dict, lane: str) -> dict 
     except Exception:
         return None
 
-    model = os.getenv("CAREERHUB_MODEL", "gpt-5.4")
+    model = os.getenv("CAREERHUB_MODEL") or "gpt-5.4"
     client = OpenAI()
     schema = {
         "type": "object",
