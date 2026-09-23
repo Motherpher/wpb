@@ -1,0 +1,58 @@
+name: CareerHub — Drill & Application Pack
+
+on:
+  workflow_dispatch:
+    inputs:
+      job_url:
+        description: "Public job-ad URL"
+        required: true
+        type: string
+      lane:
+        description: "Application/search lane"
+        required: true
+        type: choice
+        options:
+          - core
+          - adjacent
+          - bridge
+        default: core
+      job_text:
+        description: "Optional: paste job text if the URL blocks automated retrieval"
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  drill:
+    runs-on: ubuntu-latest
+    env:
+      JOB_URL: ${{ inputs.job_url }}
+      JOB_TEXT: ${{ inputs.job_text }}
+      LANE: ${{ inputs.lane }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      CAREERHUB_MODEL: ${{ secrets.CAREERHUB_MODEL }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install CareerHub
+        run: pip install -r CareerHub/requirements.txt
+
+      - name: Build HRDM and application pack
+        run: |
+          OUT="CareerHub/output/run-${{ github.run_id }}"
+          python CareerHub/scripts/careerhub.py drill             --url "$JOB_URL"             --text "$JOB_TEXT"             --lane "$LANE"             --out "$OUT"
+
+      - name: Upload application pack
+        uses: actions/upload-artifact@v4
+        with:
+          name: careerhub-application-${{ github.run_id }}
+          path: CareerHub/output/run-${{ github.run_id }}/
+          retention-days: 14
+          if-no-files-found: error
