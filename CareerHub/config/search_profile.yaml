@@ -1,0 +1,74 @@
+version: "2.0"
+intent: "Find opportunities supported by Weronika's verified career evidence while keeping user preferences search-only."
+
+geographies:
+  primary:
+    - Stockholm
+    - Sweden
+  remote:
+    - Europe
+    - worldwide where legally eligible
+
+engagement_types:
+  - full_time
+  - part_time
+  - contract
+  - freelance
+  - temporary
+
+salary:
+  minimum: null
+  currency: "SEK"
+  note: "No verified salary floor supplied."
+
+lanes:
+  - lane_id: core
+    name: "Writing / reporting / editorial / press"
+    priority: 1
+    queries:
+      - journalist
+      - reporter
+      - skribent
+      - redaktör
+      - press officer
+      - pressekreterare
+      - content writer
+      - editor
+      - researcher
+  - lane_id: adjacent
+    name: "Communications / research / coordination / translation"
+    priority: 2
+    queries:
+      - communications coordinator
+      - content specialist
+      - editorial producer
+      - research coordinator
+      - communications assistant
+      - translator
+      - localisation
+  - lane_id: bridge
+    name: "Flexible / extra"
+    priority: 3
+    queries:
+      - administratör deltid
+      - administrative assistant part time
+      - kundtjänst deltid
+      - customer support remote
+      - receptionist deltid
+      - eventpersonal
+      - museivärd
+      - servicevärd
+      - booking coordinator
+      - transcription remote
+
+negative_filters:
+  - "Do not score an unmet professional licence as satisfied."
+  - "Do not infer spoken-language proficiency from publication language."
+  - "Do not infer current residence from historical work location."
+
+triage_rule: "Verified career evidence defines candidate fit. User wishes or needs may modify sourcing and ranking only; HRDM is required before candidate positioning."
+
+user_search_overlay:
+  source: user_input
+  scope: search_only
+  specific_wishes_or_needs: ""
