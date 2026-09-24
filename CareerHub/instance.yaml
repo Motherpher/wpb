@@ -2,7 +2,7 @@ careerhub:
   instance_id: weronika-perez-borjas
   engine:
     repository: Motherpher/CareerHubZero
-    version: 0.2.4-alpha
+    version: 0.2.5-alpha
 profile:
   path: profile/candidate_verified.yaml
 search:
