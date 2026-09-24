@@ -1,0 +1,12 @@
+schema_version: "1.0"
+profile_id: weronika-perez-borjas
+
+profile:
+  path: profile/candidate_verified.yaml
+
+search:
+  path: config/search_profile.yaml
+
+state:
+  job_vault: data/job_vault.json
+  applications: data/applications.json
