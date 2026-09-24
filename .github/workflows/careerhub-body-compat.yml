@@ -1,0 +1,24 @@
+name: CareerHub · Unified Body Compatibility
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "careerhub.yaml"
+      - "CareerHub/careerhub.yaml"
+      - ".github/workflows/careerhub-body-compat.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate profile against central CareerHub body
+        uses: Motherpher/CareerHubZero@main
+        with:
+          manifest: "CareerHub/careerhub.yaml"
+          command: validate
