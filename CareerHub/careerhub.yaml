@@ -10,3 +10,11 @@ search:
 state:
   job_vault: data/job_vault.json
   applications: data/applications.json
+  hrdm_ledger: data/hrdm_ledger.json
+
+artifacts:
+  hrdm_reports: reports/hrdm/active
+  hrdm_history: reports/hrdm/history
+
+ui:
+  language: en
