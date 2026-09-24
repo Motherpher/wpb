@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T16:10:27.388665+00:00",
+  "generated_at": "2026-09-24T10:05:10.473545+00:00",
   "count": 80,
   "jobs": [
     {
@@ -42,13 +42,13 @@
       "provider_id": "31491509",
       "lane": "core",
       "matched_query": "communications NGO",
-      "triage_score": 94.6,
+      "triage_score": 94.5,
       "triage_reasons": [
         "title/role fit 100%",
         "candidate-evidence support 85%",
         "arrangement fit 72%",
         "geography/remote fit 100%",
-        "recency signal 93%"
+        "recency signal 91%"
       ],
       "review_flags": [],
       "id": "f692b21c9192771f",
@@ -108,6 +108,32 @@
     },
     {
       "source": "platsbanken",
+      "title": "Junior kommunikatör med fokus på innehåll och produktion",
+      "company": "SKOLIDROTTSFÖRBUNDET I SKÅNE",
+      "location": "Malmö, Skåne län",
+      "employment_type": "Tidsbegränsad anställning",
+      "work_mode": null,
+      "published": "2026-09-24T11:45:15",
+      "deadline": "2026-10-19T23:59:59",
+      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31515529",
+      "salary": "",
+      "provider_id": "31515529",
+      "lane": "core",
+      "matched_query": "pressekreterare",
+      "triage_score": 86.5,
+      "triage_reasons": [
+        "title/role fit 100%",
+        "candidate-evidence support 28%",
+        "arrangement fit 100%",
+        "geography/remote fit 82%",
+        "recency signal 100%"
+      ],
+      "review_flags": [],
+      "id": "172c039dec624895",
+      "description_excerpt": "Vill du skapa innehåll som gör skillnad för barn och ungas hälsa, inflytande och gemenskap? Vi söker en kreativ kommunikatör som vill hjälpa oss att skapa ökad förståelse för skol-IF i Skåne. Hos oss får du kombinera operativt innehållsskapande med grafisk formgivning och vara med och synliggöra verksamhet som varje dag bidrar till att fler barn och unga får röra sig, utvecklas som ledare och känna tillhörighet. Om oss Skolidrottsförbundet i Skåne arbetar för att skapa mer rörelse, gemenskap och inflytande för barn och unga. Genom en skol-IF får unga möjlighet att vara ledare idag, inte imorgon. Vår verksamhet bygger på inkludering, delaktighet och rörelseglädje, där aktiviteterna är kostnad"
+    },
+    {
+      "source": "platsbanken",
       "title": "Vikarierande kommunikatör",
       "company": "Inspektionen För Vård och Omsorg",
       "location": "Stockholm, Stockholms län",
@@ -119,7 +145,7 @@
       "salary": "",
       "provider_id": "31507714",
       "lane": "core",
-      "matched_query": "pressekreterare",
+      "matched_query": "kommunikatör",
       "triage_score": 86.3,
       "triage_reasons": [
         "title/role fit 100%",
@@ -146,13 +172,13 @@
       "provider_id": "31397411",
       "lane": "core",
       "matched_query": "content writer",
-      "triage_score": 85.9,
+      "triage_score": 85.8,
       "triage_reasons": [
         "title/role fit 100%",
         "candidate-evidence support 38%",
         "arrangement fit 72%",
         "geography/remote fit 100%",
-        "recency signal 60%"
+        "recency signal 59%"
       ],
       "review_flags": [],
       "id": "39597e0e2b5b69bb",
@@ -250,13 +276,13 @@
       "provider_id": "31459310",
       "lane": "core",
       "matched_query": "research assistant",
-      "triage_score": 84.0,
+      "triage_score": 83.9,
       "triage_reasons": [
         "title/role fit 94%",
         "candidate-evidence support 38%",
         "arrangement fit 100%",
         "geography/remote fit 82%",
-        "recency signal 81%"
+        "recency signal 80%"
       ],
       "review_flags": [],
       "id": "1d6ab1ac34a3b6cc",
@@ -275,7 +301,7 @@
       "salary": "",
       "provider_id": "31507756",
       "lane": "core",
-      "matched_query": "pressekreterare",
+      "matched_query": "kommunikatör",
       "triage_score": 83.5,
       "triage_reasons": [
         "title/role fit 100%",
@@ -341,32 +367,6 @@
       "description_excerpt": "Om Lawgent Lawgent är en modern juristbyrå byggd för företag som verkar i en tid där juridik, AI, data och europeisk reglering allt oftare möts. Vi arbetar för att göra komplex juridik tydlig, konkret och användbar. Våra klienter ska inte bara få veta vad lagen säger. De ska förstå vad den innebär för deras verksamhet och vad de faktiskt behöver göra. Vår verksamhet omfattar bland annat AI och data, GDPR, digital reglering, finansiell reglering, kommersiell juridik, regulatorisk rådgivning och europeisk tillväxt. Vi bygger marknadsfunktionen på Lawgent Lawgent växer och marknad är den funktion vi bygger ut nu. Vi rekryterar flera roller parallellt: growth, performance, SEO och innehåll, mark"
     },
     {
-      "source": "platsbanken",
-      "title": "Product and Technical Communications",
-      "company": "Lovable Labs Sweden AB",
-      "location": "Stockholm, Stockholms län",
-      "employment_type": "Tillsvidareanställning (inkl. eventuell provanställning)",
-      "work_mode": "Arbete på plats",
-      "published": "2026-09-17T21:17:00",
-      "deadline": "2027-02-17T23:59:59",
-      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31491531",
-      "salary": "",
-      "provider_id": "31491531",
-      "lane": "core",
-      "matched_query": "communications NGO",
-      "triage_score": 82.2,
-      "triage_reasons": [
-        "title/role fit 80%",
-        "candidate-evidence support 76%",
-        "arrangement fit 72%",
-        "geography/remote fit 100%",
-        "recency signal 93%"
-      ],
-      "review_flags": [],
-      "id": "2993b0c1a0438251",
-      "description_excerpt": "Why Lovable? Lovable is the software creation platform that gives people the power to act on the problems closest to them. For decades, turning an idea into software required so much capital, technical fluency, and time that many ideas never came to life. Lovable is the counterargument: a platform for all people with ideas, ambition, and problems worth solving. From solopreneurs to small business owners to teams at companies like Adidas and Zendesk, people have built over 60 million projects on Lovable since its launch in November 2024. And we’re just getting started. What you’ll do Own trust, security, and incident communications. People build real businesses on Lovable, and their confidenc"
-    },
-    {
       "source": "remoteok",
       "title": "Course Writer and Editor UX UI and AI",
       "company": "Interaction Design Foundation",
@@ -396,6 +396,32 @@
     },
     {
       "source": "platsbanken",
+      "title": "Product and Technical Communications",
+      "company": "Lovable Labs Sweden AB",
+      "location": "Stockholm, Stockholms län",
+      "employment_type": "Tillsvidareanställning (inkl. eventuell provanställning)",
+      "work_mode": "Arbete på plats",
+      "published": "2026-09-17T21:17:00",
+      "deadline": "2027-02-17T23:59:59",
+      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31491531",
+      "salary": "",
+      "provider_id": "31491531",
+      "lane": "core",
+      "matched_query": "communications NGO",
+      "triage_score": 82.1,
+      "triage_reasons": [
+        "title/role fit 80%",
+        "candidate-evidence support 76%",
+        "arrangement fit 72%",
+        "geography/remote fit 100%",
+        "recency signal 91%"
+      ],
+      "review_flags": [],
+      "id": "2993b0c1a0438251",
+      "description_excerpt": "Why Lovable? Lovable is the software creation platform that gives people the power to act on the problems closest to them. For decades, turning an idea into software required so much capital, technical fluency, and time that many ideas never came to life. Lovable is the counterargument: a platform for all people with ideas, ambition, and problems worth solving. From solopreneurs to small business owners to teams at companies like Adidas and Zendesk, people have built over 60 million projects on Lovable since its launch in November 2024. And we’re just getting started. What you’ll do Own trust, security, and incident communications. People build real businesses on Lovable, and their confidenc"
+    },
+    {
+      "source": "platsbanken",
       "title": "Timavlönad servicevärd till Växjö sjukhus ",
       "company": "REGION KRONOBERG",
       "location": "Växjö, Kronobergs län",
@@ -408,13 +434,13 @@
       "provider_id": "31498167",
       "lane": "bridge",
       "matched_query": "servicevärd",
-      "triage_score": 82.2,
+      "triage_score": 82.1,
       "triage_reasons": [
         "title/role fit 100%",
         "candidate-evidence support 0%",
         "arrangement fit 100%",
         "geography/remote fit 82%",
-        "recency signal 97%"
+        "recency signal 96%"
       ],
       "review_flags": [],
       "id": "c805cc42e3f20447",
@@ -434,13 +460,13 @@
       "provider_id": "1135903",
       "lane": "bridge",
       "matched_query": "data entry remote",
-      "triage_score": 82.2,
+      "triage_score": 82.1,
       "triage_reasons": [
         "title/role fit 100%",
         "candidate-evidence support 38%",
         "arrangement fit 100%",
         "geography/remote fit 68%",
-        "recency signal 26%"
+        "recency signal 24%"
       ],
       "review_flags": [
         "remote-eligibility-needs-verification"
@@ -496,7 +522,7 @@
         "candidate-evidence support 0%",
         "arrangement fit 100%",
         "geography/remote fit 82%",
-        "recency signal 93%"
+        "recency signal 91%"
       ],
       "review_flags": [],
       "id": "9b98e34c009d1cc7",
@@ -515,7 +541,7 @@
       "salary": "",
       "provider_id": "31490511",
       "lane": "adjacent",
-      "matched_query": "projektkoordinator",
+      "matched_query": "project coordinator",
       "triage_score": 81.8,
       "triage_reasons": [
         "title/role fit 100%",
@@ -541,7 +567,7 @@
       "salary": "",
       "provider_id": "31484839",
       "lane": "adjacent",
-      "matched_query": "projektkoordinator",
+      "matched_query": "project coordinator",
       "triage_score": 81.7,
       "triage_reasons": [
         "title/role fit 100%",
@@ -582,6 +608,32 @@
     },
     {
       "source": "platsbanken",
+      "title": "Research Assistant in Computational Toxicology and PBK Modeling",
+      "company": "Sveriges Lantbruksuniversitet",
+      "location": "Uppsala, Uppsala län",
+      "employment_type": "Vanlig anställning",
+      "work_mode": null,
+      "published": "2026-09-24T11:14:43",
+      "deadline": "2026-10-08T23:59:59",
+      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31515245",
+      "salary": "",
+      "provider_id": "31515245",
+      "lane": "core",
+      "matched_query": "research assistant",
+      "triage_score": 80.8,
+      "triage_reasons": [
+        "title/role fit 92%",
+        "candidate-evidence support 38%",
+        "arrangement fit 72%",
+        "geography/remote fit 82%",
+        "recency signal 100%"
+      ],
+      "review_flags": [],
+      "id": "58721b3186ef84b8",
+      "description_excerpt": "Department of Animal Biosciences &nbsp; We are looking for a motivated research assistant to contribute to computational research on chemical exposure during pregnancy. You will join an ongoing project developing a physiologically based kinetic (PBK) model for per- and polyfluoroalkyl substances (PFAS) in pregnant women and the developing fetus. The position offers hands-on experience at the interface of toxicology, quantitative modeling, and human biomonitoring. About the position The main task is to contribute to the development, evaluation, and documentation of a pregnancy–fetus PBK model for PFAS. You will work closely with researchers in computational toxicology and chemical risk assess"
+    },
+    {
+      "source": "platsbanken",
       "title": "Teknisk skribent",
       "company": "Academic Work Sweden AB",
       "location": "Lund, Skåne län",
@@ -594,13 +646,13 @@
       "provider_id": "31487405",
       "lane": "core",
       "matched_query": "skribent",
-      "triage_score": 80.5,
+      "triage_score": 80.4,
       "triage_reasons": [
         "title/role fit 100%",
         "candidate-evidence support 9%",
         "arrangement fit 72%",
         "geography/remote fit 82%",
-        "recency signal 91%"
+        "recency signal 90%"
       ],
       "review_flags": [],
       "id": "bbbeb8042e3ac0e5",
@@ -645,7 +697,7 @@
       "salary": "",
       "provider_id": "31483657",
       "lane": "core",
-      "matched_query": "pressekreterare",
+      "matched_query": "kommunikatör",
       "triage_score": 80.1,
       "triage_reasons": [
         "title/role fit 92%",
@@ -678,7 +730,7 @@
         "candidate-evidence support 9%",
         "arrangement fit 72%",
         "geography/remote fit 82%",
-        "recency signal 79%"
+        "recency signal 77%"
       ],
       "review_flags": [],
       "id": "2b2b37ad020ce347",
@@ -732,7 +784,7 @@
         "candidate-evidence support 38%",
         "arrangement fit 72%",
         "geography/remote fit 82%",
-        "recency signal 77%"
+        "recency signal 76%"
       ],
       "review_flags": [],
       "id": "854384d208fc7564",
@@ -810,7 +862,7 @@
         "candidate-evidence support 57%",
         "arrangement fit 72%",
         "geography/remote fit 100%",
-        "recency signal 93%"
+        "recency signal 91%"
       ],
       "review_flags": [],
       "id": "d4a950022530a81c",
@@ -855,7 +907,7 @@
       "salary": "",
       "provider_id": "31488106",
       "lane": "core",
-      "matched_query": "pressekreterare",
+      "matched_query": "kommunikatör",
       "triage_score": 79.1,
       "triage_reasons": [
         "title/role fit 100%",
@@ -888,7 +940,7 @@
         "candidate-evidence support 0%",
         "arrangement fit 100%",
         "geography/remote fit 68%",
-        "recency signal 73%"
+        "recency signal 71%"
       ],
       "review_flags": [
         "remote-eligibility-needs-verification"
@@ -962,43 +1014,17 @@
       "provider_id": "31449345",
       "lane": "core",
       "matched_query": "research assistant",
-      "triage_score": 78.3,
+      "triage_score": 78.2,
       "triage_reasons": [
         "title/role fit 92%",
         "candidate-evidence support 28%",
         "arrangement fit 72%",
         "geography/remote fit 82%",
-        "recency signal 79%"
+        "recency signal 77%"
       ],
       "review_flags": [],
       "id": "dbc2292324d2ff1f",
       "description_excerpt": "The University of Gothenburg tackles society's challenges with diverse knowledge. 58 000 students and 6800 employees make the university a large and inspiring place to work and study. Strong research and attractive study programmes attract researchers and students from around the world. With new knowledge and new perspectives, the University contributes to a better future. &nbsp; The Institute of Biomedicine is involved in both research and education. In both of these areas, we focus on fundamental knowledge of the living cell – what it consists of, how it works, how its function is directed by the genetic material, and how it interacts with various kinds of micro-organisms. Using this knowl"
-    },
-    {
-      "source": "platsbanken",
-      "title": "Researcher",
-      "company": "Göteborgs Universitet",
-      "location": "Göteborg, Västra Götalands län",
-      "employment_type": "Vanlig anställning",
-      "work_mode": "Arbete på plats",
-      "published": "2026-09-02T14:31:52",
-      "deadline": "2026-09-23T23:59:59",
-      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31429604",
-      "salary": "",
-      "provider_id": "31429604",
-      "lane": "core",
-      "matched_query": "researcher",
-      "triage_score": 78.2,
-      "triage_reasons": [
-        "title/role fit 90%",
-        "candidate-evidence support 38%",
-        "arrangement fit 72%",
-        "geography/remote fit 82%",
-        "recency signal 70%"
-      ],
-      "review_flags": [],
-      "id": "85d6f252e5c1e90f",
-      "description_excerpt": "The University of Gothenburg tackles society’s challenges with diverse knowledge. 58 000 students and 6800 employees make the university a large and inspiring place to work and study. Strong research and attractive study programmes attract researchers and students from around the world. With new knowledge and new perspectives, the University contributes to a better future. The Institute of Biomedicine is involved in both research and education. In both of these areas, we focus on fundamental knowledge of the living cell – what it consists of, how it works, how its function is directed by the genetic material, and how it interacts with various kinds of micro-organisms. Using this knowledge, w"
     },
     {
       "source": "platsbanken",
@@ -1039,7 +1065,7 @@
       "salary": "",
       "provider_id": "31507069",
       "lane": "adjacent",
-      "matched_query": "projektkoordinator",
+      "matched_query": "project coordinator",
       "triage_score": 78.2,
       "triage_reasons": [
         "title/role fit 100%",
@@ -1053,32 +1079,6 @@
       ],
       "id": "32aa1a9250614950",
       "description_excerpt": "Vill du vara med och stärka framtidens kompetensförsörjning? Brinner du för att skapa möten mellan människor? Gillar du att driva projekt, bygga relationer och få saker att hända? Vill du ha ett arbete där ingen vecka är den andra lik och där du samtidigt bidrar till en viktig samhällsutveckling? Då kan rollen som projektkoordinator inom Kompetenskompassen STEM vara rätt för dig. Vi på Handelskammaren Mittsverige söker nu en projektkoordinator med placeringsort Örnsköldsvik som vill vara med och utveckla samverkan mellan utbildning och arbetsliv i Västernorrland. Om oss Handelskammaren Mittsverige är en näringslivsorganisation som arbetar för att stärka företagens förutsättningar i Västernor"
-    },
-    {
-      "source": "platsbanken",
-      "title": "Senior plansamordnare / redaktör",
-      "company": "Centio Consulting Group AB",
-      "location": "Göteborg, Västra Götalands län",
-      "employment_type": "Vanlig anställning",
-      "work_mode": "Arbete på plats",
-      "published": "2026-09-01T14:06:12",
-      "deadline": "2026-09-23T23:59:59",
-      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31424136",
-      "salary": "",
-      "provider_id": "31424136",
-      "lane": "core",
-      "matched_query": "redaktör",
-      "triage_score": 77.9,
-      "triage_reasons": [
-        "title/role fit 100%",
-        "candidate-evidence support 0%",
-        "arrangement fit 72%",
-        "geography/remote fit 82%",
-        "recency signal 69%"
-      ],
-      "review_flags": [],
-      "id": "4fef9ac7a8fdc5c9",
-      "description_excerpt": "Vi söker en senior redaktör/samordnare för vägplaneprocessen till Trafikverket för projektet Väg 168 Ekelöv–Kareby. Detta är ett konsultuppdrag. Stationeringsort är Göteborg. Tjänsten är på cirka 50 % av en heltid. Uppdraget innebär ett nära samarbete med kunden vilket ställer stora krav på flexibilitet och samarbetsförmåga. Uppdraget Uppdraget innebär att arbeta som senior redaktör/samordnare för vägplaneprocessen med färdigställandet av en redan påbörjad vägplan för Väg 168 Ekelöv–Kareby. I rollen ansvarar du för det huvudsakliga arbetet med vägplaneprocessen och har en central samordnande funktion i projektet. Arbetet omfattar bland annat redigering och samordning av planhandlingar, oblig"
     },
     {
       "source": "platsbanken",
@@ -1100,11 +1100,37 @@
         "candidate-evidence support 0%",
         "arrangement fit 100%",
         "geography/remote fit 100%",
-        "recency signal 93%"
+        "recency signal 91%"
       ],
       "review_flags": [],
       "id": "25fdb6b5a021ffcc",
       "description_excerpt": "ISS är ett av världens största tjänsteföretag och i år firar vi 80 år i Sverige! Med över 6500 medarbetare i landet, från norr till söder, levererar vi service som gör skillnad. Vi erbjuder våra kunder allt från städning till teknisk service, mat- och arbetsplatstjänster. Vi skapar arbetsplatser där människor trivs, företag växer och där hållbarhet är en självklarhet – socialt, miljömässigt och affärsmässigt. Våra medarbetare är hjärtat i det vi gör – och avgörande för att våra kunder ska känna sig trygga, sedda – och för att deras arbetsplatser ska blomstra.&amp;nbsp; Vi på ISS söker en engagerad och driven receptionist på deltid ca 50% till ISS kund i Solna. Vill du vara med och leverera s"
+    },
+    {
+      "source": "platsbanken",
+      "title": "Researcher",
+      "company": "Göteborgs Universitet",
+      "location": "Göteborg, Västra Götalands län",
+      "employment_type": "Vanlig anställning",
+      "work_mode": "Arbete på plats",
+      "published": "2026-09-16T15:20:03",
+      "deadline": "2026-10-07T23:59:59",
+      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31485605",
+      "salary": "",
+      "provider_id": "31485605",
+      "lane": "core",
+      "matched_query": "researcher",
+      "triage_score": 77.7,
+      "triage_reasons": [
+        "title/role fit 90%",
+        "candidate-evidence support 9%",
+        "arrangement fit 100%",
+        "geography/remote fit 82%",
+        "recency signal 90%"
+      ],
+      "review_flags": [],
+      "id": "3cf302b9eefd3b58",
+      "description_excerpt": "The University of Gothenburg tackles society’s challenges with diverse knowledge. 58 000 students and 6800 employees make the university a large and inspiring place to work and study. Strong research and attractive study programmes attract researchers and students from around the world. With new knowledge and new perspectives, the University contributes to a better future. The Institute of Biomedicine is involved in both research and education. In both of these areas, we focus on fundamental knowledge of the living cell – what it consists of, how it works, how its function is directed by the genetic material, and how it interacts with various kinds of micro-organisms. Using this knowledge, w"
     },
     {
       "source": "platsbanken",
@@ -1120,13 +1146,13 @@
       "provider_id": "31375246",
       "lane": "core",
       "matched_query": "skribent",
-      "triage_score": 77.1,
+      "triage_score": 77.0,
       "triage_reasons": [
         "title/role fit 100%",
         "candidate-evidence support 0%",
         "arrangement fit 72%",
         "geography/remote fit 82%",
-        "recency signal 51%"
+        "recency signal 50%"
       ],
       "review_flags": [],
       "id": "8d434995b5ee9f9a",
@@ -1232,7 +1258,7 @@
         "candidate-evidence support 76%",
         "arrangement fit 100%",
         "geography/remote fit 68%",
-        "recency signal 94%"
+        "recency signal 93%"
       ],
       "review_flags": [
         "remote-eligibility-needs-verification"
@@ -1322,32 +1348,6 @@
     },
     {
       "source": "platsbanken",
-      "title": "Kommunikatör",
-      "company": "Bjuvs kommun",
-      "location": "Bjuv, Skåne län",
-      "employment_type": "Vanlig anställning",
-      "work_mode": "Arbete på plats",
-      "published": "2026-09-10T09:55:18",
-      "deadline": "2026-10-04T23:59:59",
-      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31459841",
-      "salary": "",
-      "provider_id": "31459841",
-      "lane": "core",
-      "matched_query": "kommunikatör",
-      "triage_score": 75.4,
-      "triage_reasons": [
-        "title/role fit 92%",
-        "candidate-evidence support 9%",
-        "arrangement fit 72%",
-        "geography/remote fit 82%",
-        "recency signal 81%"
-      ],
-      "review_flags": [],
-      "id": "99197b0301b17b74",
-      "description_excerpt": "Du har säkert fått frågan &quot;Vad jobbar du med?&quot;. I Bjuvs kommun ställer vi istället frågan &quot;Vad jobbar du för?&quot; Vi arbetar för utveckling, hållbarhet, jämlikhet och framtiden för att tillsammans forma ett helt samhälle. Vad jobbar du för? Vi söker nu en driven och engagerad kommunikatör som vill vara med och skapa bästa möjliga kommunikation för Bjuvs kommuns invånare, besökare och andra intressenter. Hos oss får du ett spännande och omväxlande kommunikationsjobb som spänner över hela bredden av kommunens verksamheter, från strategiskt kommunikationsarbete till konkreta insatser i vardagen. Som kommunikatör i Bjuvs kommun blir du en del av ett engagerat team som arbetar me"
-    },
-    {
-      "source": "platsbanken",
       "title": "Partnership Coordinator (Volunteer Opportunity)",
       "company": "AGILE GOTHENBURG",
       "location": "Göteborg, Västra Götalands län",
@@ -1374,29 +1374,29 @@
     },
     {
       "source": "platsbanken",
-      "title": "Juniora administratörer inom bostadsrätt och fastighet till HSB Stockholm",
-      "company": "Academic Work Sweden AB",
-      "location": "Solna, Stockholms län",
+      "title": "Kommunikatör",
+      "company": "Bjuvs kommun",
+      "location": "Bjuv, Skåne län",
       "employment_type": "Vanlig anställning",
-      "work_mode": null,
-      "published": "2026-09-23T09:54:40",
-      "deadline": "2027-03-22T23:59:59",
-      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31509727",
+      "work_mode": "Arbete på plats",
+      "published": "2026-09-10T09:55:18",
+      "deadline": "2026-10-04T23:59:59",
+      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31459841",
       "salary": "",
-      "provider_id": "31509727",
-      "lane": "bridge",
-      "matched_query": "administratör deltid",
-      "triage_score": 75.4,
+      "provider_id": "31459841",
+      "lane": "core",
+      "matched_query": "kommunikatör",
+      "triage_score": 75.3,
       "triage_reasons": [
-        "title/role fit 80%",
+        "title/role fit 92%",
         "candidate-evidence support 9%",
-        "arrangement fit 100%",
-        "geography/remote fit 100%",
-        "recency signal 100%"
+        "arrangement fit 72%",
+        "geography/remote fit 82%",
+        "recency signal 80%"
       ],
       "review_flags": [],
-      "id": "4217d08c1918cb80",
-      "description_excerpt": "Vill du skaffa dig värdefull erfarenhet från fastighetsbranschen vid sidan av dina studier? Till HSB Stockholm i Solna söker vi nu tre engagerade studenter som tillsammans vill utgöra kärnan i HSB:s nya studentpool inom bostadsrättsadministration. Här får du en trygg introduktion, ett meriterande extrajobb och en unik inblick i Sveriges ledande bostadsorganisation! Om tjänsten Som en del av HSB:s nya studentpool blir du och dina två poolkollegor en nyckelresurs för att skapa kontinuitet och ge administrativ avlastning åt ordinarie handläggare. Poolen bemannar verksamheten motsvarande 100 % heltid täckt över veckans alla arbetsdagar, där du jobbar cirka 1–2 dagar (ca 13–16 timmar) per vecka e"
+      "id": "99197b0301b17b74",
+      "description_excerpt": "Du har säkert fått frågan &quot;Vad jobbar du med?&quot;. I Bjuvs kommun ställer vi istället frågan &quot;Vad jobbar du för?&quot; Vi arbetar för utveckling, hållbarhet, jämlikhet och framtiden för att tillsammans forma ett helt samhälle. Vad jobbar du för? Vi söker nu en driven och engagerad kommunikatör som vill vara med och skapa bästa möjliga kommunikation för Bjuvs kommuns invånare, besökare och andra intressenter. Hos oss får du ett spännande och omväxlande kommunikationsjobb som spänner över hela bredden av kommunens verksamheter, från strategiskt kommunikationsarbete till konkreta insatser i vardagen. Som kommunikatör i Bjuvs kommun blir du en del av ett engagerat team som arbetar me"
     },
     {
       "source": "platsbanken",
@@ -1452,6 +1452,32 @@
     },
     {
       "source": "platsbanken",
+      "title": "Juniora administratörer inom bostadsrätt och fastighet till HSB Stockholm",
+      "company": "Academic Work Sweden AB",
+      "location": "Solna, Stockholms län",
+      "employment_type": "Vanlig anställning",
+      "work_mode": null,
+      "published": "2026-09-23T09:54:40",
+      "deadline": "2027-03-22T23:59:59",
+      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31509727",
+      "salary": "",
+      "provider_id": "31509727",
+      "lane": "bridge",
+      "matched_query": "administratör deltid",
+      "triage_score": 75.3,
+      "triage_reasons": [
+        "title/role fit 80%",
+        "candidate-evidence support 9%",
+        "arrangement fit 100%",
+        "geography/remote fit 100%",
+        "recency signal 99%"
+      ],
+      "review_flags": [],
+      "id": "4217d08c1918cb80",
+      "description_excerpt": "Vill du skaffa dig värdefull erfarenhet från fastighetsbranschen vid sidan av dina studier? Till HSB Stockholm i Solna söker vi nu tre engagerade studenter som tillsammans vill utgöra kärnan i HSB:s nya studentpool inom bostadsrättsadministration. Här får du en trygg introduktion, ett meriterande extrajobb och en unik inblick i Sveriges ledande bostadsorganisation! Om tjänsten Som en del av HSB:s nya studentpool blir du och dina två poolkollegor en nyckelresurs för att skapa kontinuitet och ge administrativ avlastning åt ordinarie handläggare. Poolen bemannar verksamheten motsvarande 100 % heltid täckt över veckans alla arbetsdagar, där du jobbar cirka 1–2 dagar (ca 13–16 timmar) per vecka e"
+    },
+    {
+      "source": "platsbanken",
       "title": "Teknisk skribent",
       "company": "Professional Galaxy AB",
       "location": "Jönköping, Jönköpings län",
@@ -1475,34 +1501,6 @@
       "review_flags": [],
       "id": "b299de88a066e4bd",
       "description_excerpt": "Professional Galaxy söker dig som är teknisk skribent och som har ett stort intresse för teknik. Du är analytiskt lagd och har lätt för att samarbeta samt skapa förtroende i din omgivning. Du är drivande i ditt arbete, ansvarstagande samt har förmåga att ta egna initiativ. Skall-krav: Examen från Teknikinformatörsutbildning Goda kunskaper i svenska och engelska då dokumentation och kundkontakter förekommer på båda språken. 2-5 års erfarenhet av att arbeta i UPTIME 4 eller likvärdiga verktyg (XML/CMS). Meriterande erfarenheter: Erfarenhet av underhålls-/reparationsinstruktioner Erfarenhet av instruktioner för test och felsökning Erfarenhet av instruktioner för användning av mjukvara Meriteran"
-    },
-    {
-      "source": "remoteok",
-      "title": "Human Resources Coordinator",
-      "company": "Pacific Health Group",
-      "location": "San Diego, San Diego, California, United States",
-      "employment_type": "",
-      "work_mode": "remote",
-      "published": "2026-07-31T22:29:53+00:00",
-      "deadline": "",
-      "url": "https://remoteOK.com/remote-jobs/remote-human-resources-coordinator-pacific-health-group-1135783",
-      "salary": "",
-      "provider_id": "1135783",
-      "lane": "adjacent",
-      "matched_query": "communications coordinator",
-      "triage_score": 75.2,
-      "triage_reasons": [
-        "title/role fit 72%",
-        "candidate-evidence support 94%",
-        "arrangement fit 100%",
-        "geography/remote fit 68%",
-        "recency signal 24%"
-      ],
-      "review_flags": [
-        "remote-eligibility-needs-verification"
-      ],
-      "id": "8edc97b915c51ada",
-      "description_excerpt": "Job Snapshot Location: Remote - California (San Diego or Southern California Preferred) Employment Type: Full-Time Compensation: $28-30 per hour Schedule: Full-Time Work Environment: Remote Reports To: Human Resources Manager About Pacific Health Group At Pacific Health Group, we care deeply about the people and communities we serve. We meet individuals with kindness, respect, and understanding—listening first, honoring each person's journey, and offering support without judgment. Through compassionate, person-centered healthcare, behavioral health services, and social supports, we walk alongside people as they work toward healing, stability, and a healthier, more hopeful life. Our Core Valu"
     },
     {
       "source": "platsbanken",
@@ -1531,30 +1529,32 @@
       "description_excerpt": "Studerar du och vill kombinera det med ett givande extrajobb? Vill du ha en roll där du är den självklara kontaktpunkten på kontoret och ser till att vardagen fungerar för både medarbetare och besökare? Här får du en bred och omväxlande tjänst med mycket ansvar och daglig kontakt med både interna och externa parter. Om tjänsten Det här är ett konsultuppdrag på deltid som pågår till och med januari. Vi söker dig som kan stötta teamet som en extra resurs under utvalda perioder i december och januari, då behovet är som störst. Under hösten erbjuds utbildningstillfällen så att du känner dig trygg och väl förberedd inför uppdraget. Du blir anställd av Bravura och arbetar som konsult hos vår kund."
     },
     {
-      "source": "platsbanken",
-      "title": "Projektkoordinator i ett byggföretag",
-      "company": "Toppreno AB",
-      "location": "Täby, Stockholms län",
-      "employment_type": "Tidsbegränsad anställning",
-      "work_mode": "Arbete på plats",
-      "published": "2026-09-15T18:21:25",
-      "deadline": "2026-09-30T23:59:59",
-      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31481372",
+      "source": "remoteok",
+      "title": "Human Resources Coordinator",
+      "company": "Pacific Health Group",
+      "location": "San Diego, San Diego, California, United States",
+      "employment_type": "",
+      "work_mode": "remote",
+      "published": "2026-07-31T22:29:53+00:00",
+      "deadline": "",
+      "url": "https://remoteOK.com/remote-jobs/remote-human-resources-coordinator-pacific-health-group-1135783",
       "salary": "",
-      "provider_id": "31481372",
+      "provider_id": "1135783",
       "lane": "adjacent",
-      "matched_query": "projektkoordinator",
-      "triage_score": 74.9,
+      "matched_query": "communications coordinator",
+      "triage_score": 75.1,
       "triage_reasons": [
-        "title/role fit 80%",
-        "candidate-evidence support 9%",
+        "title/role fit 72%",
+        "candidate-evidence support 94%",
         "arrangement fit 100%",
-        "geography/remote fit 100%",
-        "recency signal 90%"
+        "geography/remote fit 68%",
+        "recency signal 23%"
       ],
-      "review_flags": [],
-      "id": "2d9164f5c12dce09",
-      "description_excerpt": "Om jobbet Vi söker dig som är i början av din karriär och gillar att ha flera bollar i luften. I rollen ligger ditt fokus på att avlasta VD i det dagliga arbetet samt att vara behjälplig med administration, projektkoordinering och kundkontakter. Här får du utrymme för kreativt arbete samt en del sociala möten med kunder, partners och andra intressenter. Start enligt överenskommelse. Arbetsuppgifter Arbetsuppgifterna för tjänsten är ständigt varierande och passar perfekt för den som gillar att testa på nya saker. Du kommer att sköta allt ifrån att skapa inlägg till sociala medier, uppdatera hemsidan, kontakta nya och befintliga kunder, assistera vid kundmöten och att skapa relevanta mallar oc"
+      "review_flags": [
+        "remote-eligibility-needs-verification"
+      ],
+      "id": "8edc97b915c51ada",
+      "description_excerpt": "Job Snapshot Location: Remote - California (San Diego or Southern California Preferred) Employment Type: Full-Time Compensation: $28-30 per hour Schedule: Full-Time Work Environment: Remote Reports To: Human Resources Manager About Pacific Health Group At Pacific Health Group, we care deeply about the people and communities we serve. We meet individuals with kindness, respect, and understanding—listening first, honoring each person's journey, and offering support without judgment. Through compassionate, person-centered healthcare, behavioral health services, and social supports, we walk alongside people as they work toward healing, stability, and a healthier, more hopeful life. Our Core Valu"
     },
     {
       "source": "platsbanken",
@@ -1610,6 +1610,32 @@
     },
     {
       "source": "platsbanken",
+      "title": "Projektkoordinator i ett byggföretag",
+      "company": "Toppreno AB",
+      "location": "Täby, Stockholms län",
+      "employment_type": "Tidsbegränsad anställning",
+      "work_mode": "Arbete på plats",
+      "published": "2026-09-15T18:21:25",
+      "deadline": "2026-09-30T23:59:59",
+      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31481372",
+      "salary": "",
+      "provider_id": "31481372",
+      "lane": "adjacent",
+      "matched_query": "project coordinator",
+      "triage_score": 74.8,
+      "triage_reasons": [
+        "title/role fit 80%",
+        "candidate-evidence support 9%",
+        "arrangement fit 100%",
+        "geography/remote fit 100%",
+        "recency signal 89%"
+      ],
+      "review_flags": [],
+      "id": "2d9164f5c12dce09",
+      "description_excerpt": "Om jobbet Vi söker dig som är i början av din karriär och gillar att ha flera bollar i luften. I rollen ligger ditt fokus på att avlasta VD i det dagliga arbetet samt att vara behjälplig med administration, projektkoordinering och kundkontakter. Här får du utrymme för kreativt arbete samt en del sociala möten med kunder, partners och andra intressenter. Start enligt överenskommelse. Arbetsuppgifter Arbetsuppgifterna för tjänsten är ständigt varierande och passar perfekt för den som gillar att testa på nya saker. Du kommer att sköta allt ifrån att skapa inlägg till sociala medier, uppdatera hemsidan, kontakta nya och befintliga kunder, assistera vid kundmöten och att skapa relevanta mallar oc"
+    },
+    {
+      "source": "platsbanken",
       "title": "Technical Writer  Engineering-to-Order Projects",
       "company": "Sandvik Aktiebolag",
       "location": "Svedala, Skåne län",
@@ -1636,6 +1662,32 @@
     },
     {
       "source": "platsbanken",
+      "title": "Projektkoordinator till Jobbsprånget",
+      "company": "Academic Work Sweden AB",
+      "location": "Stockholm, Stockholms län",
+      "employment_type": "Vanlig anställning",
+      "work_mode": "Arbete på plats",
+      "published": "2026-09-15T17:52:13",
+      "deadline": "2027-03-14T23:59:59",
+      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31481350",
+      "salary": "",
+      "provider_id": "31481350",
+      "lane": "adjacent",
+      "matched_query": "project coordinator",
+      "triage_score": 73.5,
+      "triage_reasons": [
+        "title/role fit 80%",
+        "candidate-evidence support 19%",
+        "arrangement fit 72%",
+        "geography/remote fit 100%",
+        "recency signal 89%"
+      ],
+      "review_flags": [],
+      "id": "7768be0972806be0",
+      "description_excerpt": "Vill du arbeta i en spännande organisation som gör skillnad i samhället? I den här rollen erbjuds du ett viktigt arbete inom administration och koordinering, med engagerade kollegor. Sök redan idag då urval sker löpande! Om tjänsten Jobbsprånget är en så kallad social entreprenör vars syfte är att hjälpa arbetslösa utrikes födda akademiker till att få jobb hos svenska arbetsgivare. Praktikprogrammet fyller snart 10 år och är störst i Sverige inom området och växer snabbt. Verksamheten spänner över många områden och berör både frågor som näringslivets kompetensförsörjning, svenska myndigheter samt integration- och arbetsmarknadsfrågor. Jobbsprånget består idag av femton medarbetare i Stockhol"
+    },
+    {
+      "source": "platsbanken",
       "title": "Social Media & Content Manager",
       "company": "Hemfrid i Sverige AB",
       "location": "Stockholm, Stockholms län",
@@ -1648,43 +1700,17 @@
       "provider_id": "31492543",
       "lane": "core",
       "matched_query": "content writer",
-      "triage_score": 73.5,
+      "triage_score": 73.4,
       "triage_reasons": [
         "title/role fit 72%",
         "candidate-evidence support 28%",
         "arrangement fit 100%",
         "geography/remote fit 100%",
-        "recency signal 93%"
+        "recency signal 91%"
       ],
       "review_flags": [],
       "id": "a0a47549cd3d05d7",
       "description_excerpt": "Vill du ta ett strategiskt och operativt helhetsansvar för sociala medier och innehåll i en av Nordens mest snabbväxande servicekoncerner? Vi söker en senior Social Media &amp; Content Manager som kan utveckla våra kanaler, skapa engagerande innehåll och förvandla idéer till berättelser som stärker Hemfrids varumärke. Du ansvarar för hela innehållsresan – från strategi och produktion till publicering, uppföljning och optimering. Rollen är en tidsbegränsad anställning om 6 månader - men med goda möjligheter till förlängning. Om Hemfrid &amp; KEYTO Group Hemfrid är Sveriges ledande företag inom hemnära tjänster och är ett centralt bolag inom koncernen KEYTO Group. Koncernen samlar några av Nor"
-    },
-    {
-      "source": "platsbanken",
-      "title": "Projektkoordinator till Jobbsprånget",
-      "company": "Academic Work Sweden AB",
-      "location": "Stockholm, Stockholms län",
-      "employment_type": "Vanlig anställning",
-      "work_mode": "Arbete på plats",
-      "published": "2026-09-15T17:52:13",
-      "deadline": "2027-03-14T23:59:59",
-      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31481350",
-      "salary": "",
-      "provider_id": "31481350",
-      "lane": "adjacent",
-      "matched_query": "projektkoordinator",
-      "triage_score": 73.5,
-      "triage_reasons": [
-        "title/role fit 80%",
-        "candidate-evidence support 19%",
-        "arrangement fit 72%",
-        "geography/remote fit 100%",
-        "recency signal 90%"
-      ],
-      "review_flags": [],
-      "id": "7768be0972806be0",
-      "description_excerpt": "Vill du arbeta i en spännande organisation som gör skillnad i samhället? I den här rollen erbjuds du ett viktigt arbete inom administration och koordinering, med engagerade kollegor. Sök redan idag då urval sker löpande! Om tjänsten Jobbsprånget är en så kallad social entreprenör vars syfte är att hjälpa arbetslösa utrikes födda akademiker till att få jobb hos svenska arbetsgivare. Praktikprogrammet fyller snart 10 år och är störst i Sverige inom området och växer snabbt. Verksamheten spänner över många områden och berör både frågor som näringslivets kompetensförsörjning, svenska myndigheter samt integration- och arbetsmarknadsfrågor. Jobbsprånget består idag av femton medarbetare i Stockhol"
     },
     {
       "source": "platsbanken",
@@ -1725,7 +1751,7 @@
       "salary": "",
       "provider_id": "31502660",
       "lane": "core",
-      "matched_query": "pressekreterare",
+      "matched_query": "skribent",
       "triage_score": 72.7,
       "triage_reasons": [
         "title/role fit 80%",
@@ -1846,32 +1872,6 @@
     },
     {
       "source": "platsbanken",
-      "title": "Content Creator (part-time)",
-      "company": "Done Sweden AB",
-      "location": "Stockholm, Stockholms län",
-      "employment_type": "Behovsanställning",
-      "work_mode": "Arbete på plats",
-      "published": "2026-09-02T17:05:36",
-      "deadline": "2027-03-01T23:59:59",
-      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31430974",
-      "salary": "",
-      "provider_id": "31430974",
-      "lane": "adjacent",
-      "matched_query": "content specialist",
-      "triage_score": 72.4,
-      "triage_reasons": [
-        "title/role fit 72%",
-        "candidate-evidence support 28%",
-        "arrangement fit 100%",
-        "geography/remote fit 100%",
-        "recency signal 71%"
-      ],
-      "review_flags": [],
-      "id": "ff98892ab6b674db",
-      "description_excerpt": "About Done.green Done.green is a fast-growing tech company and a national network for sustainable energy installations within EV charging, home batteries, heat pumps, and more. By digitizing the installation process, Done.green connects retailers, installers, and consumers on one platform. With over 20,000 installations completed and backing from leading investors including Almi Invest, Done.green is among Europe’s fastest-growing startups. Our partners include Tesla, Charge Amps and retailers such as Elbilsvaruhuset and KG Knutsson/Autoexperten. The role This is a broad content role for content creation within text, photo and video. You make product posts, posts when we ship new features, c"
-    },
-    {
-      "source": "platsbanken",
       "title": "Utbildningsadministratör till Komvux - Folkuniversitetet",
       "company": "Folkuniversitetet Stift Kursverksamheten Vid Sto",
       "location": "Göteborg, Västra Götalands län",
@@ -1899,6 +1899,60 @@
     {
       "source": "platsbanken",
       "title": "Kommunikatör",
+      "company": "REGION GOTLAND",
+      "location": "Gotland, Gotlands län",
+      "employment_type": "Vanlig anställning",
+      "work_mode": null,
+      "published": "2026-09-24T00:00:10",
+      "deadline": "2026-10-11T23:59:59",
+      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31513492",
+      "salary": "",
+      "provider_id": "31513492",
+      "lane": "core",
+      "matched_query": "kommunikatör",
+      "triage_score": 72.3,
+      "triage_reasons": [
+        "title/role fit 92%",
+        "candidate-evidence support 9%",
+        "arrangement fit 72%",
+        "geography/remote fit 82%",
+        "recency signal 100%"
+      ],
+      "review_flags": [
+        "licence-requirement-needs-verification"
+      ],
+      "id": "28683b825eaedbde",
+      "description_excerpt": "Välkommen till Gotlands folkhögskola – en plats för utveckling, lärande och skapande. Gotlands folkhögskola har ett uppdrag att bedriva en verksamhet som syftar till att nå de folkbildningsmål som staten fastställt. Dessa är att: • Stödja verksamhet som bidrar till att stärka och utveckla demokratin. • Bidra till att göra det möjligt för en ökad mångfald av människor att påverka sin livssituation och skapa engagemang att delta i samhällsutvecklingen. • Bidra till att utjämna utbildningsklyftor och höja utbildnings- och bildningsnivån i samhället. • Bidra till att bredda intresset för och delaktigheten i kulturlivet. Gotlands folkhögskola finns i Hemse och Fårösund. Folkhögskolan arbetar med "
+    },
+    {
+      "source": "platsbanken",
+      "title": "Content Creator (part-time)",
+      "company": "Done Sweden AB",
+      "location": "Stockholm, Stockholms län",
+      "employment_type": "Behovsanställning",
+      "work_mode": "Arbete på plats",
+      "published": "2026-09-02T17:05:36",
+      "deadline": "2027-03-01T23:59:59",
+      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31430974",
+      "salary": "",
+      "provider_id": "31430974",
+      "lane": "adjacent",
+      "matched_query": "content specialist",
+      "triage_score": 72.3,
+      "triage_reasons": [
+        "title/role fit 72%",
+        "candidate-evidence support 28%",
+        "arrangement fit 100%",
+        "geography/remote fit 100%",
+        "recency signal 70%"
+      ],
+      "review_flags": [],
+      "id": "ff98892ab6b674db",
+      "description_excerpt": "About Done.green Done.green is a fast-growing tech company and a national network for sustainable energy installations within EV charging, home batteries, heat pumps, and more. By digitizing the installation process, Done.green connects retailers, installers, and consumers on one platform. With over 20,000 installations completed and backing from leading investors including Almi Invest, Done.green is among Europe’s fastest-growing startups. Our partners include Tesla, Charge Amps and retailers such as Elbilsvaruhuset and KG Knutsson/Autoexperten. The role This is a broad content role for content creation within text, photo and video. You make product posts, posts when we ship new features, c"
+    },
+    {
+      "source": "platsbanken",
+      "title": "Kommunikatör",
       "company": "Försvarsmakten",
       "location": "Örebro, Örebro län",
       "employment_type": "Vanlig anställning",
@@ -1909,7 +1963,7 @@
       "salary": "",
       "provider_id": "31500635",
       "lane": "core",
-      "matched_query": "pressekreterare",
+      "matched_query": "kommunikatör",
       "triage_score": 72.2,
       "triage_reasons": [
         "title/role fit 92%",
@@ -1938,44 +1992,18 @@
       "salary": "",
       "provider_id": "31486083",
       "lane": "core",
-      "matched_query": "pressekreterare",
-      "triage_score": 72.2,
+      "matched_query": "kommunikatör",
+      "triage_score": 72.1,
       "triage_reasons": [
         "title/role fit 80%",
         "candidate-evidence support 9%",
         "arrangement fit 72%",
         "geography/remote fit 100%",
-        "recency signal 91%"
+        "recency signal 90%"
       ],
       "review_flags": [],
       "id": "8198ea05dbf06872",
       "description_excerpt": "Kommunikatör och webbredaktör till AcadeMedia Om rollen AcadeMedia är ett expansivt och samhällsnyttigt företag med lärande i fokus. Nu söker vi en driven och serviceinriktad webbredaktör och kommunikatör till vår centrala kommunikationsavdelning för en projektanställning på 1 år. Hos oss får du arbeta med såväl intern som extern kommunikation och hantera flera olika system och plattformar, däribland Wordpress, Google och MS365. Vi söker dig som är nyfiken och serviceinriktad, med förmåga att växla mellan olika arbetsuppgifter och prioritera i en händelserik vardag. Du är en vass skribent med god känsla för vad olika målgrupper och kanaler kräver. Hos oss blir du en del av ett erfaret team d"
-    },
-    {
-      "source": "platsbanken",
-      "title": "Projektkoordinator till Energiföretagen",
-      "company": "Bravura Sverige AB",
-      "location": "Stockholm, Stockholms län",
-      "employment_type": "Vanlig anställning",
-      "work_mode": "Arbete på plats",
-      "published": "2026-08-27T09:54:04",
-      "deadline": "2027-02-23T23:59:59",
-      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31403506",
-      "salary": "",
-      "provider_id": "31403506",
-      "lane": "adjacent",
-      "matched_query": "projektkoordinator",
-      "triage_score": 72.1,
-      "triage_reasons": [
-        "title/role fit 80%",
-        "candidate-evidence support 0%",
-        "arrangement fit 100%",
-        "geography/remote fit 100%",
-        "recency signal 61%"
-      ],
-      "review_flags": [],
-      "id": "f644a4d68330739e",
-      "description_excerpt": "Studerar du och söker ett deltidsjobb vid sidan av studierna? Är du dessutom en strukturerad och lösningsorienterad person som vill utvecklas inom projektkoordinering och administration? Då kan det här vara en tjänst för dig! Vi söker dig som vill spela en viktig roll i en branschorganisation som arbetar för att utveckla energibranschen. Det här är ett uppdrag på deltid med start omgående. Om tjänsten Det här är ett konsultuppdrag på deltid som varar till juni 2027. Du blir anställd av Bravura och arbetar som konsult hos Energiföretagen. Om företaget Energiföretagen Sverige är en branschorganisation som samlar företag som producerar, distribuerar, handlar med och lagrar energi. Deras medlemm"
     },
     {
       "source": "platsbanken",
@@ -2079,32 +2107,6 @@
       ],
       "review_flags": [],
       "id": "5c8888800ffc0986",
-      "description_excerpt": "Stockholm, Sweden Switchboard/Workplace Support Coordinator Role summary As a Switchboard/Workplace Support Coordinator, you will play a key role in delivering workplace services and support to employees, visitors, and stakeholders. Acting as a primary point of contact, you will manage a wide range of workplace-related services including customer service, switchboard operations, issue management, administrative support, and workplace systems. The role requires a proactive and service-oriented mindset, ensuring that inquiries, requests, and incidents are handled efficiently and professionally. You will collaborate with internal and external stakeholders to enhance the workplace experience and"
-    },
-    {
-      "source": "platsbanken",
-      "title": "Switchboard/Workplace support Coordinator Fixed position",
-      "company": "CBRE GWS Sweden AB",
-      "location": "Stockholm, Stockholms län",
-      "employment_type": "Vanlig anställning",
-      "work_mode": "Arbete på plats",
-      "published": "2026-09-18T11:35:31",
-      "deadline": "2026-10-16T23:59:59",
-      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31493838",
-      "salary": "",
-      "provider_id": "31493838",
-      "lane": "bridge",
-      "matched_query": "data entry remote",
-      "triage_score": 72.1,
-      "triage_reasons": [
-        "title/role fit 72%",
-        "candidate-evidence support 19%",
-        "arrangement fit 100%",
-        "geography/remote fit 100%",
-        "recency signal 93%"
-      ],
-      "review_flags": [],
-      "id": "7bb19c050b36a5da",
       "description_excerpt": "Stockholm, Sweden Switchboard/Workplace Support Coordinator Role summary As a Switchboard/Workplace Support Coordinator, you will play a key role in delivering workplace services and support to employees, visitors, and stakeholders. Acting as a primary point of contact, you will manage a wide range of workplace-related services including customer service, switchboard operations, issue management, administrative support, and workplace systems. The role requires a proactive and service-oriented mindset, ensuring that inquiries, requests, and incidents are handled efficiently and professionally. You will collaborate with internal and external stakeholders to enhance the workplace experience and"
     }
   ]
