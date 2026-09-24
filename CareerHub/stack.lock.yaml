@@ -2,7 +2,7 @@ schema_version: "1.0"
 stack_id: careerhub
 instance_id: weronika-perez-borjas
 engine_repository: Motherpher/CareerHubZero
-engine_version: 0.2.4-alpha
+engine_version: 0.2.5-alpha
 alignment: blocked
 blockers:
   - CareerHub/src/careerhub
