@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T11:24:04.835787+00:00",
+  "generated_at": "2026-09-30T11:12:08.100568+00:00",
   "count": 80,
   "jobs": [
     {
@@ -8,7 +8,7 @@
       "company": "H & M Hennes & Mauritz GBC AB",
       "location": "Stockholm, Stockholms län",
       "employment_type": "Tidsbegränsad anställning",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-08-31T12:01:10",
       "deadline": "2026-09-30T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31417247",
@@ -22,7 +22,7 @@
         "candidate-evidence support 76%",
         "arrangement fit 100%",
         "geography/remote fit 100%",
-        "recency signal 60%"
+        "recency signal 59%"
       ],
       "review_flags": [],
       "id": "4ab816e3062d736d",
@@ -34,7 +34,7 @@
       "company": "Lovable Labs Sweden AB",
       "location": "Stockholm, Stockholms län",
       "employment_type": "Tillsvidareanställning (inkl. eventuell provanställning)",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-09-17T21:08:40",
       "deadline": "2027-02-17T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31491509",
@@ -42,13 +42,13 @@
       "provider_id": "31491509",
       "lane": "core",
       "matched_query": "communications NGO",
-      "triage_score": 94.2,
+      "triage_score": 94.1,
       "triage_reasons": [
         "title/role fit 100%",
         "candidate-evidence support 85%",
         "arrangement fit 72%",
         "geography/remote fit 100%",
-        "recency signal 84%"
+        "recency signal 83%"
       ],
       "review_flags": [],
       "id": "f692b21c9192771f",
@@ -60,21 +60,21 @@
       "company": "Sveriges Lantbruksuniversitet",
       "location": "Uppsala, Uppsala län",
       "employment_type": "Vanlig anställning",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-09-18T15:56:12",
       "deadline": "2026-10-09T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31496388",
       "salary": "",
       "provider_id": "31496388",
       "lane": "adjacent",
-      "matched_query": "communications coordinator",
-      "triage_score": 88.7,
+      "matched_query": "research coordinator",
+      "triage_score": 88.6,
       "triage_reasons": [
         "title/role fit 100%",
         "candidate-evidence support 47%",
         "arrangement fit 100%",
         "geography/remote fit 82%",
-        "recency signal 86%"
+        "recency signal 84%"
       ],
       "review_flags": [],
       "id": "dfcbcef0211c87fe",
@@ -94,13 +94,13 @@
       "provider_id": "1136066",
       "lane": "bridge",
       "matched_query": "customer support remote",
-      "triage_score": 88.6,
+      "triage_score": 88.5,
       "triage_reasons": [
         "title/role fit 100%",
         "candidate-evidence support 57%",
         "arrangement fit 100%",
         "geography/remote fit 95%",
-        "recency signal 17%"
+        "recency signal 16%"
       ],
       "review_flags": [],
       "id": "066efc7f9f1f5193",
@@ -120,13 +120,13 @@
       "provider_id": "31518421",
       "lane": "adjacent",
       "matched_query": "project coordinator",
-      "triage_score": 87.7,
+      "triage_score": 87.6,
       "triage_reasons": [
         "title/role fit 100%",
         "candidate-evidence support 38%",
         "arrangement fit 100%",
         "geography/remote fit 82%",
-        "recency signal 94%"
+        "recency signal 93%"
       ],
       "review_flags": [],
       "id": "1cc0eab55f1c5200",
@@ -152,7 +152,7 @@
         "candidate-evidence support 19%",
         "arrangement fit 100%",
         "geography/remote fit 100%",
-        "recency signal 90%"
+        "recency signal 89%"
       ],
       "review_flags": [],
       "id": "c3b7d26a924e3ec2",
@@ -172,13 +172,13 @@
       "provider_id": "31515529",
       "lane": "core",
       "matched_query": "pressekreterare",
-      "triage_score": 86.3,
+      "triage_score": 86.2,
       "triage_reasons": [
         "title/role fit 100%",
         "candidate-evidence support 28%",
         "arrangement fit 100%",
         "geography/remote fit 82%",
-        "recency signal 94%"
+        "recency signal 93%"
       ],
       "review_flags": [],
       "id": "172c039dec624895",
@@ -198,13 +198,13 @@
       "provider_id": "31507714",
       "lane": "core",
       "matched_query": "kommunikatör",
-      "triage_score": 86.0,
+      "triage_score": 85.9,
       "triage_reasons": [
         "title/role fit 100%",
         "candidate-evidence support 9%",
         "arrangement fit 100%",
         "geography/remote fit 100%",
-        "recency signal 91%"
+        "recency signal 90%"
       ],
       "review_flags": [],
       "id": "906666be4b086262",
@@ -212,11 +212,37 @@
     },
     {
       "source": "platsbanken",
+      "title": "Postdoctoral researcher in Human Work Science",
+      "company": "Luleå Tekniska Universitet",
+      "location": "Luleå, Norrbottens län",
+      "employment_type": "Vanlig anställning",
+      "work_mode": null,
+      "published": "2026-09-23T13:00:05",
+      "deadline": "2026-10-27T23:59:59",
+      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31511066",
+      "salary": "",
+      "provider_id": "31511066",
+      "lane": "core",
+      "matched_query": "researcher",
+      "triage_score": 84.7,
+      "triage_reasons": [
+        "title/role fit 100%",
+        "candidate-evidence support 38%",
+        "arrangement fit 72%",
+        "geography/remote fit 82%",
+        "recency signal 91%"
+      ],
+      "review_flags": [],
+      "id": "0140d2d3ced2a473",
+      "description_excerpt": "Do you want to develop your research and teaching in an environment where collaboration with industry and society is a natural part of the work? With us, you will collaborate with dedicated colleagues, have access to modern research infrastructure, and enjoy strong opportunities to attract external funding. You will have the space to make a real difference for your students, your research, and society at large. The research subject Human Work Science at Luleå University of Technology is seeking a postdoctoral researcher to join an engaging research environment focused on the work environment, advanced technology and sustainable societal development. The successful candidate will work in rese"
+    },
+    {
+      "source": "platsbanken",
       "title": "Grävande journalist (extrajobb)",
       "company": "Cigarrklubben CK Sverige AB",
       "location": "Stockholm, Stockholms län",
       "employment_type": "Behovsanställning",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-09-02T11:12:20",
       "deadline": "2026-12-31T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31428095",
@@ -256,13 +282,41 @@
         "candidate-evidence support 19%",
         "arrangement fit 100%",
         "geography/remote fit 100%",
-        "recency signal 100%"
+        "recency signal 99%"
       ],
       "review_flags": [
         "security-requirement-needs-verification"
       ],
       "id": "c97ebbafd8f185ae",
       "description_excerpt": "Vill du arbeta nära myndighetsledningen i en av Sveriges mest samhällsviktiga myndigheter? Har du erfarenhet av kvalificerat pressarbete på hög nivå och trivs i komplexa miljöer där tempot är högt, frågorna viktiga och förtroendet avgörande? Då kan det här vara rollen för dig. Svenska kraftnät har en central roll i energiomställningen och ansvarar för att Sveriges transmissionsnät för el är säkert, robust och utvecklas för framtiden. Samtidigt genomgår myndigheten ett omfattande förändringsarbete med en ny organisation inom GD-staben och kommunikationsområdet. Nu söker vi en erfaren pressekreterare som vill bidra till att utveckla och stärka myndighetens press- och mediearbete. Om tjänsten S"
+    },
+    {
+      "source": "platsbanken",
+      "title": "SiS söker erfaren pressekreterare",
+      "company": "Statens Institutionsstyrelse",
+      "location": "Solna, Stockholms län",
+      "employment_type": "Vanlig anställning",
+      "work_mode": null,
+      "published": "2026-09-30T09:18:53",
+      "deadline": "2026-10-13T23:59:59",
+      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31535073",
+      "salary": "",
+      "provider_id": "31535073",
+      "lane": "core",
+      "matched_query": "pressekreterare",
+      "triage_score": 83.8,
+      "triage_reasons": [
+        "title/role fit 100%",
+        "candidate-evidence support 19%",
+        "arrangement fit 100%",
+        "geography/remote fit 100%",
+        "recency signal 100%"
+      ],
+      "review_flags": [
+        "licence-requirement-needs-verification"
+      ],
+      "id": "e34c95d63b3f44a8",
+      "description_excerpt": "Statens institutionsstyrelse, SiS, är en myndighet som ansvarar för individuellt anpassad tvångsvård för ungdomar med komplex psykosocial problematik och för vuxna med missbruk. SiS verkställer även sluten ungdomsvård. Det gör vi på ungdomshem och hem för vuxna med missbruk, över hela landet. Hos oss på SiS blir ditt arbetsliv en spännande utmaning. Oavsett var i vår organisation du arbetar, eller vilken tjänst du har, hjälper du till att skapa livsviktig förändring. På huvudkontoret i Solna Business Park är vi ca 500 medarbetare och tillsammans arbetar vi för att stötta och utveckla myndigheten med ca 5000 medarbetare. &nbsp; Vill du vara med och utveckla och stärka pressarbetet i en myndig"
     },
     {
       "source": "platsbanken",
@@ -278,13 +332,13 @@
       "provider_id": "31507756",
       "lane": "core",
       "matched_query": "kommunikatör",
-      "triage_score": 83.2,
+      "triage_score": 83.1,
       "triage_reasons": [
         "title/role fit 100%",
         "candidate-evidence support 9%",
         "arrangement fit 72%",
         "geography/remote fit 100%",
-        "recency signal 91%"
+        "recency signal 90%"
       ],
       "review_flags": [],
       "id": "41d79eb9c71d67e2",
@@ -292,11 +346,37 @@
     },
     {
       "source": "platsbanken",
+      "title": "Corporate Communications Specialist – Change & Internal communications",
+      "company": "AFRY AB",
+      "location": "Solna, Stockholms län",
+      "employment_type": "Vanlig anställning",
+      "work_mode": null,
+      "published": "2026-09-30T10:05:18",
+      "deadline": "2026-11-29T23:59:59",
+      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31535422",
+      "salary": "",
+      "provider_id": "31535422",
+      "lane": "core",
+      "matched_query": "communications NGO",
+      "triage_score": 82.4,
+      "triage_reasons": [
+        "title/role fit 88%",
+        "candidate-evidence support 28%",
+        "arrangement fit 100%",
+        "geography/remote fit 100%",
+        "recency signal 100%"
+      ],
+      "review_flags": [],
+      "id": "6e3b6c444dfe4639",
+      "description_excerpt": "Company Description AFRY provides engineering, project management, and advisory services that enable the energy and industrial transition and strengthen resilience in society. With 18,000 experts worldwide, we combine a global reach with local insights and deep sector knowledge to make a lasting impact for generations to come. Our shared principles - Results driven, Client Centric, Empowering and Accountable - guide us in how we work,&#xa0;grow&#xa0;and succeed together. Job Description We are looking for a Corporate Communications Specialist with a focus on change and internal communications. You will report to the Head of Corporate Communications, based in Solna, Sweden, and be part of an "
+    },
+    {
+      "source": "platsbanken",
       "title": "Product and Technical Communications",
       "company": "Lovable Labs Sweden AB",
       "location": "Stockholm, Stockholms län",
       "employment_type": "Tillsvidareanställning (inkl. eventuell provanställning)",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-09-17T21:17:00",
       "deadline": "2027-02-17T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31491531",
@@ -310,7 +390,7 @@
         "candidate-evidence support 76%",
         "arrangement fit 72%",
         "geography/remote fit 100%",
-        "recency signal 84%"
+        "recency signal 83%"
       ],
       "review_flags": [],
       "id": "2993b0c1a0438251",
@@ -322,7 +402,7 @@
       "company": "REGION KRONOBERG",
       "location": "Växjö, Kronobergs län",
       "employment_type": "Vanlig anställning",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-09-21T01:35:21",
       "deadline": "2026-10-05T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31498167",
@@ -336,7 +416,7 @@
         "candidate-evidence support 0%",
         "arrangement fit 100%",
         "geography/remote fit 82%",
-        "recency signal 89%"
+        "recency signal 87%"
       ],
       "review_flags": [],
       "id": "c805cc42e3f20447",
@@ -362,7 +442,7 @@
         "candidate-evidence support 38%",
         "arrangement fit 100%",
         "geography/remote fit 68%",
-        "recency signal 17%"
+        "recency signal 16%"
       ],
       "review_flags": [
         "remote-eligibility-needs-verification"
@@ -376,7 +456,7 @@
       "company": "Motorrad Nordic AB",
       "location": "Stockholm, Stockholms län",
       "employment_type": "Behovsanställning",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-09-16T11:16:55",
       "deadline": "2026-10-16T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31483440",
@@ -404,7 +484,7 @@
       "company": "Performiq AB",
       "location": "Örebro, Örebro län",
       "employment_type": "Vanlig anställning",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-09-18T08:56:34",
       "deadline": "2026-10-17T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31492266",
@@ -412,13 +492,13 @@
       "provider_id": "31492266",
       "lane": "bridge",
       "matched_query": "administratör deltid",
-      "triage_score": 81.5,
+      "triage_score": 81.4,
       "triage_reasons": [
         "title/role fit 100%",
         "candidate-evidence support 0%",
         "arrangement fit 100%",
         "geography/remote fit 82%",
-        "recency signal 84%"
+        "recency signal 83%"
       ],
       "review_flags": [],
       "id": "9b98e34c009d1cc7",
@@ -438,13 +518,13 @@
       "provider_id": "31490511",
       "lane": "adjacent",
       "matched_query": "projektkoordinator",
-      "triage_score": 81.4,
+      "triage_score": 81.3,
       "triage_reasons": [
         "title/role fit 100%",
         "candidate-evidence support 0%",
         "arrangement fit 72%",
         "geography/remote fit 100%",
-        "recency signal 84%"
+        "recency signal 83%"
       ],
       "review_flags": [],
       "id": "3667109f6db2f4e3",
@@ -456,7 +536,7 @@
       "company": "Lynqa AB",
       "location": "Stockholm, Stockholms län",
       "employment_type": "Behovsanställning",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-09-16T14:00:25",
       "deadline": "2027-03-15T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31484839",
@@ -470,7 +550,7 @@
         "candidate-evidence support 0%",
         "arrangement fit 72%",
         "geography/remote fit 100%",
-        "recency signal 83%"
+        "recency signal 81%"
       ],
       "review_flags": [],
       "id": "45b7ffeb581f2a0f",
@@ -482,7 +562,7 @@
       "company": "Letsgig AB",
       "location": "Gävle, Gävleborgs län",
       "employment_type": "Behovsanställning",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-09-10T15:15:38",
       "deadline": "2027-03-09T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31462558",
@@ -490,13 +570,13 @@
       "provider_id": "31462558",
       "lane": "core",
       "matched_query": "kommunikatör",
-      "triage_score": 81.0,
+      "triage_score": 80.9,
       "triage_reasons": [
         "title/role fit 100%",
         "candidate-evidence support 0%",
         "arrangement fit 100%",
         "geography/remote fit 82%",
-        "recency signal 74%"
+        "recency signal 73%"
       ],
       "review_flags": [],
       "id": "5df85477493045e2",
@@ -516,13 +596,13 @@
       "provider_id": "31531156",
       "lane": "core",
       "matched_query": "skribent",
-      "triage_score": 80.6,
+      "triage_score": 80.5,
       "triage_reasons": [
         "title/role fit 92%",
         "candidate-evidence support 19%",
         "arrangement fit 100%",
         "geography/remote fit 82%",
-        "recency signal 100%"
+        "recency signal 99%"
       ],
       "review_flags": [],
       "id": "f7e45bbe5909c520",
@@ -534,7 +614,7 @@
       "company": "Academic Work Sweden AB",
       "location": "Lund, Skåne län",
       "employment_type": "Vanlig anställning",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-09-17T09:12:32",
       "deadline": "2027-03-16T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31487405",
@@ -542,43 +622,17 @@
       "provider_id": "31487405",
       "lane": "core",
       "matched_query": "skribent",
-      "triage_score": 80.1,
+      "triage_score": 80.0,
       "triage_reasons": [
         "title/role fit 100%",
         "candidate-evidence support 9%",
         "arrangement fit 72%",
         "geography/remote fit 82%",
-        "recency signal 83%"
+        "recency signal 81%"
       ],
       "review_flags": [],
       "id": "bbbeb8042e3ac0e5",
       "description_excerpt": "Vill du kombinera ditt teknikintresse med din förmåga att göra komplex information tydlig och användbar? Vi söker nu en teknikinformatör till ett spännande konsultuppdrag där du får arbeta i skärningspunkten mellan teknik, kommunikation och digitalisering. Här får du möjlighet att ta stort ansvar, arbeta med varierande projekt och bidra till utvecklingen av framtidens tekniska information. Om tjänsten Som teknikinformatör kommer du att arbeta med att samla in, analysera och strukturera teknisk information och omvandla den till tydlig och användarvänlig dokumentation. Du arbetar i varierande projekt och samarbetar med olika kompetenser för att förstå både tekniken och användarnas behov. Rolle"
-    },
-    {
-      "source": "platsbanken",
-      "title": "Kommunikatör",
-      "company": "Hylte kommun",
-      "location": "Hylte, Hallands län",
-      "employment_type": "Vanlig anställning",
-      "work_mode": "Arbete på plats",
-      "published": "2026-09-16T11:43:01",
-      "deadline": "2026-09-30T23:59:59",
-      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31483657",
-      "salary": "",
-      "provider_id": "31483657",
-      "lane": "core",
-      "matched_query": "kommunikatör",
-      "triage_score": 79.7,
-      "triage_reasons": [
-        "title/role fit 92%",
-        "candidate-evidence support 19%",
-        "arrangement fit 100%",
-        "geography/remote fit 82%",
-        "recency signal 83%"
-      ],
-      "review_flags": [],
-      "id": "f9623d738d033907",
-      "description_excerpt": "Välkommen till den lilla och styrkebaserade kommunen med stora möjligheter! Här har du chansen att bidra med samhällsviktiga tjänster, till de vi är till för, tillsammans med dina kollegor. Vi utgår ifrån friskfaktorer och har ett styrkebaserat förhållningssätt som fokuserar på människors samt organisationens styrkor. Det är också det vi kommunicerar och ger återkoppling på. Du ges hållbara arbetsvillkor, förutsättningar att växa och bidra till det kollegiala lärandet. Vi vägleds av utvecklingskraft, stolthet och medmänsklighet och det förväntar vi oss att du också gör. Om verksamheten Kommunledningsförvaltningen är kommunstyrelsens stöd- och stabsförvaltning med ansvar för flera kommunöverg"
     },
     {
       "source": "platsbanken",
@@ -610,29 +664,29 @@
     },
     {
       "source": "platsbanken",
-      "title": "Communications Specialist to automotive company!",
-      "company": "Perido AB",
-      "location": "Stockholm, Stockholms län",
-      "employment_type": "Tidsbegränsad anställning",
+      "title": "Kommunikatör",
+      "company": "Hylte kommun",
+      "location": "Hylte, Hallands län",
+      "employment_type": "Vanlig anställning",
       "work_mode": null,
-      "published": "2026-09-25T18:35:40",
-      "deadline": "2026-10-25T23:59:59",
-      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31523394",
+      "published": "2026-09-16T11:43:01",
+      "deadline": "2026-09-30T23:59:59",
+      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31483657",
       "salary": "",
-      "provider_id": "31523394",
+      "provider_id": "31483657",
       "lane": "core",
-      "matched_query": "communications NGO",
-      "triage_score": 79.5,
+      "matched_query": "kommunikatör",
+      "triage_score": 79.6,
       "triage_reasons": [
-        "title/role fit 80%",
-        "candidate-evidence support 38%",
+        "title/role fit 92%",
+        "candidate-evidence support 19%",
         "arrangement fit 100%",
-        "geography/remote fit 100%",
-        "recency signal 96%"
+        "geography/remote fit 82%",
+        "recency signal 81%"
       ],
       "review_flags": [],
-      "id": "f3581123ea37bb56",
-      "description_excerpt": "Are you a talented communicator with a passion for driving employee engagement and crafting impactful content? Do you excel at strategic communication and enjoy working closely with dynamic marketing and communications teams? If so, we have the perfect opportunity for you! About the position Perido is looking for a Communications Specialist for our client, an automotive company. In this position, you will be in charge of leading internal communication activities, producing high-quality content that engages employees and other stakeholders, and supporting brand recognition. You will work in close connection with the Corporate Communications (CC-department) and Marketing Communications (CM-dep"
+      "id": "f9623d738d033907",
+      "description_excerpt": "Välkommen till den lilla och styrkebaserade kommunen med stora möjligheter! Här har du chansen att bidra med samhällsviktiga tjänster, till de vi är till för, tillsammans med dina kollegor. Vi utgår ifrån friskfaktorer och har ett styrkebaserat förhållningssätt som fokuserar på människors samt organisationens styrkor. Det är också det vi kommunicerar och ger återkoppling på. Du ges hållbara arbetsvillkor, förutsättningar att växa och bidra till det kollegiala lärandet. Vi vägleds av utvecklingskraft, stolthet och medmänsklighet och det förväntar vi oss att du också gör. Om verksamheten Kommunledningsförvaltningen är kommunstyrelsens stöd- och stabsförvaltning med ansvar för flera kommunöverg"
     },
     {
       "source": "platsbanken",
@@ -662,11 +716,37 @@
     },
     {
       "source": "platsbanken",
+      "title": "Communications Specialist to automotive company!",
+      "company": "Perido AB",
+      "location": "Stockholm, Stockholms län",
+      "employment_type": "Tidsbegränsad anställning",
+      "work_mode": null,
+      "published": "2026-09-25T18:35:40",
+      "deadline": "2026-10-25T23:59:59",
+      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31523394",
+      "salary": "",
+      "provider_id": "31523394",
+      "lane": "core",
+      "matched_query": "communications NGO",
+      "triage_score": 79.4,
+      "triage_reasons": [
+        "title/role fit 80%",
+        "candidate-evidence support 38%",
+        "arrangement fit 100%",
+        "geography/remote fit 100%",
+        "recency signal 94%"
+      ],
+      "review_flags": [],
+      "id": "f3581123ea37bb56",
+      "description_excerpt": "Are you a talented communicator with a passion for driving employee engagement and crafting impactful content? Do you excel at strategic communication and enjoy working closely with dynamic marketing and communications teams? If so, we have the perfect opportunity for you! About the position Perido is looking for a Communications Specialist for our client, an automotive company. In this position, you will be in charge of leading internal communication activities, producing high-quality content that engages employees and other stakeholders, and supporting brand recognition. You will work in close connection with the Corporate Communications (CC-department) and Marketing Communications (CM-dep"
+    },
+    {
+      "source": "platsbanken",
       "title": "Projektledare och projektkoordinator i Umeå",
       "company": "Academic Work Sweden AB",
       "location": "Umeå, Västerbottens län",
       "employment_type": "Vanlig anställning",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-09-08T09:07:36",
       "deadline": "2027-03-07T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31449188",
@@ -674,13 +754,13 @@
       "provider_id": "31449188",
       "lane": "adjacent",
       "matched_query": "projektkoordinator",
-      "triage_score": 79.4,
+      "triage_score": 79.3,
       "triage_reasons": [
         "title/role fit 100%",
         "candidate-evidence support 9%",
         "arrangement fit 72%",
         "geography/remote fit 82%",
-        "recency signal 70%"
+        "recency signal 69%"
       ],
       "review_flags": [],
       "id": "2b2b37ad020ce347",
@@ -692,7 +772,7 @@
       "company": "Handelshögskolan i Stockholm",
       "location": "Stockholm, Stockholms län",
       "employment_type": "Vanlig anställning",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-09-01T15:05:27",
       "deadline": "2026-10-01T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31424812",
@@ -700,13 +780,13 @@
       "provider_id": "31424812",
       "lane": "core",
       "matched_query": "research assistant",
-      "triage_score": 79.0,
+      "triage_score": 78.9,
       "triage_reasons": [
         "title/role fit 72%",
         "candidate-evidence support 76%",
         "arrangement fit 100%",
         "geography/remote fit 100%",
-        "recency signal 61%"
+        "recency signal 60%"
       ],
       "review_flags": [],
       "id": "47ddfa2728c1846a",
@@ -718,7 +798,7 @@
       "company": "Lovable Labs Sweden AB",
       "location": "Stockholm, Stockholms län",
       "employment_type": "Tillsvidareanställning (inkl. eventuell provanställning)",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-09-17T21:13:05",
       "deadline": "2027-02-17T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31491517",
@@ -726,13 +806,13 @@
       "provider_id": "31491517",
       "lane": "core",
       "matched_query": "communications NGO",
-      "triage_score": 78.9,
+      "triage_score": 78.8,
       "triage_reasons": [
         "title/role fit 80%",
         "candidate-evidence support 57%",
         "arrangement fit 72%",
         "geography/remote fit 100%",
-        "recency signal 84%"
+        "recency signal 83%"
       ],
       "review_flags": [],
       "id": "d4a950022530a81c",
@@ -744,7 +824,7 @@
       "company": "GÖTEBORGS KOMMUN",
       "location": "Göteborg, Västra Götalands län",
       "employment_type": "Vanlig anställning",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-09-17T10:35:35",
       "deadline": "2026-10-08T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31488106",
@@ -758,39 +838,11 @@
         "candidate-evidence support 0%",
         "arrangement fit 72%",
         "geography/remote fit 82%",
-        "recency signal 83%"
+        "recency signal 81%"
       ],
       "review_flags": [],
       "id": "4b137acd1735f752",
       "description_excerpt": "Arbetsuppgifter Kommunikationsenhetens uppdrag är att leda, samordna och utveckla förvaltningens interna och externa kommunikation. Enheten stödjer verksamheterna i att planera, genomföra och följa upp kommunikationsinsatser samt säkerställer en samordnad och ändamålsenlig kommunikation. Uppdraget omfattar såväl strategiskt som operativt kommunikationsarbete. Anställningen är på ett år med eventuell förlängning. Vi söker nu en erfaren kommunikatör med pedagogisk inriktning som brinner för hållbarhet, kretslopp och återbruk. Uppdraget är att synliggöra och skapa uppmärksamhet kring våra kretsloppsparker, med fokus på den nya kretsloppsparken i Högsbo som öppnar i januari 2027. Du kommer att i"
-    },
-    {
-      "source": "remoteok",
-      "title": "Customer Support & Success Specialist",
-      "company": "Warehance",
-      "location": "Remote",
-      "employment_type": "",
-      "work_mode": "remote",
-      "published": "2026-09-03T19:12:26+00:00",
-      "deadline": "",
-      "url": "https://remoteOK.com/remote-jobs/remote-customer-support-success-specialist-warehance-1137302",
-      "salary": "50000 - 70000",
-      "provider_id": "1137302",
-      "lane": "bridge",
-      "matched_query": "customer support remote",
-      "triage_score": 78.4,
-      "triage_reasons": [
-        "title/role fit 100%",
-        "candidate-evidence support 0%",
-        "arrangement fit 100%",
-        "geography/remote fit 68%",
-        "recency signal 64%"
-      ],
-      "review_flags": [
-        "remote-eligibility-needs-verification"
-      ],
-      "id": "b229c41a38011195",
-      "description_excerpt": "Customer Success &amp; Support Specialist Warehance helps businesses manage orders, inventory, shipping, and fulfillment. We’re looking for someone who is good with people, sharp with details, and enjoys solving problems . You’ll work directly with customers, investigate issues, answer technical questions, and help them run their operations. We care about getting the answer right and seeing problems through. What You’ll Do Solve customer problems involving software, warehousing, and shipping Investigate root causes and explain solutions clearly Help customers get more out of Warehance Work with product and engineering to resolve issues Own problems from the first question through resolution "
     },
     {
       "source": "platsbanken",
@@ -812,13 +864,67 @@
         "candidate-evidence support 19%",
         "arrangement fit 72%",
         "geography/remote fit 82%",
-        "recency signal 100%"
+        "recency signal 99%"
       ],
       "review_flags": [
         "licence-requirement-needs-verification"
       ],
       "id": "2d23bbe786955f4c",
       "description_excerpt": "Vill du göra journalistik som betyder något på riktigt? Vi söker en journalist till Piteåtidningen som vill komma nära människorna i vårt område, förstå det som händer och granska det som påverkar deras vardag. Hos oss får du möjlighet att både vara först när nyheten händer och att ta dig tiden att gå på djupet. Vi vill avslöja det som inte syns vid en första anblick och följa upp när andra har gått vidare. Bli vår kollega Som journalist på PT blir du en del av en redaktion som tror på den nära lokaljournalistiken. Vi är på plats, möter människor och försöker förstå vårt område – inte bara rapportera om det. Vi söker dig som drivs av att hitta nyheter och berättelser som andra missar. Du kan"
+    },
+    {
+      "source": "platsbanken",
+      "title": "Senior Systems Engineer – Satellite Communications at Ovzon",
+      "company": "Friday Väst AB",
+      "location": "Stockholm, Stockholms län",
+      "employment_type": "Vanlig anställning",
+      "work_mode": null,
+      "published": "2026-09-30T13:08:59",
+      "deadline": "2026-10-31T23:59:59",
+      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31536639",
+      "salary": "",
+      "provider_id": "31536639",
+      "lane": "core",
+      "matched_query": "communications NGO",
+      "triage_score": 78.3,
+      "triage_reasons": [
+        "title/role fit 80%",
+        "candidate-evidence support 47%",
+        "arrangement fit 72%",
+        "geography/remote fit 100%",
+        "recency signal 100%"
+      ],
+      "review_flags": [],
+      "id": "78dd86aed35fa3d3",
+      "description_excerpt": "At Ovzon, you will work with the space-based systems that enable satellite communications when terrestrial infrastructure is insufficient, unavailable or disrupted. The role combines RF engineering and system-level design with requirements engineering, procurement, supplier collaboration and verification. About the role Ovzon develops and delivers integrated mobile satellite communication services. Its communications system includes Ovzon 3, the company’s proprietary geostationary satellite, featuring steerable spot beams and an On-Board Processor that enables communication even when ground infrastructure is limited or unavailable. As a Senior Systems Engineer, you will work at the heart of "
+    },
+    {
+      "source": "remoteok",
+      "title": "Customer Support & Success Specialist",
+      "company": "Warehance",
+      "location": "Remote",
+      "employment_type": "",
+      "work_mode": "remote",
+      "published": "2026-09-03T19:12:26+00:00",
+      "deadline": "",
+      "url": "https://remoteOK.com/remote-jobs/remote-customer-support-success-specialist-warehance-1137302",
+      "salary": "50000 - 70000",
+      "provider_id": "1137302",
+      "lane": "bridge",
+      "matched_query": "customer support remote",
+      "triage_score": 78.3,
+      "triage_reasons": [
+        "title/role fit 100%",
+        "candidate-evidence support 0%",
+        "arrangement fit 100%",
+        "geography/remote fit 68%",
+        "recency signal 63%"
+      ],
+      "review_flags": [
+        "remote-eligibility-needs-verification"
+      ],
+      "id": "b229c41a38011195",
+      "description_excerpt": "Customer Success &amp; Support Specialist Warehance helps businesses manage orders, inventory, shipping, and fulfillment. We’re looking for someone who is good with people, sharp with details, and enjoys solving problems . You’ll work directly with customers, investigate issues, answer technical questions, and help them run their operations. We care about getting the answer right and seeing problems through. What You’ll Do Solve customer problems involving software, warehousing, and shipping Investigate root causes and explain solutions clearly Help customers get more out of Warehance Work with product and engineering to resolve issues Own problems from the first question through resolution "
     },
     {
       "source": "platsbanken",
@@ -834,17 +940,43 @@
       "provider_id": "31531216",
       "lane": "core",
       "matched_query": "communications NGO",
-      "triage_score": 78.3,
+      "triage_score": 78.2,
       "triage_reasons": [
         "title/role fit 80%",
         "candidate-evidence support 47%",
         "arrangement fit 72%",
         "geography/remote fit 100%",
-        "recency signal 100%"
+        "recency signal 99%"
       ],
       "review_flags": [],
       "id": "3e47b9794585ba6e",
       "description_excerpt": "Would you like to work with advanced communication systems where satellites, terminals, modems, radio systems and ground infrastructure need to operate as one integrated system? We are currently seeking an experienced System Engineer/Architect for one of our clients, offering the opportunity to work with technically complex systems within satellite communications and space systems. The ideal candidate has a technical background in satellite communications or radio communications, combined with the ability to work at system level across areas such as system design, requirements, integration and verification. Our client is a Swedish technology company developing advanced solutions for secure a"
+    },
+    {
+      "source": "platsbanken",
+      "title": "Marketing Specialist – Paid Social & Content",
+      "company": "Keystone Education Group AB",
+      "location": "Stockholm, Stockholms län",
+      "employment_type": "Behovsanställning",
+      "work_mode": null,
+      "published": "2026-09-07T10:25:20",
+      "deadline": "2027-03-06T23:59:59",
+      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31444510",
+      "salary": "",
+      "provider_id": "31444510",
+      "lane": "adjacent",
+      "matched_query": "content specialist",
+      "triage_score": 77.9,
+      "triage_reasons": [
+        "title/role fit 72%",
+        "candidate-evidence support 66%",
+        "arrangement fit 100%",
+        "geography/remote fit 100%",
+        "recency signal 67%"
+      ],
+      "review_flags": [],
+      "id": "e408d1bcdcb909f0",
+      "description_excerpt": "Do you enjoy paid social, creative content and the challenge of finding what makes people stop scrolling, click and convert? Are you curious about what makes one ad perform better than another – and excited by the idea of combining creativity with data-driven marketing? We’re looking for a Marketing Specialist who is fluent in Swedish, with a focus on paid social and content to help us create digital campaigns that perform – for both our own brands and our clients. This is a hands-on role for someone who enjoys working at the intersection of performance marketing, social media, creative production and campaign optimization. You like testing new ideas, creating engaging ads, following results"
     },
     {
       "source": "platsbanken",
@@ -860,13 +992,13 @@
       "provider_id": "31507069",
       "lane": "adjacent",
       "matched_query": "projektkoordinator",
-      "triage_score": 77.9,
+      "triage_score": 77.8,
       "triage_reasons": [
         "title/role fit 100%",
         "candidate-evidence support 0%",
         "arrangement fit 100%",
         "geography/remote fit 82%",
-        "recency signal 91%"
+        "recency signal 90%"
       ],
       "review_flags": [
         "licence-requirement-needs-verification"
@@ -876,37 +1008,11 @@
     },
     {
       "source": "platsbanken",
-      "title": "Marketing Specialist – Paid Social & Content",
-      "company": "Keystone Education Group AB",
-      "location": "Stockholm, Stockholms län",
-      "employment_type": "Behovsanställning",
-      "work_mode": "Arbete på plats",
-      "published": "2026-09-07T10:25:20",
-      "deadline": "2027-03-06T23:59:59",
-      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31444510",
-      "salary": "",
-      "provider_id": "31444510",
-      "lane": "adjacent",
-      "matched_query": "content specialist",
-      "triage_score": 77.9,
-      "triage_reasons": [
-        "title/role fit 72%",
-        "candidate-evidence support 66%",
-        "arrangement fit 100%",
-        "geography/remote fit 100%",
-        "recency signal 69%"
-      ],
-      "review_flags": [],
-      "id": "e408d1bcdcb909f0",
-      "description_excerpt": "Do you enjoy paid social, creative content and the challenge of finding what makes people stop scrolling, click and convert? Are you curious about what makes one ad perform better than another – and excited by the idea of combining creativity with data-driven marketing? We’re looking for a Marketing Specialist who is fluent in Swedish, with a focus on paid social and content to help us create digital campaigns that perform – for both our own brands and our clients. This is a hands-on role for someone who enjoys working at the intersection of performance marketing, social media, creative production and campaign optimization. You like testing new ideas, creating engaging ads, following results"
-    },
-    {
-      "source": "platsbanken",
       "title": "Researcher",
       "company": "Ytsab Defence AB",
       "location": "Upplands Väsby, Stockholms län",
       "employment_type": "Tillsvidareanställning (inkl. eventuell provanställning)",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-09-04T15:49:40",
       "deadline": "2026-11-04T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31441002",
@@ -914,13 +1020,13 @@
       "provider_id": "31441002",
       "lane": "core",
       "matched_query": "researcher",
-      "triage_score": 77.8,
+      "triage_score": 77.7,
       "triage_reasons": [
         "title/role fit 90%",
         "candidate-evidence support 19%",
         "arrangement fit 72%",
         "geography/remote fit 100%",
-        "recency signal 66%"
+        "recency signal 64%"
       ],
       "review_flags": [],
       "id": "f1f1f3c2faab5e04",
@@ -932,7 +1038,7 @@
       "company": "ISS Facility Services AB",
       "location": "Stockholm, Stockholms län",
       "employment_type": "Vanlig anställning",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-09-18T08:28:20",
       "deadline": "2026-10-17T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31492073",
@@ -940,13 +1046,13 @@
       "provider_id": "31492073",
       "lane": "bridge",
       "matched_query": "receptionist deltid",
-      "triage_score": 77.5,
+      "triage_score": 77.4,
       "triage_reasons": [
         "title/role fit 88%",
         "candidate-evidence support 0%",
         "arrangement fit 100%",
         "geography/remote fit 100%",
-        "recency signal 84%"
+        "recency signal 83%"
       ],
       "review_flags": [],
       "id": "25fdb6b5a021ffcc",
@@ -958,7 +1064,7 @@
       "company": "Göteborgs Universitet",
       "location": "Göteborg, Västra Götalands län",
       "employment_type": "Vanlig anställning",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-09-16T15:20:03",
       "deadline": "2026-10-07T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31485605",
@@ -966,13 +1072,13 @@
       "provider_id": "31485605",
       "lane": "core",
       "matched_query": "researcher",
-      "triage_score": 77.4,
+      "triage_score": 77.3,
       "triage_reasons": [
         "title/role fit 90%",
         "candidate-evidence support 9%",
         "arrangement fit 100%",
         "geography/remote fit 82%",
-        "recency signal 83%"
+        "recency signal 81%"
       ],
       "review_flags": [],
       "id": "3cf302b9eefd3b58",
@@ -1024,7 +1130,7 @@
         "candidate-evidence support 0%",
         "arrangement fit 72%",
         "geography/remote fit 82%",
-        "recency signal 43%"
+        "recency signal 41%"
       ],
       "review_flags": [],
       "id": "8d434995b5ee9f9a",
@@ -1044,13 +1150,13 @@
       "provider_id": "31521040",
       "lane": "bridge",
       "matched_query": "receptionist deltid",
-      "triage_score": 76.6,
+      "triage_score": 76.5,
       "triage_reasons": [
         "title/role fit 80%",
         "candidate-evidence support 19%",
         "arrangement fit 100%",
         "geography/remote fit 100%",
-        "recency signal 96%"
+        "recency signal 94%"
       ],
       "review_flags": [],
       "id": "67b63f636f20412b",
@@ -1070,13 +1176,13 @@
       "provider_id": "31524764",
       "lane": "core",
       "matched_query": "kommunikatör",
-      "triage_score": 76.3,
+      "triage_score": 76.2,
       "triage_reasons": [
         "title/role fit 92%",
         "candidate-evidence support 9%",
         "arrangement fit 72%",
         "geography/remote fit 82%",
-        "recency signal 99%"
+        "recency signal 97%"
       ],
       "review_flags": [],
       "id": "c3c7157876d7d771",
@@ -1088,7 +1194,7 @@
       "company": "Workday Sweden Aktiebolag",
       "location": "Stockholm, Stockholms län",
       "employment_type": "Tillsvidareanställning (inkl. eventuell provanställning)",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-09-15T11:33:15",
       "deadline": "2026-10-26T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31478552",
@@ -1096,13 +1202,13 @@
       "provider_id": "31478552",
       "lane": "adjacent",
       "matched_query": "content specialist",
-      "triage_score": 75.8,
+      "triage_score": 75.7,
       "triage_reasons": [
         "title/role fit 72%",
         "candidate-evidence support 66%",
         "arrangement fit 72%",
         "geography/remote fit 100%",
-        "recency signal 81%"
+        "recency signal 80%"
       ],
       "review_flags": [],
       "id": "16788c1d1ec432c2",
@@ -1114,7 +1220,7 @@
       "company": "Jobsplus",
       "location": "",
       "employment_type": "Tillsvidareanställning (inkl. eventuell provanställning)",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-09-07T15:46:02",
       "deadline": "2026-10-07T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31447382",
@@ -1122,75 +1228,19 @@
       "provider_id": "31447382",
       "lane": "core",
       "matched_query": "communications NGO",
-      "triage_score": 75.7,
+      "triage_score": 75.6,
       "triage_reasons": [
         "title/role fit 80%",
         "candidate-evidence support 85%",
         "arrangement fit 72%",
         "geography/remote fit 55%",
-        "recency signal 70%"
+        "recency signal 69%"
       ],
       "review_flags": [
         "location-unknown"
       ],
       "id": "01206b23b69b13b3",
       "description_excerpt": "Job description The Branding, Marketing, and Communications Executive will be responsible for the positioning, brand, and awareness raising of the work and impact of the AquaBioTech Group internationally. The post holder will need to develop a communications strategy in line with AquaBioTech Group's international business plan, identifying key stakeholders, communication platforms, and/or channels with whom to engage to maximise our commercial business opportunities globally. This will include managing the yearly events calendar and budgets, liaising with external event coordinators, and devising appropriate news stories and content that align with key themes and issues faced by the sector. "
-    },
-    {
-      "source": "platsbanken",
-      "title": "Junior teknisk skribent till världsledande försvarsprodukt",
-      "company": "Xamera AB",
-      "location": "Örnsköldsvik, Västernorrlands län",
-      "employment_type": "Vanlig anställning",
-      "work_mode": null,
-      "published": "2026-08-18T13:45:39",
-      "deadline": "2027-02-14T23:59:59",
-      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31365857",
-      "salary": "",
-      "provider_id": "31365857",
-      "lane": "core",
-      "matched_query": "skribent",
-      "triage_score": 75.4,
-      "triage_reasons": [
-        "title/role fit 100%",
-        "candidate-evidence support 0%",
-        "arrangement fit 100%",
-        "geography/remote fit 82%",
-        "recency signal 41%"
-      ],
-      "review_flags": [
-        "security-requirement-needs-verification"
-      ],
-      "id": "3aac5663f256cc69",
-      "description_excerpt": "Om tjänsten Som teknisk skribent arbetar du med att samla in information från ingenjörer och specialister och omvandla den till tydlig, strukturerad och användarvänlig teknisk dokumentation. Du ingår i projektgrupper, följer etablerade arbetssätt och arbetar i flera olika system och verktyg det är meriterande med XML. Du blir en del av ett team med cirka 15 tekniska skribenter med blandad bakgrund inom bland annat teknik, journalistik och teknikinformation, i en större avdelning med bred kompetens inom mekanik, design, mjukvara och IT. Vi söker dig som Vi söker dig som är junior har en YH-utbildning inom teknikinformation, tekniskt skrivande eller motsvarande, samt ett tydligt teknikintresse"
-    },
-    {
-      "source": "remoteok",
-      "title": "VP Pricing & Packaging",
-      "company": "Delinea",
-      "location": "Redwood City",
-      "employment_type": "",
-      "work_mode": "remote",
-      "published": "2026-09-19T00:00:16+00:00",
-      "deadline": "",
-      "url": "https://remoteOK.com/remote-jobs/remote-vp-pricing-packaging-delinea-1137407",
-      "salary": "300000 - 340000",
-      "provider_id": "1137407",
-      "lane": "core",
-      "matched_query": "press officer",
-      "triage_score": 75.4,
-      "triage_reasons": [
-        "title/role fit 72%",
-        "candidate-evidence support 76%",
-        "arrangement fit 100%",
-        "geography/remote fit 68%",
-        "recency signal 86%"
-      ],
-      "review_flags": [
-        "remote-eligibility-needs-verification"
-      ],
-      "id": "5dc626541a14c0e3",
-      "description_excerpt": "About Delinea: Delinea is a pioneer in securing human and machine identities through intelligent, centralized authorization, empowering organizations to seamlessly govern their interactions across the modern enterprise. Leveraging AI-powered intelligence, Delinea’s leading cloud-native Identity Security Platform applies context throughout the entire identity lifecycle – across cloud and traditional infrastructure, data, SaaS applications, and AI. It is the only platform that enables you to discover all identities – including workforce, IT administrator, developers, and machines – assign appropriate access levels, detect irregularities, and respond to threats in real-time. With deployment in "
     },
     {
       "source": "platsbanken",
@@ -1217,6 +1267,62 @@
       "review_flags": [],
       "id": "e708447db60f02d8",
       "description_excerpt": "Agile Gothenburg is looking for a partnership coordinator to assist in a project that is dedicated to safeguarding and advancing the rights of immigrants across Sweden and the EU. You will have the unique opportunity to establish our partnership arm, bridge connections with diverse diaspora communities, and establish formal understandings with organizations that share our commitment to immigrant rights and social justice. ✅ What You’ll Do Identify, reach out to, and establish dialogue with key diaspora communities in Sweden (e.g., Arabic, Ukrainian, Assyrian, and Armenian organizations). Build and maintain strategic relationships with pro-immigrant NGOs and human rights groups across Sweden "
+    },
+    {
+      "source": "platsbanken",
+      "title": "Junior teknisk skribent till världsledande försvarsprodukt",
+      "company": "Xamera AB",
+      "location": "Örnsköldsvik, Västernorrlands län",
+      "employment_type": "Vanlig anställning",
+      "work_mode": null,
+      "published": "2026-08-18T13:45:39",
+      "deadline": "2027-02-14T23:59:59",
+      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31365857",
+      "salary": "",
+      "provider_id": "31365857",
+      "lane": "core",
+      "matched_query": "skribent",
+      "triage_score": 75.3,
+      "triage_reasons": [
+        "title/role fit 100%",
+        "candidate-evidence support 0%",
+        "arrangement fit 100%",
+        "geography/remote fit 82%",
+        "recency signal 40%"
+      ],
+      "review_flags": [
+        "security-requirement-needs-verification"
+      ],
+      "id": "3aac5663f256cc69",
+      "description_excerpt": "Om tjänsten Som teknisk skribent arbetar du med att samla in information från ingenjörer och specialister och omvandla den till tydlig, strukturerad och användarvänlig teknisk dokumentation. Du ingår i projektgrupper, följer etablerade arbetssätt och arbetar i flera olika system och verktyg det är meriterande med XML. Du blir en del av ett team med cirka 15 tekniska skribenter med blandad bakgrund inom bland annat teknik, journalistik och teknikinformation, i en större avdelning med bred kompetens inom mekanik, design, mjukvara och IT. Vi söker dig som Vi söker dig som är junior har en YH-utbildning inom teknikinformation, tekniskt skrivande eller motsvarande, samt ett tydligt teknikintresse"
+    },
+    {
+      "source": "remoteok",
+      "title": "VP Pricing & Packaging",
+      "company": "Delinea",
+      "location": "Redwood City",
+      "employment_type": "",
+      "work_mode": "remote",
+      "published": "2026-09-19T00:00:16+00:00",
+      "deadline": "",
+      "url": "https://remoteOK.com/remote-jobs/remote-vp-pricing-packaging-delinea-1137407",
+      "salary": "300000 - 340000",
+      "provider_id": "1137407",
+      "lane": "core",
+      "matched_query": "press officer",
+      "triage_score": 75.3,
+      "triage_reasons": [
+        "title/role fit 72%",
+        "candidate-evidence support 76%",
+        "arrangement fit 100%",
+        "geography/remote fit 68%",
+        "recency signal 84%"
+      ],
+      "review_flags": [
+        "remote-eligibility-needs-verification"
+      ],
+      "id": "5dc626541a14c0e3",
+      "description_excerpt": "About Delinea: Delinea is a pioneer in securing human and machine identities through intelligent, centralized authorization, empowering organizations to seamlessly govern their interactions across the modern enterprise. Leveraging AI-powered intelligence, Delinea’s leading cloud-native Identity Security Platform applies context throughout the entire identity lifecycle – across cloud and traditional infrastructure, data, SaaS applications, and AI. It is the only platform that enables you to discover all identities – including workforce, IT administrator, developers, and machines – assign appropriate access levels, detect irregularities, and respond to threats in real-time. With deployment in "
     },
     {
       "source": "platsbanken",
@@ -1258,13 +1364,13 @@
       "provider_id": "31375501",
       "lane": "bridge",
       "matched_query": "eventpersonal",
-      "triage_score": 75.2,
+      "triage_score": 75.1,
       "triage_reasons": [
         "title/role fit 92%",
         "candidate-evidence support 0%",
         "arrangement fit 100%",
         "geography/remote fit 82%",
-        "recency signal 43%"
+        "recency signal 41%"
       ],
       "review_flags": [],
       "id": "484c1eb601990b28",
@@ -1276,7 +1382,7 @@
       "company": "Bolagsverket",
       "location": "Sundsvall, Västernorrlands län",
       "employment_type": "Vanlig anställning",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-09-11T13:40:21",
       "deadline": "2026-10-04T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31467353",
@@ -1284,13 +1390,13 @@
       "provider_id": "31467353",
       "lane": "core",
       "matched_query": "kommunikatör",
-      "triage_score": 75.1,
+      "triage_score": 75.0,
       "triage_reasons": [
         "title/role fit 92%",
         "candidate-evidence support 9%",
         "arrangement fit 72%",
         "geography/remote fit 82%",
-        "recency signal 76%"
+        "recency signal 74%"
       ],
       "review_flags": [],
       "id": "82072659853d0eef",
@@ -1302,7 +1408,7 @@
       "company": "Bjuvs kommun",
       "location": "Bjuv, Skåne län",
       "employment_type": "Vanlig anställning",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-09-10T09:55:18",
       "deadline": "2026-10-04T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31459841",
@@ -1310,43 +1416,17 @@
       "provider_id": "31459841",
       "lane": "core",
       "matched_query": "kommunikatör",
-      "triage_score": 75.0,
+      "triage_score": 74.9,
       "triage_reasons": [
         "title/role fit 92%",
         "candidate-evidence support 9%",
         "arrangement fit 72%",
         "geography/remote fit 82%",
-        "recency signal 73%"
+        "recency signal 71%"
       ],
       "review_flags": [],
       "id": "99197b0301b17b74",
       "description_excerpt": "Du har säkert fått frågan &quot;Vad jobbar du med?&quot;. I Bjuvs kommun ställer vi istället frågan &quot;Vad jobbar du för?&quot; Vi arbetar för utveckling, hållbarhet, jämlikhet och framtiden för att tillsammans forma ett helt samhälle. Vad jobbar du för? Vi söker nu en driven och engagerad kommunikatör som vill vara med och skapa bästa möjliga kommunikation för Bjuvs kommuns invånare, besökare och andra intressenter. Hos oss får du ett spännande och omväxlande kommunikationsjobb som spänner över hela bredden av kommunens verksamheter, från strategiskt kommunikationsarbete till konkreta insatser i vardagen. Som kommunikatör i Bjuvs kommun blir du en del av ett engagerat team som arbetar me"
-    },
-    {
-      "source": "platsbanken",
-      "title": "Juniora administratörer inom bostadsrätt och fastighet till HSB Stockholm",
-      "company": "Academic Work Sweden AB",
-      "location": "Solna, Stockholms län",
-      "employment_type": "Vanlig anställning",
-      "work_mode": null,
-      "published": "2026-09-23T09:54:40",
-      "deadline": "2027-03-22T23:59:59",
-      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31509727",
-      "salary": "",
-      "provider_id": "31509727",
-      "lane": "bridge",
-      "matched_query": "administratör deltid",
-      "triage_score": 75.0,
-      "triage_reasons": [
-        "title/role fit 80%",
-        "candidate-evidence support 9%",
-        "arrangement fit 100%",
-        "geography/remote fit 100%",
-        "recency signal 91%"
-      ],
-      "review_flags": [],
-      "id": "4217d08c1918cb80",
-      "description_excerpt": "Vill du skaffa dig värdefull erfarenhet från fastighetsbranschen vid sidan av dina studier? Till HSB Stockholm i Solna söker vi nu tre engagerade studenter som tillsammans vill utgöra kärnan i HSB:s nya studentpool inom bostadsrättsadministration. Här får du en trygg introduktion, ett meriterande extrajobb och en unik inblick i Sveriges ledande bostadsorganisation! Om tjänsten Som en del av HSB:s nya studentpool blir du och dina två poolkollegor en nyckelresurs för att skapa kontinuitet och ge administrativ avlastning åt ordinarie handläggare. Poolen bemannar verksamheten motsvarande 100 % heltid täckt över veckans alla arbetsdagar, där du jobbar cirka 1–2 dagar (ca 13–16 timmar) per vecka e"
     },
     {
       "source": "platsbanken",
@@ -1376,11 +1456,37 @@
     },
     {
       "source": "platsbanken",
+      "title": "Juniora administratörer inom bostadsrätt och fastighet till HSB Stockholm",
+      "company": "Academic Work Sweden AB",
+      "location": "Solna, Stockholms län",
+      "employment_type": "Vanlig anställning",
+      "work_mode": null,
+      "published": "2026-09-23T09:54:40",
+      "deadline": "2027-03-22T23:59:59",
+      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31509727",
+      "salary": "",
+      "provider_id": "31509727",
+      "lane": "bridge",
+      "matched_query": "administratör deltid",
+      "triage_score": 74.9,
+      "triage_reasons": [
+        "title/role fit 80%",
+        "candidate-evidence support 9%",
+        "arrangement fit 100%",
+        "geography/remote fit 100%",
+        "recency signal 90%"
+      ],
+      "review_flags": [],
+      "id": "4217d08c1918cb80",
+      "description_excerpt": "Vill du skaffa dig värdefull erfarenhet från fastighetsbranschen vid sidan av dina studier? Till HSB Stockholm i Solna söker vi nu tre engagerade studenter som tillsammans vill utgöra kärnan i HSB:s nya studentpool inom bostadsrättsadministration. Här får du en trygg introduktion, ett meriterande extrajobb och en unik inblick i Sveriges ledande bostadsorganisation! Om tjänsten Som en del av HSB:s nya studentpool blir du och dina två poolkollegor en nyckelresurs för att skapa kontinuitet och ge administrativ avlastning åt ordinarie handläggare. Poolen bemannar verksamheten motsvarande 100 % heltid täckt över veckans alla arbetsdagar, där du jobbar cirka 1–2 dagar (ca 13–16 timmar) per vecka e"
+    },
+    {
+      "source": "platsbanken",
       "title": "Receptionist på deltid",
       "company": "Bravura Sverige AB",
       "location": "Uppsala, Uppsala län",
       "employment_type": "Vanlig anställning",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-09-18T13:09:21",
       "deadline": "2027-03-17T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31494553",
@@ -1388,13 +1494,13 @@
       "provider_id": "31494553",
       "lane": "bridge",
       "matched_query": "receptionist deltid",
-      "triage_score": 74.9,
+      "triage_score": 74.8,
       "triage_reasons": [
         "title/role fit 88%",
         "candidate-evidence support 0%",
         "arrangement fit 100%",
         "geography/remote fit 82%",
-        "recency signal 86%"
+        "recency signal 84%"
       ],
       "review_flags": [],
       "id": "bb10d940cd24f6a8",
@@ -1414,13 +1520,13 @@
       "provider_id": "1135783",
       "lane": "adjacent",
       "matched_query": "communications coordinator",
-      "triage_score": 74.8,
+      "triage_score": 74.7,
       "triage_reasons": [
         "title/role fit 72%",
         "candidate-evidence support 94%",
         "arrangement fit 100%",
         "geography/remote fit 68%",
-        "recency signal 16%"
+        "recency signal 15%"
       ],
       "review_flags": [
         "remote-eligibility-needs-verification"
@@ -1430,37 +1536,11 @@
     },
     {
       "source": "platsbanken",
-      "title": "Projektkoordinator i ett byggföretag",
-      "company": "Toppreno AB",
-      "location": "Täby, Stockholms län",
-      "employment_type": "Tidsbegränsad anställning",
-      "work_mode": "Arbete på plats",
-      "published": "2026-09-15T18:21:25",
-      "deadline": "2026-09-30T23:59:59",
-      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31481372",
-      "salary": "",
-      "provider_id": "31481372",
-      "lane": "adjacent",
-      "matched_query": "projektkoordinator",
-      "triage_score": 74.5,
-      "triage_reasons": [
-        "title/role fit 80%",
-        "candidate-evidence support 9%",
-        "arrangement fit 100%",
-        "geography/remote fit 100%",
-        "recency signal 81%"
-      ],
-      "review_flags": [],
-      "id": "2d9164f5c12dce09",
-      "description_excerpt": "Om jobbet Vi söker dig som är i början av din karriär och gillar att ha flera bollar i luften. I rollen ligger ditt fokus på att avlasta VD i det dagliga arbetet samt att vara behjälplig med administration, projektkoordinering och kundkontakter. Här får du utrymme för kreativt arbete samt en del sociala möten med kunder, partners och andra intressenter. Start enligt överenskommelse. Arbetsuppgifter Arbetsuppgifterna för tjänsten är ständigt varierande och passar perfekt för den som gillar att testa på nya saker. Du kommer att sköta allt ifrån att skapa inlägg till sociala medier, uppdatera hemsidan, kontakta nya och befintliga kunder, assistera vid kundmöten och att skapa relevanta mallar oc"
-    },
-    {
-      "source": "platsbanken",
       "title": "UX Writer and Content Designer",
       "company": "Nordic Investin Group Aktiebolag",
       "location": "Stockholm, Stockholms län",
       "employment_type": "Vanlig anställning",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-09-16T12:22:56",
       "deadline": "2027-03-15T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31483941",
@@ -1474,7 +1554,7 @@
         "candidate-evidence support 57%",
         "arrangement fit 72%",
         "geography/remote fit 100%",
-        "recency signal 83%"
+        "recency signal 81%"
       ],
       "review_flags": [],
       "id": "98c8dcdf5f717b0c",
@@ -1482,11 +1562,115 @@
     },
     {
       "source": "platsbanken",
+      "title": "Projektkoordinator i ett byggföretag",
+      "company": "Toppreno AB",
+      "location": "Täby, Stockholms län",
+      "employment_type": "Tidsbegränsad anställning",
+      "work_mode": null,
+      "published": "2026-09-15T18:21:25",
+      "deadline": "2026-09-30T23:59:59",
+      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31481372",
+      "salary": "",
+      "provider_id": "31481372",
+      "lane": "adjacent",
+      "matched_query": "projektkoordinator",
+      "triage_score": 74.4,
+      "triage_reasons": [
+        "title/role fit 80%",
+        "candidate-evidence support 9%",
+        "arrangement fit 100%",
+        "geography/remote fit 100%",
+        "recency signal 80%"
+      ],
+      "review_flags": [],
+      "id": "2d9164f5c12dce09",
+      "description_excerpt": "Om jobbet Vi söker dig som är i början av din karriär och gillar att ha flera bollar i luften. I rollen ligger ditt fokus på att avlasta VD i det dagliga arbetet samt att vara behjälplig med administration, projektkoordinering och kundkontakter. Här får du utrymme för kreativt arbete samt en del sociala möten med kunder, partners och andra intressenter. Start enligt överenskommelse. Arbetsuppgifter Arbetsuppgifterna för tjänsten är ständigt varierande och passar perfekt för den som gillar att testa på nya saker. Du kommer att sköta allt ifrån att skapa inlägg till sociala medier, uppdatera hemsidan, kontakta nya och befintliga kunder, assistera vid kundmöten och att skapa relevanta mallar oc"
+    },
+    {
+      "source": "platsbanken",
+      "title": "Administratör på deltid sökes vid sidan av studier!",
+      "company": "Academic Work Sweden AB",
+      "location": "Stockholm, Stockholms län",
+      "employment_type": "Vanlig anställning",
+      "work_mode": null,
+      "published": "2026-09-16T11:02:11",
+      "deadline": "2027-03-15T23:59:59",
+      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31483260",
+      "salary": "",
+      "provider_id": "31483260",
+      "lane": "bridge",
+      "matched_query": "administratör deltid",
+      "triage_score": 74.4,
+      "triage_reasons": [
+        "title/role fit 80%",
+        "candidate-evidence support 9%",
+        "arrangement fit 100%",
+        "geography/remote fit 100%",
+        "recency signal 80%"
+      ],
+      "review_flags": [],
+      "id": "cdd1512e8d066c96",
+      "description_excerpt": "Vi söker en noggrann och ansvarstagande student som vill hjälpa till att gå igenom och matcha över 2 000 transportdokument mot rätt order efter ett systembyte. Ett monotont men viktigt administrativt extrajobb med start omgående till årsskiftet. Om tjänsten Ragn-Sells har nyligen genomfört ett systembyte och söker nu två studenter som tillsammans ska stötta verksamheten fram till årsskiftet. Ni delar på en heltidsbemanning om 40 timmar per vecka och planerar tillsammans hur arbetstiden fördelas utifrån verksamhetens behov. Information Ni arbetar växelvis och fördelar dagarna mellan er, exempelvis två dagar för den ena studenten och tre dagar för den andra under en vecka. Arbetstid: 08:00–17:"
+    },
+    {
+      "source": "platsbanken",
+      "title": "Web Editor/Coordinator to Axis Communications",
+      "company": "Academic Work Sweden AB",
+      "location": "Lund, Skåne län",
+      "employment_type": "Vanlig anställning",
+      "work_mode": null,
+      "published": "2026-09-30T12:53:54",
+      "deadline": "2027-03-29T23:59:59",
+      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31536510",
+      "salary": "",
+      "provider_id": "31536510",
+      "lane": "core",
+      "matched_query": "editor",
+      "triage_score": 74.2,
+      "triage_reasons": [
+        "title/role fit 80%",
+        "candidate-evidence support 38%",
+        "arrangement fit 72%",
+        "geography/remote fit 82%",
+        "recency signal 100%"
+      ],
+      "review_flags": [],
+      "id": "d14acfde5e1dedf9",
+      "description_excerpt": "Are you an experienced Web Editor with strong organizational skills? Axis Communications is seeking a Web Editor/Coordinator to join their team in Lund and drive key content updates on their digital platforms. Apply today! About the role Exciting opportunity to join our team as Web Editor/Coordinator, Information Systems. Axis is on a journey to grow our digital marketing capabilities to support our rapid growth with an ambition to deliver excellent experience in all digital touchpoints to support our customers. Our corporate digital teams are placed in axis HQ, Lund. This is a consultancy assignment running from November to July 2027. Who is your future team? The Digital Communications &amp"
+    },
+    {
+      "source": "platsbanken",
+      "title": "Administratör på deltid  till markservice",
+      "company": "Botkyrka kommun",
+      "location": "Botkyrka, Stockholms län",
+      "employment_type": "Vanlig anställning",
+      "work_mode": null,
+      "published": "2026-09-30T07:51:48",
+      "deadline": "2026-10-14T23:59:59",
+      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31534540",
+      "salary": "",
+      "provider_id": "31534540",
+      "lane": "bridge",
+      "matched_query": "administratör deltid",
+      "triage_score": 74.0,
+      "triage_reasons": [
+        "title/role fit 80%",
+        "candidate-evidence support 0%",
+        "arrangement fit 100%",
+        "geography/remote fit 100%",
+        "recency signal 100%"
+      ],
+      "review_flags": [],
+      "id": "ce87c235a6b1b398",
+      "description_excerpt": "Vill du ha meningsfulla arbetsuppgifter som gör skillnad i människors liv? Välkommen till kommunen som är långt ifrån lagom! Teknik- och fastighetsförvaltningen ansvarar för Botkyrka kommuns samhällsfastigheter och den allmänna VA-anläggningen. Vi utvecklar och förvaltar kommunens fastigheter samt planerar och genomför investeringar i både nya och befintliga fastigheter och VA-anläggningar för att möta kommunens långsiktiga behov. Förvaltningen ansvarar även för fastighetsdrift, markservice, lokalvård, transport- och fordonsservice. Med cirka 300 medarbetare arbetar vi för hållbara lösningar och en väl fungerande samhällsservice. Tjänsten och arbetsuppgifterna Vill du kombinera administratio"
+    },
+    {
+      "source": "platsbanken",
       "title": "Technical Writer  Engineering-to-Order Projects",
       "company": "Sandvik Aktiebolag",
       "location": "Svedala, Skåne län",
       "employment_type": "Tillsvidareanställning (inkl. eventuell provanställning)",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-09-17T11:25:40",
       "deadline": "2026-10-01T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31488591",
@@ -1494,13 +1678,13 @@
       "provider_id": "31488591",
       "lane": "core",
       "matched_query": "content writer",
-      "triage_score": 73.4,
+      "triage_score": 73.3,
       "triage_reasons": [
         "title/role fit 80%",
         "candidate-evidence support 38%",
         "arrangement fit 72%",
         "geography/remote fit 82%",
-        "recency signal 84%"
+        "recency signal 83%"
       ],
       "review_flags": [],
       "id": "639301e9f5c8683b",
@@ -1512,7 +1696,7 @@
       "company": "Hemfrid i Sverige AB",
       "location": "Stockholm, Stockholms län",
       "employment_type": "Behovsanställning",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-09-18T09:41:08",
       "deadline": "2027-03-17T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31492543",
@@ -1520,13 +1704,13 @@
       "provider_id": "31492543",
       "lane": "core",
       "matched_query": "content writer",
-      "triage_score": 73.1,
+      "triage_score": 73.0,
       "triage_reasons": [
         "title/role fit 72%",
         "candidate-evidence support 28%",
         "arrangement fit 100%",
         "geography/remote fit 100%",
-        "recency signal 84%"
+        "recency signal 83%"
       ],
       "review_flags": [],
       "id": "a0a47549cd3d05d7",
@@ -1534,55 +1718,55 @@
     },
     {
       "source": "platsbanken",
-      "title": "Projektkoordinator till Jobbsprånget",
-      "company": "Academic Work Sweden AB",
-      "location": "Stockholm, Stockholms län",
+      "title": "Utbildningsadministratör till Komvux - Folkuniversitetet",
+      "company": "Folkuniversitetet Stift Kursverksamheten Vid Sto",
+      "location": "Karlstad, Värmlands län",
       "employment_type": "Vanlig anställning",
-      "work_mode": "Arbete på plats",
-      "published": "2026-09-15T17:52:13",
-      "deadline": "2027-03-14T23:59:59",
-      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31481350",
-      "salary": "",
-      "provider_id": "31481350",
-      "lane": "adjacent",
-      "matched_query": "projektkoordinator",
-      "triage_score": 73.1,
-      "triage_reasons": [
-        "title/role fit 80%",
-        "candidate-evidence support 19%",
-        "arrangement fit 72%",
-        "geography/remote fit 100%",
-        "recency signal 81%"
-      ],
-      "review_flags": [],
-      "id": "7768be0972806be0",
-      "description_excerpt": "Vill du arbeta i en spännande organisation som gör skillnad i samhället? I den här rollen erbjuds du ett viktigt arbete inom administration och koordinering, med engagerade kollegor. Sök redan idag då urval sker löpande! Om tjänsten Jobbsprånget är en så kallad social entreprenör vars syfte är att hjälpa arbetslösa utrikes födda akademiker till att få jobb hos svenska arbetsgivare. Praktikprogrammet fyller snart 10 år och är störst i Sverige inom området och växer snabbt. Verksamheten spänner över många områden och berör både frågor som näringslivets kompetensförsörjning, svenska myndigheter samt integration- och arbetsmarknadsfrågor. Jobbsprånget består idag av femton medarbetare i Stockhol"
-    },
-    {
-      "source": "platsbanken",
-      "title": "Web Manager I Brand, Marketing and Communications | Stockholm",
-      "company": "Ernst & Young Aktiebolag",
-      "location": "Stockholm, Stockholms län",
-      "employment_type": "Tillsvidareanställning (inkl. eventuell provanställning)",
       "work_mode": null,
-      "published": "2026-09-25T15:14:05",
-      "deadline": "2026-10-18T23:59:59",
-      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31522291",
+      "published": "2026-09-29T14:10:12",
+      "deadline": "2026-10-20T23:59:59",
+      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31532602",
       "salary": "",
-      "provider_id": "31522291",
-      "lane": "core",
-      "matched_query": "communications NGO",
-      "triage_score": 72.4,
+      "provider_id": "31532602",
+      "lane": "bridge",
+      "matched_query": "administratör deltid",
+      "triage_score": 72.7,
       "triage_reasons": [
         "title/role fit 80%",
         "candidate-evidence support 9%",
-        "arrangement fit 72%",
-        "geography/remote fit 100%",
-        "recency signal 96%"
+        "arrangement fit 100%",
+        "geography/remote fit 82%",
+        "recency signal 100%"
       ],
       "review_flags": [],
-      "id": "a79286fe9452dda3",
-      "description_excerpt": "Vill du vara med och utveckla en av världens starkaste professionella tjänsteorganisationers digitala närvaro? Som Web Manager får du en nyckelroll i att utveckla EY:s digitala närvaro i Sverige samtidigt som du bidrar till att forma framtiden för vårt nordiska webbteam. Vi söker dig som kombinerar ett operativt driv med ett intresse för att leda förändring, utveckla arbetssätt och skapa resultat tillsammans med andra. Möjligheten Som Web Manager med placering i Sverige har du huvudansvaret för den svenska delen av ey.com och är samtidigt en del av vårt nordiska webbteam. Du kommer också att få möjlighet att påverka arbetssätt, prioriteringar och utvecklingen inom det nordiska webbteamet, me"
+      "id": "bb16d1ceacb23fd8",
+      "description_excerpt": "Folkuniversitetet i Karlstad bedriver utbildning inom vuxenutbildning med SFI och kurser på grundläggande nivå, på uppdrag av Karlstad kommun. &nbsp;Vi söker nu en engagerad och kompetent utbildningsadministratör.&nbsp; Värdesätter du att arbeta i en kreativ miljö där service, bemötande, utveckling av processer och arbetsmetoder är viktigt? Tror du som vi på att ge människor möjlighet till ett livslångt lärande och att kunskap förändrar? Då kan vi vara rätt arbetsgivare för dig. &nbsp; &nbsp; Om tjänsten &nbsp; Du kommer att arbeta med antagning och registrering av elever som läser SFI och grundläggande vuxenutbildning samt hantering av betyg och intyg. Din kompetens är ett viktigt stöd för "
+    },
+    {
+      "source": "platsbanken",
+      "title": "Receptionist på deltid till sökes till Rotebro!",
+      "company": "Academic Work Sweden AB",
+      "location": "Stockholm, Stockholms län",
+      "employment_type": "Vanlig anställning",
+      "work_mode": null,
+      "published": "2026-09-29T17:10:02",
+      "deadline": "2027-03-28T23:59:59",
+      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31533941",
+      "salary": "",
+      "provider_id": "31533941",
+      "lane": "bridge",
+      "matched_query": "receptionist deltid",
+      "triage_score": 72.4,
+      "triage_reasons": [
+        "title/role fit 72%",
+        "candidate-evidence support 19%",
+        "arrangement fit 100%",
+        "geography/remote fit 100%",
+        "recency signal 100%"
+      ],
+      "review_flags": [],
+      "id": "528281458a34c9eb",
+      "description_excerpt": "Vår kund erbjuder ett meriterande extrajobb i sin reception där du får värdefull erfarenhet av service och administration i en stöttande miljö som är enkel att kombinera med dina studier. Om tjänsten I rollen som receptionist är du företagets ansikte utåt och det första mötet för besökare och inringande kunder. Du tillhör ett engagerat team och tar stort ansvar för den dagliga servicen och administrationen på kontoret. Du erbjuds Du erbjuds ett flexibelt extrajobb som är perfekt att kombinera med studier, där du får värdefull erfarenhet inom kundservice och administration tillsammans med hjälpsamma kollegor. Arbetsuppgifter Rollen innebär att hantera receptionen, växeln och löpande kontorsad"
     },
     {
       "source": "platsbanken",
@@ -1604,7 +1788,7 @@
         "candidate-evidence support 19%",
         "arrangement fit 100%",
         "geography/remote fit 100%",
-        "recency signal 90%"
+        "recency signal 89%"
       ],
       "review_flags": [
         "language-requirement-needs-verification"
@@ -1614,11 +1798,37 @@
     },
     {
       "source": "platsbanken",
+      "title": "Web Manager I Brand, Marketing and Communications | Stockholm",
+      "company": "Ernst & Young Aktiebolag",
+      "location": "Stockholm, Stockholms län",
+      "employment_type": "Tillsvidareanställning (inkl. eventuell provanställning)",
+      "work_mode": null,
+      "published": "2026-09-25T15:14:05",
+      "deadline": "2026-10-18T23:59:59",
+      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31522291",
+      "salary": "",
+      "provider_id": "31522291",
+      "lane": "core",
+      "matched_query": "communications NGO",
+      "triage_score": 72.3,
+      "triage_reasons": [
+        "title/role fit 80%",
+        "candidate-evidence support 9%",
+        "arrangement fit 72%",
+        "geography/remote fit 100%",
+        "recency signal 94%"
+      ],
+      "review_flags": [],
+      "id": "a79286fe9452dda3",
+      "description_excerpt": "Vill du vara med och utveckla en av världens starkaste professionella tjänsteorganisationers digitala närvaro? Som Web Manager får du en nyckelroll i att utveckla EY:s digitala närvaro i Sverige samtidigt som du bidrar till att forma framtiden för vårt nordiska webbteam. Vi söker dig som kombinerar ett operativt driv med ett intresse för att leda förändring, utveckla arbetssätt och skapa resultat tillsammans med andra. Möjligheten Som Web Manager med placering i Sverige har du huvudansvaret för den svenska delen av ey.com och är samtidigt en del av vårt nordiska webbteam. Du kommer också att få möjlighet att påverka arbetssätt, prioriteringar och utvecklingen inom det nordiska webbteamet, me"
+    },
+    {
+      "source": "platsbanken",
       "title": "IT Helpdesk-tekniker till Axis Communications!",
       "company": "A Hub AB",
       "location": "Linköping, Östergötlands län",
       "employment_type": "Vanlig anställning",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-08-31T14:10:09",
       "deadline": "2027-02-27T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31418307",
@@ -1632,7 +1842,7 @@
         "candidate-evidence support 19%",
         "arrangement fit 100%",
         "geography/remote fit 82%",
-        "recency signal 60%"
+        "recency signal 59%"
       ],
       "review_flags": [],
       "id": "2596de173143dc99",
@@ -1652,13 +1862,13 @@
       "provider_id": "31513492",
       "lane": "core",
       "matched_query": "kommunikatör",
-      "triage_score": 72.0,
+      "triage_score": 71.9,
       "triage_reasons": [
         "title/role fit 92%",
         "candidate-evidence support 9%",
         "arrangement fit 72%",
         "geography/remote fit 82%",
-        "recency signal 93%"
+        "recency signal 91%"
       ],
       "review_flags": [
         "licence-requirement-needs-verification"
@@ -1672,7 +1882,7 @@
       "company": "Göteborgs Universitet",
       "location": "Göteborg, Västra Götalands län",
       "employment_type": "Tidsbegränsad anställning",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-09-01T10:34:45",
       "deadline": "2026-10-30T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31422216",
@@ -1680,13 +1890,13 @@
       "provider_id": "31422216",
       "lane": "core",
       "matched_query": "research assistant",
-      "triage_score": 72.0,
+      "triage_score": 71.9,
       "triage_reasons": [
         "title/role fit 72%",
         "candidate-evidence support 47%",
         "arrangement fit 100%",
         "geography/remote fit 82%",
-        "recency signal 60%"
+        "recency signal 59%"
       ],
       "review_flags": [],
       "id": "d809925253f528c9",
@@ -1698,7 +1908,7 @@
       "company": "Göteborgs Universitet",
       "location": "Göteborg, Västra Götalands län",
       "employment_type": "Tidsbegränsad anställning",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-09-01T10:30:10",
       "deadline": "2026-10-30T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31422192",
@@ -1706,13 +1916,13 @@
       "provider_id": "31422192",
       "lane": "core",
       "matched_query": "research assistant",
-      "triage_score": 72.0,
+      "triage_score": 71.9,
       "triage_reasons": [
         "title/role fit 72%",
         "candidate-evidence support 47%",
         "arrangement fit 100%",
         "geography/remote fit 82%",
-        "recency signal 60%"
+        "recency signal 59%"
       ],
       "review_flags": [],
       "id": "1582f9889dae7fa7",
@@ -1724,7 +1934,7 @@
       "company": "Done Sweden AB",
       "location": "Stockholm, Stockholms län",
       "employment_type": "Behovsanställning",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-09-02T17:05:36",
       "deadline": "2027-03-01T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31430974",
@@ -1732,13 +1942,13 @@
       "provider_id": "31430974",
       "lane": "adjacent",
       "matched_query": "content specialist",
-      "triage_score": 72.0,
+      "triage_score": 71.9,
       "triage_reasons": [
         "title/role fit 72%",
         "candidate-evidence support 28%",
         "arrangement fit 100%",
         "geography/remote fit 100%",
-        "recency signal 63%"
+        "recency signal 61%"
       ],
       "review_flags": [],
       "id": "ff98892ab6b674db",
@@ -1750,7 +1960,7 @@
       "company": "Folkuniversitetet Stift Kursverksamheten Vid Sto",
       "location": "Göteborg, Västra Götalands län",
       "employment_type": "Vanlig anställning",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-09-18T12:09:18",
       "deadline": "2026-10-11T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31494119",
@@ -1758,13 +1968,13 @@
       "provider_id": "31494119",
       "lane": "bridge",
       "matched_query": "administratör deltid",
-      "triage_score": 72.0,
+      "triage_score": 71.9,
       "triage_reasons": [
         "title/role fit 80%",
         "candidate-evidence support 9%",
         "arrangement fit 100%",
         "geography/remote fit 82%",
-        "recency signal 86%"
+        "recency signal 84%"
       ],
       "review_flags": [],
       "id": "6d0c722090f1891b",
@@ -1772,37 +1982,11 @@
     },
     {
       "source": "platsbanken",
-      "title": "Administratör",
-      "company": "Gislaveds kommun",
-      "location": "Gislaved, Jönköpings län",
-      "employment_type": "Vanlig anställning",
-      "work_mode": "Arbete på plats",
-      "published": "2026-09-14T11:47:06",
-      "deadline": "2026-09-30T23:59:59",
-      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31473089",
-      "salary": "",
-      "provider_id": "31473089",
-      "lane": "bridge",
-      "matched_query": "administratör deltid",
-      "triage_score": 71.7,
-      "triage_reasons": [
-        "title/role fit 80%",
-        "candidate-evidence support 9%",
-        "arrangement fit 100%",
-        "geography/remote fit 82%",
-        "recency signal 80%"
-      ],
-      "review_flags": [],
-      "id": "6fcdde56fc8679cb",
-      "description_excerpt": "Beskrivning Som medarbetare i Gislaveds kommun är du medskapare på din arbetsplats. Du ges möjlighet och förväntas att bidra till verksamhetens utveckling genom din kunskap och erfarenhet. Hos oss är respekt för olikheter och alla människors lika värde grundläggande. Vill du arbeta i en samhällsviktig verksamhet där administration, service och kvalitet går hand i hand? Avdelningen för arbete och utbildning söker nu en administratör som kommer att arbeta med administrativa uppdrag inom avdelningen. Arbetsuppgifter I rollen som administratör är du ett administrativt stöd till chefer, medarbetare och studerande inom avdelningen för arbete och utbildning. Tjänsten innehåller även ett kvalificera"
-    },
-    {
-      "source": "platsbanken",
       "title": "Digital Transformation Services Lead (Hybrid)",
       "company": "Jobs Europe AB",
       "location": "",
       "employment_type": "Tillsvidareanställning (inkl. eventuell provanställning)",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-08-20T14:20:45",
       "deadline": "2026-09-30T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31377344",
@@ -1816,7 +2000,7 @@
         "candidate-evidence support 38%",
         "arrangement fit 100%",
         "geography/remote fit 95%",
-        "recency signal 44%"
+        "recency signal 43%"
       ],
       "review_flags": [],
       "id": "4182a7e45e569467",
@@ -1824,11 +2008,37 @@
     },
     {
       "source": "platsbanken",
+      "title": "Administratör",
+      "company": "Gislaveds kommun",
+      "location": "Gislaved, Jönköpings län",
+      "employment_type": "Vanlig anställning",
+      "work_mode": null,
+      "published": "2026-09-14T11:47:06",
+      "deadline": "2026-09-30T23:59:59",
+      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31473089",
+      "salary": "",
+      "provider_id": "31473089",
+      "lane": "bridge",
+      "matched_query": "administratör deltid",
+      "triage_score": 71.6,
+      "triage_reasons": [
+        "title/role fit 80%",
+        "candidate-evidence support 9%",
+        "arrangement fit 100%",
+        "geography/remote fit 82%",
+        "recency signal 79%"
+      ],
+      "review_flags": [],
+      "id": "6fcdde56fc8679cb",
+      "description_excerpt": "Beskrivning Som medarbetare i Gislaveds kommun är du medskapare på din arbetsplats. Du ges möjlighet och förväntas att bidra till verksamhetens utveckling genom din kunskap och erfarenhet. Hos oss är respekt för olikheter och alla människors lika värde grundläggande. Vill du arbeta i en samhällsviktig verksamhet där administration, service och kvalitet går hand i hand? Avdelningen för arbete och utbildning söker nu en administratör som kommer att arbeta med administrativa uppdrag inom avdelningen. Arbetsuppgifter I rollen som administratör är du ett administrativt stöd till chefer, medarbetare och studerande inom avdelningen för arbete och utbildning. Tjänsten innehåller även ett kvalificera"
+    },
+    {
+      "source": "platsbanken",
       "title": "Switchboard/Workplace support Coordinator",
       "company": "CBRE GWS Sweden AB",
       "location": "Stockholm, Stockholms län",
       "employment_type": "Vanlig anställning",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-09-18T14:31:53",
       "deadline": "2026-10-16T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31495388",
@@ -1836,13 +2046,13 @@
       "provider_id": "31495388",
       "lane": "bridge",
       "matched_query": "data entry remote",
-      "triage_score": 71.7,
+      "triage_score": 71.6,
       "triage_reasons": [
         "title/role fit 72%",
         "candidate-evidence support 19%",
         "arrangement fit 100%",
         "geography/remote fit 100%",
-        "recency signal 86%"
+        "recency signal 84%"
       ],
       "review_flags": [],
       "id": "2dce309e1b10e2e1",
@@ -1854,7 +2064,7 @@
       "company": "CBRE GWS Sweden AB",
       "location": "Stockholm, Stockholms län",
       "employment_type": "Behovsanställning",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-09-18T12:50:06",
       "deadline": "2026-10-16T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31494381",
@@ -1862,13 +2072,13 @@
       "provider_id": "31494381",
       "lane": "bridge",
       "matched_query": "data entry remote",
-      "triage_score": 71.7,
+      "triage_score": 71.6,
       "triage_reasons": [
         "title/role fit 72%",
         "candidate-evidence support 19%",
         "arrangement fit 100%",
         "geography/remote fit 100%",
-        "recency signal 86%"
+        "recency signal 84%"
       ],
       "review_flags": [],
       "id": "5c8888800ffc0986",
@@ -1880,7 +2090,7 @@
       "company": "CBRE GWS Sweden AB",
       "location": "Stockholm, Stockholms län",
       "employment_type": "Vanlig anställning",
-      "work_mode": "Arbete på plats",
+      "work_mode": null,
       "published": "2026-09-18T11:35:31",
       "deadline": "2026-10-16T23:59:59",
       "url": "https://arbetsformedlingen.se/platsbanken/annonser/31493838",
@@ -1888,233 +2098,17 @@
       "provider_id": "31493838",
       "lane": "bridge",
       "matched_query": "data entry remote",
-      "triage_score": 71.7,
+      "triage_score": 71.6,
       "triage_reasons": [
         "title/role fit 72%",
         "candidate-evidence support 19%",
         "arrangement fit 100%",
         "geography/remote fit 100%",
-        "recency signal 86%"
+        "recency signal 84%"
       ],
       "review_flags": [],
       "id": "7bb19c050b36a5da",
       "description_excerpt": "Stockholm, Sweden Switchboard/Workplace Support Coordinator Role summary As a Switchboard/Workplace Support Coordinator, you will play a key role in delivering workplace services and support to employees, visitors, and stakeholders. Acting as a primary point of contact, you will manage a wide range of workplace-related services including customer service, switchboard operations, issue management, administrative support, and workplace systems. The role requires a proactive and service-oriented mindset, ensuring that inquiries, requests, and incidents are handled efficiently and professionally. You will collaborate with internal and external stakeholders to enhance the workplace experience and"
-    },
-    {
-      "source": "remotive",
-      "title": "Freelance Copywriter",
-      "company": "Coalition Technologies ",
-      "location": "Worldwide",
-      "employment_type": "freelance",
-      "work_mode": "remote",
-      "published": "2026-09-02T19:59:53",
-      "deadline": "",
-      "url": "https://remotive.com/remote-jobs/writing/freelance-copywriter-1749306",
-      "salary": "$20k -$35k",
-      "provider_id": "1749306",
-      "lane": "core",
-      "matched_query": "content writer",
-      "triage_score": 71.6,
-      "triage_reasons": [
-        "title/role fit 80%",
-        "candidate-evidence support 28%",
-        "arrangement fit 100%",
-        "geography/remote fit 68%",
-        "recency signal 63%"
-      ],
-      "review_flags": [
-        "remote-eligibility-needs-verification"
-      ],
-      "id": "c4fe3c0ab41785e6",
-      "description_excerpt": "CT Marketing Agency is seeking skilled Freelance Copywriters to write high-quality, SEO-driven content for eCommerce and lead generation websites. This is a freelance, project-based writing role. The ideal candidate has excellent English writing skills, strong research ability, and experience writing content that follows detailed, client-specific guidelines. Projects commonly include category pages, product descriptions, blog posts, SEO landing pages, and website copy. About the Role Our client base is constantly evolving, and writers may create content across a wide range of industries, including: Fashion, including mass-market and luxury brands Skincare and beauty Tech and software Finance"
-    },
-    {
-      "source": "platsbanken",
-      "title": "Journalist / Webbskribent med intresse för SEO",
-      "company": "Birger AB",
-      "location": "",
-      "employment_type": "Tidsbegränsad anställning",
-      "work_mode": null,
-      "published": "2026-07-10T08:09:00",
-      "deadline": "2026-12-31T23:59:59",
-      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31264034",
-      "salary": "",
-      "provider_id": "31264034",
-      "lane": "core",
-      "matched_query": "redaktör",
-      "triage_score": 71.5,
-      "triage_reasons": [
-        "title/role fit 80%",
-        "candidate-evidence support 57%",
-        "arrangement fit 100%",
-        "geography/remote fit 55%",
-        "recency signal 15%"
-      ],
-      "review_flags": [
-        "location-unknown"
-      ],
-      "id": "7ba76372707666fa",
-      "description_excerpt": "Är du journalist, skribent, redaktör eller kommunikatör och vill utveckla din kompetens inom SEO, webbinnehåll och digital tillväxt? Birger söker en praktikant som vill vara med och bygga upp innehållet för ett nytt digitalt varumärke inom bygg- och renoveringsbranschen. Rollen passar dig som har en stark känsla för språk, research och redaktionellt innehåll, men som också är nyfiken på hur texter kan användas för att skapa synlighet i Google, attrahera rätt målgrupp och bidra till verkliga affärsresultat. Du kommer att arbeta praktiskt med att researcha, skriva, publicera och optimera innehåll för webbplatsen. Det kan handla om allt från guider och artiklar till tjänstesidor, lokala landnin"
-    },
-    {
-      "source": "remoteok",
-      "title": "People Operations Coordinator",
-      "company": "Ashby",
-      "location": "Remote",
-      "employment_type": "",
-      "work_mode": "remote",
-      "published": "2026-09-21T16:00:11+00:00",
-      "deadline": "",
-      "url": "https://remoteOK.com/remote-jobs/remote-people-operations-coordinator-ashby-1137412",
-      "salary": "55000 - 80000",
-      "provider_id": "1137412",
-      "lane": "adjacent",
-      "matched_query": "project coordinator",
-      "triage_score": 71.4,
-      "triage_reasons": [
-        "title/role fit 72%",
-        "candidate-evidence support 47%",
-        "arrangement fit 100%",
-        "geography/remote fit 68%",
-        "recency signal 90%"
-      ],
-      "review_flags": [
-        "remote-eligibility-needs-verification"
-      ],
-      "id": "015855af2351fe46",
-      "description_excerpt": "Hi! I’m Hannah and I lead People Operations here at Ashby. I joined over four years ago as the first People hire and I’m excited that our People Ops team is growing! The People Operations team supports Ashby employees through the development and implementation of programs, policies, and services that contribute to a productive and inclusive working environment. We ensure the work we do aligns with our Operating Principles and strengthens the environment we’re building at Ashby. Our approach is to do things differently, we prioritize what truly fits our team and enhances how we work together. By embracing creativity and customization, we aim to create a people-first culture that drives both i"
-    },
-    {
-      "source": "platsbanken",
-      "title": "Ekonomi/Administratör",
-      "company": "Ideella Fören S:T Lukas i Uppsala Med Firma S:T",
-      "location": "Uppsala, Uppsala län",
-      "employment_type": "Tillsvidareanställning (inkl. eventuell provanställning)",
-      "work_mode": null,
-      "published": "2026-09-28T13:52:15",
-      "deadline": "2026-11-16T23:59:59",
-      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31522131",
-      "salary": "",
-      "provider_id": "31522131",
-      "lane": "bridge",
-      "matched_query": "administratör deltid",
-      "triage_score": 71.3,
-      "triage_reasons": [
-        "title/role fit 80%",
-        "candidate-evidence support 0%",
-        "arrangement fit 100%",
-        "geography/remote fit 82%",
-        "recency signal 100%"
-      ],
-      "review_flags": [],
-      "id": "c402e2aa713dddb9",
-      "description_excerpt": "Vill du arbeta i en verksamhet där människor står i fokus och samtidigt bidra med struktur, ordning och ekonomisk kompetens? Hos oss får du en viktig och verksamhetsnära roll med brett ansvar för löpande ekonomi, löner, bokslut, rapportering, uppföljning, upphandlingar och övrigt administrativt arbete. S:t Lukas i Uppsala vänder sig till privatpersoner, företag och organisationer. Vi erbjuder psykoterapi för vuxna, par och ungdomar. Till organisationer erbjuder vi även utbildning och psykosociala insatser bl. a handledning, stödsamtal, chefs-och grupputveckling, coachning för chefer och medarbetare, avlastande samtal, utbildning och konflikthantering. Vi har för närvarande 11st anställda var"
-    },
-    {
-      "source": "platsbanken",
-      "title": "Extrajobb receptionist till Joyweek Staffing",
-      "company": "Joyweek AB",
-      "location": "Stockholm, Stockholms län",
-      "employment_type": "Behovsanställning",
-      "work_mode": "Arbete på plats",
-      "published": "2026-09-11T11:14:50",
-      "deadline": "2027-03-10T23:59:59",
-      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31466093",
-      "salary": "",
-      "provider_id": "31466093",
-      "lane": "bridge",
-      "matched_query": "receptionist deltid",
-      "triage_score": 71.3,
-      "triage_reasons": [
-        "title/role fit 77%",
-        "candidate-evidence support 0%",
-        "arrangement fit 100%",
-        "geography/remote fit 100%",
-        "recency signal 74%"
-      ],
-      "review_flags": [],
-      "id": "5eb8aca34c725107",
-      "description_excerpt": "Vi söker dig som är en positiv, engagerad och serviceinriktad person som vill vara med och stötta våra kunder vid behov. Detta är ett extrajobb, under kontorstider, som passar bra till sidan av dina studier. Det kommer även finnas arbetsmöjligheter under sommaren. I rollen kommer du att täcka upp för ordinarie personal vid frånvaro och bidra till en väl fungerande arbetsmiljö. Vanliga roller inkluderar receptionist, Office Coordinator och kontorsadministratör. Vi söker dig som: Har en stark känsla för service och trivs med att hjälpa andra Är strukturerad och har ett öga för detaljer, med förmåga att hålla arbetsmiljön snygg och inbjudande Är ordningsam och noggrann i ditt arbete Har en lösn"
-    },
-    {
-      "source": "platsbanken",
-      "title": "Assistant Professor, Tenure Track, in Strategic Marketing",
-      "company": "Handelshögskolan i Stockholm",
-      "location": "Stockholm, Stockholms län",
-      "employment_type": "Vanlig anställning",
-      "work_mode": "Arbete på plats",
-      "published": "2026-09-11T11:12:29",
-      "deadline": "2026-11-01T23:59:59",
-      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31466081",
-      "salary": "",
-      "provider_id": "31466081",
-      "lane": "core",
-      "matched_query": "research assistant",
-      "triage_score": 71.2,
-      "triage_reasons": [
-        "title/role fit 72%",
-        "candidate-evidence support 38%",
-        "arrangement fit 72%",
-        "geography/remote fit 100%",
-        "recency signal 74%"
-      ],
-      "review_flags": [],
-      "id": "abd949260b345063",
-      "description_excerpt": "Department of Marketing and Strategy (DMS), Stockholm School of Economics The Department of Marketing and Strategy at the Stockholm School of Economics invites applications for a tenure-track position at the Assistant Professor level in strategic marketing. Please note that this is not an open-rank search; we are specifically seeking early-career scholars for appointment at the Assistant Professor level. Your profile We are looking for candidates with a completed Ph.D. degree in Business Administration from an accredited university or business school (EQUIS, AACSB, or AMBA). The candidate must have completed their doctoral degree prior to taking up the position. As a candidate, you should ha"
-    },
-    {
-      "source": "platsbanken",
-      "title": "Administrative Assistant",
-      "company": "CERN",
-      "location": "",
-      "employment_type": "Tillsvidareanställning (inkl. eventuell provanställning)",
-      "work_mode": null,
-      "published": "2026-09-22T13:22:52",
-      "deadline": "2026-10-21T23:59:59",
-      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31506334",
-      "salary": "",
-      "provider_id": "31506334",
-      "lane": "bridge",
-      "matched_query": "administrative assistant part time",
-      "triage_score": 71.1,
-      "triage_reasons": [
-        "title/role fit 80%",
-        "candidate-evidence support 47%",
-        "arrangement fit 72%",
-        "geography/remote fit 55%",
-        "recency signal 91%"
-      ],
-      "review_flags": [
-        "location-unknown"
-      ],
-      "id": "06b260e1f0f458be",
-      "description_excerpt": "The CERN Staff Association (SA) is committed to promoting the welfare of CERN personnel through a wide range of services and initiatives. Among these is the Jardin des Particules (JDP), an early childhood education and childcare facility located at CERN, welcoming children from 4 months to 10 years old. We are looking for an experienced Administrative Assistant to play a central role in the day-to-day administration and management of the Jardin des Particules. This is a varied position combining human resources administration, financial management and operational coordination within a Swiss employment framework. If you enjoy taking ownership of diverse administrative responsibilities, have s"
-    },
-    {
-      "source": "platsbanken",
-      "title": "Klarspråksredaktör",
-      "company": "Socialstyrelsen",
-      "location": "Stockholm, Stockholms län",
-      "employment_type": "Vanlig anställning",
-      "work_mode": null,
-      "published": "2026-09-25T17:15:19",
-      "deadline": "2026-10-11T23:59:59",
-      "url": "https://arbetsformedlingen.se/platsbanken/annonser/31523249",
-      "salary": "",
-      "provider_id": "31523249",
-      "lane": "core",
-      "matched_query": "redaktör",
-      "triage_score": 71.0,
-      "triage_reasons": [
-        "title/role fit 80%",
-        "candidate-evidence support 0%",
-        "arrangement fit 72%",
-        "geography/remote fit 100%",
-        "recency signal 96%"
-      ],
-      "review_flags": [],
-      "id": "dd8fa7e7ad3a774a",
-      "description_excerpt": "Som klarspråksredaktör arbetar du nära våra utredare och externa experter. Du tar ett helhetsansvar för textkvaliteten i utvalda publikationer – genom textredigering, utveckling av mallar och standardtexter samt utbildning av kollegor. Du är med från början i projekten, och du jobbar med allt från innehållsurval till slutlig korrekturläsning och kommunikation inför publiceringen. Här ingår att ta fram material för fler målgrupper, till exempel patienter. Ibland skriver du kanske också en debattartikel, ibland en språkspalt till hela myndigheten. Din roll handlar mycket om att samarbeta, ta hand om synpunkter och inspirera till klarspråk. Texthantverket är dock arbetets kärna, och vi behöver "
     }
   ]
 }
