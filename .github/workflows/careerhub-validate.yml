@@ -37,6 +37,8 @@ jobs:
           test ! -d CareerHub/scripts
           test ! -d CareerHub/hrdm
           test ! -f CareerHub/requirements.txt
+          test ! -f CareerHub/instance.yaml
+          test ! -f CareerHub/stack.lock.yaml
       - name: Validate profile contract against central motor
         env:
           PYTHONPATH: .careerhub-zero/src
