@@ -20,72 +20,57 @@ jobs:
        github.event.issue.author_association == 'MEMBER' ||
        github.event.issue.author_association == 'COLLABORATOR')
     runs-on: ubuntu-latest
-
     env:
       GH_TOKEN: ${{ github.token }}
-
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
-      - uses: actions/setup-python@v5
+      - name: Checkout central CareerHub utilities
+        uses: actions/checkout@v4
         with:
-          python-version: "3.12"
-
-      - name: Install CareerHub
-        run: pip install -r CareerHub/requirements.txt
-
-      - name: Align with latest main
-        run: |
-          git fetch origin main
-          git checkout main
-          git reset --hard origin/main
-
-      - name: Parse update
+          repository: Motherpher/CareerHubZero
+          ref: main
+          path: .careerhub-zero
+      - name: Parse update request
         run: |
           mkdir -p /tmp/careerhub-update
-          python CareerHub/scripts/update_request.py             --event "$GITHUB_EVENT_PATH"             --out /tmp/careerhub-update
-
-      - name: Apply update
+          python .careerhub-zero/scripts/update_request.py --event "$GITHUB_EVENT_PATH" --out /tmp/careerhub-update
+      - name: Apply status or priority update
+        env:
+          PYTHONPATH: .careerhub-zero/src
         run: |
+          python -m pip install -r .careerhub-zero/requirements.txt
           CASE="$(cat /tmp/careerhub-update/case_issue_number.txt)"
           STATUS="$(cat /tmp/careerhub-update/status.txt)"
           PRIORITY="$(cat /tmp/careerhub-update/priority.txt)"
           DATE="$(cat /tmp/careerhub-update/date.txt)"
           NEXT_ACTION="$(cat /tmp/careerhub-update/next_action.txt)"
           NEXT_DATE="$(cat /tmp/careerhub-update/next_action_date.txt)"
-
           if [ -n "$PRIORITY" ]; then
-            python CareerHub/scripts/careerhub.py track               --action priority               --issue-number "$CASE"               --priority "$PRIORITY"
+            python .careerhub-zero/scripts/careerhub.py --manifest CareerHub/careerhub.yaml track --action priority --issue-number "$CASE" --priority "$PRIORITY"
           elif [ -n "$STATUS" ]; then
-            python CareerHub/scripts/careerhub.py track               --action status               --issue-number "$CASE"               --status "$STATUS"               --date "$DATE"               --next-action "$NEXT_ACTION"               --next-action-date "$NEXT_DATE"
+            python .careerhub-zero/scripts/careerhub.py --manifest CareerHub/careerhub.yaml track --action status --issue-number "$CASE" --status "$STATUS" --date "$DATE" --next-action "$NEXT_ACTION" --next-action-date "$NEXT_DATE"
           else
             echo "No status or priority update supplied."
             exit 1
           fi
-
       - name: Commit CareerHub state
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add             CareerHub/data/applications.json             CareerHub/CONTROL_ROOM.md             CareerHub/APPLICATIONS.md             CareerHub/JOB_VAULT.md             CareerHub/visuals/careerhub-journey.svg
+          git add -A CareerHub/data CareerHub/CONTROL_ROOM.md CareerHub/APPLICATIONS.md CareerHub/JOB_VAULT.md CareerHub/reports
           if ! git diff --cached --quiet; then
             git commit -m "CareerHub: update application case"
             git fetch origin main
             git rebase origin/main
             git push origin HEAD:main
           fi
-
       - name: Update original case and close helper issue
         run: |
           CASE="$(cat /tmp/careerhub-update/case_issue_number.txt)"
           STATUS="$(cat /tmp/careerhub-update/status.txt)"
           PRIORITY="$(cat /tmp/careerhub-update/priority.txt)"
-          if [ -n "$PRIORITY" ]; then
-            MESSAGE="CareerHub priority updated to **$PRIORITY / 5**. The control room has been refreshed."
-          else
-            MESSAGE="CareerHub status updated to **$STATUS**. The control room and application monitor have been refreshed."
-          fi
+          if [ -n "$PRIORITY" ]; then MESSAGE="CareerHub priority updated to **$PRIORITY / 5**."; else MESSAGE="CareerHub status updated to **$STATUS**."; fi
           gh issue comment "$CASE" --repo "${{ github.repository }}" --body "$MESSAGE"
           gh issue close "${{ github.event.issue.number }}" --repo "${{ github.repository }}" --comment "Update applied to CareerHub case #$CASE."
