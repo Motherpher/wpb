@@ -45,12 +45,17 @@ jobs:
         env:
           PYTHONPATH: .careerhub-zero/src
         run: python .careerhub-zero/scripts/careerhub.py --manifest CareerHub/careerhub.yaml render
-      - name: Verify preserved profile state
+      - name: Verify manifest-owned profile and state are preserved
         run: |
-          test -f CareerHub/data/applications.json
-          test -f CareerHub/data/job_vault.json
-          test -f CareerHub/profile/candidate_verified.yaml
-          test -f CareerHub/config/search_profile.yaml
-          test -f CareerHub/CONTROL_ROOM.md
-          test -f CareerHub/APPLICATIONS.md
-          test -f CareerHub/JOB_VAULT.md
+          python - <<'PY'
+          from pathlib import Path
+          import yaml
+          root = Path('CareerHub')
+          manifest = yaml.safe_load((root / 'careerhub.yaml').read_text(encoding='utf-8'))
+          required = [manifest['profile']['path'], manifest['search']['path'], *manifest['state'].values()]
+          required += ['CONTROL_ROOM.md', 'APPLICATIONS.md', 'JOB_VAULT.md']
+          missing = [rel for rel in required if not (root / rel).exists()]
+          if missing:
+              raise SystemExit('Missing preserved profile/state paths: ' + ', '.join(missing))
+          print('Preserved profile/state paths OK:', ', '.join(required))
+          PY
