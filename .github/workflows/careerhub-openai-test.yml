@@ -12,44 +12,25 @@ jobs:
     env:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       CAREERHUB_MODEL: ${{ secrets.CAREERHUB_MODEL }}
-
     steps:
       - uses: actions/checkout@v4
-
-      - uses: actions/setup-python@v5
+      - name: Checkout central CareerHub motor
+        uses: actions/checkout@v4
         with:
-          python-version: "3.12"
-
-      - name: Install CareerHub dependencies
-        run: pip install -r CareerHub/requirements.txt
-
+          repository: Motherpher/CareerHubZero
+          ref: main
+          path: .careerhub-zero
+      - name: Install central dependencies
+        run: python -m pip install -r .careerhub-zero/requirements.txt
       - name: Check secret exists
         run: |
           if [ -z "$OPENAI_API_KEY" ]; then
             echo "## ❌ CareerHub is not connected to OpenAI" >> "$GITHUB_STEP_SUMMARY"
-            echo "" >> "$GITHUB_STEP_SUMMARY"
             echo "The repository secret **OPENAI_API_KEY** is missing." >> "$GITHUB_STEP_SUMMARY"
-            echo "" >> "$GITHUB_STEP_SUMMARY"
-            echo "Add it under **Settings → Secrets and variables → Actions → New repository secret**." >> "$GITHUB_STEP_SUMMARY"
-            echo "::error::OPENAI_API_KEY is missing."
             exit 1
           fi
-
       - name: Test OpenAI Responses API
         run: |
-          python CareerHub/scripts/test_openai.py
+          python .careerhub-zero/scripts/test_openai.py
           echo "## ✅ CareerHub is connected to OpenAI" >> "$GITHUB_STEP_SUMMARY"
-          echo "" >> "$GITHUB_STEP_SUMMARY"
-          echo "The **OPENAI_API_KEY** secret is available and a live Responses API request succeeded." >> "$GITHUB_STEP_SUMMARY"
-          echo "" >> "$GITHUB_STEP_SUMMARY"
-          echo "CareerHub can now run **YES — Analyse this job → HRDM-R → application pack**." >> "$GITHUB_STEP_SUMMARY"
-
-      - name: Troubleshooting
-        if: failure()
-        run: |
-          echo "" >> "$GITHUB_STEP_SUMMARY"
-          echo "### If the secret exists but the test failed" >> "$GITHUB_STEP_SUMMARY"
-          echo "- confirm API billing/credits are active" >> "$GITHUB_STEP_SUMMARY"
-          echo "- confirm the key belongs to the intended OpenAI project" >> "$GITHUB_STEP_SUMMARY"
-          echo "- confirm the project can access the configured model" >> "$GITHUB_STEP_SUMMARY"
-          echo "- if CAREERHUB_MODEL is set, verify that model ID" >> "$GITHUB_STEP_SUMMARY"
+          echo "A live Responses API request succeeded through the central CareerHub motor." >> "$GITHUB_STEP_SUMMARY"
