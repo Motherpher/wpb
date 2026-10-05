@@ -1,0 +1,10 @@
+schema_version: "1.0"
+posture: "editorial, precise, culturally literate, evidence-bounded"
+prefer:
+  - clear editorial hierarchy
+  - concrete role and publication language
+  - concise guidance around next actions
+avoid:
+  - generic motivational career language
+  - inflated claims beyond verified sources
+  - treating historical location as current residence

@@ -1,0 +1,11 @@
+schema_version: "1.0"
+status: STRUCTURE_READY
+source_basis:
+  - profile/candidate_verified.yaml
+  - config/search_profile.yaml
+material_decisions:
+  - editorial rather than analytical information posture
+  - publication/reporting evidence foregrounded
+  - balanced information density
+  - profile-search-analysis-application-tracking journey
+evidence_rule: "Presentation changes emphasis only; it does not add career evidence."

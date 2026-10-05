@@ -1,0 +1,7 @@
+{
+  "schema_version": "1.0",
+  "typography": {"display": "Georgia, 'Times New Roman', serif", "body": "ui-sans-serif, system-ui, sans-serif", "scale": "balanced"},
+  "shape": {"radius": "soft", "border": "defined"},
+  "surface": {"treatment": "editorial", "shadow": "none"},
+  "palette": {"background": "#F5F1E8", "foreground": "#1D1A17", "muted": "#6D675F", "accent": "#7A2F3A", "accent_foreground": "#FFFFFF"}
+}

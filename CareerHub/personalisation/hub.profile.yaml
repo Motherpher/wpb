@@ -1,0 +1,24 @@
+schema_version: "1.0"
+identity:
+  display_name: "Weronika Pérez Borjas"
+  strapline: "Writing, reporting and editorial work across culture, society and long-form journalism."
+  language: "en"
+experience:
+  mode: editorial
+  density: balanced
+  guidance: standard
+  motion: subtle
+home:
+  headline: "Current work. Current opportunities. Clear evidence."
+  intro: "Use the verified profile as the starting point, adjust the search when needed, analyse the role, then build and track the application."
+  slots: [identity, profile_health, search_coverage, next_action, opportunities, pipeline, hrdm, artifacts]
+navigation:
+  primary: [profile, find, analyse, apply, track, library, home]
+  labels:
+    profile: Profile
+    find: Search
+    analyse: Analyse
+    apply: Apply
+    track: Track
+    library: Library
+    home: Overview
