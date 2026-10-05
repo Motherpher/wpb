@@ -25,28 +25,28 @@ jobs:
       TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
       TWILIO_FROM_NUMBER: ${{ secrets.TWILIO_FROM_NUMBER }}
       CAREERHUB_NOTIFY_PHONE: ${{ secrets.CAREERHUB_NOTIFY_PHONE }}
-
+      CAREERHUB_APPLICATIONS: CareerHub/data/applications.json
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
+      - uses: actions/checkout@v4
+        with:
+          repository: Motherpher/CareerHubZero
+          ref: main
+          path: .careerhub-zero
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
-      - name: Install dependencies
-        run: pip install -r CareerHub/requirements.txt
-
+      - name: Install central CareerHub motor
+        run: pip install -r .careerhub-zero/requirements.txt
       - name: Align with latest main
         run: |
           git fetch origin main
           git checkout main
           git reset --hard origin/main
-
       - name: Send due reminders
-        run: python CareerHub/scripts/deadline_notify.py
-
+        run: python .careerhub-zero/scripts/deadline_notify.py
       - name: Persist reminder log
         run: |
           if git diff --quiet -- CareerHub/data/applications.json; then

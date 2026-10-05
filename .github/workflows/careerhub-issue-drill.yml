@@ -21,66 +21,63 @@ jobs:
        github.event.issue.author_association == 'MEMBER' ||
        github.event.issue.author_association == 'COLLABORATOR')
     runs-on: ubuntu-latest
-
     env:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       CAREERHUB_MODEL: ${{ secrets.CAREERHUB_MODEL }}
       CAREERHUB_REQUIRE_AI: "true"
       GH_TOKEN: ${{ github.token }}
-
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
+      - uses: actions/checkout@v4
+        with:
+          repository: Motherpher/CareerHubZero
+          ref: main
+          path: .careerhub-zero
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
-      - name: Install CareerHub
-        run: pip install -r CareerHub/requirements.txt
-
+      - name: Install central CareerHub motor
+        run: pip install -r .careerhub-zero/requirements.txt
       - name: Align with latest main
         run: |
           git fetch origin main
           git checkout main
           git reset --hard origin/main
-
       - name: Read chosen-job request
         run: |
           mkdir -p /tmp/careerhub-request
-          python CareerHub/scripts/issue_request.py             --event "$GITHUB_EVENT_PATH"             --out /tmp/careerhub-request
-
+          python .careerhub-zero/scripts/issue_request.py --event "$GITHUB_EVENT_PATH" --out /tmp/careerhub-request
       - name: Verify OpenAI is configured
         run: |
           if [ -z "$OPENAI_API_KEY" ]; then
-            echo "::error::CareerHub cannot run HRDM yet because the repository secret OPENAI_API_KEY is missing."
+            echo "::error::CareerHub cannot run HRDM yet because OPENAI_API_KEY is missing."
             exit 1
           fi
-
       - name: Build HRDM and application pack
+        env:
+          PYTHONPATH: .careerhub-zero/src
         run: |
           JOB_URL="$(cat /tmp/careerhub-request/job_url.txt)"
           LANE="$(cat /tmp/careerhub-request/lane.txt)"
           ROLE="$(cat /tmp/careerhub-request/role.txt)"
           EMPLOYER="$(cat /tmp/careerhub-request/employer.txt)"
           DEADLINE="$(cat /tmp/careerhub-request/deadline.txt)"
-          OUT="CareerHub/output/issue-${{ github.event.issue.number }}"
-
-          python CareerHub/scripts/careerhub.py drill             --url "$JOB_URL"             --text-file /tmp/careerhub-request/job_text.txt             --title "$ROLE"             --company "$EMPLOYER"             --deadline "$DEADLINE"             --lane "$LANE"             --out "$OUT"
-
-          cp /tmp/careerhub-request/request.json "$OUT/request.json"
-
+          OUT_REL="output/issue-${{ github.event.issue.number }}"
+          python .careerhub-zero/scripts/careerhub.py --manifest CareerHub/careerhub.yaml drill --url "$JOB_URL" --text-file /tmp/careerhub-request/job_text.txt --title "$ROLE" --company "$EMPLOYER" --deadline "$DEADLINE" --lane "$LANE" --out "$OUT_REL"
+          cp /tmp/careerhub-request/request.json "CareerHub/$OUT_REL/request.json"
       - name: Register chosen job and refresh CareerHub
+        env:
+          PYTHONPATH: .careerhub-zero/src
         run: |
           PRIORITY="$(cat /tmp/careerhub-request/priority.txt)"
-          python CareerHub/scripts/careerhub.py track             --action choose             --job-json "CareerHub/output/issue-${{ github.event.issue.number }}/job.json"             --issue-number "${{ github.event.issue.number }}"             --issue-url "${{ github.event.issue.html_url }}"             --priority "$PRIORITY"
-
-      - name: Commit CareerHub state
+          python .careerhub-zero/scripts/careerhub.py --manifest CareerHub/careerhub.yaml track --action choose --job-json "CareerHub/output/issue-${{ github.event.issue.number }}/job.json" --issue-number "${{ github.event.issue.number }}" --issue-url "${{ github.event.issue.html_url }}" --priority "$PRIORITY" --analysis-complete
+      - name: Commit CareerHub state and output
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add             CareerHub/data/applications.json             CareerHub/CONTROL_ROOM.md             CareerHub/APPLICATIONS.md             CareerHub/JOB_VAULT.md             CareerHub/visuals/careerhub-journey.svg
+          git add CareerHub/data/applications.json CareerHub/data/hrdm_ledger.json CareerHub/reports CareerHub/output/issue-${{ github.event.issue.number }} CareerHub/CONTROL_ROOM.md CareerHub/APPLICATIONS.md CareerHub/JOB_VAULT.md
           if git diff --cached --quiet; then
             echo "No state changes."
           else
@@ -89,7 +86,6 @@ jobs:
             git rebase origin/main
             git push origin HEAD:main
           fi
-
       - name: Upload finished pack
         uses: actions/upload-artifact@v4
         with:
@@ -97,34 +93,14 @@ jobs:
           path: CareerHub/output/issue-${{ github.event.issue.number }}/
           retention-days: 14
           if-no-files-found: error
-
       - name: Tell the user Step 3 is ready
         if: success()
         run: |
           RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
           UPDATE_URL="${{ github.server_url }}/${{ github.repository }}/issues/new?template=careerhub-update-status.yml"
-          gh issue comment "${{ github.event.issue.number }}" --repo "${{ github.repository }}" --body "$(cat <<EOF
-          ## Step 3 — Apply
-
-          The job is now **chosen**, ranked and stored in CareerHub. The HRDM/application pack is ready.
-
-          **[Download the application pack →]($RUN_URL)**
-
-          Download **CareerHub-${{ github.event.issue.number }}-application-pack**.
-
-          Then:
-          1. edit the Word application,
-          2. submit it to the employer,
-          3. return to CareerHub and mark the case **Applied**.
-
-          **[Update application status →]($UPDATE_URL)**
-
-          CareerHub will keep the job in the historic vault even after it disappears from the live sourcing list.
-          EOF
-          )"
-
+          gh issue comment "${{ github.event.issue.number }}" --repo "${{ github.repository }}" --body "## Step 3 — Apply\n\nThe job is chosen and analysed. The HRDM/application pack is ready.\n\n**[Download the application pack →]($RUN_URL)**\n\nThen edit the Word application, submit it, and **[update application status →]($UPDATE_URL)**."
       - name: Explain failures
         if: failure()
         run: |
           TEST_URL="${{ github.server_url }}/${{ github.repository }}/actions/workflows/careerhub-openai-test.yml"
-          gh issue comment "${{ github.event.issue.number }}" --repo "${{ github.repository }}" --body "CareerHub could not finish the analysis. First run **[Test OpenAI connection]($TEST_URL)**. If that passes, the next most common cause is a job board that blocks automated reading; in that case create a new **Analyse job** request and paste the public job-ad text into **Job text (optional)**."
+          gh issue comment "${{ github.event.issue.number }}" --repo "${{ github.repository }}" --body "CareerHub could not finish the analysis. Run **[Test OpenAI connection]($TEST_URL)** first. If that passes, retry with the vacancy text pasted into the Analyse job request."

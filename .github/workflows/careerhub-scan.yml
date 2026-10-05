@@ -3,19 +3,16 @@ name: CareerHub — Scan & Rank Jobs
 on:
   push:
     paths:
-      - "CareerHub/config/search_profiles.yaml"
-      - "CareerHub/profile/candidate.yaml"
+      - "CareerHub/config/**"
+      - "CareerHub/profile/**"
+      - "CareerHub/careerhub.yaml"
   workflow_dispatch:
     inputs:
       lane:
         description: "Search lane"
         required: true
         type: choice
-        options:
-          - all
-          - core
-          - adjacent
-          - bridge
+        options: [all, core, adjacent, bridge]
         default: all
       limit:
         description: "Maximum ranked leads to keep"
@@ -41,33 +38,35 @@ jobs:
       ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
       JOOBLE_API_KEY: ${{ secrets.JOOBLE_API_KEY }}
       JOOBLE_API_ENDPOINT: ${{ secrets.JOOBLE_API_ENDPOINT }}
-
+      GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
+      - uses: actions/checkout@v4
+        with:
+          repository: Motherpher/CareerHubZero
+          ref: main
+          path: .careerhub-zero
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
-      - name: Install CareerHub
-        run: pip install -r CareerHub/requirements.txt
-
+      - name: Install central CareerHub motor
+        run: pip install -r .careerhub-zero/requirements.txt
       - name: Align with latest main
         run: |
           git fetch origin main
           git checkout main
           git reset --hard origin/main
-
       - name: Source and rank jobs
-        run: python CareerHub/scripts/careerhub.py scan --lane "$LANE" --limit "$LIMIT"
-
-      - name: Commit refreshed control room
+        env:
+          PYTHONPATH: .careerhub-zero/src
+        run: python .careerhub-zero/scripts/careerhub.py --manifest CareerHub/careerhub.yaml scan --lane "$LANE" --limit "$LIMIT"
+      - name: Commit refreshed CareerHub state
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add             CareerHub/CONTROL_ROOM.md             CareerHub/JOB_VAULT.md             CareerHub/APPLICATIONS.md             CareerHub/visuals/careerhub-journey.svg             CareerHub/data/latest_jobs.json             CareerHub/data/job_vault.json             CareerHub/data/applications.json
+          git add CareerHub/CONTROL_ROOM.md CareerHub/JOB_VAULT.md CareerHub/APPLICATIONS.md CareerHub/data/latest_jobs.json CareerHub/data/job_vault.json CareerHub/data/applications.json CareerHub/data/maps 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No CareerHub changes."
             exit 0
