@@ -2,11 +2,16 @@ name: CareerHub · Unified Body Compatibility
 
 on:
   workflow_dispatch:
+  pull_request:
+    paths:
+      - "careerhub.yaml"
+      - "CareerHub/**"
+      - ".github/workflows/careerhub-body-compat.yml"
   push:
     branches: [main]
     paths:
       - "careerhub.yaml"
-      - "CareerHub/careerhub.yaml"
+      - "CareerHub/**"
       - ".github/workflows/careerhub-body-compat.yml"
 
 permissions:
@@ -17,8 +22,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Validate profile against central CareerHub body
-        uses: Motherpher/CareerHubZero@main
+      - name: Checkout canonical CareerHub body
+        uses: actions/checkout@v4
         with:
-          manifest: "CareerHub/careerhub.yaml"
-          command: validate
+          repository: Motherpher/CareerHubZero
+          ref: main
+          path: .careerhub-zero
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install central motor dependencies
+        run: python -m pip install -r .careerhub-zero/requirements.txt
+      - name: Validate profile against central CareerHub body
+        env:
+          PYTHONPATH: .careerhub-zero/src
+        run: python .careerhub-zero/scripts/careerhub.py --manifest CareerHub/careerhub.yaml validate
