@@ -116,6 +116,10 @@ jobs:
             voice: personalisation/voice.yaml
             site_root: site
           EOF
+          mkdir -p CareerHub/data
+          if [ ! -f CareerHub/data/hrdm_ledger.json ]; then
+            printf '{\n  "schema_version": "1.0",\n  "updated_at": null,\n  "runs": []\n}\n' > CareerHub/data/hrdm_ledger.json
+          fi
 
       - name: Sync canonical managed web shell
         run: python .careerhub-zero/scripts/sync_web_shell.py CareerHub
