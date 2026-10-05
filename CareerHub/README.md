@@ -1,5 +1,9 @@
 # CareerHub
 
+> **Room boundary:** CareerHub is the **job-search and application room** inside the WPB profile. Weronika's writing, journalism, archive, editorial development and portfolio live separately in the [Writer & Journalism Room](../WriterRoom/README.md).
+
+CareerHub may use explicitly approved, verified career evidence exported from WriterRoom, but it does not own or automatically ingest the writer-room corpus or working material. See [WriterRoom/ROOM_BOUNDARY.md](../WriterRoom/ROOM_BOUNDARY.md).
+
 ![CareerHub journey](visuals/careerhub-journey.svg)
 
 ## One journey. Three steps.
@@ -66,6 +70,12 @@ Chosen jobs can receive automated reminders at **7, 3, 1 and 0 days** before dea
 
 See [SETUP.md](SETUP.md#deadline-reminders).
 
+## Evidence boundary
+
+CareerHub's candidate-positioning and application claims must remain evidence-bounded.
+
+WriterRoom can supply selected verified evidence such as publication records, approved biography statements, selected work and documented professional capabilities. CareerHub must not silently upgrade archive interpretation into candidate fact, and it must not automatically use unpublished drafts, confidential reporting material, private notes or unresolved archive leads.
+
 ## Visual system
 
 CareerHub uses a deliberately lighter editorial interface inspired by the visual references for this project:
@@ -81,7 +91,9 @@ The visual is generated from live CareerHub state, so the numbers change automat
 
 ## Privacy
 
-For regular use, a **private CareerHub repository** remains the recommended deployment. This public WPB repository is suitable for the public-safe architecture and demonstration layer.
+This WPB repository is private. Secrets such as API keys and notification credentials remain in repository/environment secret infrastructure and must never be committed to source control.
+
+Candidate evidence, application history and recruitment state belong to CareerHub; writer-room drafts and reporting material remain outside CareerHub unless explicitly exported for a specific career use.
 
 See [PRIVACY.md](PRIVACY.md).
 
@@ -109,5 +121,7 @@ Maintainer documentation:
 - [Workflow](docs/WORKFLOW.md)
 - [Source matrix](docs/SOURCE_MATRIX.md)
 - [UX review](docs/UX_REVIEW.md)
+
+The reusable central engine is developed separately in `Motherpher/CareerHubZero`; this directory is the WPB-profiled CareerHub surface/state.
 
 </details>
