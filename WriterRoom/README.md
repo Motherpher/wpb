@@ -1,10 +1,10 @@
-# Writer & Journalism Room
+# Weronika Portfolio
 
-This is Weronika Pérez Borjas's **writer/journalist workroom** inside the WPB profile.
+This is Weronika Pérez Borjas's **professional writing and journalism workspace** inside the WPB profile.
 
 It is deliberately separate from **CareerHub**.
 
-- **Writer & Journalism Room** = the work itself: writing, reporting, research, editorial development, publication archive and portfolio.
+- **Weronika Portfolio** = the work itself: writing, reporting, research, editorial development, publication archive and portfolio.
 - **CareerHub** = finding roles, analysing job opportunities, preparing applications and following recruitment cases.
 
 Neither room owns the other.
@@ -15,7 +15,7 @@ Neither room owns the other.
 
 ## What belongs here
 
-The Writer & Journalism Room is the home for:
+Weronika Portfolio is the home for:
 
 - current and future writing/reporting projects;
 - ideas, pitches and commissions;
@@ -33,7 +33,7 @@ The Writer & Journalism Room is the home for:
 
 ## Operational desks
 
-The room is organised conceptually around these functions:
+The workspace is organised conceptually around these functions:
 
 1. **Work Desk** — current stories, drafts, commissions and status.
 2. **Pitch Desk** — pitch development, sending, follow-up and commissioning.
@@ -69,7 +69,7 @@ The following stays in [CareerHub](../CareerHub/README.md):
 
 ## Current archive estate
 
-The existing WPB archive predates this room and remains in its stable repository paths for compatibility. These paths are functionally owned by WriterRoom:
+The existing WPB archive predates this workspace and remains in its stable repository paths for compatibility. These paths are functionally owned by Weronika Portfolio:
 
 - [`../data/`](../data/) — canonical corpus and structured metadata
 - [`../bibliography/`](../bibliography/) — reconstructed publication bibliography
@@ -93,7 +93,7 @@ Not every piece must pass through every stage.
 
 ## Security classifications
 
-WriterRoom recognises:
+Weronika Portfolio recognises:
 
 **PUBLIC → INTERNAL → CONFIDENTIAL → PROTECTED_SOURCE**
 
@@ -107,7 +107,7 @@ See [security/README.md](security/README.md).
 
 ## Controlled bridge to CareerHub
 
-CareerHub may use only **explicitly approved, provenance-preserving career evidence** from this room.
+CareerHub may use only **explicitly approved, provenance-preserving career evidence** from this workspace.
 
 The bridge is defined in:
 
@@ -119,4 +119,4 @@ See [ROOM_BOUNDARY.md](ROOM_BOUNDARY.md).
 
 ## Start
 
-Open [CONTROL_ROOM.md](CONTROL_ROOM.md) for the writer-facing navigation surface.
+Open [CONTROL_ROOM.md](CONTROL_ROOM.md) for the Weronika Portfolio navigation surface.
