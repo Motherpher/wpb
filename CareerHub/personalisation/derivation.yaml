@@ -1,6 +1,6 @@
 schema_version: "1.0"
 profile_id: weronika-perez-borjas
-status: REFERENCE_PENDING
+status: PERSONALISATION_LOCK
 
 vectors:
   identity:
@@ -21,8 +21,9 @@ vectors:
     - "Evidence before claim; no generic HR or motivational language."
     - "Portfolio copy foregrounds work and provenance; CareerHub copy foregrounds next actions."
   visual_grammar:
-    - "Current implementation uses a provisional editorial grammar: large serif hierarchy, airy spacing, square geometry, defined rules and restrained surfaces."
-    - "No explicit visual reference has yet been inspected, so these traits are not VISUAL_LOCK evidence."
+    - "Use a warm editorial base with deep ink typography, botanical green restraint and a saturated coral-orange identity accent."
+    - "Reference logic comes from the supplied collage/portrait images: bold warm colour fields, botanical greens, warm white negative space and selective high-energy yellow, cyan and coral-red counterpoints."
+    - "Keep surfaces flat and editorial; colour and image should carry identity rather than shadows, glossy cards or corporate-blue UI conventions."
   interaction:
     - "Outer profile landing asks which workspace to enter."
     - "CareerHub internally preserves the canonical Profile → Search → Analyse → Apply → Track journey."
@@ -30,7 +31,7 @@ vectors:
   reference_provenance:
     - "Verified work/profile evidence comes from WPB profile and publication corpus."
     - "Peer-room architecture and the name Weronika Portfolio are explicit user decisions."
-    - "Visual-reference provenance remains pending until an explicit reference is inspected."
+    - "Colour direction is visually harvested from four explicit user-supplied references and is now locked."
 
 decisions:
   - id: wpb-d01
@@ -68,10 +69,13 @@ decisions:
       - "docs:CareerHubZero/PERSONAL_WORKSPACE_PROFILE_LIBRARY_SEARCH.md"
   - id: wpb-d06
     dimension: visual_grammar
-    decision: "Use the current editorial token set only as a provisional presentation pending an inspected visual reference; do not claim visual lock."
-    source_state: REFERENCE_PENDING
+    decision: "Lock the colour system to a warm-white and deep-ink reading base, botanical green restraint and coral-orange identity accent, with solar yellow, sage, cyan-blue and coral-red retained as supporting graphic colours from the reference set."
+    source_state: VISUAL_HARVEST
     source_refs:
-      - "visual-reference:none-inspected"
+      - "user-supplied-reference:image(4).png"
+      - "user-supplied-reference:image(5).png"
+      - "user-supplied-reference:image(6).png"
+      - "user-supplied-reference:image(7).png"
   - id: wpb-d07
     dimension: interaction_defaults
     decision: "Use the profile landing for workspace selection, then preserve CareerHub's canonical Profile → Search → Analyse → Apply → Track sequence inside CareerHub."
@@ -90,6 +94,6 @@ decisions:
 
 genericity_audit:
   eligible_dimensions: 8
-  changed_dimensions: 7
-  score: 0.875
+  changed_dimensions: 8
+  score: 1.0
   result: PASS
