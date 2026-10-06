@@ -10,6 +10,7 @@ layout = Path("CareerHub/site/app/layout.tsx")
 visual_layers = [
     Path("CareerHub/site/personal/weronika.css"),
     Path("CareerHub/site/personal/weronika-v3.css"),
+    Path("CareerHub/site/personal/weronika-expression.css"),
 ]
 
 if not layout.exists():
@@ -23,6 +24,7 @@ anchor = "import './motor.css';"
 imports = [
     "import '../personal/weronika.css';",
     "import '../personal/weronika-v3.css';",
+    "import '../personal/weronika-expression.css';",
 ]
 
 if anchor not in text:
