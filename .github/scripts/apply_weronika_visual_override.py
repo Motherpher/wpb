@@ -7,22 +7,34 @@ style imports/hooks without patching managed files.
 from pathlib import Path
 
 layout = Path("CareerHub/site/app/layout.tsx")
-css = Path("CareerHub/site/personal/weronika.css")
+visual_layers = [
+    Path("CareerHub/site/personal/weronika.css"),
+    Path("CareerHub/site/personal/weronika-v3.css"),
+]
 
 if not layout.exists():
     raise SystemExit(f"Missing managed layout: {layout}")
-if not css.exists():
-    raise SystemExit(f"Missing profile visual override: {css}")
+for css in visual_layers:
+    if not css.exists():
+        raise SystemExit(f"Missing profile visual override: {css}")
 
 text = layout.read_text(encoding="utf-8")
-import_line = "import '../personal/weronika.css';"
 anchor = "import './motor.css';"
+imports = [
+    "import '../personal/weronika.css';",
+    "import '../personal/weronika-v3.css';",
+]
 
-if import_line not in text:
-    if anchor not in text:
-        raise SystemExit("CareerHubZero layout import anchor changed; visual override cannot be injected safely.")
-    text = text.replace(anchor, anchor + "\n" + import_line, 1)
+if anchor not in text:
+    raise SystemExit("CareerHubZero layout import anchor changed; visual override cannot be injected safely.")
+
+missing = [line for line in imports if line not in text]
+if missing:
+    existing_profile_imports = [line for line in imports if line in text]
+    insert_after = existing_profile_imports[-1] if existing_profile_imports else anchor
+    injection = insert_after + "\n" + "\n".join(missing)
+    text = text.replace(insert_after, injection, 1)
     layout.write_text(text, encoding="utf-8")
-    print("Injected Weronika profile-owned visual override.")
+    print("Injected Weronika profile-owned visual layers:", ", ".join(missing))
 else:
-    print("Weronika profile-owned visual override already attached.")
+    print("Weronika profile-owned visual layers already attached.")
