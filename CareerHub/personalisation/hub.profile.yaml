@@ -11,14 +11,14 @@ experience:
 profile_shell:
   enabled: true
   headline: "Weronika Pérez Borjas"
-  intro: "Choose the workspace you want to enter. Writer & Journalism is for the work itself; CareerHub is for finding and securing the next role."
+  intro: "Choose the workspace you want to enter. Weronika Portfolio is for the work itself; CareerHub is for finding and securing the next role."
   rooms:
     - id: writer
-      label: "Writer & Journalism Room"
+      label: "Weronika Portfolio"
       eyebrow: "Your work"
       description: "Writing, reporting, pitches, research, editorial development, publication archive and portfolio."
       href: "/writer"
-      cta: "Open Writer Room"
+      cta: "Open Weronika Portfolio"
       features:
         - "Work desk"
         - "Pitches & commissions"
@@ -27,7 +27,7 @@ profile_shell:
         - "Archive"
         - "Portfolio"
       links:
-        - label: "Writer control room"
+        - label: "Portfolio control room"
           href: "https://github.com/Motherpher/wpb/blob/main/WriterRoom/CONTROL_ROOM.md"
         - label: "Archive dashboard"
           href: "https://github.com/Motherpher/wpb/blob/main/DASHBOARD.md"
@@ -71,7 +71,7 @@ navigation:
     - library
   labels:
     home: "Home"
-    writer: "Writer Room"
+    writer: "Weronika Portfolio"
     career: "CareerHub"
     profile: "Career profile"
     find: "Search"
