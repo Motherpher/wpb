@@ -5,50 +5,72 @@ status: VISUAL_HARVEST_COMPLETE
 references:
   - id: vr-01
     source: "user-supplied-reference:image(4).png"
-    role: "dominant warm field, botanical darks, coral-red subject, pale yellow support"
+    role: "saturated orange field; dark tropical foliage; coral-red focal subject; pale yellow circular support; surreal editorial collage"
   - id: vr-02
     source: "user-supplied-reference:image(5).png"
-    role: "warm white field, muted botanical neutrals, organic layering"
+    role: "warm white field; silhouette/double-exposure construction; muted botanical neutrals; organic layering; high negative-space contrast"
   - id: vr-03
     source: "user-supplied-reference:image(6).png"
-    role: "sage field, mustard yellow, olive/leaf green, graphic editorial blocking"
+    role: "sage field; mustard yellow panels; olive/leaf green; portrait fragmentation; asymmetric graphic blocking; print/editorial artefacts"
   - id: vr-04
     source: "user-supplied-reference:image(7).png"
-    role: "high-saturation coral-red, cyan-blue, solar yellow and deep ink"
+    role: "high-saturation coral-red, cyan-blue and solar yellow; tropical florals; deep ink; poster-like colour collision"
 
 observed:
-  typography_character: "editorial; typography is subordinate to image and colour fields in the supplied references"
-  grid_layout_rhythm: "asymmetric editorial composition with large colour planes and layered focal material"
-  whitespace_density: "variable; open fields are used to intensify saturated focal colour"
-  geometry: "hard-edged blocks combined with organic botanical silhouettes"
-  hierarchy: "one dominant visual field, one strong focal accent, restrained supporting neutrals"
-  colour_logic: "warm coral/orange and solar yellow against warm white, sage/botanical green and deep charcoal; selective cyan-blue or coral-red used as high-energy counterpoints"
-  card_surface_behaviour: "flat editorial planes rather than glossy UI surfaces"
-  iconography: "minimal; image and colour carry identity"
-  data_visualisation_language: "not established by the references"
-  imagery_language: "editorial collage, botanical layering, portrait/silhouette, saturated cut-paper and print-like colour relationships"
-  motion_character: "not established by the references; retain subtle motion"
+  typography_character: "editorial and poster-like; typography should act as a major compositional object, not merely interface text"
+  grid_layout_rhythm: "asymmetric editorial composition; deliberate imbalance; large colour planes; overlapping or offset focal elements; variable section widths"
+  whitespace_density: "variable by section; generous negative space alternates with visually dense collage fields"
+  geometry: "hard-edged editorial panels and bars combined with circles, botanical silhouettes and irregular organic masses"
+  hierarchy: "one dominant visual field per scene; oversized display type; strong image/colour focal point; small utility typography as contrast"
+  colour_logic: "orange/coral and solar yellow are structural fields, not occasional button colours; warm white and sage create breathing space; electric blue and coral-red provide high-energy counterpoints; charcoal anchors type and rules"
+  card_surface_behaviour: "cards should often read as print panels, clipped spreads or poster blocks rather than generic dashboard containers"
+  iconography: "minimal; graphic marks, numbering, lines, collage fields and typography carry identity"
+  data_visualisation_language: "functional and restrained when needed; should inherit print/editorial rules rather than default SaaS dashboard styling"
+  imagery_language: "editorial collage; botanical layering; silhouette/double exposure; fragmented portrait logic; saturated cut-paper and print-like colour relationships"
+  motion_character: "subtle physical movement only: offset, slide, lift and small collage shifts; no glossy product-animation language"
 
 reference_palette:
   warm_white: "#F7F2E8"
+  paper_bright: "#FFFDF8"
   deep_ink: "#242831"
-  botanical_green: "#59675F"
+  botanical_green: "#415848"
+  muted_botanical: "#59675F"
   coral_orange: "#ED7938"
+  hot_orange: "#F06A2B"
   solar_yellow: "#FEC524"
   sage: "#94ABA1"
   electric_blue: "#0B80B4"
   coral_red: "#F83E58"
 
 operational_palette:
-  background: "#F7F2E8"
+  background: "#ED7938"
   foreground: "#242831"
+  paper: "#FFFDF8"
   muted: "#59675F"
   accent: "#ED7938"
-  accent_foreground: "#242831"
-  rationale: "The operational UI uses the quieter warm-white/ink/botanical base for sustained reading and the coral-orange as the dominant identity accent. Yellow, sage, cyan and coral-red remain reference support colours for future graphic and imagery surfaces rather than persistent body UI."
+  secondary: "#94ABA1"
+  highlight: "#FEC524"
+  signal: "#0B80B4"
+  counterpoint: "#F83E58"
+  rationale: "The reference material is not a beige editorial system with occasional accents. Saturated colour fields are part of the composition itself. The profile home therefore uses orange/sage/yellow as structural background fields, the portfolio alternates bright paper with collage-colour scenes, and CareerHub uses the same identity with stronger functional restraint."
+
+composition_contract:
+  profile_home:
+    background: "full-bleed orange/sage field with solar-yellow focal circle and organic botanical mass"
+    typography: "oversized editorial display type"
+    room_cards: "offset print-panel composition; asymmetrical vertical alignment; hard ink rules/shadows"
+  portfolio:
+    background: "bright paper interrupted by saturated fields and botanical/double-exposure abstractions"
+    hero: "poster-scale title with layered colour bars/circle and collage depth"
+    sections: "variable colour panels, strong numbering, dense selected-work list with colour-reactive hover"
+  careerhub:
+    background: "paper/sage field with large abstract colour geometry"
+    interface: "functional information density retained, but cards/actions read as editorial blocks rather than generic SaaS surfaces"
+  responsive:
+    rule: "preserve colour-field identity and large typography while collapsing asymmetry safely on narrow screens"
 
 lock:
   permitted: true
   state: VISUAL_LOCK
   blocker: null
-  note: "Colour direction is locked from the explicit supplied visual references. Typography, motion and detailed image placement remain independently adjustable."
+  note: "Palette, colour-field use, asymmetric editorial geometry, botanical/organic contrast and collage/poster character are locked from the explicit supplied reference material. Exact source imagery is not reproduced; the site uses original CSS-composed abstractions inspired by those visual principles."
