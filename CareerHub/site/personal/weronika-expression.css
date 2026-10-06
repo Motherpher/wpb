@@ -1,0 +1,557 @@
+/*
+  Weronika Pérez Borjas — Expression Palette v4
+  ------------------------------------------------
+  This is a restrained expressionist layer built from the visual language of the supplied
+  references without reproducing their compositions, motifs or image content.
+
+  Design rule: preserve the editorial grid as the skeleton. Expression enters through
+  interruption — atmospheric colour fields, irregular organic masses, paper texture,
+  translucent geometry and asymmetry — not through literal collage imitation.
+
+  Approximate colour balance:
+  55% warm paper / neutral
+  18% sky
+  12% sage + moss
+  10% coral + blush
+   5% ochre punctuation
+*/
+
+:root {
+  --wb-paper: #F4EFE5;
+  --wb-paper-hi: #FBF7EF;
+  --wb-ink: #24272B;
+  --wb-sky: #9CCDD0;
+  --wb-sky-deep: #6E9AA0;
+  --wb-coral: #D96F59;
+  --wb-coral-deep: #BF5C4D;
+  --wb-blush: #D7A0A0;
+  --wb-sage: #98A69A;
+  --wb-sage-pale: #D9E0D8;
+  --wb-moss: #596650;
+  --wb-ochre: #D9AD4B;
+  --wb-cream: #EADDBE;
+  --wb-rule: 2px solid var(--wb-ink);
+  --wb-shadow: 10px 10px 0 rgba(36,39,43,.92);
+
+  /* Remap the previous visual layer so inherited v3 rules stay inside this palette. */
+  --wb-v3-paper: var(--wb-paper);
+  --wb-v3-paper-hi: var(--wb-paper-hi);
+  --wb-v3-ink: var(--wb-ink);
+  --wb-v3-orange: var(--wb-coral);
+  --wb-v3-orange-deep: var(--wb-coral-deep);
+  --wb-v3-yellow: var(--wb-ochre);
+  --wb-v3-sage: var(--wb-sage);
+  --wb-v3-sage-pale: var(--wb-sage-pale);
+  --wb-v3-olive: var(--wb-moss);
+  --wb-v3-blue: var(--wb-sky);
+  --wb-v3-blue-dark: var(--wb-sky-deep);
+  --wb-v3-pink: var(--wb-blush);
+  --wb-v3-cream: var(--wb-cream);
+  --wb-v3-rule: var(--wb-rule);
+  --wb-v3-shadow: var(--wb-shadow);
+}
+
+/* ---------- PAGE FIELD: LESS LOUD, MORE ATMOSPHERIC ---------- */
+
+html,
+body {
+  background: var(--wb-paper) !important;
+}
+
+body {
+  color: var(--wb-ink);
+  background-image:
+    linear-gradient(90deg,
+      var(--wb-coral) 0 3.25%,
+      var(--wb-paper) 3.25% 73%,
+      color-mix(in srgb, var(--wb-sky) 72%, var(--wb-paper)) 73% 91%,
+      color-mix(in srgb, var(--wb-sage) 76%, var(--wb-paper)) 91% 100%) !important;
+  background-attachment: fixed !important;
+}
+
+body::before {
+  opacity: .09 !important;
+  background-image:
+    radial-gradient(circle at 18% 34%, rgba(36,39,43,.18) 0 .6px, transparent .75px),
+    radial-gradient(circle at 82% 66%, rgba(36,39,43,.10) 0 .5px, transparent .7px) !important;
+  background-size: 10px 10px, 14px 14px !important;
+}
+
+body::after {
+  width: min(30vw, 470px) !important;
+  min-width: 250px !important;
+  height: 70vh !important;
+  right: -12vw !important;
+  top: 12vh !important;
+  opacity: .24 !important;
+  filter: none !important;
+  border-radius: 63% 37% 48% 52% / 26% 48% 52% 74% !important;
+  background:
+    radial-gradient(ellipse at 50% 12%, var(--wb-moss) 0 10%, transparent 10.7%),
+    radial-gradient(ellipse at 34% 31%, var(--wb-sage) 0 14%, transparent 14.7%),
+    radial-gradient(ellipse at 63% 50%, var(--wb-moss) 0 15%, transparent 15.7%),
+    radial-gradient(ellipse at 39% 72%, var(--wb-blush) 0 12%, transparent 12.7%) !important;
+}
+
+::selection {
+  background: var(--wb-ochre) !important;
+  color: var(--wb-ink) !important;
+}
+
+/* ---------- PROFILE HOME: EDITORIAL GRID + CONTROLLED INTERRUPTION ---------- */
+
+.hub--profile {
+  background:
+    linear-gradient(90deg,
+      var(--wb-coral) 0 4%,
+      var(--wb-paper) 4% 67%,
+      color-mix(in srgb, var(--wb-sky) 82%, var(--wb-paper)) 67% 88%,
+      color-mix(in srgb, var(--wb-sage) 72%, var(--wb-paper)) 88% 100%) !important;
+}
+
+.hub--profile::before {
+  opacity: 1 !important;
+  background:
+    radial-gradient(circle at 61% 23%, color-mix(in srgb, var(--wb-ochre) 76%, transparent) 0 8.8vw, transparent 9vw),
+    linear-gradient(128deg, transparent 0 60%, color-mix(in srgb, var(--wb-sky) 74%, transparent) 60% 64%, transparent 64% 100%),
+    linear-gradient(90deg, transparent 0 21%, rgba(36,39,43,.10) 21% 21.12%, transparent 21.12% 100%) !important;
+}
+
+.hub--profile::after {
+  width: clamp(290px, 31vw, 520px) !important;
+  height: clamp(560px, 62vw, 900px) !important;
+  right: clamp(-140px, -6vw, -45px) !important;
+  top: clamp(120px, 11vw, 185px) !important;
+  opacity: .42 !important;
+  filter: none !important;
+}
+
+.hub--profile .hero--profile {
+  min-height: min(82vh, 900px) !important;
+  border-bottom: 2px solid var(--wb-ink) !important;
+}
+
+.hub--profile .hero--profile::before {
+  width: clamp(90px, 10vw, 155px) !important;
+  height: clamp(250px, 30vw, 420px) !important;
+  left: clamp(48%, 57vw, 67%) !important;
+  top: 9% !important;
+  opacity: .62 !important;
+  background: var(--wb-sky-deep) !important;
+}
+
+.hub--profile .hero--profile::after {
+  width: clamp(170px, 19vw, 290px) !important;
+  height: clamp(64px, 7vw, 110px) !important;
+  left: clamp(10%, 17vw, 24%) !important;
+  bottom: 18% !important;
+  background: var(--wb-blush) !important;
+  box-shadow: 96px 54px 0 color-mix(in srgb, var(--wb-ochre) 72%, transparent) !important;
+  opacity: .78 !important;
+}
+
+.hub--profile .hero--profile h1 {
+  font-size: clamp(5.4rem, 12.8vw, 12.8rem) !important;
+  line-height: .74 !important;
+}
+
+.hub--profile .hero--profile .lead {
+  background: color-mix(in srgb, var(--wb-paper-hi) 94%, transparent) !important;
+  box-shadow: 7px 7px 0 var(--wb-ink) !important;
+}
+
+.hub--profile .nav--profile {
+  background: var(--wb-paper-hi) !important;
+  border: var(--wb-rule) !important;
+  box-shadow: 7px 7px 0 var(--wb-ink) !important;
+  transform: rotate(.18deg) !important;
+}
+
+.hub--profile .room-grid::before {
+  width: 28vw !important;
+  height: 66% !important;
+  left: -4vw !important;
+  top: 16% !important;
+  background: linear-gradient(12deg, color-mix(in srgb, var(--wb-ochre) 58%, transparent) 0 31%, transparent 31% 100%) !important;
+  opacity: .72;
+}
+
+.hub--profile .room-grid::after {
+  color: rgba(36,39,43,.052) !important;
+  font-size: clamp(6rem, 15vw, 16rem) !important;
+}
+
+.hub--profile .room-card {
+  box-shadow: 11px 11px 0 var(--wb-ink) !important;
+  min-height: 680px !important;
+}
+
+.hub--profile .room-card--writer {
+  background:
+    radial-gradient(circle at 83% 16%, color-mix(in srgb, var(--wb-ochre) 78%, var(--wb-paper-hi)) 0 9%, transparent 9.4%),
+    linear-gradient(146deg,
+      var(--wb-paper-hi) 0 45%,
+      color-mix(in srgb, var(--wb-sage) 72%, var(--wb-paper)) 45% 61%,
+      var(--wb-paper) 61% 100%) !important;
+}
+
+.hub--profile .room-card--writer::after {
+  width: 180px !important;
+  height: 360px !important;
+  right: -48px !important;
+  bottom: -35px !important;
+  opacity: .42 !important;
+  background:
+    radial-gradient(ellipse at 50% 12%, var(--wb-moss) 0 15%, transparent 15.7%),
+    radial-gradient(ellipse at 39% 35%, var(--wb-sage) 0 16%, transparent 16.7%),
+    radial-gradient(ellipse at 62% 59%, var(--wb-moss) 0 16%, transparent 16.7%) !important;
+}
+
+.hub--profile .room-card--career {
+  background:
+    linear-gradient(152deg,
+      var(--wb-sky-deep) 0 24%,
+      var(--wb-ink) 24% 72%,
+      var(--wb-coral) 72% 88%,
+      var(--wb-ochre) 88% 100%) !important;
+}
+
+.hub--profile .profile-utility {
+  background:
+    linear-gradient(90deg,
+      var(--wb-ochre) 0 46%,
+      var(--wb-paper) 46% 63%,
+      var(--wb-coral) 63% 77%,
+      var(--wb-sage) 77% 100%) !important;
+}
+
+/* ---------- PORTFOLIO: QUIETER SURFACE, RICHER DEPTH ---------- */
+
+.portfolio-room {
+  background:
+    linear-gradient(180deg,
+      var(--wb-paper) 0 22%,
+      color-mix(in srgb, var(--wb-sky) 20%, var(--wb-paper)) 22% 38%,
+      var(--wb-paper-hi) 38% 58%,
+      color-mix(in srgb, var(--wb-sage) 28%, var(--wb-paper)) 58% 73%,
+      var(--wb-paper) 73% 100%) !important;
+}
+
+.portfolio-room::before {
+  background:
+    linear-gradient(90deg, var(--wb-coral) 0 3.8%, transparent 3.8% 100%),
+    linear-gradient(90deg, transparent 0 79%, color-mix(in srgb, var(--wb-sky) 28%, transparent) 79% 100%),
+    radial-gradient(circle at 71% 11%, color-mix(in srgb, var(--wb-ochre) 62%, transparent) 0 6.6vw, transparent 6.8vw),
+    radial-gradient(ellipse at 89% 31%, color-mix(in srgb, var(--wb-moss) 15%, transparent) 0 10%, transparent 10.5%) !important;
+}
+
+.portfolio-room::after {
+  width: clamp(280px, 31vw, 520px) !important;
+  height: clamp(480px, 56vw, 820px) !important;
+  opacity: .30 !important;
+  filter: none !important;
+}
+
+.portfolio-masthead > .breadcrumb {
+  background: var(--wb-paper-hi) !important;
+  border: var(--wb-rule) !important;
+  box-shadow: 4px 4px 0 var(--wb-ink) !important;
+}
+
+.portfolio-masthead .nav--profile {
+  background: var(--wb-ochre) !important;
+  color: var(--wb-ink) !important;
+  border: var(--wb-rule) !important;
+  box-shadow: 5px 5px 0 var(--wb-ink) !important;
+}
+
+.portfolio-title-block {
+  min-height: min(79vh, 860px) !important;
+  box-shadow: 12px 12px 0 var(--wb-ink) !important;
+  background:
+    linear-gradient(90deg,
+      transparent 0 12%,
+      color-mix(in srgb, var(--wb-ochre) 72%, transparent) 12% 12.25%,
+      transparent 12.25% 68%,
+      color-mix(in srgb, var(--wb-sky) 60%, var(--wb-paper-hi)) 68% 82%,
+      transparent 82%),
+    linear-gradient(180deg,
+      var(--wb-paper-hi) 0 72%,
+      color-mix(in srgb, var(--wb-coral) 86%, var(--wb-paper)) 72% 87%,
+      var(--wb-paper) 87% 100%) !important;
+}
+
+.portfolio-title-block::before {
+  width: clamp(210px, 24vw, 390px) !important;
+  height: clamp(210px, 24vw, 390px) !important;
+  right: 12% !important;
+  top: 12% !important;
+  background: radial-gradient(circle,
+      color-mix(in srgb, var(--wb-ochre) 72%, var(--wb-paper-hi)) 0 72%,
+      color-mix(in srgb, var(--wb-blush) 66%, transparent) 72% 74%,
+      transparent 74%) !important;
+  opacity: .78;
+}
+
+.portfolio-title-block::after {
+  width: clamp(78px, 8vw, 132px) !important;
+  height: 59% !important;
+  left: 58% !important;
+  background: var(--wb-sky-deep) !important;
+  opacity: .64 !important;
+}
+
+.portfolio-title-block h1 {
+  font-size: clamp(5.4rem, 13.2vw, 13.4rem) !important;
+  line-height: .71 !important;
+}
+
+.portfolio-title-block .lead {
+  background: var(--wb-paper-hi) !important;
+  border-left-color: var(--wb-sky-deep) !important;
+  box-shadow: 6px 6px 0 var(--wb-ink) !important;
+}
+
+.portfolio-intro {
+  background:
+    linear-gradient(118deg,
+      color-mix(in srgb, var(--wb-paper-hi) 94%, transparent) 0 62%,
+      color-mix(in srgb, var(--wb-sage) 48%, var(--wb-paper)) 62% 100%) !important;
+}
+
+.portfolio-intro::before {
+  color: rgba(36,39,43,.055) !important;
+}
+
+.portfolio-intro__copy {
+  background: color-mix(in srgb, var(--wb-sage) 74%, var(--wb-paper)) !important;
+  box-shadow: 7px 7px 0 var(--wb-ink) !important;
+}
+
+.portfolio-departments {
+  box-shadow: 12px 12px 0 var(--wb-ink) !important;
+  transform: rotate(-.12deg) !important;
+}
+
+.portfolio-department {
+  min-height: 430px !important;
+}
+
+.portfolio-department::after {
+  opacity: .34 !important;
+}
+
+.portfolio-department--lead {
+  background:
+    linear-gradient(139deg,
+      var(--wb-coral) 0 72%,
+      var(--wb-ochre) 72% 88%,
+      color-mix(in srgb, var(--wb-blush) 78%, var(--wb-coral)) 88% 100%) !important;
+  color: var(--wb-ink) !important;
+}
+
+.portfolio-department:nth-child(2) {
+  background: linear-gradient(160deg,
+      color-mix(in srgb, var(--wb-sage) 78%, var(--wb-paper)) 0 74%,
+      var(--wb-paper) 74% 100%) !important;
+  color: var(--wb-ink) !important;
+}
+
+.portfolio-department:nth-child(3) {
+  background: linear-gradient(150deg,
+      var(--wb-cream) 0 78%,
+      color-mix(in srgb, var(--wb-ochre) 65%, var(--wb-cream)) 78% 100%) !important;
+  color: var(--wb-ink) !important;
+}
+
+.portfolio-department:nth-child(4) {
+  background: linear-gradient(150deg,
+      color-mix(in srgb, var(--wb-sky) 82%, var(--wb-paper)) 0 76%,
+      var(--wb-sky-deep) 76% 100%) !important;
+  color: var(--wb-ink) !important;
+}
+
+.portfolio-department:nth-child(4) .meta-label,
+.portfolio-department:nth-child(4) p:last-child {
+  color: color-mix(in srgb, var(--wb-ink) 82%, transparent) !important;
+}
+
+.portfolio-department__action {
+  background: color-mix(in srgb, var(--wb-paper-hi) 58%, transparent);
+}
+
+.portfolio-links {
+  background:
+    linear-gradient(90deg,
+      color-mix(in srgb, var(--wb-paper-hi) 95%, transparent) 0 71%,
+      color-mix(in srgb, var(--wb-sage-pale) 78%, var(--wb-paper)) 71% 100%) !important;
+}
+
+.portfolio-links::before {
+  width: clamp(130px, 17vw, 270px) !important;
+  height: 64% !important;
+  left: -2.5vw !important;
+  top: 16% !important;
+  opacity: .55 !important;
+  background:
+    linear-gradient(180deg,
+      var(--wb-ochre) 0 50%,
+      var(--wb-coral) 50% 72%,
+      var(--wb-sky-deep) 72% 100%) !important;
+}
+
+.portfolio-link-list {
+  box-shadow: 8px 8px 0 var(--wb-ink) !important;
+}
+
+.portfolio-link-list a:nth-child(4n+1):hover { background: color-mix(in srgb, var(--wb-coral) 72%, var(--wb-paper-hi)) !important; color: var(--wb-ink) !important; }
+.portfolio-link-list a:nth-child(4n+2):hover { background: color-mix(in srgb, var(--wb-ochre) 68%, var(--wb-paper-hi)) !important; color: var(--wb-ink) !important; }
+.portfolio-link-list a:nth-child(4n+3):hover { background: color-mix(in srgb, var(--wb-sage) 68%, var(--wb-paper-hi)) !important; color: var(--wb-ink) !important; }
+.portfolio-link-list a:nth-child(4n+4):hover { background: color-mix(in srgb, var(--wb-sky) 74%, var(--wb-paper-hi)) !important; color: var(--wb-ink) !important; }
+
+.portfolio-boundary {
+  background:
+    linear-gradient(96deg,
+      var(--wb-sky-deep) 0 12%,
+      var(--wb-ink) 12% 64%,
+      var(--wb-coral) 64% 79%,
+      var(--wb-ochre) 79% 100%) !important;
+}
+
+.portfolio-boundary::before {
+  color: rgba(255,255,255,.07) !important;
+}
+
+/* ---------- CAREERHUB / OPERATIONAL SURFACES ---------- */
+
+.workspace:not(.portfolio-room),
+.hub:not(.hub--profile) {
+  background:
+    linear-gradient(90deg,
+      var(--wb-coral) 0 2.6%,
+      var(--wb-paper) 2.6% 79%,
+      color-mix(in srgb, var(--wb-sky) 28%, var(--wb-paper)) 79% 92%,
+      color-mix(in srgb, var(--wb-sage) 54%, var(--wb-paper)) 92% 100%) !important;
+}
+
+.workspace:not(.portfolio-room)::before,
+.hub:not(.hub--profile)::before {
+  opacity: .46 !important;
+  background: radial-gradient(circle at 50% 50%, var(--wb-ochre) 0 66%, transparent 67%) !important;
+}
+
+.workspace:not(.portfolio-room)::after,
+.hub:not(.hub--profile)::after {
+  width: 5vw !important;
+  min-width: 46px !important;
+  opacity: .72;
+  background:
+    linear-gradient(180deg,
+      var(--wb-sky-deep) 0 36%,
+      var(--wb-coral) 36% 78%,
+      var(--wb-blush) 78% 100%) !important;
+}
+
+.workspace-header,
+.hero:not(.hero--profile) {
+  background: color-mix(in srgb, var(--wb-paper-hi) 92%, transparent) !important;
+  box-shadow: 7px 7px 0 var(--wb-ink) !important;
+}
+
+.card,
+.panel,
+.wish-form {
+  background: var(--wb-paper-hi) !important;
+  border-color: var(--wb-ink) !important;
+  box-shadow: 5px 5px 0 rgba(36,39,43,.18) !important;
+}
+
+.card--priority { background: color-mix(in srgb, var(--wb-ochre) 58%, var(--wb-paper-hi)) !important; }
+.card--next_action { background: color-mix(in srgb, var(--wb-sage) 62%, var(--wb-paper-hi)) !important; }
+.card--opportunities { background: color-mix(in srgb, var(--wb-sky) 44%, var(--wb-paper-hi)) !important; }
+
+.action--primary,
+.wish-form button {
+  background: var(--wb-coral) !important;
+  color: var(--wb-ink) !important;
+}
+
+.action:not(.action--primary):nth-child(2) {
+  background: var(--wb-ochre) !important;
+  color: var(--wb-ink) !important;
+}
+
+.action:not(.action--primary):nth-child(3) {
+  background: var(--wb-sky) !important;
+  color: var(--wb-ink) !important;
+}
+
+.wish-launcher {
+  background: var(--wb-ochre) !important;
+  color: var(--wb-ink) !important;
+  box-shadow: 5px 5px 0 var(--wb-ink) !important;
+}
+
+/* ---------- RESPONSIVE REDUCTION ---------- */
+
+@media (max-width: 980px) {
+  body {
+    background-image:
+      linear-gradient(90deg, var(--wb-paper) 0 89%, color-mix(in srgb, var(--wb-sage) 50%, var(--wb-paper)) 89% 100%) !important;
+  }
+
+  body::after { opacity: .14 !important; }
+
+  .hub--profile {
+    background:
+      linear-gradient(180deg,
+        color-mix(in srgb, var(--wb-coral) 78%, var(--wb-paper)) 0 14%,
+        var(--wb-paper) 14% 74%,
+        color-mix(in srgb, var(--wb-sky) 42%, var(--wb-paper)) 74% 88%,
+        color-mix(in srgb, var(--wb-sage) 58%, var(--wb-paper)) 88% 100%) !important;
+  }
+
+  .portfolio-room {
+    background:
+      linear-gradient(180deg,
+        var(--wb-paper) 0 40%,
+        color-mix(in srgb, var(--wb-sky) 18%, var(--wb-paper)) 40% 58%,
+        var(--wb-paper-hi) 58% 78%,
+        color-mix(in srgb, var(--wb-sage) 22%, var(--wb-paper)) 78% 100%) !important;
+  }
+
+  .portfolio-departments { transform: none !important; }
+}
+
+@media (max-width: 680px) {
+  body::before { opacity: .06 !important; }
+  body::after { display: none; }
+
+  .hub--profile .hero--profile::before,
+  .hub--profile .hero--profile::after,
+  .portfolio-title-block::after {
+    opacity: .34 !important;
+  }
+
+  .hub--profile .room-card {
+    min-height: 540px !important;
+    box-shadow: 7px 7px 0 var(--wb-ink) !important;
+  }
+
+  .portfolio-title-block {
+    min-height: 620px !important;
+    box-shadow: 7px 7px 0 var(--wb-ink) !important;
+  }
+
+  .portfolio-department {
+    min-height: 360px !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-department:hover,
+  .portfolio-link-list a:hover,
+  .hub--profile .room-card:hover {
+    transform: none !important;
+  }
+}
