@@ -1,5 +1,5 @@
 name: CareerHub Managed Site Sync
-# Motor sync marker: WP38-39 operational close-loop v5
+# Fleet rollout marker: 2026-10-06 motor-close-loop-v6
 
 on:
   push:
