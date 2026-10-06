@@ -1,5 +1,5 @@
 name: CareerHub Managed Site Sync
-# Fleet rollout marker: 2026-10-07 wpb-visual-override-v3
+# Fleet rollout marker: 2026-10-07 wpb-expression-palette-v4
 
 on:
   push:
@@ -57,8 +57,10 @@ jobs:
         run: |
           test -f CareerHub/site/personal/weronika.css
           test -f CareerHub/site/personal/weronika-v3.css
+          test -f CareerHub/site/personal/weronika-expression.css
           grep -F "import '../personal/weronika.css';" CareerHub/site/app/layout.tsx
           grep -F "import '../personal/weronika-v3.css';" CareerHub/site/app/layout.tsx
+          grep -F "import '../personal/weronika-expression.css';" CareerHub/site/app/layout.tsx
 
       - name: Build personalised site
         working-directory: CareerHub/site
