@@ -2,21 +2,61 @@
 
 This is the working entrance for Weronika's writing and journalism practice.
 
-## 1. Work
+## 1 — Work Desk
 
-**Current / future active writing**
+Use this for active writing and reporting.
 
-This area is for ideas, pitches, commissions, reporting projects, research, drafts and editorial development.
+Canonical lifecycle:
 
-The active-work layer is intentionally separate from the historical publication archive. It can be expanded when Weronika begins using the room for live assignments.
+**Idea → Pitch → Commissioned → Research → Reporting → Draft → Edit → Source/Fact Check → Submitted → Published → Archived → Portfolio Review**
 
-Suggested working states:
+Not every work must use every state.
 
-**Idea → Pitch → Commissioned → Research → Reporting → Draft → Edit → Source/Fact Check → Submitted → Published**
+- [Lifecycle contract](work/lifecycle.yaml)
+- [Work-item template](templates/work-item.yaml)
+- [Pitch template](templates/pitch.yaml)
 
-## 2. Archive
+## 2 — Pitch Desk
 
-The reconstructed body of published work is the evidence base of the room.
+Track ideas pitched to publications, responses, follow-ups, commissions, deadlines, expected fees and related work.
+
+Pitch state belongs here, not in CareerHub.
+
+## 3 — Reporting / Research & Source Desk
+
+Use this layer for story questions, actors, institutions, research evidence, interviews, claims and open questions.
+
+Source handling must follow the room security classes:
+
+**PUBLIC → INTERNAL → CONFIDENTIAL → PROTECTED_SOURCE**
+
+- [Security & source protection](security/README.md)
+- [Source metadata template](templates/source.yaml)
+
+Protected-source material is excluded from general AI workflows, CareerHub export and public surfaces.
+
+## 4 — Writing & Editorial Desk
+
+Use this for manuscript/version work, editorial development, fact/claim control and review.
+
+- [Editorial Desk](editorial/README.md)
+
+`The Writer and the Beast` / Publicist may be used as an optional review protocol. Weronika retains authorship and editorial authority.
+
+## 5 — Publication Desk
+
+Use this when a piece is accepted/published and needs a durable publication record.
+
+- [Publication Desk](publication/README.md)
+- [Rights & attribution](rights/README.md)
+
+Flow:
+
+**Published → Archive record → Portfolio review → optional Career evidence export**
+
+## 6 — Archive
+
+The reconstructed body of published work remains the evidence base of the room.
 
 - [Master bibliography](../bibliography/master-bibliography.md)
 - [Structured corpus](../data/corpus.json)
@@ -25,44 +65,41 @@ The reconstructed body of published work is the evidence base of the room.
 - [Unresolved records](../sources/unresolved-records.md)
 - [Archive dashboard](../DASHBOARD.md)
 
-The archive is reconstructed and evidence-graded; it is not assumed to be exhaustive.
+The archive is evidence-graded and not assumed exhaustive.
 
-## 3. Portfolio
+## 7 — Portfolio
 
-This is the selective public-facing layer built from the larger archive.
+The portfolio is selective; the archive is comprehensive.
 
+- [Portfolio layer](portfolio/README.md)
 - [Working writer profile](../content/profile.md)
 - [Biography versions](../content/bio-versions.md)
 - [Featured work](../content/featured-work.md)
 - [Future site architecture](../docs/site-roadmap.md)
 
-Archive and portfolio are not the same thing: the archive can remain broad while the portfolio is intentionally edited.
-
-## 4. Analysis & development
+## 8 — Analysis & Discovery
 
 - [Writer dossier](../analysis/writer-dossier.md)
 - [Archive/research analysis](../analysis/)
 - [Research reports](../reports/)
-
-This layer may identify patterns in the corpus, but repository analysis must remain distinguishable from Weronika's own self-description.
-
-## 5. Discovery
-
 - [Metadata harvester](../harvest/README.md)
 
-Discovery systems may find candidate records, but name matches or contextual mentions do not automatically become authorship evidence.
+Discovery may create candidate records but never turns a name match into verified authorship automatically.
 
-## 6. Editorial desk
+## 9 — Career Bridge
 
-The room may later bind editorial review, source audit, fact-checking and writing-development tools to active texts. These are writer/journalist functions and remain outside CareerHub's job-search machinery.
+Need to use part of the body of work in an application?
 
-## 7. Career bridge
+Use the explicit evidence bridge:
 
-Need to use part of this body of work in a job application?
+- [Bridge policy](../bridges/writer-career-evidence/README.md)
+- [Machine contract](../bridges/writer-career-evidence/export.yaml)
+- [CareerHub](../CareerHub/CONTROL_ROOM.md)
 
-Use only an **explicit, verified export** into [CareerHub](../CareerHub/CONTROL_ROOM.md). CareerHub can use selected publication/capability evidence, but it does not own or automatically read the whole Writer & Journalism Room.
+CareerHub can receive approved publication/capability evidence but does not own or automatically read WriterRoom state.
 
 ---
 
-**Writer & Journalism Room:** work + archive + editorial development + portfolio  
-**CareerHub:** jobs + applications + recruitment state
+**WriterRoom:** work + reporting + editorial + publication + archive + portfolio  
+**CareerHub:** jobs + applications + recruitment state  
+**Profile Core:** shared verified facts + permissions
