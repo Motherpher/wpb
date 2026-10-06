@@ -101,12 +101,14 @@ jobs:
               raise SystemExit('Missing preserved profile/state paths: ' + ', '.join(missing))
           print('Preserved profile/state paths OK:', ', '.join(required))
           PY
-      - name: Reproduce central sync and re-apply Weronika visual layer
+      - name: Reproduce central sync and re-apply Weronika visual layers
         run: |
           python .careerhub-zero/scripts/sync_web_shell.py CareerHub
           python .github/scripts/apply_weronika_visual_override.py
           test -f CareerHub/site/personal/weronika.css
+          test -f CareerHub/site/personal/weronika-v3.css
           grep -F "import '../personal/weronika.css';" CareerHub/site/app/layout.tsx
+          grep -F "import '../personal/weronika-v3.css';" CareerHub/site/app/layout.tsx
       - name: Build personalised site with visual override
         working-directory: CareerHub/site
         run: |
