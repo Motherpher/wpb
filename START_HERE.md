@@ -6,9 +6,9 @@ You do **not** need to think of it as one large GitHub repository. It has two se
 
 ## Choose your room
 
-### 1 — Writer & Journalism Room
+### 1 — Weronika Portfolio
 
-**[Open Writer & Journalism Room →](WriterRoom/CONTROL_ROOM.md)**
+**[Open Weronika Portfolio →](WriterRoom/CONTROL_ROOM.md)**
 
 Use this for **your work as a writer and journalist**:
 
@@ -21,7 +21,7 @@ Use this for **your work as a writer and journalist**:
 - biography/profile texts
 - archive reconstruction and missing-work discovery
 
-The existing publication archive, dashboard, corpus, analysis and portfolio material belong to this room.
+The existing publication archive, dashboard, corpus, analysis and portfolio material belong here.
 
 ### 2 — CareerHub
 
@@ -37,19 +37,19 @@ CareerHub keeps job leads, analyses selected roles, prepares application materia
 
 # The rooms are separate
 
-The Writer & Journalism Room and CareerHub are **peer rooms** inside your profile.
+Weronika Portfolio and CareerHub are **peer rooms** inside your profile.
 
 CareerHub does not own your writing archive, reporting work, drafts or editorial material.
 
-The Writer & Journalism Room does not own your job applications or recruitment history.
+Weronika Portfolio does not own your job applications or recruitment history.
 
-When a job application needs evidence from your writing career, selected verified material can be passed from WriterRoom to CareerHub. That is a controlled evidence bridge — not shared storage.
+When a job application needs evidence from your writing career, selected verified material can be passed from Weronika Portfolio to CareerHub. That is a controlled evidence bridge — not shared storage.
 
 See [PROFILE_ARCHITECTURE.md](PROFILE_ARCHITECTURE.md) and [WriterRoom/ROOM_BOUNDARY.md](WriterRoom/ROOM_BOUNDARY.md).
 
 ---
 
-# Writer & Journalism Room — what is already there
+# Weronika Portfolio — what is already there
 
 The archive currently brings together verified work from different parts of your writing history, including:
 
@@ -67,9 +67,9 @@ The material currently spans publications such as *Fashion, Style & Popular Cult
 
 The archive is not presented as complete. Some older material may still be missing, especially where publications changed websites, removed author pages or never digitised print material.
 
-## Useful writer-room links
+## Useful portfolio-workspace links
 
-- [Writer Room Control Room](WriterRoom/CONTROL_ROOM.md)
+- [Weronika Portfolio Control Room](WriterRoom/CONTROL_ROOM.md)
 - [Archive dashboard](DASHBOARD.md)
 - [Working profile](content/profile.md)
 - [Featured work](content/featured-work.md)
@@ -82,11 +82,11 @@ The structured publication source of truth is `data/corpus.json`. Deeper publica
 
 You do not need to edit JSON yourself. The repository can be updated from links, lists, documents or notes.
 
-## What you can decide in the Writer Room
+## What you can decide in Weronika Portfolio
 
 You can correct dates, titles, outlets, roles or biography details; add missing work; decide what should be public; choose which pieces represent you now; rewrite how you are described; and decide how journalism, research, translation, editing and other work should relate in a future portfolio.
 
-The archive is intentionally broader than the portfolio. Not everything recovered needs to be foregrounded publicly.
+The archive is intentionally broader than the public portfolio. Not everything recovered needs to be foregrounded publicly.
 
 Current repository analysis is just that: **analysis**. It is not treated as your own self-description unless you adopt it.
 
@@ -121,4 +121,4 @@ Active reporting material may require stricter handling than published-work meta
 
 ## In one sentence
 
-**Your WPB profile now has one room for the work itself — Writer & Journalism — and another for finding the next job — CareerHub.**
+**Your WPB profile has one room for the work itself — Weronika Portfolio — and another for finding the next job — CareerHub.**
