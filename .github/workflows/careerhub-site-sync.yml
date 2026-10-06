@@ -1,5 +1,5 @@
 name: CareerHub Managed Site Sync
-# Motor sync marker: WP38-39 operational close-loop
+# Motor sync marker: WP38-39 operational close-loop v2
 
 on:
   push:
@@ -58,7 +58,7 @@ jobs:
         shell: bash
         run: |
           rm -rf .careerhub-zero CareerHub/site/node_modules CareerHub/site/.next
-          git add CareerHub/site .github/workflows/careerhub-operations.yml
+          git add CareerHub/site
           if git diff --cached --quiet; then
             echo 'Managed shell already current.'
             exit 0
