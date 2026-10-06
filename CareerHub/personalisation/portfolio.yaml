@@ -1,4 +1,4 @@
-# Site-native portfolio content rendered at /writer. Sync revision 2.
+# Site-native portfolio content rendered at /writer. Sync revision 3.
 schema_version: "1.0"
 eyebrow: "Writer · reporter · researcher"
 headline: "Writing across borders, systems and lived experience."
@@ -6,13 +6,76 @@ intro: "Weronika Pérez Borjas is a writer and reporter whose published work mov
 
 sections:
   - label: "Long-form reportage"
+    slug: "long-form-reportage"
     description: "Migration, labour, healthcare, reproductive rights, gender, borders and public institutions."
+    filter:
+      type_contains:
+        - "reportage"
+        - "reporting"
+        - "feature"
+        - "investigation"
+      text_contains:
+        - "long-form"
+        - "labour"
+        - "healthcare"
+        - "reproductive rights"
+        - "public institutions"
   - label: "Culture & interviews"
+    slug: "culture-interviews"
     description: "Music, art, subculture, urban life and conversations with cultural actors."
+    filter:
+      phases:
+        - "cultural-journalism"
+      type_contains:
+        - "interview"
+        - "music"
+        - "culture"
+        - "cultural"
+        - "film"
+        - "profile"
+      text_contains:
+        - "subculture"
+        - "urban life"
+        - "creative process"
   - label: "Research & criticism"
+    slug: "research-criticism"
     description: "Work rooted in fashion studies, visual culture, the body, representation and social categories."
+    filter:
+      phases:
+        - "body-fashion-research"
+      type_contains:
+        - "academic"
+        - "research"
+        - "criticism"
+        - "analysis"
+        - "essay"
+      themes:
+        - "body"
+        - "fashion"
+        - "visual-culture"
+        - "representation"
   - label: "Transnational reporting"
+    slug: "transnational-reporting"
     description: "Poland and Sweden form one major axis; Cuba and wider cross-border contexts form another."
+    filter:
+      themes:
+        - "migration"
+        - "diaspora"
+        - "cuba"
+        - "Sweden"
+        - "Poland"
+        - "Kurdistan"
+      text_contains:
+        - "cross-border"
+        - "transnational"
+        - "migration"
+        - "diaspora"
+        - "border"
+        - "Sweden"
+        - "Poland"
+        - "Cuba"
+        - "Kurdistan"
+        - "emigration"
 
 featured:
   - title: "Pięciu Kubańczyków, cztery miesiące w niewoli"
@@ -67,6 +130,7 @@ featured:
 archive:
   count: 38
   label: "Verified works in the reconstructed archive"
+  source: "../../data/corpus.json"
   note: "The archive is evidence-graded and reconstructed; it is not claimed to be exhaustive. The public portfolio is selective, while the underlying archive preserves the broader body of work."
 
 boundary:
