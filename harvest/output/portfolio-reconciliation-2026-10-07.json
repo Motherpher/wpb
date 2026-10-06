@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "generated": "2026-10-07",
+  "purpose": "Portfolio reconciliation discoveries requiring canonical corpus follow-up",
+  "records": [
+    {
+      "id": "2015-forumist-into-the-sound",
+      "title": "Into the Sound",
+      "outlet": "The Forumist",
+      "date": "2015",
+      "url": "https://theforumist.com/into-the-sound/",
+      "evidence": "A",
+      "evidence_basis": "direct publisher page with byline Weronika Pérez Borjas",
+      "portfolio_status": "verified",
+      "primary_area": "culture-interviews",
+      "canonical_corpus_action": "add",
+      "note": "Recovered during 2026-10-07 full portfolio reconciliation; absent from the previous 38-work corpus."
+    }
+  ]
+}

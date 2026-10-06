@@ -1,81 +1,74 @@
-# Site-native portfolio content rendered at /writer. Sync revision 3.
+# Site-native portfolio content rendered at /writer. Reconciled 2026-10-07.
 schema_version: "1.0"
 eyebrow: "Writer · reporter · researcher"
 headline: "Writing across borders, systems and lived experience."
 intro: "Weronika Pérez Borjas is a writer and reporter whose published work moves across cultural criticism, interviews, social observation and long-form reportage. A recurring strength is cross-cultural translation: reporting that begins with people encountering institutions, borders, labour systems, law and public life."
 
+# Primary-area assignment is explicit. A work appears under exactly one of these buttons.
+# Cross-cutting subjects remain themes in portfolio-catalog.json and do not create duplicate area membership.
 sections:
   - label: "Long-form reportage"
     slug: "long-form-reportage"
-    description: "Migration, labour, healthcare, reproductive rights, gender, borders and public institutions."
+    description: "Long-form, field and social reporting on institutions, rights, gender, labour and public life."
     filter:
-      type_contains:
-        - "reportage"
-        - "reporting"
-        - "feature"
-        - "investigation"
-      text_contains:
-        - "long-form"
-        - "labour"
-        - "healthcare"
-        - "reproductive rights"
-        - "public institutions"
+      ids:
+        - "2016-vice-spiritual-fair"
+        - "2016-vice-nago"
+        - "2016-vice-instamatki"
+        - "2016-vice-men-generations"
+        - "2016-vice-rainbows-racism"
+        - "2018-duzy-format-russians"
+        - "2019-duzy-format-nonbinary"
+        - "2020-duzy-format-nurses"
+
   - label: "Culture & interviews"
     slug: "culture-interviews"
-    description: "Music, art, subculture, urban life and conversations with cultural actors."
+    description: "Music, art, film, subculture, urban life and conversations with cultural and creative actors."
     filter:
-      phases:
-        - "cultural-journalism"
-      type_contains:
-        - "interview"
-        - "music"
-        - "culture"
-        - "cultural"
-        - "film"
-        - "profile"
-      text_contains:
-        - "subculture"
-        - "urban life"
-        - "creative process"
+      ids:
+        - "2015-forumist-a-world-beyond"
+        - "2015-forumist-hayden-james"
+        - "2015-forumist-av-av-av"
+        - "2015-forumist-nadya"
+        - "2015-totally-hokarangen"
+        - "2015-forumist-moto-boy"
+        - "2015-forumist-zhala-makode"
+        - "2015-forumist-tales-unexpected"
+        - "2015-forumist-rnb-poltergeist"
+        - "2015-forumist-wildbirds"
+        - "2015-forumist-wir-sind-berliner"
+        - "2015-forumist-into-the-sound"
+        - "2016-krull-all-that-jazz"
+        - "2016-krull-fatoumata-diawara"
+        - "2016-krull-mali-blues"
+        - "2016-krull-stockholm-film-festival"
+        - "2016-vice-makode-linde"
+        - "2016-vice-eurovision"
+        - "2016-vice-miss-crash"
+        - "2016-vice-opener"
+        - "2017-krull-tempo"
+        - "pending-krull-henry-rude"
+        - "pending-krull-joanna-lemnelius"
+
   - label: "Research & criticism"
     slug: "research-criticism"
-    description: "Work rooted in fashion studies, visual culture, the body, representation and social categories."
+    description: "Academic, analytical and essayistic work on fashion, visual culture, the body and representation."
     filter:
-      phases:
-        - "body-fashion-research"
-      type_contains:
-        - "academic"
-        - "research"
-        - "criticism"
-        - "analysis"
-        - "essay"
-      themes:
-        - "body"
-        - "fashion"
-        - "visual-culture"
-        - "representation"
+      ids:
+        - "2013-kultura-zombie-boy"
+        - "2014-fspc-flayed"
+        - "2015-forumist-jukebox"
+        - "2015-forumist-talking-los-muertos"
+
   - label: "Transnational reporting"
     slug: "transnational-reporting"
-    description: "Poland and Sweden form one major axis; Cuba and wider cross-border contexts form another."
+    description: "Reporting where migration, borders, belonging and cross-border systems are the primary frame."
     filter:
-      themes:
-        - "migration"
-        - "diaspora"
-        - "cuba"
-        - "Sweden"
-        - "Poland"
-        - "Kurdistan"
-      text_contains:
-        - "cross-border"
-        - "transnational"
-        - "migration"
-        - "diaspora"
-        - "border"
-        - "Sweden"
-        - "Poland"
-        - "Cuba"
-        - "Kurdistan"
-        - "emigration"
+      ids:
+        - "2015-totally-tensta"
+        - "2016-vice-polish-emigration"
+        - "2020-newsweek-abortion"
+        - "2020-onet-cubans"
 
 featured:
   - title: "Pięciu Kubańczyków, cztery miesiące w niewoli"
@@ -87,7 +80,7 @@ featured:
   - title: "Szwedki przez lata przyjeżdżały po aborcję do Polski..."
     outlet: "Newsweek Polska"
     year: "2020"
-    type: "Long-form social/history reportage"
+    type: "Long-form transnational social/history reportage"
     description: "A historical reversal in abortion travel between Sweden and Poland, connecting law, memory and reproductive rights."
     href: "https://www.newsweek.pl/polska/spoleczenstwo/aborcja-w-szwecji-koszt-pomoc-mozliwosci-jak-dawniej-szwedki-robily-aborcje-w-polsce/fb4hejt"
   - title: "Szwedzkie pielęgniarki znikają..."
@@ -128,10 +121,10 @@ featured:
     href: "https://intellectdiscover.com/content/journals/10.1386/fspc.1.3.459_1"
 
 archive:
-  count: 38
-  label: "Verified works in the reconstructed archive"
-  source: "../../data/corpus.json"
-  note: "The archive is evidence-graded and reconstructed; it is not claimed to be exhaustive. The public portfolio is selective, while the underlying archive preserves the broader body of work."
+  count: 39
+  label: "verified works in the reconstructed public portfolio catalog"
+  source: "portfolio-catalog.json"
+  note: "All currently verified reconstructed authored works are indexed under exactly one primary portfolio area. Featured work remains a curated selection. The archive remains reconstructed rather than claimed exhaustive until writer reconciliation is complete."
 
 boundary:
   title: "Portfolio, not repository"

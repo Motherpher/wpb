@@ -5,12 +5,16 @@ on:
   pull_request:
     paths:
       - "CareerHub/**"
+      - "WriterRoom/portfolio/**"
+      - "harvest/output/**"
       - ".github/scripts/apply_weronika_visual_override.py"
       - ".github/workflows/careerhub-*.yml"
   push:
     branches: [main]
     paths:
       - "CareerHub/**"
+      - "WriterRoom/portfolio/**"
+      - "harvest/output/**"
       - ".github/scripts/apply_weronika_visual_override.py"
       - ".github/workflows/careerhub-*.yml"
 
@@ -79,6 +83,54 @@ jobs:
                   raise SystemExit('Personalisation schema validation failed:\n' + '\n'.join(lines))
               print('SCHEMA OK', instance_name, 'against', schema_name)
           PY
+      - name: Validate complete portfolio partition
+        run: |
+          python - <<'PY'
+          import json
+          from collections import Counter
+          from pathlib import Path
+          import yaml
+
+          root = Path('CareerHub/personalisation')
+          profile = yaml.safe_load((root / 'portfolio.yaml').read_text(encoding='utf-8'))
+          catalog = json.loads((root / 'portfolio-catalog.json').read_text(encoding='utf-8'))
+          works = catalog.get('works', [])
+          ids = [work['id'] for work in works]
+          if len(ids) != catalog.get('work_count'):
+              raise SystemExit(f"Catalog count mismatch: declared {catalog.get('work_count')} actual {len(ids)}")
+          duplicate_catalog_ids = [work_id for work_id, count in Counter(ids).items() if count > 1]
+          if duplicate_catalog_ids:
+              raise SystemExit('Duplicate catalog IDs: ' + ', '.join(duplicate_catalog_ids))
+
+          assignments = []
+          areas = {}
+          for section in profile.get('sections', []):
+              section_ids = section.get('filter', {}).get('ids', [])
+              areas[section['slug']] = section_ids
+              assignments.extend(section_ids)
+
+          duplicate_assignments = [work_id for work_id, count in Counter(assignments).items() if count > 1]
+          missing = sorted(set(ids) - set(assignments))
+          unknown = sorted(set(assignments) - set(ids))
+          mismatched_primary = sorted(
+              work['id'] for work in works
+              if work.get('primary_area') not in areas or work['id'] not in areas[work.get('primary_area')]
+          )
+          if duplicate_assignments or missing or unknown or mismatched_primary:
+              raise SystemExit(
+                  'Portfolio partition invalid\n'
+                  f'duplicate assignments={duplicate_assignments}\n'
+                  f'missing={missing}\n'
+                  f'unknown={unknown}\n'
+                  f'primary_area mismatches={mismatched_primary}'
+              )
+          if profile.get('archive', {}).get('count') != len(ids):
+              raise SystemExit('portfolio.yaml archive.count does not equal catalog work count')
+          if profile.get('archive', {}).get('source') != 'portfolio-catalog.json':
+              raise SystemExit('portfolio.yaml must use portfolio-catalog.json as the public archive source')
+
+          print('PORTFOLIO PARTITION OK', {slug: len(items) for slug, items in areas.items()}, 'total=', len(ids))
+          PY
       - name: Validate profile contract against central motor
         env:
           PYTHONPATH: .careerhub-zero/src
@@ -107,8 +159,10 @@ jobs:
           python .github/scripts/apply_weronika_visual_override.py
           test -f CareerHub/site/personal/weronika.css
           test -f CareerHub/site/personal/weronika-v3.css
+          test -f CareerHub/site/personal/weronika-expression.css
           grep -F "import '../personal/weronika.css';" CareerHub/site/app/layout.tsx
           grep -F "import '../personal/weronika-v3.css';" CareerHub/site/app/layout.tsx
+          grep -F "import '../personal/weronika-expression.css';" CareerHub/site/app/layout.tsx
       - name: Build personalised site with visual override
         working-directory: CareerHub/site
         run: |
