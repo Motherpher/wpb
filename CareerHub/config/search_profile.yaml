@@ -1,54 +1,80 @@
-version: "2.1"
-intent: "Find opportunities supported by Weronika's verified career evidence while keeping preferences and experiments search-only."
-
+version: '2.1'
+intent: Find opportunities supported by Weronika's verified career evidence while
+  keeping preferences and experiments search-only.
 geographies:
-  country: "SE"
+  country: SE
   anchors:
-    - Stockholm
+  - Stockholm
   remote_allowed: true
   remote_scopes:
-    - SE
-    - EU
-    - GLOBAL
+  - SE
+  - EU
+  - GLOBAL
   progressive_widening:
-    - anchor
-    - travel_time
-    - functional_labour_market
-    - region
-    - country
-    - remote
-
-engagement_types: [full_time, part_time, contract, freelance, temporary]
-
+  - anchor
+  - travel_time
+  - functional_labour_market
+  - region
+  - country
+  - remote
+engagement_types:
+- full_time
+- part_time
+- contract
+- freelance
+- temporary
 salary:
   minimum: null
-  currency: "SEK"
-
+  currency: SEK
 lanes:
-  - lane_id: core
-    name: "Writing / reporting / editorial / press"
-    bucket: core
-    priority: 1
-    queries: [journalist, reporter, skribent, redaktör, press officer, pressekreterare, content writer, editor, researcher]
-  - lane_id: adjacent
-    name: "Communications / research / coordination / translation"
-    bucket: adjacent
-    priority: 2
-    queries: [communications coordinator, content specialist, editorial producer, research coordinator, communications assistant, translator, localisation]
-  - lane_id: bridge
-    name: "Flexible / extra"
-    bucket: bridge
-    priority: 3
-    queries: [administratör deltid, administrative assistant part time, kundtjänst deltid, customer support remote, receptionist deltid, eventpersonal, museivärd, servicevärd, booking coordinator, transcription remote]
-
+- lane_id: core
+  name: Writing / reporting / editorial / press
+  bucket: core
+  priority: 1
+  queries:
+  - journalist
+  - reporter
+  - skribent
+  - redaktör
+  - press officer
+  - pressekreterare
+  - content writer
+  - editor
+  - researcher
+- lane_id: adjacent
+  name: Communications / research / coordination / translation
+  bucket: adjacent
+  priority: 2
+  queries:
+  - communications coordinator
+  - content specialist
+  - editorial producer
+  - research coordinator
+  - communications assistant
+  - translator
+  - localisation
+- lane_id: bridge
+  name: Flexible / extra
+  bucket: bridge
+  priority: 3
+  queries:
+  - administratör deltid
+  - administrative assistant part time
+  - kundtjänst deltid
+  - customer support remote
+  - receptionist deltid
+  - eventpersonal
+  - museivärd
+  - servicevärd
+  - booking coordinator
+  - transcription remote
 negative_filters:
-  - "Do not score an unmet professional licence as satisfied."
-  - "Do not infer spoken-language proficiency from publication language."
-  - "Do not infer current residence from historical work location."
-
-triage_rule: "Verified career evidence defines candidate fit. Search hypotheses may modify sourcing/ranking only; HRDM is required before candidate positioning."
-
+- Do not score an unmet professional licence as satisfied.
+- Do not infer spoken-language proficiency from publication language.
+- Do not infer current residence from historical work location.
+triage_rule: Verified career evidence defines candidate fit. Search hypotheses may
+  modify sourcing/ranking only; HRDM is required before candidate positioning.
 user_search_overlay:
   source: user_input
   scope: search_only
-  specific_wishes_or_needs: ""
+  specific_wishes_or_needs: ''
