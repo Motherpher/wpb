@@ -1,0 +1,66 @@
+schema_version: "1.0"
+profile_id: weronika-perez-borjas
+
+sources:
+  - id: ref-profile-core
+    source_state: VERIFIED_CAREER
+    reference: "profile/profile.yaml"
+    use:
+      - identity framing
+      - verified capability/evidence boundaries
+
+  - id: ref-corpus
+    source_state: VERIFIED_CAREER
+    reference: "data/corpus.json"
+    use:
+      - writing/reporting work logic
+      - publication-led portfolio framing
+
+  - id: ref-bibliography
+    source_state: VERIFIED_CAREER
+    reference: "bibliography/master-bibliography.md"
+    use:
+      - archive/provenance logic
+
+  - id: ref-writer-dossier
+    source_state: VERIFIED_CAREER
+    reference: "analysis/writer-dossier.md"
+    use:
+      - internal work-pattern analysis only
+    constraint: "Repository analysis is not automatically Weronika's self-description."
+
+  - id: ref-peer-rooms
+    source_state: EXPLICIT_USER
+    reference: "conversation:2026-10-06:portfolio-career-peer-rooms"
+    use:
+      - separate Weronika Portfolio and CareerHub as peer workspaces
+
+  - id: ref-portfolio-name
+    source_state: EXPLICIT_USER
+    reference: "conversation:2026-10-06:rename-weronika-portfolio"
+    use:
+      - visible room name Weronika Portfolio
+
+  - id: ref-person-specific-design
+    source_state: EXPLICIT_USER
+    reference: "conversation:2026-10-05:non-generic-personal-hubs"
+    use:
+      - require person-specific hierarchy, tone, navigation, emphasis and portfolio presentation
+
+  - id: ref-chzero-formula
+    source_state: VERIFIED_CAREER
+    reference: "Motherpher/CareerHubZero/docs/NON_GENERIC_PROFILE_FORMULA.md"
+    use:
+      - personalisation derivation method
+      - provenance and anti-generic audit
+
+  - id: ref-chzero-workspace
+    source_state: VERIFIED_CAREER
+    reference: "Motherpher/CareerHubZero/docs/PERSONAL_WORKSPACE_PROFILE_LIBRARY_SEARCH.md"
+    use:
+      - CareerHub task journey and information architecture
+
+visual_references:
+  status: REFERENCE_PENDING
+  inspected: []
+  note: "No explicit Weronika visual reference has yet been inspected for this design pass. Current visual tokens are provisional and must not be treated as VISUAL_LOCK evidence."

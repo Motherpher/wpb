@@ -1,0 +1,43 @@
+schema_version: "1.0"
+enabled: true
+headline: "Weronika Pérez Borjas"
+intro: "Two separate professional workspaces: Weronika Portfolio for the work itself, and CareerHub for finding and securing the next role."
+rooms:
+  - id: writer
+    kind: portfolio
+    label: "Weronika Portfolio"
+    eyebrow: "The work"
+    description: "Writing, reporting, pitches, research, editorial development, publication archive and selected portfolio."
+    href: "/writer"
+    cta: "Open Weronika Portfolio"
+    features:
+      - "Writing & reporting"
+      - "Pitches & commissions"
+      - "Research & sources"
+      - "Editorial development"
+      - "Publication archive"
+      - "Selected portfolio"
+    links:
+      - label: "Portfolio control room"
+        href: "https://github.com/Motherpher/wpb/blob/main/WriterRoom/CONTROL_ROOM.md"
+      - label: "Archive dashboard"
+        href: "https://github.com/Motherpher/wpb/blob/main/DASHBOARD.md"
+      - label: "Featured work"
+        href: "https://github.com/Motherpher/wpb/blob/main/content/featured-work.md"
+      - label: "Master bibliography"
+        href: "https://github.com/Motherpher/wpb/blob/main/bibliography/master-bibliography.md"
+
+  - id: career
+    kind: career
+    label: "CareerHub"
+    eyebrow: "The career"
+    description: "Find jobs, analyse roles, build applications and follow recruitment cases."
+    href: "/career"
+    cta: "Open CareerHub"
+    features:
+      - "Career profile"
+      - "Search"
+      - "Analyse"
+      - "Apply"
+      - "Track"
+      - "Library"

@@ -1,11 +1,24 @@
 schema_version: "1.0"
 posture: editorial, precise, observant
 language: en
+sentence_tendency: concise, specific, low-boilerplate
 principles:
   - evidence before claim
-  - concise but not generic
   - preserve reporting and cultural specificity
+  - distinguish verified fact from interpretation
+  - describe the work before describing the system
+  - use plain task language inside CareerHub
+portfolio_voice:
+  - publication-led
+  - calm and editorial
+  - allow the work and provenance to carry authority
+careerhub_voice:
+  - direct and practical
+  - explain only what the user needs for the next action
+  - avoid exposing motor, schema or repository vocabulary in ordinary use
 avoid:
   - motivational boilerplate
   - generic HR language
   - inflated claims
+  - invented professional identity language
+  - technical implementation terminology in user-facing copy

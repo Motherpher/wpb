@@ -1,0 +1,31 @@
+schema_version: "1.0"
+profile_id: weronika-perez-borjas
+status: REFERENCE_PENDING
+
+references: []
+
+observed:
+  typography_character: null
+  grid_layout_rhythm: null
+  whitespace_density: null
+  geometry: null
+  hierarchy: null
+  colour_logic: null
+  card_surface_behaviour: null
+  iconography: null
+  data_visualisation_language: null
+  imagery_language: null
+  motion_character: null
+
+provisional_system_defaults:
+  typography: "editorial serif display with restrained sans-serif body"
+  density: airy
+  geometry: square
+  surface: editorial
+  imagery: documentary_muted
+  motion: subtle
+  note: "These are provisional presentation choices derived from work logic and CareerHubZero primitives. They are not claimed as harvested visual characteristics and do not satisfy VISUAL_LOCK."
+
+lock:
+  permitted: false
+  blocker: "No explicit Weronika visual reference has been inspected."

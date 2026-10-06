@@ -1,0 +1,95 @@
+schema_version: "1.0"
+profile_id: weronika-perez-borjas
+status: REFERENCE_PENDING
+
+vectors:
+  identity:
+    - "Lead with Weronika Pérez Borjas rather than repository or product identity."
+    - "Professional framing is writer/reporter/editorial and remains evidence-led."
+  work_logic:
+    - "Her professional body of work is organised as writing/reporting practice, publication archive, provenance and curated portfolio."
+    - "Active work and published work are related but operationally distinct."
+  information_need:
+    - "The first choice is between the work itself and the employment-search workflow."
+    - "Technical CareerHub internals stay behind task-oriented language."
+    - "Evidence provenance remains available without dominating ordinary navigation."
+  career_surface:
+    - "Weronika Portfolio and CareerHub are peer workspaces under one person-level profile."
+    - "Weronika Portfolio is not a CareerHub module and CareerHub does not own writer/reporting state."
+  voice:
+    - "Editorial, precise and observant."
+    - "Evidence before claim; no generic HR or motivational language."
+    - "Portfolio copy foregrounds work and provenance; CareerHub copy foregrounds next actions."
+  visual_grammar:
+    - "Current implementation uses a provisional editorial grammar: large serif hierarchy, airy spacing, square geometry, defined rules and restrained surfaces."
+    - "No explicit visual reference has yet been inspected, so these traits are not VISUAL_LOCK evidence."
+  interaction:
+    - "Outer profile landing asks which workspace to enter."
+    - "CareerHub internally preserves the canonical Profile → Search → Analyse → Apply → Track journey."
+    - "Portfolio and CareerHub exchange only approved evidence through the controlled bridge."
+  reference_provenance:
+    - "Verified work/profile evidence comes from WPB profile and publication corpus."
+    - "Peer-room architecture and the name Weronika Portfolio are explicit user decisions."
+    - "Visual-reference provenance remains pending until an explicit reference is inspected."
+
+decisions:
+  - id: wpb-d01
+    dimension: information_hierarchy
+    decision: "Use a person-level landing page whose first decision is Weronika Portfolio versus CareerHub."
+    source_state: EXPLICIT_USER
+    source_refs:
+      - "conversation:2026-10-06:portfolio-career-peer-rooms"
+  - id: wpb-d02
+    dimension: module_order
+    decision: "Present Weronika Portfolio first and CareerHub second because the portfolio represents the professional work itself while CareerHub is an employment workflow."
+    source_state: EXPLICIT_USER
+    source_refs:
+      - "conversation:2026-10-06:rename-weronika-portfolio"
+  - id: wpb-d03
+    dimension: career_surfaces
+    decision: "Keep Weronika Portfolio and CareerHub as peer surfaces with separate operational state and a controlled evidence bridge."
+    source_state: EXPLICIT_USER
+    source_refs:
+      - "PROFILE_ARCHITECTURE.md"
+      - "WriterRoom/ROOM_BOUNDARY.md"
+  - id: wpb-d04
+    dimension: voice
+    decision: "Use editorial, precise, evidence-aware language and exclude motivational boilerplate, generic HR language and inflated claims."
+    source_state: VERIFIED_CAREER
+    source_refs:
+      - "profile/profile.yaml"
+      - "data/corpus.json"
+  - id: wpb-d05
+    dimension: density
+    decision: "Use an airy information density with progressive disclosure rather than exposing technical or audit detail by default."
+    source_state: EXPLICIT_USER
+    source_refs:
+      - "conversation:2026-10-05:non-generic-personal-hubs"
+      - "docs:CareerHubZero/PERSONAL_WORKSPACE_PROFILE_LIBRARY_SEARCH.md"
+  - id: wpb-d06
+    dimension: visual_grammar
+    decision: "Use the current editorial token set only as a provisional presentation pending an inspected visual reference; do not claim visual lock."
+    source_state: REFERENCE_PENDING
+    source_refs:
+      - "visual-reference:none-inspected"
+  - id: wpb-d07
+    dimension: interaction_defaults
+    decision: "Use the profile landing for workspace selection, then preserve CareerHub's canonical Profile → Search → Analyse → Apply → Track sequence inside CareerHub."
+    source_state: EXPLICIT_USER
+    source_refs:
+      - "conversation:2026-10-06:portfolio-career-peer-rooms"
+      - "docs:CareerHubZero/PERSONAL_WORKSPACE_PROFILE_LIBRARY_SEARCH.md"
+  - id: wpb-d08
+    dimension: content_framing
+    decision: "Frame Weronika Portfolio around work, reporting, publication provenance and selected portfolio while CareerHub is framed around jobs, analysis, applications and recruitment state."
+    source_state: VERIFIED_CAREER
+    source_refs:
+      - "data/corpus.json"
+      - "bibliography/master-bibliography.md"
+      - "analysis/writer-dossier.md"
+
+genericity_audit:
+  eligible_dimensions: 8
+  changed_dimensions: 7
+  score: 0.875
+  result: PASS

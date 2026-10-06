@@ -3,25 +3,25 @@
   "typography": {
     "display": "Iowan Old Style, Baskerville, Georgia, 'Times New Roman', serif",
     "body": "Avenir Next, Inter, ui-sans-serif, system-ui, sans-serif",
-    "scale": "editorial"
+    "scale": "large"
   },
   "shape": {
-    "radius": "0px",
-    "border": "1px solid #B9AA9C"
+    "radius": "square",
+    "border": "defined"
   },
   "surface": {
-    "treatment": "editorial-paper",
-    "shadow": "0 22px 70px rgba(47, 37, 31, 0.08)"
+    "treatment": "editorial",
+    "shadow": "none"
   },
   "palette": {
     "background": "#EFE9DF",
     "foreground": "#171310",
     "muted": "#71665D",
     "accent": "#8A243B",
-    "accent_foreground": "#FFF9F3",
-    "surface": "#F8F4ED",
-    "surface_alt": "#DED2C5",
-    "border": "#B9AA9C",
-    "accent_soft": "#E8D5D8"
+    "accent_foreground": "#FFF9F3"
+  },
+  "imagery": {
+    "mode": "documentary",
+    "treatment": "muted"
   }
 }

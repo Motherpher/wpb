@@ -1,68 +1,34 @@
 schema_version: "1.0"
+
 identity:
   display_name: "Weronika Pérez Borjas"
   strapline: "Writing, reporting and editorial work across culture, society and long-form journalism."
   language: en
+  avatar_path: null
+
 experience:
   mode: editorial
-  density: balanced
+  density: airy
   guidance: minimal
   motion: subtle
-profile_shell:
-  enabled: true
-  headline: "Weronika Pérez Borjas"
-  intro: "Choose the workspace you want to enter. Weronika Portfolio is for the work itself; CareerHub is for finding and securing the next role."
-  rooms:
-    - id: writer
-      label: "Weronika Portfolio"
-      eyebrow: "Your work"
-      description: "Writing, reporting, pitches, research, editorial development, publication archive and portfolio."
-      href: "/writer"
-      cta: "Open Weronika Portfolio"
-      features:
-        - "Work desk"
-        - "Pitches & commissions"
-        - "Reporting & research"
-        - "Editorial desk"
-        - "Archive"
-        - "Portfolio"
-      links:
-        - label: "Portfolio control room"
-          href: "https://github.com/Motherpher/wpb/blob/main/WriterRoom/CONTROL_ROOM.md"
-        - label: "Archive dashboard"
-          href: "https://github.com/Motherpher/wpb/blob/main/DASHBOARD.md"
-        - label: "Featured work"
-          href: "https://github.com/Motherpher/wpb/blob/main/content/featured-work.md"
-        - label: "Master bibliography"
-          href: "https://github.com/Motherpher/wpb/blob/main/bibliography/master-bibliography.md"
-    - id: career
-      label: "CareerHub"
-      eyebrow: "Your career"
-      description: "Find jobs, analyse roles, prepare applications and follow recruitment cases."
-      href: "/career"
-      cta: "Open CareerHub"
-      features:
-        - "Find jobs"
-        - "Analyse roles"
-        - "Apply"
-        - "Track applications"
+
 home:
-  headline: "Current profile. Current search. Current work."
-  intro: "CareerHub for editorial, reporting, press, research and adjacent opportunities grounded in verified work."
+  headline: "CareerHub"
+  intro: "Find roles, understand what they need, prepare evidence-based applications and follow every case."
   slots:
     - identity
-    - profile_health
-    - search_coverage
+    - priority
+    - next_action
     - opportunities
     - pipeline
+    - profile_health
+    - search_coverage
     - hrdm
     - artifacts
-    - next_action
+
 navigation:
   primary:
     - home
-    - writer
-    - career
     - profile
     - find
     - analyse
@@ -70,12 +36,23 @@ navigation:
     - track
     - library
   labels:
-    home: "Home"
-    writer: "Weronika Portfolio"
-    career: "CareerHub"
+    home: "Profile home"
     profile: "Career profile"
     find: "Search"
     analyse: "Analyse"
     apply: "Apply"
     track: "Track"
     library: "Library"
+
+modules:
+  portfolio: false
+  analytics: true
+  profile_health: true
+  geography: true
+  hrdm_explainer: true
+
+visibility:
+  show_verified_sources: true
+  show_match_scores: true
+  show_hrdm_trace: false
+  show_application_history: true
