@@ -8,9 +8,47 @@ experience:
   density: balanced
   guidance: minimal
   motion: subtle
+profile_shell:
+  enabled: true
+  headline: "Weronika Pérez Borjas"
+  intro: "Choose the workspace you want to enter. Writer & Journalism is for the work itself; CareerHub is for finding and securing the next role."
+  rooms:
+    - id: writer
+      label: "Writer & Journalism Room"
+      eyebrow: "Your work"
+      description: "Writing, reporting, pitches, research, editorial development, publication archive and portfolio."
+      href: "/writer"
+      cta: "Open Writer Room"
+      features:
+        - "Work desk"
+        - "Pitches & commissions"
+        - "Reporting & research"
+        - "Editorial desk"
+        - "Archive"
+        - "Portfolio"
+      links:
+        - label: "Writer control room"
+          href: "https://github.com/Motherpher/wpb/blob/main/WriterRoom/CONTROL_ROOM.md"
+        - label: "Archive dashboard"
+          href: "https://github.com/Motherpher/wpb/blob/main/DASHBOARD.md"
+        - label: "Featured work"
+          href: "https://github.com/Motherpher/wpb/blob/main/content/featured-work.md"
+        - label: "Master bibliography"
+          href: "https://github.com/Motherpher/wpb/blob/main/bibliography/master-bibliography.md"
+    - id: career
+      label: "CareerHub"
+      eyebrow: "Your career"
+      description: "Find jobs, analyse roles, prepare applications and follow recruitment cases."
+      href: "/career"
+      cta: "Open CareerHub"
+      features:
+        - "Find jobs"
+        - "Analyse roles"
+        - "Apply"
+        - "Track applications"
 home:
   headline: "Current profile. Current search. Current work."
-  intro: "A CareerHub for editorial, reporting, press, research and adjacent opportunities grounded in verified work."
+  intro: "CareerHub for editorial, reporting, press, research and adjacent opportunities grounded in verified work."
   slots:
     - identity
     - profile_health
@@ -22,10 +60,22 @@ home:
     - next_action
 navigation:
   primary:
+    - home
+    - writer
+    - career
     - profile
     - find
     - analyse
     - apply
     - track
     - library
-    - home
+  labels:
+    home: "Home"
+    writer: "Writer Room"
+    career: "CareerHub"
+    profile: "Career profile"
+    find: "Search"
+    analyse: "Analyse"
+    apply: "Apply"
+    track: "Track"
+    library: "Library"
