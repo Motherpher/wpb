@@ -1,0 +1,30 @@
+schema_version: "1.0"
+room_id: writer-journalism
+
+primary_states:
+  - idea
+  - pitch
+  - commissioned
+  - research
+  - reporting
+  - draft
+  - edit
+  - source_fact_check
+  - submitted
+  - published
+  - archived
+  - portfolio_review
+
+terminal_or_hold_states:
+  - paused
+  - declined
+  - killed
+  - withdrawn
+  - embargoed
+
+rules:
+  - not_every_item_must_visit_every_state
+  - state_changes_preserve_history
+  - published_state_does_not_imply_portfolio_selection
+  - evidence_grade_is_separate_from_workflow_state
+  - embargoed_or_restricted_material_never_flows_to_public_surfaces_automatically
