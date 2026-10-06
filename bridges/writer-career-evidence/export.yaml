@@ -1,0 +1,46 @@
+schema_version: "1.0"
+bridge_id: writer-to-career-evidence
+source_room: writer-journalism
+target_room: career
+mode: explicit_approved_evidence_export
+
+default: deny
+
+allowed_classes:
+  - verified_publication_record
+  - selected_work
+  - confirmed_biography_statement
+  - verified_professional_capability
+  - approved_portfolio_reference
+
+required_fields:
+  - evidence_id
+  - claim_or_reference
+  - source_ids
+  - evidence_status
+  - approved_by
+  - approved_at
+  - approved_for
+
+required_approval_scope:
+  - careerhub_evidence
+
+excluded_classes:
+  - unpublished_draft
+  - confidential_source
+  - protected_source
+  - interview_notes
+  - private_research_notes
+  - unresolved_record
+  - private_editorial_comment
+  - personal_noncareer_material
+
+provenance:
+  preserve_original_source: true
+  preserve_evidence_state: true
+  prohibit_claim_strengthening: true
+  prohibit_silent_rewrite: true
+
+automation:
+  automatic_export: false
+  automatic_shared_storage: false
