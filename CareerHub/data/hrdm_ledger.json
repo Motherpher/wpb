@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-10-06T15:59:15.410183+00:00",
+  "runs": [
+    {
+      "run_id": "cbcbfd5d-fe26-4034-aedb-3245ea7f9740",
+      "process_id": "HRDM-R-20261006-0001-S09-A-R01-FINAL",
+      "job_id": "20641ef17f2f8f17",
+      "title": "WP39 End-to-End Test Role",
+      "company": "CareerHub Test Harness",
+      "location": "",
+      "deadline": "",
+      "job_url": "https://careerhub.local/wp39-e2e-test-6",
+      "created_at": "2026-10-06T15:57:52.869463+00:00",
+      "status": "active",
+      "archived_at": null,
+      "archive_reason": null,
+      "bankable": true,
+      "hy_filter": {
+        "recommended": true,
+        "status": "active",
+        "used": true
+      },
+      "trace": {
+        "run_id": "cbcbfd5d-fe26-4034-aedb-3245ea7f9740",
+        "mode": "R",
+        "timestamp": "2026-10-06T15:57:52.869463+00:00",
+        "environment": "Standalone",
+        "piusite_usage": false,
+        "hy_filter_usage": true,
+        "hcc_authority": "HCC-Lite",
+        "downing_street_loop_count": 0,
+        "final_output_state": "FINAL",
+        "process_id_validation_status": true,
+        "last_pid_rev": "HRDM-R-20261006-0001-S09-A-R01-FINAL",
+        "process_id": "HRDM-R-20261006-0001-S09-A-R01-FINAL",
+        "runseq": 1,
+        "step_process_ids": {
+          "S01": "HRDM-R-20261006-0001-S01-A-R01-LOCK",
+          "S02": "HRDM-R-20261006-0001-S02-A-R01-LOCK",
+          "S03": "HRDM-R-20261006-0001-S03-A-R01-LOCK",
+          "S04": "HRDM-R-20261006-0001-S04-A-R01-LOCK",
+          "S05": "HRDM-R-20261006-0001-S05-A-R01-LOCK",
+          "S06": "HRDM-R-20261006-0001-S06-A-R01-LOCK",
+          "S07": "HRDM-R-20261006-0001-S07-A-R01-LOCK",
+          "S08": "HRDM-R-20261006-0001-S08-A-R01-LOCK",
+          "S09": "HRDM-R-20261006-0001-S09-A-R01-FINAL"
+        },
+        "outstanding_warnings": [],
+        "bank_eligible_outputs": [
+          "Final deconstructed ad map",
+          "Final candidate positioning map",
+          "Final DoD flagged meta-report",
+          "Final HCC commentary"
+        ],
+        "hy_filter_evaluated": true,
+        "hy_filter_activated": true,
+        "hy_filter_confidence": "high",
+        "hy_filter_activation_rationale": "All four relevance criteria are evidenced. Multiple organisational logics are explicit; structural asymmetry is relevant because institutional stakeholders, producers of evidence and public audiences possess different authority and exposure; translation is the constitutive mechanism connecting qualitative evidence to public and institutional use; and the process is required to materialize into traceable public-facing outputs and actionable recommendations.",
+        "hy_filter_criteria": {
+          "plural_logics": {
+            "met": true,
+            "evidence": [
+              "The description explicitly refers to multiple organisational logics.",
+              "Research rigor, editorial accessibility, stakeholder responsiveness, operational delivery and trace governance impose different standards on the work.",
+              "Competing institutional expectations are explicitly named."
+            ]
+          },
+          "structural_asymmetry": {
+            "met": true,
+            "evidence": [
+              "The role mediates between institutional expectations and public-facing communication, implying unequal authority over framing and approval.",
+              "Evidence producers, organisational stakeholders and public audiences have different capacities to determine how material is interpreted and used.",
+              "The role is assigned broad coordination responsibility while its own decision authority is not defined."
+            ]
+          },
+          "constitutive_translation": {
+            "met": true,
+            "evidence": [
+              "The role must translate complex qualitative material into clear public-facing outputs.",
+              "Stakeholder communication must connect competing institutional expectations to editorial and analytical work.",
+              "Translation changes evidence into forms that can be publicly understood and institutionally acted upon; it is not merely cosmetic rewriting."
+            ]
+          },
+          "materialized_output": {
+            "met": true,
+            "evidence": [
+              "Public-facing outputs are explicitly required.",
+              "Actionable recommendations are explicitly required.",
+              "Traceability, durable artifact persistence and result retrieval make materialized and reviewable products central to the test purpose."
+            ]
+          }
+        }
+      },
+      "paths": {
+        "markdown": "reports/hrdm/active/20641ef17f2f8f17/HRDM-R-20261006-0001-S09-A-R01-FINAL/HRDM_report.md",
+        "json": "reports/hrdm/active/20641ef17f2f8f17/HRDM-R-20261006-0001-S09-A-R01-FINAL/HRDM_result.json",
+        "docx": "reports/hrdm/active/20641ef17f2f8f17/HRDM-R-20261006-0001-S09-A-R01-FINAL/HRDM_report.docx",
+        "pdf": "reports/hrdm/active/20641ef17f2f8f17/HRDM-R-20261006-0001-S09-A-R01-FINAL/HRDM_report.pdf"
+      }
+    }
+  ]
+}

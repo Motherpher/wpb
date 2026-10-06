@@ -1,0 +1,506 @@
+{
+  "process_id": "HRDM-R-20261006-0001-S09-A-R01-FINAL",
+  "job": {
+    "source": "manual",
+    "title": "WP39 End-to-End Test Role",
+    "company": "CareerHub Test Harness",
+    "location": "",
+    "workplace_address": "",
+    "latitude": null,
+    "longitude": null,
+    "employment_type": "",
+    "work_mode": "",
+    "published": "",
+    "deadline": "",
+    "url": "https://careerhub.local/wp39-e2e-test-6",
+    "salary": "",
+    "description": "This is a synthetic end-to-end verification role for CareerHub WP39. The role coordinates research, editorial production, stakeholder communication, structured analysis, evidence synthesis and delivery across multiple organisational logics. It requires translating complex qualitative material into clear public-facing outputs, managing competing institutional expectations, maintaining traceability of evidence, and producing actionable recommendations. This text exists only to verify the governed HRDM-R execution path, automatic Hybridianesque relevance evaluation, semantic analysis, durable artifact persistence and result retrieval.",
+    "provider_id": "",
+    "lane": "core",
+    "matched_query": "",
+    "triage_score": 0.0,
+    "triage_reasons": [],
+    "review_flags": [],
+    "provider_meta": {},
+    "id": "20641ef17f2f8f17"
+  },
+  "signals": [
+    {
+      "signal": "Synthetic verification purpose",
+      "evidence": "The description explicitly states that the text exists only to verify the governed HRDM-R execution path, Hybridianesque relevance evaluation, semantic analysis, artifact persistence and result retrieval.",
+      "confidence": "high"
+    },
+    {
+      "signal": "Cross-functional coordination",
+      "evidence": "The role coordinates research, editorial production, stakeholder communication, structured analysis, evidence synthesis and delivery.",
+      "confidence": "high"
+    },
+    {
+      "signal": "Translation of complexity",
+      "evidence": "The role requires complex qualitative material to be translated into clear public-facing outputs.",
+      "confidence": "high"
+    },
+    {
+      "signal": "Institutional plurality",
+      "evidence": "The description names multiple organisational logics and competing institutional expectations.",
+      "confidence": "high"
+    },
+    {
+      "signal": "Evidence governance",
+      "evidence": "Maintaining traceability of evidence is an explicit requirement.",
+      "confidence": "high"
+    },
+    {
+      "signal": "Output orientation",
+      "evidence": "Expected products include public-facing outputs and actionable recommendations.",
+      "confidence": "high"
+    },
+    {
+      "signal": "Stakeholder mediation",
+      "evidence": "Stakeholder communication and management of competing expectations are central to the stated role.",
+      "confidence": "high"
+    },
+    {
+      "signal": "Broad but under-specified burden",
+      "evidence": "The description combines research, editorial, communication, analysis, synthesis and delivery without defining reporting lines, decision rights, resources or concrete counterparties.",
+      "confidence": "high"
+    }
+  ],
+  "concept_clusters": [
+    {
+      "cluster": "Research and evidence",
+      "items": [
+        "research",
+        "structured analysis",
+        "evidence synthesis",
+        "evidence traceability",
+        "qualitative material"
+      ]
+    },
+    {
+      "cluster": "Editorial transformation",
+      "items": [
+        "editorial production",
+        "clear communication",
+        "public-facing outputs",
+        "translation of complexity"
+      ]
+    },
+    {
+      "cluster": "Coordination and mediation",
+      "items": [
+        "stakeholder communication",
+        "multiple organisational logics",
+        "competing institutional expectations",
+        "cross-functional delivery"
+      ]
+    },
+    {
+      "cluster": "Decision support",
+      "items": [
+        "actionable recommendations",
+        "usable outputs",
+        "delivery",
+        "institutional expectations"
+      ]
+    },
+    {
+      "cluster": "Governed execution",
+      "items": [
+        "semantic analysis",
+        "durable artifact persistence",
+        "result retrieval",
+        "automatic relevance evaluation",
+        "traceability"
+      ]
+    }
+  ],
+  "hidden_need": {
+    "statement": "The primary need is not ordinary recruitment but verification that CareerHub can govern an end-to-end analytical process in which heterogeneous evidence and stakeholder expectations are translated into traceable, usable outputs. At the role level, the implied human function is an evidence-led editorial mediator who can impose structure without erasing differences among institutional, analytical and public-facing requirements.",
+    "confidence": "high",
+    "rationale": [
+      "The description explicitly identifies the role as synthetic and names system-path verification as its purpose.",
+      "The listed activities form a repeated movement from research and qualitative evidence through synthesis and editorial translation to delivery.",
+      "Competing institutional expectations imply a need for mediation rather than simple content production.",
+      "Traceability indicates that conclusions must remain connected to evidence and be reviewable.",
+      "Actionable recommendations indicate that analysis must culminate in decision-relevant products."
+    ]
+  },
+  "field_logic": {
+    "dominant_logics": [
+      "Research and evidentiary rigor",
+      "Editorial clarity and audience accessibility",
+      "Institutional stakeholder responsiveness",
+      "Operational delivery and artifact persistence",
+      "Governance, traceability and accountability"
+    ],
+    "tensions": [
+      "Nuanced qualitative evidence versus concise public-facing communication",
+      "Analytical independence versus competing institutional expectations",
+      "Editorial speed and delivery versus evidence verification and traceability",
+      "Cross-functional responsibility versus unspecified authority and resources",
+      "Audience accessibility versus preservation of uncertainty and complexity"
+    ],
+    "coordination_requirements": [
+      "Coordinate research, analysis, editorial production and delivery as one traceable workflow.",
+      "Establish what evidence is admissible and preserve links between evidence, interpretation and recommendations.",
+      "Translate among researchers, editorial participants, institutional stakeholders and public audiences.",
+      "Resolve or explicitly surface incompatible stakeholder expectations rather than concealing them in generalized language.",
+      "Define review points, ownership, acceptance criteria and escalation routes for outputs."
+    ],
+    "decision_environment": [
+      "The description implies multiple stakeholders with potentially different standards of validity, clarity and usefulness.",
+      "Decisions must be supported by qualitative evidence rather than unsupported assertion.",
+      "Outputs are expected to be both publicly intelligible and institutionally actionable.",
+      "The synthetic context makes successful governed execution and retrievability part of the decision environment.",
+      "Important operational details—including authority, counterparties, deadlines, resources and acceptance criteria—are absent."
+    ],
+    "implications_for_role": [
+      "Success depends on mediation and judgment, not merely writing or project administration.",
+      "The role must preserve evidentiary integrity while adapting material for different audiences.",
+      "Recommendations should expose assumptions, uncertainty and unresolved disagreement.",
+      "The role needs explicit decision rights or reliable escalation pathways to avoid responsibility without authority.",
+      "Traceable documentation is a core deliverable rather than an incidental administrative task."
+    ],
+    "summary": "The field combines research, editorial, institutional, public-communication and governance logics. Its central challenge is to convert heterogeneous qualitative evidence into accessible and actionable outputs while maintaining traceability and negotiating competing expectations. The function is coherent, but its real-world burden would remain structurally ambiguous until authority, counterparties, resources and acceptance standards were defined."
+  },
+  "function_core": {
+    "chain": "Acquire and assess qualitative evidence → structure and synthesize findings → mediate competing institutional expectations → translate analysis for public and stakeholder audiences → produce actionable recommendations and editorial outputs → preserve traceability and support retrieval or review.",
+    "summary": "An evidence-to-output mediation function combining research, editorial judgment, stakeholder translation and governed delivery."
+  },
+  "dod": {
+    "alpha": "At minimum, the work requires competent research synthesis, editorial production and disciplined evidence documentation.",
+    "zenith": "At maximum, the role becomes accountable for reconciling institutional conflict, safeguarding evidentiary integrity, shaping public communication and delivering decision-ready recommendations across an underdefined stakeholder system.",
+    "dimensions": {
+      "burden": 4,
+      "scope_environment": 4,
+      "function": 4,
+      "signal_identity": 3
+    },
+    "average": 3.75,
+    "classification": "High"
+  },
+  "assessment_zones": [
+    {
+      "zone": "Research and qualitative evidence synthesis",
+      "importance": "high",
+      "evidence_from_ad": [
+        "Coordinates research and structured analysis.",
+        "Requires synthesis of complex qualitative material.",
+        "Requires evidence to support outputs and recommendations."
+      ]
+    },
+    {
+      "zone": "Editorial translation and audience judgment",
+      "importance": "high",
+      "evidence_from_ad": [
+        "Coordinates editorial production.",
+        "Translates complex material into clear public-facing outputs.",
+        "Must retain meaning while improving accessibility."
+      ]
+    },
+    {
+      "zone": "Stakeholder mediation",
+      "importance": "high",
+      "evidence_from_ad": [
+        "Coordinates stakeholder communication.",
+        "Manages competing institutional expectations.",
+        "Works across multiple organisational logics."
+      ]
+    },
+    {
+      "zone": "Evidence traceability and analytical integrity",
+      "importance": "high",
+      "evidence_from_ad": [
+        "Maintaining traceability of evidence is explicit.",
+        "The verification context requires governed semantic analysis and durable artifacts."
+      ]
+    },
+    {
+      "zone": "Recommendation development",
+      "importance": "high",
+      "evidence_from_ad": [
+        "The role must produce actionable recommendations.",
+        "Analysis must materialize into usable outputs rather than remain descriptive."
+      ]
+    },
+    {
+      "zone": "Delivery and workflow coordination",
+      "importance": "medium",
+      "evidence_from_ad": [
+        "Coordinates delivery alongside research and production.",
+        "The end-to-end framing implies ownership across workflow stages."
+      ]
+    },
+    {
+      "zone": "Operating under ambiguity",
+      "importance": "medium",
+      "evidence_from_ad": [
+        "Multiple logics and competing expectations are named.",
+        "Counterparties, authority, resources, deadlines and acceptance criteria are not defined."
+      ]
+    }
+  ],
+  "candidate_positioning": {
+    "strong_matches": [
+      "Verified work across academic and cultural analysis, interviews, cultural journalism, social reporting and long-form reportage supports research, qualitative interpretation and editorial production.",
+      "The verified corpus includes 31 published or reported works in Polish and English, providing evidence of sustained production across different editorial contexts.",
+      "Verified interview and profile-writing work supports eliciting, organizing and communicating complex qualitative material.",
+      "Verified long-form reportage for Duży Format/Gazeta Wyborcza, Newsweek Polska and Onet Wiadomości supports evidence-led narrative synthesis for public audiences.",
+      "Verified press assistant and press secretary credits during the 2015 Stockholm Film Festival cycle support press communication and media-relations exposure.",
+      "A verified Polish literary translation credit supports direct experience translating meaning across linguistic and audience contexts."
+    ],
+    "transferable_matches": [
+      "Journalistic research and reporting are transferable to structured evidence gathering and synthesis.",
+      "Long-form reporting is transferable to converting dispersed qualitative material into coherent public-facing outputs.",
+      "Interviewing and profile writing are transferable to stakeholder inquiry and representation of multiple perspectives.",
+      "Press and media-relations experience is transferable to stakeholder communication, message coordination and audience awareness.",
+      "Published work across academic, cultural and news outlets suggests adaptability to differing editorial and institutional conventions."
+    ],
+    "gaps_unknowns": [
+      "No verified evidence establishes formal ownership of end-to-end organisational programmes.",
+      "No verified evidence establishes responsibility for producing institutional or policy recommendations.",
+      "No verified evidence establishes management of competing stakeholders with formal decision authority.",
+      "No verified evidence establishes use of evidence-governance, workflow, project-management or artifact-persistence systems.",
+      "Current employment, professional role and availability are unknown.",
+      "Current location and work-mode compatibility are unknown.",
+      "Spoken-language proficiency is unknown and must not be inferred from publication-language evidence.",
+      "Education and software or tool proficiency are unverified.",
+      "The role itself is synthetic, so no genuine employment conditions or selection criteria are available."
+    ],
+    "prohibited_claims": [
+      "Do not claim current employment, current title, location or availability.",
+      "Do not infer spoken-language fluency from Polish- and English-language publication evidence.",
+      "Do not claim formal programme management, people management or budget ownership.",
+      "Do not claim policy, consultancy or institutional recommendation experience without additional verified evidence.",
+      "Do not claim proficiency with specific software, evidence-management systems or project-management tools.",
+      "Do not present historical Stockholm Film Festival work as evidence of current residence or employment.",
+      "Do not describe the synthetic test role as a confirmed employment opportunity."
+    ],
+    "proof_points": [
+      "31 verified published or reported works in Polish and English.",
+      "Verified work across academic and cultural analysis, interviews, cultural journalism, social reporting and long-form reportage.",
+      "Verified long-form reportage credits with Duży Format/Gazeta Wyborcza, Newsweek Polska and Onet Wiadomości.",
+      "Verified interview and profile-writing work across music, culture, identity and social subjects.",
+      "Verified Stockholm Film Festival press assistant and press secretary credits from the 2015 festival cycle.",
+      "Verified Polish translation credit for Susanna Isern's Oso cazamariposas / Niedźwiedź łowca motyli."
+    ],
+    "cv_emphasis": [
+      "Lead with research, reporting, interviewing and long-form evidence synthesis.",
+      "Show breadth across academic, cultural, social and news-oriented editorial environments.",
+      "Use selected long-form reportage as evidence of organizing complex material for public audiences.",
+      "Include the verified press roles as bounded evidence of media communication experience.",
+      "Include the verified translation credit where cross-context translation is relevant.",
+      "Avoid converting editorial breadth into unsupported claims of formal institutional leadership or programme ownership."
+    ]
+  },
+  "hcc": {
+    "risks": [
+      "The text is explicitly synthetic and must not be represented as a genuine vacancy.",
+      "The work bundle is broad, combining research, editorial production, stakeholder communication, analysis, synthesis, recommendations and delivery without defining authority or resources.",
+      "Responsibility for managing competing institutional expectations could create accountability without corresponding decision rights.",
+      "Counterparties, reporting lines, review stages and acceptance criteria are undefined.",
+      "No employment type, location, work mode, salary, deadline or workload information is supplied.",
+      "The phrase 'multiple organisational logics' could obscure concrete conflicts unless each logic and stakeholder is operationally identified.",
+      "Candidates could be encouraged to overstate institutional or programme-management experience when the strongest verified evidence is editorial, reporting, press and translation work.",
+      "Because this is a test artifact, requiring an applicant to invest significant application labor or disclose vulnerable personal information would be inappropriate."
+    ],
+    "commentary": "Structural honesty is comparatively strong because the description explicitly identifies itself as synthetic and states its verification purpose. That disclosure must remain attached wherever the text is displayed; detached presentation as a live vacancy would be deceptive. Burden clarity is weak: the activity list is extensive, but authority, workload, resources, counterparties and success criteria are absent. Dignity and fairness require that candidate evidence be assessed only against stated functions and that editorial experience not be discounted merely because it was acquired outside formal corporate roles. Vulnerability sensitivity requires avoiding unnecessary requests for private information, current location, immigration status or availability in a non-vacancy test context. Non-deceptive positioning must distinguish demonstrated research, reporting, press and translation experience from unverified programme leadership or institutional advisory experience. Trace and accountability are explicit strengths of the proposed function, but real implementation would require named evidence standards, reviewers, decision owners and escalation routes."
+  },
+  "application_strategy": {
+    "positioning": "Treat this as a matching and governance simulation rather than a live application. Position the candidate as an evidence-led writer and reporter with verified strengths in qualitative research, interviewing, long-form synthesis, public-facing editorial production, press communication and translation. Present stakeholder mediation and recommendation development as transferable potential unless further verified evidence is added.",
+    "opening": "Writer and reporter with a verified body of work across cultural analysis, interviews, social reporting and long-form reportage, experienced in researching complex subjects and translating qualitative material into clear public-facing narratives.",
+    "evidence_to_use": [
+      "The 31-work verified Polish- and English-language corpus.",
+      "Verified breadth across academic analysis, cultural journalism, interviews, social reporting and long-form reportage.",
+      "Long-form reportage credits with Duży Format/Gazeta Wyborcza, Newsweek Polska and Onet Wiadomości.",
+      "Interview and profile-writing work across culture, identity, music and social subjects.",
+      "The bounded 2015 Stockholm Film Festival press assistant and press secretary credits.",
+      "The verified Polish literary translation credit."
+    ],
+    "evidence_to_avoid": [
+      "Unverified current employment, location or availability.",
+      "Claims of spoken-language proficiency not separately verified.",
+      "Unsupported claims of formal stakeholder governance, programme ownership or people management.",
+      "Unsupported claims of institutional consulting, policy formulation or recommendation ownership.",
+      "Unverified education, software proficiency or workflow-system experience.",
+      "Any suggestion that the test harness is offering actual employment."
+    ],
+    "tone": "Precise, evidence-led and editorially confident, while remaining explicit about transferability, unknowns and the synthetic status of the role.",
+    "interview_themes": [
+      "How complex qualitative evidence is gathered, checked and structured.",
+      "How long-form material is made clear without flattening ambiguity.",
+      "How interviews and multiple perspectives are synthesized responsibly.",
+      "How editorial choices change across academic, cultural, news and public-facing contexts.",
+      "How press experience informs stakeholder and audience communication.",
+      "How translation experience supports preservation of meaning across contexts.",
+      "What additional structures would be needed to manage institutional expectations and evidence traceability at programme level."
+    ]
+  },
+  "hybridianesque": {
+    "recommended": true,
+    "evaluated": true,
+    "activated": true,
+    "confidence": "high",
+    "activation_mode": "automatic",
+    "activation_rationale": "All four relevance criteria are evidenced. Multiple organisational logics are explicit; structural asymmetry is relevant because institutional stakeholders, producers of evidence and public audiences possess different authority and exposure; translation is the constitutive mechanism connecting qualitative evidence to public and institutional use; and the process is required to materialize into traceable public-facing outputs and actionable recommendations.",
+    "why": "All four relevance criteria are evidenced. Multiple organisational logics are explicit; structural asymmetry is relevant because institutional stakeholders, producers of evidence and public audiences possess different authority and exposure; translation is the constitutive mechanism connecting qualitative evidence to public and institutional use; and the process is required to materialize into traceable public-facing outputs and actionable recommendations.",
+    "criteria": {
+      "plural_logics": {
+        "met": true,
+        "evidence": [
+          "The description explicitly refers to multiple organisational logics.",
+          "Research rigor, editorial accessibility, stakeholder responsiveness, operational delivery and trace governance impose different standards on the work.",
+          "Competing institutional expectations are explicitly named."
+        ]
+      },
+      "structural_asymmetry": {
+        "met": true,
+        "evidence": [
+          "The role mediates between institutional expectations and public-facing communication, implying unequal authority over framing and approval.",
+          "Evidence producers, organisational stakeholders and public audiences have different capacities to determine how material is interpreted and used.",
+          "The role is assigned broad coordination responsibility while its own decision authority is not defined."
+        ]
+      },
+      "constitutive_translation": {
+        "met": true,
+        "evidence": [
+          "The role must translate complex qualitative material into clear public-facing outputs.",
+          "Stakeholder communication must connect competing institutional expectations to editorial and analytical work.",
+          "Translation changes evidence into forms that can be publicly understood and institutionally acted upon; it is not merely cosmetic rewriting."
+        ]
+      },
+      "materialized_output": {
+        "met": true,
+        "evidence": [
+          "Public-facing outputs are explicitly required.",
+          "Actionable recommendations are explicitly required.",
+          "Traceability, durable artifact persistence and result retrieval make materialized and reviewable products central to the test purpose."
+        ]
+      }
+    },
+    "user_decision": null,
+    "status": "active",
+    "participating_logics": [
+      "Qualitative research and evidentiary rigor",
+      "Editorial production and narrative clarity",
+      "Institutional legitimacy and stakeholder responsiveness",
+      "Public accessibility and communicative responsibility",
+      "Operational delivery and artifact persistence",
+      "Governance, traceability and auditability"
+    ],
+    "asymmetries": [
+      "Institutional stakeholders may control approval or use while researchers and subjects supply much of the underlying knowledge.",
+      "Public audiences receive mediated accounts but may have limited visibility into evidence selection and institutional constraints.",
+      "The coordinating role may carry delivery accountability without explicit authority over contributors or decision owners.",
+      "Subjects represented in qualitative material may bear reputational or personal consequences without equal control over final framing."
+    ],
+    "translation_relations": [
+      "Research evidence to structured analysis.",
+      "Structured analysis to editorial narrative.",
+      "Institutional expectations to workable production requirements.",
+      "Specialist or qualitative complexity to public-facing clarity.",
+      "Stakeholder disagreement to explicit assumptions, options and recommendations.",
+      "Evidence provenance to traceable artifacts that reviewers can inspect."
+    ],
+    "process_to_output": [
+      "Gather and qualify evidence.",
+      "Identify participating logics, stakeholders and unresolved conflicts.",
+      "Synthesize evidence while preserving provenance and uncertainty.",
+      "Translate findings into audience-appropriate editorial forms.",
+      "Develop recommendations tied explicitly to evidence and assumptions.",
+      "Submit outputs through named review and acceptance stages.",
+      "Persist artifacts and trace links for retrieval, challenge and revision."
+    ],
+    "overload_or_misframing": [
+      "The role may be misframed as a single generalist position when it combines research, editorial, stakeholder, analytical, governance and delivery responsibilities.",
+      "The language of multiple logics may conceal ordinary scope or authority problems unless concrete counterparties and decisions are named.",
+      "Actionable recommendations may create advisory accountability without specifying who owns final decisions.",
+      "Traceability requirements may become administrative overload if tools, standards and review responsibilities are not supplied."
+    ],
+    "failure_modes": [
+      "many_hats_drift",
+      "undefined_outputs",
+      "undefined_counterparties"
+    ],
+    "risk_remaining": [
+      "Output categories are named, but formats, volume, deadlines and acceptance standards remain undefined.",
+      "Institutional counterparties and final decision owners remain unidentified.",
+      "The role's authority to resolve competing expectations remains unknown.",
+      "The synthetic description cannot establish whether a comparable real role would have adequate resources or fair employment conditions.",
+      "Public-facing translation could still flatten uncertainty or stakeholder disagreement unless explicit safeguards are used."
+    ],
+    "framing_if_active": "Interpret the function as a governed mediation system rather than a broad collection of tasks: distinct research, editorial, institutional, public and operational logics enter the process; asymmetries and disagreements are surfaced; translation connects those logics; and the work culminates in evidence-linked, reviewable outputs. Activation does not validate unlimited scope. It strengthens the requirement to define counterparties, authority, outputs, safeguards and acceptance criteria."
+  },
+  "trace": {
+    "run_id": "cbcbfd5d-fe26-4034-aedb-3245ea7f9740",
+    "mode": "R",
+    "timestamp": "2026-10-06T15:57:52.869463+00:00",
+    "environment": "Standalone",
+    "piusite_usage": false,
+    "hy_filter_usage": true,
+    "hcc_authority": "HCC-Lite",
+    "downing_street_loop_count": 0,
+    "final_output_state": "FINAL",
+    "process_id_validation_status": true,
+    "last_pid_rev": "HRDM-R-20261006-0001-S09-A-R01-FINAL",
+    "process_id": "HRDM-R-20261006-0001-S09-A-R01-FINAL",
+    "runseq": 1,
+    "step_process_ids": {
+      "S01": "HRDM-R-20261006-0001-S01-A-R01-LOCK",
+      "S02": "HRDM-R-20261006-0001-S02-A-R01-LOCK",
+      "S03": "HRDM-R-20261006-0001-S03-A-R01-LOCK",
+      "S04": "HRDM-R-20261006-0001-S04-A-R01-LOCK",
+      "S05": "HRDM-R-20261006-0001-S05-A-R01-LOCK",
+      "S06": "HRDM-R-20261006-0001-S06-A-R01-LOCK",
+      "S07": "HRDM-R-20261006-0001-S07-A-R01-LOCK",
+      "S08": "HRDM-R-20261006-0001-S08-A-R01-LOCK",
+      "S09": "HRDM-R-20261006-0001-S09-A-R01-FINAL"
+    },
+    "outstanding_warnings": [],
+    "bank_eligible_outputs": [
+      "Final deconstructed ad map",
+      "Final candidate positioning map",
+      "Final DoD flagged meta-report",
+      "Final HCC commentary"
+    ],
+    "hy_filter_evaluated": true,
+    "hy_filter_activated": true,
+    "hy_filter_confidence": "high",
+    "hy_filter_activation_rationale": "All four relevance criteria are evidenced. Multiple organisational logics are explicit; structural asymmetry is relevant because institutional stakeholders, producers of evidence and public audiences possess different authority and exposure; translation is the constitutive mechanism connecting qualitative evidence to public and institutional use; and the process is required to materialize into traceable public-facing outputs and actionable recommendations.",
+    "hy_filter_criteria": {
+      "plural_logics": {
+        "met": true,
+        "evidence": [
+          "The description explicitly refers to multiple organisational logics.",
+          "Research rigor, editorial accessibility, stakeholder responsiveness, operational delivery and trace governance impose different standards on the work.",
+          "Competing institutional expectations are explicitly named."
+        ]
+      },
+      "structural_asymmetry": {
+        "met": true,
+        "evidence": [
+          "The role mediates between institutional expectations and public-facing communication, implying unequal authority over framing and approval.",
+          "Evidence producers, organisational stakeholders and public audiences have different capacities to determine how material is interpreted and used.",
+          "The role is assigned broad coordination responsibility while its own decision authority is not defined."
+        ]
+      },
+      "constitutive_translation": {
+        "met": true,
+        "evidence": [
+          "The role must translate complex qualitative material into clear public-facing outputs.",
+          "Stakeholder communication must connect competing institutional expectations to editorial and analytical work.",
+          "Translation changes evidence into forms that can be publicly understood and institutionally acted upon; it is not merely cosmetic rewriting."
+        ]
+      },
+      "materialized_output": {
+        "met": true,
+        "evidence": [
+          "Public-facing outputs are explicitly required.",
+          "Actionable recommendations are explicitly required.",
+          "Traceability, durable artifact persistence and result retrieval make materialized and reviewable products central to the test purpose."
+        ]
+      }
+    }
+  }
+}
