@@ -1,5 +1,5 @@
 name: CareerHub Managed Site Sync
-# Motor sync marker: WP38-39 operational close-loop v2
+# Motor sync marker: WP38-39 operational close-loop v3
 
 on:
   push:
