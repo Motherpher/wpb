@@ -1,5 +1,5 @@
 name: CareerHub Managed Site Sync
-# Fleet rollout marker: 2026-10-06 motor-close-loop-v6
+# Fleet rollout marker: 2026-10-07 wpb-visual-override-v2
 
 on:
   push:
@@ -9,6 +9,8 @@ on:
       - 'CareerHub/profile/**'
       - 'CareerHub/config/**'
       - 'CareerHub/personalisation/**'
+      - 'CareerHub/site/personal/**'
+      - '.github/scripts/apply_weronika_visual_override.py'
       - '.github/workflows/careerhub-site-sync.yml'
   workflow_dispatch:
   schedule:
@@ -48,6 +50,14 @@ jobs:
       - name: Sync centrally managed shell
         run: python .careerhub-zero/scripts/sync_web_shell.py CareerHub
 
+      - name: Re-attach profile-owned Weronika visual layer
+        run: python .github/scripts/apply_weronika_visual_override.py
+
+      - name: Assert visual override survived shell sync
+        run: |
+          test -f CareerHub/site/personal/weronika.css
+          grep -F "import '../personal/weronika.css';" CareerHub/site/app/layout.tsx
+
       - name: Build personalised site
         working-directory: CareerHub/site
         run: |
@@ -60,10 +70,10 @@ jobs:
           rm -rf .careerhub-zero CareerHub/site/node_modules CareerHub/site/.next
           git add CareerHub/site
           if git diff --cached --quiet; then
-            echo 'Managed shell already current.'
+            echo 'Managed shell and profile-owned visual layer already current.'
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'Sync CareerHub managed site from CareerHubZero'
+          git commit -m 'Sync CareerHub shell and re-apply Weronika visual layer'
           git push origin HEAD:main
