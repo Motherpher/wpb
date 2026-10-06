@@ -1,6 +1,9 @@
 schema_version: "1.0"
 profile_id: weronika-perez-borjas
 
+binding:
+  repository: Motherpher/wpb
+
 profile:
   path: profile/candidate_verified.yaml
 
