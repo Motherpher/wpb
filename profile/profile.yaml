@@ -1,0 +1,105 @@
+schema_version: "1.0"
+profile_id: weronika-perez-borjas
+identity:
+  name: "Weronika Pérez Borjas"
+
+claim_states:
+  allowed:
+    - verified
+    - confirmed_by_weronika
+    - provisional
+    - interpretive
+    - unresolved
+    - rejected
+
+professional_identity:
+  headline:
+    value: "Writer and reporter with verified work across cultural journalism, interviews, social reporting and long-form reportage"
+    status: interpretive
+    source_ids:
+      - ev-wpb-001
+      - ev-wpb-002
+      - ev-wpb-004
+      - ev-wpb-008
+    approved_for:
+      - internal_profile
+
+sources:
+  - id: wpb-corpus-verified
+    source_type: verified_project_record
+    reference: "../data/corpus.json"
+    verification_status: verified
+    verified_at: "2026-09-24"
+    rule: "Use only entries whose own record is verified."
+  - id: wpb-credits-verified
+    source_type: verified_project_record
+    reference: "../data/credits.json"
+    verification_status: verified
+    verified_at: "2026-09-24"
+    rule: "Use only context-verified records; unresolved records are excluded."
+
+evidence:
+  - id: ev-wpb-001
+    claim: "The verified repository corpus contains published or reported work in Polish and English."
+    status: verified
+    source_ids: [wpb-corpus-verified]
+    approved_for: [writerroom, careerhub_evidence]
+  - id: ev-wpb-002
+    claim: "Verified work spans academic and cultural analysis, interviews, cultural journalism, social reporting and long-form reportage."
+    status: verified
+    source_ids: [wpb-corpus-verified]
+    approved_for: [writerroom, careerhub_evidence]
+  - id: ev-wpb-003
+    claim: "Verified publication outlets include Kultura Współczesna, Fashion, Style & Popular Culture, The Forumist, Totally Stockholm, VICE/VICE Polska, Duży Format/Gazeta Wyborcza, Newsweek Polska and Onet Wiadomości."
+    status: verified
+    source_ids: [wpb-corpus-verified]
+    approved_for: [writerroom, careerhub_evidence]
+  - id: ev-wpb-004
+    claim: "The verified corpus includes long-form reportage for Duży Format/Gazeta Wyborcza, Newsweek Polska and Onet Wiadomości."
+    status: verified
+    source_ids: [wpb-corpus-verified]
+    approved_for: [writerroom, careerhub_evidence]
+  - id: ev-wpb-005
+    claim: "Stockholm Film Festival press materials identify Weronika Pérez Borjas as press assistant and later press secretary during the 2015 festival cycle."
+    status: verified
+    source_ids: [wpb-credits-verified]
+    approved_for: [careerhub_evidence]
+  - id: ev-wpb-006
+    claim: "A verified catalogue record credits Weronika Pérez Borjas with the Polish translation of Susanna Isern's Oso cazamariposas / Niedźwiedź łowca motyli."
+    status: verified
+    source_ids: [wpb-credits-verified]
+    approved_for: [writerroom, careerhub_evidence]
+  - id: ev-wpb-007
+    claim: "A verified Krull Magazine record credits Weronika Pérez Borjas with styling work."
+    status: verified
+    source_ids: [wpb-credits-verified]
+    approved_for: [writerroom, careerhub_evidence]
+  - id: ev-wpb-008
+    claim: "The verified corpus includes interview and profile-writing work across music, culture, identity and social subjects."
+    status: verified
+    source_ids: [wpb-corpus-verified]
+    approved_for: [writerroom, careerhub_evidence]
+
+verification_queue:
+  - id: wpb-current-employment
+    question: "Confirm current employment and current professional role before external use."
+    status: unresolved
+  - id: wpb-current-location
+    question: "Confirm current location; do not infer residence from historical work."
+    status: unresolved
+  - id: wpb-spoken-languages
+    question: "Confirm spoken-language proficiency separately from publication-language evidence."
+    status: unresolved
+  - id: wpb-education
+    question: "Add source-backed education chronology before external use."
+    status: unresolved
+  - id: wpb-tools
+    question: "Add verified software and tool proficiency if it should be used professionally."
+    status: unresolved
+  - id: wpb-availability
+    question: "Confirm current availability and engagement preferences."
+    status: unresolved
+
+authority:
+  human_owner: weronika-perez-borjas
+  rule: "Weronika may correct, approve, reject, hide, replace or restrict profile material. AI interpretation never becomes evidence merely by being generated."
