@@ -4,26 +4,56 @@ This is Weronika Pérez Borjas's **writer/journalist workroom** inside the WPB p
 
 It is deliberately separate from **CareerHub**.
 
-- **Writer & Journalism Room** = the work itself: writing, reporting, research, archive, editorial development and portfolio.
+- **Writer & Journalism Room** = the work itself: writing, reporting, research, editorial development, publication archive and portfolio.
 - **CareerHub** = finding roles, analysing job opportunities, preparing applications and following recruitment cases.
 
 Neither room owns the other.
+
+## Manifest
+
+[`writerroom.yaml`](writerroom.yaml) is the machine-readable room manifest.
 
 ## What belongs here
 
 The Writer & Journalism Room is the home for:
 
+- current and future writing/reporting projects;
+- ideas, pitches and commissions;
+- research and source work;
+- drafts and revision history;
+- editorial review and development;
 - published journalism and writing;
 - reconstructed bibliography and source evidence;
-- current and future reporting/writing projects;
-- pitches, commissions and editorial development;
-- research notes and source work;
-- interviews and reporting material where legally and ethically appropriate;
+- publication records and provenance;
 - portfolio selection and presentation;
 - writer biography/profile development;
 - translation/editorial work connected to the writing practice;
-- rights, attribution and publication provenance;
+- rights and attribution;
 - analysis of the body of work.
+
+## Operational desks
+
+The room is organised conceptually around these functions:
+
+1. **Work Desk** — current stories, drafts, commissions and status.
+2. **Pitch Desk** — pitch development, sending, follow-up and commissioning.
+3. **Reporting Desk** — story question, actors, institutions, interviews, claims and open questions.
+4. **Research & Source Desk** — research evidence plus security-aware source handling.
+5. **Writing Desk** — manuscripts and version lineage.
+6. **Editorial Desk** — structure, source/referential control, style and deployment review.
+7. **Publication Desk** — final publication records and provenance.
+8. **Archive** — reconstructed body of published work.
+9. **Portfolio** — selected public-facing representation.
+
+Supporting specifications:
+
+- [Work lifecycle](work/lifecycle.yaml)
+- [Editorial Desk](editorial/README.md)
+- [Publication Desk](publication/README.md)
+- [Portfolio](portfolio/README.md)
+- [Rights & attribution](rights/README.md)
+- [Security & source protection](security/README.md)
+- [Work-item templates](templates/)
 
 ## What does not belong here
 
@@ -39,7 +69,7 @@ The following stays in [CareerHub](../CareerHub/README.md):
 
 ## Current archive estate
 
-The existing WPB archive predates this room and remains in its stable repository paths for now. Those paths are now **owned conceptually by the Writer & Journalism Room**, not by CareerHub:
+The existing WPB archive predates this room and remains in its stable repository paths for compatibility. These paths are functionally owned by WriterRoom:
 
 - [`../data/`](../data/) — canonical corpus and structured metadata
 - [`../bibliography/`](../bibliography/) — reconstructed publication bibliography
@@ -51,21 +81,39 @@ The existing WPB archive predates this room and remains in its stable repository
 - [`../visuals/`](../visuals/) — archive/portfolio visual system
 - [`../docs/`](../docs/) — archive/editorial/site documentation
 
-This preserves existing links and automation while establishing a clean room boundary.
+The archive has **not** been physically moved in v1.0 so existing links and automation remain intact.
 
 ## Working lifecycle
 
-For future active writing, the room can use this lifecycle without forcing every piece through every stage:
+Canonical states are defined in [`work/lifecycle.yaml`](work/lifecycle.yaml):
 
-**Idea → Pitch → Commissioned → Research → Reporting → Draft → Edit → Source/Fact Check → Submitted → Published → Archived / Portfolio**
+**Idea → Pitch → Commissioned → Research → Reporting → Draft → Edit → Source/Fact Check → Submitted → Published → Archived → Portfolio Review**
 
-The publication archive remains evidence-led. Active work may have private or restricted material that must not be pushed into public-facing portfolio surfaces automatically.
+Not every piece must pass through every stage.
+
+## Security classifications
+
+WriterRoom recognises:
+
+**PUBLIC → INTERNAL → CONFIDENTIAL → PROTECTED_SOURCE**
+
+Protected-source material must not enter CareerHub, public surfaces or general AI workflows. GitHub is not treated as a sufficient protected-source vault merely because the repository is private.
+
+See [security/README.md](security/README.md).
+
+## Editorial review
+
+`The Writer and the Beast` / Publicist may be used as an optional editorial-review protocol inside the Editorial Desk. It is advisory. Weronika retains authorship and editorial authority.
 
 ## Controlled bridge to CareerHub
 
-CareerHub may use **explicitly selected, verified career evidence** from this room — for example publication records, a confirmed biography, selected work or documented capabilities.
+CareerHub may use only **explicitly approved, provenance-preserving career evidence** from this room.
 
-CareerHub must not treat the Writer & Journalism Room as its own state store and must not automatically ingest drafts, private reporting notes, unpublished sources or editorial material.
+The bridge is defined in:
+
+[`../bridges/writer-career-evidence/export.yaml`](../bridges/writer-career-evidence/export.yaml)
+
+CareerHub must not automatically ingest drafts, private reporting notes, unpublished sources, unresolved archive material or editorial comments.
 
 See [ROOM_BOUNDARY.md](ROOM_BOUNDARY.md).
 
