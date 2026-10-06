@@ -2,7 +2,7 @@
 
 ## Principle
 
-The WPB repository is a **profile container with multiple rooms**. CareerHub is one room. The Writer & Journalism Room is another.
+The WPB repository is a **profile container with multiple peer rooms**. CareerHub is one room. The Writer & Journalism Room is another.
 
 They may exchange selected evidence, but they do not share operational state.
 
@@ -11,11 +11,13 @@ They may exchange selected evidence, but they do not share operational state.
 ### Writer & Journalism Room owns
 
 - writing/reporting work;
+- pitches and commissions;
 - publication corpus and bibliography;
 - source provenance;
 - research notes and writer-facing analysis;
+- editorial state;
+- publication state;
 - portfolio selection;
-- writer/editorial development;
 - rights and publication context.
 
 ### CareerHub owns
@@ -23,14 +25,24 @@ They may exchange selected evidence, but they do not share operational state.
 - job sourcing;
 - vacancy analysis;
 - HRDM-R outputs;
-- candidate-positioning for a specific vacancy;
+- candidate positioning for a specific vacancy;
 - application drafts;
 - application/recruitment status;
 - deadlines, reminders and outcomes.
 
-## Permitted bridge
+### Profile Core owns
 
-CareerHub may receive only deliberately exported career evidence such as:
+- cross-room verified professional facts;
+- claim state/provenance;
+- profile-level permissions and use scope.
+
+## Implemented bridge
+
+The machine-readable bridge is:
+
+[`../bridges/writer-career-evidence/export.yaml`](../bridges/writer-career-evidence/export.yaml)
+
+CareerHub may receive only deliberately approved career evidence such as:
 
 - verified publication records;
 - selected work;
@@ -45,7 +57,7 @@ The bridge is **evidence export**, not shared storage.
 CareerHub must not automatically ingest:
 
 - unpublished drafts;
-- source identities or confidential reporting material;
+- source identities or confidential/protected reporting material;
 - interview notes;
 - private research notes;
 - incomplete/unverified archive leads;
@@ -56,29 +68,18 @@ WriterRoom must not write into CareerHub's job/application state.
 
 ## Direction of authority
 
-For published-work facts, the Writer & Journalism Room/archive evidence layer is authoritative.
+For published-work facts, WriterRoom/archive evidence is authoritative.
+
+For cross-room verified profile facts, Profile Core is authoritative.
 
 For job-search state, CareerHub is authoritative.
 
-If CareerHub uses evidence exported from WriterRoom, the original provenance remains attached. CareerHub may reframe evidence for an application but may not silently strengthen or alter the underlying factual claim.
+If CareerHub uses evidence exported from WriterRoom, original provenance and evidence status remain attached. CareerHub may reframe evidence for an application but may not silently strengthen or alter the factual claim.
 
-## Future implementation
+## Security
 
-A machine-readable bridge may later expose a small approved evidence bundle, for example:
+`PROTECTED_SOURCE` material is categorically outside the CareerHub bridge and general AI workflows.
 
-```yaml
-writer_evidence_export:
-  version: "1.0"
-  approved_sources:
-    - publication_record
-    - selected_work
-    - confirmed_bio
-    - verified_capability
-  excludes:
-    - drafts
-    - confidential_sources
-    - private_notes
-    - unresolved_records
-```
+## Automation rule
 
-Until such a contract is implemented, the boundary is manual and explicit.
+The bridge defaults to deny. Automatic shared storage and automatic export are disabled. Human approval is required for any item crossing from WriterRoom to CareerHub.
