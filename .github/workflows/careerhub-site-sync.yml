@@ -1,0 +1,68 @@
+name: CareerHub Managed Site Sync
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'CareerHub/careerhub.yaml'
+      - 'CareerHub/profile/**'
+      - 'CareerHub/config/**'
+      - 'CareerHub/personalisation/**'
+      - '.github/workflows/careerhub-site-sync.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '17 3 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: careerhub-managed-site-sync
+  cancel-in-progress: true
+
+jobs:
+  sync-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Checkout canonical CareerHub motor
+        uses: actions/checkout@v4
+        with:
+          repository: Motherpher/CareerHubZero
+          ref: main
+          path: .careerhub-zero
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Sync centrally managed shell
+        run: python .careerhub-zero/scripts/sync_web_shell.py CareerHub
+
+      - name: Build personalised site
+        working-directory: CareerHub/site
+        run: |
+          npm install --no-package-lock --no-audit --no-fund
+          npm run build
+
+      - name: Commit managed shell when changed
+        shell: bash
+        run: |
+          rm -rf .careerhub-zero CareerHub/site/node_modules CareerHub/site/.next
+          git add CareerHub/site .github/workflows/careerhub-operations.yml
+          if git diff --cached --quiet; then
+            echo 'Managed shell already current.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Sync CareerHub managed site from CareerHubZero'
+          git push origin HEAD:main
