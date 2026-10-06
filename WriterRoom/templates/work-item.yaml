@@ -1,0 +1,47 @@
+schema_version: "1.0"
+work_id: ""
+title: ""
+work_type: ""
+state: idea
+security_class: internal
+no_ai: false
+
+summary: ""
+angle_or_question: ""
+publication_target: ""
+commissioned: false
+
+workflow:
+  created_at: ""
+  deadline: ""
+  current_state: idea
+  state_history: []
+
+reporting:
+  people: []
+  institutions: []
+  locations: []
+  open_questions: []
+  claims: []
+
+sources:
+  public: []
+  internal: []
+  confidential_refs: []
+  protected_source_refs: []
+
+editorial:
+  writer_and_beast_run: false
+  fact_check_status: not_started
+  revision_refs: []
+
+publication:
+  status: unpublished
+  record_id: ""
+
+portfolio:
+  status: hidden
+
+career_export:
+  eligible: false
+  approved: false
