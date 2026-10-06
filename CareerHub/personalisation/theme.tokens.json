@@ -14,14 +14,14 @@
     "shadow": "none"
   },
   "palette": {
-    "background": "#EFE9DF",
-    "foreground": "#171310",
-    "muted": "#71665D",
-    "accent": "#8A243B",
-    "accent_foreground": "#FFF9F3"
+    "background": "#F7F2E8",
+    "foreground": "#242831",
+    "muted": "#59675F",
+    "accent": "#ED7938",
+    "accent_foreground": "#242831"
   },
   "imagery": {
-    "mode": "documentary",
-    "treatment": "muted"
+    "mode": "mixed",
+    "treatment": "high-contrast"
   }
 }
