@@ -1,0 +1,22 @@
+schema_version: "1.0"
+source_id: ""
+source_type: ""
+security_class: internal
+no_ai: false
+
+identity:
+  display_name: ""
+  protected_identity: false
+
+provenance:
+  origin: ""
+  acquired_at: ""
+  related_work_ids: []
+
+handling:
+  may_enter_general_ai: false
+  may_export_to_careerhub: false
+  may_publish_metadata: false
+  storage_reference: ""
+
+notes: ""
