@@ -1,0 +1,61 @@
+schema_version: "1.0"
+profile_id: weronika-perez-borjas
+
+visibility_domains:
+  public:
+    description: "Material explicitly approved for public portfolio or public biography surfaces."
+  private_professional:
+    description: "Private profile, writer-work and career material not intended for public release."
+  restricted_journalism:
+    description: "Confidential, embargoed or source-sensitive journalism material."
+
+ai_policy:
+  default: review_required
+  allowed_by_default:
+    - public_archive_analysis
+    - metadata_extraction
+    - draft_structure_review
+    - style_analysis
+    - public_source_research
+    - portfolio_summarisation
+    - translation_assistance
+  explicit_approval_required:
+    - unpublished_manuscript
+    - private_interview_notes
+    - commissioned_unpublished_work
+    - embargoed_material
+  prohibited_from_general_ai_workflows:
+    - protected_source_identity
+    - protected_source_communication
+    - credentials
+    - material_marked_no_ai
+
+room_access:
+  writer_journalism:
+    may_read_profile_claims_if_approved_for:
+      - writerroom
+      - public_portfolio
+    may_write_profile_core: false
+  career:
+    may_read_profile_claims_if_approved_for:
+      - careerhub_evidence
+    may_write_profile_core: false
+
+human_controls:
+  - correct
+  - approve
+  - reject
+  - hide
+  - delete
+  - replace
+  - exclude_from_portfolio
+  - exclude_from_careerhub
+  - mark_private
+  - mark_no_ai
+
+precedence:
+  - weronika
+  - verified_primary_evidence
+  - profile_core_or_writer_archive
+  - room_operational_state
+  - ai_interpretation
