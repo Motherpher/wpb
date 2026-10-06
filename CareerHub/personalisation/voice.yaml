@@ -1,0 +1,11 @@
+schema_version: "1.0"
+posture: editorial, precise, observant
+language: en
+principles:
+  - evidence before claim
+  - concise but not generic
+  - preserve reporting and cultural specificity
+avoid:
+  - motivational boilerplate
+  - generic HR language
+  - inflated claims
