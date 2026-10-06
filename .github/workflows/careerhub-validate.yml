@@ -5,11 +5,13 @@ on:
   pull_request:
     paths:
       - "CareerHub/**"
+      - ".github/scripts/apply_weronika_visual_override.py"
       - ".github/workflows/careerhub-*.yml"
   push:
     branches: [main]
     paths:
       - "CareerHub/**"
+      - ".github/scripts/apply_weronika_visual_override.py"
       - ".github/workflows/careerhub-*.yml"
 
 permissions:
@@ -28,6 +30,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
       - name: Install canonical CareerHub motor
         run: |
           pip install -r .careerhub-zero/requirements.txt
@@ -96,3 +101,14 @@ jobs:
               raise SystemExit('Missing preserved profile/state paths: ' + ', '.join(missing))
           print('Preserved profile/state paths OK:', ', '.join(required))
           PY
+      - name: Reproduce central sync and re-apply Weronika visual layer
+        run: |
+          python .careerhub-zero/scripts/sync_web_shell.py CareerHub
+          python .github/scripts/apply_weronika_visual_override.py
+          test -f CareerHub/site/personal/weronika.css
+          grep -F "import '../personal/weronika.css';" CareerHub/site/app/layout.tsx
+      - name: Build personalised site with visual override
+        working-directory: CareerHub/site
+        run: |
+          npm install --no-package-lock --no-audit --no-fund
+          npm run build
