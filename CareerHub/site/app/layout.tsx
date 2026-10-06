@@ -5,6 +5,7 @@ import './globals.css';
 import './actions.css';
 import './profile-shell.css';
 import './motor.css';
+import '../personal/weronika.css';
 
 export function generateMetadata(): Metadata {
   const hub = loadHubProfile();
