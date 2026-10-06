@@ -18,3 +18,9 @@ artifacts:
 
 ui:
   language: en
+
+presentation:
+  profile: personalisation/hub.profile.yaml
+  theme: personalisation/theme.tokens.json
+  voice: personalisation/voice.yaml
+  site_root: site
