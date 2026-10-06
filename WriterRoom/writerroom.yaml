@@ -1,0 +1,61 @@
+schema_version: "1.0"
+room_id: writer-journalism
+display_name: "Writer & Journalism Room"
+profile_id: weronika-perez-borjas
+
+profile_core:
+  path: ../profile/profile.yaml
+  access: approved_claims_only
+
+ownership:
+  - writing_work
+  - reporting_work
+  - pitch_state
+  - commission_state
+  - research_work
+  - editorial_state
+  - publication_archive
+  - portfolio_state
+  - rights_and_attribution
+
+lifecycle:
+  path: work/lifecycle.yaml
+
+security:
+  policy: security/README.md
+  classifications:
+    - public
+    - internal
+    - confidential
+    - protected_source
+
+editorial:
+  desk: editorial/README.md
+  writer_and_beast: optional_review_protocol
+  human_editorial_authority: true
+
+archive:
+  corpus: ../data/corpus.json
+  metadata: ../data/article-metadata.json
+  bibliography: ../bibliography/master-bibliography.md
+  sources: ../sources
+  discovery: ../harvest
+  physical_paths_migrated: false
+
+portfolio:
+  path: portfolio/README.md
+  source: archive_plus_approved_profile_core
+
+bridge_to_careerhub:
+  contract: ../bridges/writer-career-evidence/export.yaml
+  mode: explicit_approved_evidence_export
+  automatic_shared_storage: false
+
+ai:
+  project_boundary: wpb-writer
+  no_ai_marker_supported: true
+  protected_source_general_ai_access: prohibited
+
+human_authority:
+  owner: weronika-perez-borjas
+  ai_is_advisory: true
