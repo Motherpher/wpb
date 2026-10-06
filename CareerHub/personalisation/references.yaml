@@ -61,6 +61,11 @@ sources:
       - CareerHub task journey and information architecture
 
 visual_references:
-  status: REFERENCE_PENDING
-  inspected: []
-  note: "No explicit Weronika visual reference has yet been inspected for this design pass. Current visual tokens are provisional and must not be treated as VISUAL_LOCK evidence."
+  status: VISUAL_HARVEST_COMPLETE
+  inspected:
+    - "user-supplied-reference:image(4).png"
+    - "user-supplied-reference:image(5).png"
+    - "user-supplied-reference:image(6).png"
+    - "user-supplied-reference:image(7).png"
+  external_context: "Pinterest board supplied by user: https://se.pinterest.com/?tabId=448389775340145884"
+  note: "The colour system is grounded primarily in the four explicitly supplied images. The operational palette uses warm white, deep ink, botanical green and coral-orange; solar yellow, sage, cyan-blue and coral-red are retained as supporting reference colours for future graphic surfaces."
