@@ -1,31 +1,54 @@
 schema_version: "1.0"
 profile_id: weronika-perez-borjas
-status: REFERENCE_PENDING
+status: VISUAL_HARVEST_COMPLETE
 
-references: []
+references:
+  - id: vr-01
+    source: "user-supplied-reference:image(4).png"
+    role: "dominant warm field, botanical darks, coral-red subject, pale yellow support"
+  - id: vr-02
+    source: "user-supplied-reference:image(5).png"
+    role: "warm white field, muted botanical neutrals, organic layering"
+  - id: vr-03
+    source: "user-supplied-reference:image(6).png"
+    role: "sage field, mustard yellow, olive/leaf green, graphic editorial blocking"
+  - id: vr-04
+    source: "user-supplied-reference:image(7).png"
+    role: "high-saturation coral-red, cyan-blue, solar yellow and deep ink"
 
 observed:
-  typography_character: null
-  grid_layout_rhythm: null
-  whitespace_density: null
-  geometry: null
-  hierarchy: null
-  colour_logic: null
-  card_surface_behaviour: null
-  iconography: null
-  data_visualisation_language: null
-  imagery_language: null
-  motion_character: null
+  typography_character: "editorial; typography is subordinate to image and colour fields in the supplied references"
+  grid_layout_rhythm: "asymmetric editorial composition with large colour planes and layered focal material"
+  whitespace_density: "variable; open fields are used to intensify saturated focal colour"
+  geometry: "hard-edged blocks combined with organic botanical silhouettes"
+  hierarchy: "one dominant visual field, one strong focal accent, restrained supporting neutrals"
+  colour_logic: "warm coral/orange and solar yellow against warm white, sage/botanical green and deep charcoal; selective cyan-blue or coral-red used as high-energy counterpoints"
+  card_surface_behaviour: "flat editorial planes rather than glossy UI surfaces"
+  iconography: "minimal; image and colour carry identity"
+  data_visualisation_language: "not established by the references"
+  imagery_language: "editorial collage, botanical layering, portrait/silhouette, saturated cut-paper and print-like colour relationships"
+  motion_character: "not established by the references; retain subtle motion"
 
-provisional_system_defaults:
-  typography: "editorial serif display with restrained sans-serif body"
-  density: airy
-  geometry: square
-  surface: editorial
-  imagery: documentary_muted
-  motion: subtle
-  note: "These are provisional presentation choices derived from work logic and CareerHubZero primitives. They are not claimed as harvested visual characteristics and do not satisfy VISUAL_LOCK."
+reference_palette:
+  warm_white: "#F7F2E8"
+  deep_ink: "#242831"
+  botanical_green: "#59675F"
+  coral_orange: "#ED7938"
+  solar_yellow: "#FEC524"
+  sage: "#94ABA1"
+  electric_blue: "#0B80B4"
+  coral_red: "#F83E58"
+
+operational_palette:
+  background: "#F7F2E8"
+  foreground: "#242831"
+  muted: "#59675F"
+  accent: "#ED7938"
+  accent_foreground: "#242831"
+  rationale: "The operational UI uses the quieter warm-white/ink/botanical base for sustained reading and the coral-orange as the dominant identity accent. Yellow, sage, cyan and coral-red remain reference support colours for future graphic and imagery surfaces rather than persistent body UI."
 
 lock:
-  permitted: false
-  blocker: "No explicit Weronika visual reference has been inspected."
+  permitted: true
+  state: VISUAL_LOCK
+  blocker: null
+  note: "Colour direction is locked from the explicit supplied visual references. Typography, motion and detailed image placement remain independently adjustable."
