@@ -14,20 +14,20 @@
     "shadow": "none"
   },
   "palette": {
-    "background": "#F7F2E8",
-    "foreground": "#242831",
-    "muted": "#59675F",
-    "accent": "#ED7938",
-    "accent_foreground": "#242831",
-    "secondary": "#94ABA1",
-    "secondary_foreground": "#242831",
-    "highlight": "#FEC524",
-    "highlight_foreground": "#242831",
-    "signal": "#0B80B4",
-    "signal_foreground": "#FFFFFF"
+    "background": "#F4EFE5",
+    "foreground": "#24272B",
+    "muted": "#596650",
+    "accent": "#D96F59",
+    "accent_foreground": "#24272B",
+    "secondary": "#98A69A",
+    "secondary_foreground": "#24272B",
+    "highlight": "#D9AD4B",
+    "highlight_foreground": "#24272B",
+    "signal": "#9CCDD0",
+    "signal_foreground": "#24272B"
   },
   "imagery": {
     "mode": "mixed",
-    "treatment": "high-contrast"
+    "treatment": "muted"
   }
 }
