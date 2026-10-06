@@ -1,4 +1,4 @@
-# Writer & Journalism Room — Control Room
+# Weronika Portfolio — Control Room
 
 This is the working entrance for Weronika's writing and journalism practice.
 
@@ -26,7 +26,7 @@ Pitch state belongs here, not in CareerHub.
 
 Use this layer for story questions, actors, institutions, research evidence, interviews, claims and open questions.
 
-Source handling must follow the room security classes:
+Source handling must follow the workspace security classes:
 
 **PUBLIC → INTERNAL → CONFIDENTIAL → PROTECTED_SOURCE**
 
@@ -56,7 +56,7 @@ Flow:
 
 ## 6 — Archive
 
-The reconstructed body of published work remains the evidence base of the room.
+The reconstructed body of published work remains the evidence base of Weronika Portfolio.
 
 - [Master bibliography](../bibliography/master-bibliography.md)
 - [Structured corpus](../data/corpus.json)
@@ -69,7 +69,7 @@ The archive is evidence-graded and not assumed exhaustive.
 
 ## 7 — Portfolio
 
-The portfolio is selective; the archive is comprehensive.
+The public portfolio is selective; the archive is comprehensive.
 
 - [Portfolio layer](portfolio/README.md)
 - [Working writer profile](../content/profile.md)
@@ -96,10 +96,10 @@ Use the explicit evidence bridge:
 - [Machine contract](../bridges/writer-career-evidence/export.yaml)
 - [CareerHub](../CareerHub/CONTROL_ROOM.md)
 
-CareerHub can receive approved publication/capability evidence but does not own or automatically read WriterRoom state.
+CareerHub can receive approved publication/capability evidence but does not own or automatically read Weronika Portfolio state.
 
 ---
 
-**WriterRoom:** work + reporting + editorial + publication + archive + portfolio  
+**Weronika Portfolio:** work + reporting + editorial + publication + archive + portfolio  
 **CareerHub:** jobs + applications + recruitment state  
 **Profile Core:** shared verified facts + permissions
