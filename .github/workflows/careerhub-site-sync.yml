@@ -1,5 +1,5 @@
 name: CareerHub Managed Site Sync
-# Fleet rollout marker: 2026-10-07 parity-repair-v1
+# Fleet rollout marker: 2026-10-07 parity-repair-v2
 
 on:
   push:
