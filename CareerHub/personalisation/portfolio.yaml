@@ -1,8 +1,8 @@
 # Site-native portfolio content rendered at /writer. Reconciled 2026-10-07.
 schema_version: "1.0"
-eyebrow: "Writer · reporter · researcher"
-headline: "Writing across borders, systems and lived experience."
-intro: "Weronika Pérez Borjas is a writer and reporter whose published work moves across cultural criticism, interviews, social observation and long-form reportage. A recurring strength is cross-cultural translation: reporting that begins with people encountering institutions, borders, labour systems, law and public life."
+eyebrow: "Writer · reporter · translator · researcher"
+headline: "Writing, translation and visual editorial work across borders, systems and lived experience."
+intro: "Weronika Pérez Borjas is a writer, reporter and translator whose portfolio moves across long-form reportage, cultural criticism, interviews, books and visual editorial work. A recurring strength is cross-cultural translation in both senses: translating texts between languages and reporting across institutions, borders, cultural systems and lived experience."
 
 # Primary-area assignment is explicit. A work appears under exactly one of these buttons.
 # Cross-cutting subjects remain themes in portfolio-catalog.json and do not create duplicate area membership.
@@ -18,6 +18,8 @@ sections:
         - "2016-vice-men-generations"
         - "2016-vice-rainbows-racism"
         - "2018-duzy-format-russians"
+        - "2018-tygodnik-adresat-bog"
+        - "2019-tygodnik-pierwsza-pani-prymas"
         - "2019-duzy-format-nonbinary"
         - "2020-duzy-format-nurses"
 
@@ -70,6 +72,21 @@ sections:
         - "2020-newsweek-abortion"
         - "2020-onet-cubans"
 
+  - label: "Books & translation"
+    slug: "books-translation"
+    description: "Published literary translation, with the translator role kept distinct from authored journalism."
+    filter:
+      ids:
+        - "2012-tako-maska-lwa"
+        - "2013-tako-niedzwiedz-lowca-motyli"
+
+  - label: "Visual & editorial"
+    slug: "visual-editorial"
+    description: "Credited visual, styling and editorial work outside the authored-text archive."
+    filter:
+      ids:
+        - "pending-krull-whats-in-store-styling"
+
 featured:
   - title: "Pięciu Kubańczyków, cztery miesiące w niewoli"
     outlet: "Onet Wiadomości"
@@ -121,10 +138,10 @@ featured:
     href: "https://intellectdiscover.com/content/journals/10.1386/fspc.1.3.459_1"
 
 archive:
-  count: 39
-  label: "verified works in the reconstructed public portfolio catalog"
+  count: 44
+  label: "verified credits in the reconstructed public portfolio catalog"
   source: "portfolio-catalog.json"
-  note: "All currently verified reconstructed authored works are indexed under exactly one primary portfolio area. Featured work remains a curated selection. The archive remains reconstructed rather than claimed exhaustive until writer reconciliation is complete."
+  note: "The public catalog now contains 44 verified portfolio credits: 41 authored works, 2 book translations and 1 visual-editorial styling credit. Each credit appears in exactly one primary area and non-author roles are explicitly distinguished. The archive remains reconstructed rather than claimed exhaustive until screen credits and writer-supplied reconciliation are complete."
 
 boundary:
   title: "Portfolio, not repository"
