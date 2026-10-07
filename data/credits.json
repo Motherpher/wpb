@@ -39,34 +39,6 @@
       ]
     },
     {
-      "id": "maska-lwa-translation",
-      "work": "Margarita del Mazo — Maska lwa",
-      "role": "Polish translation credit",
-      "evidence": "A",
-      "authorship": false,
-      "note": "Bibliographic records identify Weronika Pérez Borjas as the Polish translator of Margarita del Mazo's La máscara del león, illustrated by Paloma Valdivia and published by Tako in Toruń in 2012; ISBN 978-83-62737-08-6.",
-      "dashboard": {
-        "corpus_inclusion": "keep-separate-from-authored-corpus",
-        "verification_status": "verified-bibliographic",
-        "portfolio_relevance": "verified-other-work",
-        "rights_status": "not-assessed"
-      },
-      "title_original": "La máscara del león",
-      "author": "Margarita del Mazo",
-      "illustrator": "Paloma Valdivia",
-      "publisher_records": [
-        "Tako, Toruń"
-      ],
-      "isbns": [
-        "978-83-62737-08-6"
-      ],
-      "source_urls": [
-        "https://tako.biz.pl/p,83,maska-lwa",
-        "https://nplp.pl/artykul/tako/",
-        "https://pozarozkladem.blogspot.com/2012/04/maska-lwa.html"
-      ]
-    },
-    {
       "id": "isern-bear-translation",
       "work": "Susanna Isern — Niedźwiedź łowca motyli",
       "role": "Polish translation credit",
@@ -126,37 +98,6 @@
         "portfolio_relevance": "verified-other-work",
         "rights_status": "not-assessed"
       }
-    },
-    {
-      "id": "declaration-of-youth-editorial-team-2007",
-      "work": "Deklaracja Młodych — Nasze ideały są z nieba wzięte",
-      "role": "collective editorial team member",
-      "evidence": "A",
-      "authorship": "collective",
-      "note": "A contemporaneous 2007 Gość Gdański record lists Weronika Perez-Borjas among the III LO members of the editorial team that jointly prepared the youth declaration for the Day of Judaism in Gdańsk. This is early collective/civic editorial history, not a standalone authored journalism credit and is excluded from the public 44-credit portfolio count.",
-      "dashboard": {
-        "corpus_inclusion": "keep-separate-from-authored-corpus",
-        "verification_status": "verified-archival",
-        "portfolio_relevance": "career-history-context",
-        "rights_status": "not-assessed"
-      },
-      "period": "2007",
-      "source_url": "https://www.gosc.pl/files/old/gosc.pl/zalaczniki/2007/01/29/1170085144/1170085160.pdf"
-    },
-    {
-      "id": "kaltblut-masculinity-is-candidate",
-      "work": "Masculinity is …",
-      "role": "unresolved visual-editorial credit",
-      "evidence": "C",
-      "authorship": null,
-      "note": "KALTBLUT's archive confirms the editorial exists, photographed by Sandra Thorsso with model Lefteris Ballatsas, and that the page contains a styling credit. The currently accessible indexed material truncates the stylist name, so Weronika Pérez Borjas's exact role is not yet proven. Keep out of the public portfolio count until the credit line is recovered from a primary or independently cached source.",
-      "dashboard": {
-        "corpus_inclusion": "keep-separate-from-authored-corpus",
-        "verification_status": "candidate-role-unresolved",
-        "portfolio_relevance": "possible-visual-editorial-work",
-        "rights_status": "not-assessed"
-      },
-      "source_url": "https://www.kaltblut-magazine.com/masculinity-is/"
     }
   ]
 }
