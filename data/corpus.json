@@ -1,6 +1,6 @@
 {
   "schema_version": "1.2",
-  "updated": "2026-09-22",
+  "updated": "2026-10-07",
   "completeness": "reconstructed-not-exhaustive",
   "works": [
     {
@@ -589,6 +589,57 @@
             "death",
             "art",
             "diaspora"
+          ],
+          "normalization_status": "mixed-taxonomy"
+        },
+        "flags": [
+          "portfolio-candidate"
+        ]
+      }
+    },
+    {
+      "id": "2015-forumist-seance-with-goat",
+      "date": "2015",
+      "title": "Séance with Goat",
+      "outlet": "The Forumist",
+      "language": "en",
+      "type": "music interview/profile",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://theforumist.com/seance-with-goat/",
+      "themes": [
+        "music",
+        "spirituality",
+        "identity",
+        "Sweden"
+      ],
+      "phase": "cultural-journalism",
+      "featured": false,
+      "note": "Direct publisher page credits words to Weronika Pérez Borjas; interview/profile with Goat in Way Out West 2015 context, focused on anonymity, place, spirituality and music.",
+      "dashboard": {
+        "date_precision": "year",
+        "source_completeness": "verified",
+        "evidence_grade": "A",
+        "portfolio": {
+          "candidate": true,
+          "readiness": "candidate-needs-editorial-and-rights-review",
+          "rights_status": "not-assessed",
+          "visual_asset_status": "not-assessed",
+          "public_copy_status": "working-copy"
+        },
+        "metadata": {
+          "required_fields_present": 12,
+          "required_fields_total": 12,
+          "missing_required_fields": []
+        },
+        "taxonomy": {
+          "canonical_theme_tags": [
+            "identity"
+          ],
+          "descriptive_theme_tags": [
+            "music",
+            "spirituality",
+            "Sweden"
           ],
           "normalization_status": "mixed-taxonomy"
         },

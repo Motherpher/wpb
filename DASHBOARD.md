@@ -8,8 +8,8 @@ The dashboard is the **single visual surface** for the repository. It is generat
 
 It combines six views in one composition:
 
-- **Archive size and readiness** — 38 verified works, 33 enriched article-metadata records, 12 portfolio candidates, 4 contextual credits, 2 unresolved dates and 38 A-grade authorship records.
-- **Editorial structure** — every verified work is represented as one curve flowing into four analytical phases: 2 body/fashion research, 21 cultural journalism, 10 social-observational reporting and 5 long-form social reportage.
+- **Archive size and readiness** — 39 verified works, 34 enriched article-metadata records, 12 portfolio candidates, 4 contextual credits, 2 unresolved dates and 39 A-grade authorship records.
+- **Editorial structure** — every verified work is represented as one curve flowing into four analytical phases: 2 body/fashion research, 22 cultural journalism, 10 social-observational reporting and 5 long-form social reportage.
 - **Metadata coverage** — 87% of works have additional publisher-level metadata enrichment; A-grade evidence covers 100% of the authored/research corpus; 5% still lack a resolved publication date.
 - **Publication timeline** — the actual known-year distribution from 2013–2020, with undated records disclosed separately.
 - **Research pipeline** — Discover → Verify → Structure → Interpret → Publish.

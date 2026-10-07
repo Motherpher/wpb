@@ -6,10 +6,11 @@ This note records the source sweep supplied during the October 2026 portfolio re
 
 ## Public portfolio state after this sweep
 
-The public portfolio remains **44 verified credits**: **41 authored works, 2 book translations and 1 visual/editorial styling credit**. The source batch materially strengthens provenance and career history but does not yet prove an additional 45th public credit.
+The public portfolio now contains **45 verified credits**: **42 authored works, 2 book translations and 1 visual/editorial styling credit**. This source batch establishes one additional authored work while the remaining supplied links either strengthen existing credits, provide career context or remain unresolved.
 
 ### Directly verified public credits / canonical-source upgrades
 
+- **Séance with Goat** — The Forumist. The direct publisher page identifies the work and explicitly credits `Words by Weronika Pérez Borjas`; photography is credited to Clara Uddman and the page thanks WOW2015. This is a distinct authored work absent from the preceding 44-credit catalog, so it is added under **Culture & interviews** as the 45th public credit. Source: https://theforumist.com/seance-with-goat/
 - **Henry Rude – Max of Wax** — Krull Magazine. Direct page credits `words WERONIKA PÉREZ BORJAS`. Already present in the 44-credit catalog; this source removes any remaining authorship doubt. Exact publication date remains unresolved, so no date is invented. Source: https://krullmag.com/blog/henry-rude/
 - **Turning the flesh inside-out: Uncovering the muscles and showing the veins in Jean Paul Gaultier’s scene costume Flayed** — canonical Intellect record gives author Weronika Pérez Borjas, Stockholm University affiliation, *Fashion, Style & Popular Culture* 1(3), pp. 459–469, DOI 10.1386/fspc.1.3.459_1, online publication 2014-08-01. Already in catalog. Source: https://intellectdiscover.com/content/journals/10.1386/fspc.1.3.459_1
 - **Zombie Boy: moda a ciało modela** — NCK issue page explicitly lists Weronika Pérez Borjas in *Kultura Współczesna* nr 4(79)/2013; the direct article PDF and Pedagogiczna bibliography corroborate it. Already in catalog. Sources: https://nck.pl/wydawnictwo/kultura-wspolczesna/archiwum/kw-no-9911622 and https://pedagogiczna.pl/tatuaz/

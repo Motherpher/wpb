@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated": "2026-09-22",
+  "updated": "2026-10-07",
   "description": "Article-level metadata enrichment. Canonical bibliography remains data/corpus.json. This file records publisher metadata, credits and discovery evidence without reproducing full copyrighted text.",
   "records": {
     "2013-kultura-zombie-boy": {
@@ -1036,6 +1036,35 @@
       "academic": {},
       "discovery_evidence": [
         "https://krullmag.com/blog/joanna-lemnelius-mixed-grill-motherhood-and-business/"
+      ]
+    },
+    "2015-forumist-seance-with-goat": {
+      "canonical_url": "https://theforumist.com/seance-with-goat/",
+      "metadata_status": "manually-enriched-from-publisher",
+      "retrieved_on": "2026-10-07",
+      "publication": {
+        "date": "2015",
+        "date_precision": "year"
+      },
+      "byline": {
+        "name": "Weronika Pérez Borjas",
+        "verified": true
+      },
+      "credits": [
+        {
+          "role": "photography",
+          "names": [
+            "Clara Uddman"
+          ]
+        }
+      ],
+      "platform": {
+        "subject": "Goat",
+        "context": "Way Out West 2015 / music interview"
+      },
+      "academic": {},
+      "discovery_evidence": [
+        "https://theforumist.com/seance-with-goat/"
       ]
     }
   }

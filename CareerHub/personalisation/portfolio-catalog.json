@@ -3,7 +3,7 @@
   "updated": "2026-10-07",
   "scope": "public-portfolio-catalog",
   "completeness": "reconstructed-not-proven-exhaustive",
-  "work_count": 44,
+  "work_count": 45,
   "classification_rule": "Each public portfolio credit has exactly one primary portfolio area. Cross-cutting themes remain descriptive and do not duplicate a credit across area pages; non-author roles are explicit in credit_role.",
   "works": [
     {
@@ -166,6 +166,26 @@
       "phase": "cultural-journalism",
       "primary_area": "culture-interviews",
       "note": "Direct publisher byline recovered during portfolio reconciliation on 2026-10-07; absent from the previous 38-work corpus."
+    },
+    {
+      "id": "2015-forumist-seance-with-goat",
+      "date": "2015",
+      "title": "Séance with Goat",
+      "outlet": "The Forumist",
+      "language": "en",
+      "type": "music interview/profile",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://theforumist.com/seance-with-goat/",
+      "themes": [
+        "music",
+        "spirituality",
+        "identity",
+        "Sweden"
+      ],
+      "phase": "cultural-journalism",
+      "primary_area": "culture-interviews",
+      "note": "Direct publisher page credits words to Weronika Pérez Borjas; recovered during source reconciliation from the Way Out West 2015 context."
     },
     {
       "id": "2015-forumist-jukebox",
