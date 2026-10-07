@@ -1,8 +1,8 @@
 # Site-native portfolio content rendered at /writer. Reconciled 2026-10-07.
-schema_version: "1.0"
+schema_version: "1.1"
 eyebrow: "Writer · reporter · translator · researcher"
-headline: "Writing, translation and visual editorial work across borders, systems and lived experience."
-intro: "Weronika Pérez Borjas is a writer, reporter and translator whose portfolio moves across long-form reportage, cultural criticism, interviews, books and visual editorial work. A recurring strength is cross-cultural translation in both senses: translating texts between languages and reporting across institutions, borders, cultural systems and lived experience."
+headline: "Writing, translation, visual editorial and screen work across borders, systems and lived experience."
+intro: "Weronika Pérez Borjas is a writer, reporter and translator whose portfolio moves across long-form reportage, cultural criticism, interviews, books, visual editorial work and selected screen/theatre credits. A recurring strength is cross-cultural translation in both senses: translating texts and screen language between languages and reporting across institutions, borders, cultural systems and lived experience."
 
 # Primary-area assignment is explicit. A work appears under exactly one of these buttons.
 # Cross-cutting subjects remain themes in portfolio-catalog.json and do not create duplicate area membership.
@@ -87,6 +87,16 @@ sections:
     filter:
       ids:
         - "pending-krull-whats-in-store-styling"
+        - "pending-kaltblut-masculinity-styling"
+
+  - label: "Screen & theatre"
+    slug: "screen-theatre"
+    description: "Confirmed film, screen-language and theatre credits, with unresolved role detail stated rather than inferred."
+    filter:
+      ids:
+        - "2005-anthem-screen-credit"
+        - "2021-stolen-fish-subtitles"
+        - "pending-encyklopedia-teatru-credit"
 
 featured:
   - title: "Pięciu Kubańczyków, cztery miesiące w niewoli"
@@ -139,10 +149,10 @@ featured:
     href: "https://intellectdiscover.com/content/journals/10.1386/fspc.1.3.459_1"
 
 archive:
-  count: 45
+  count: 49
   label: "verified credits in the reconstructed public portfolio catalog"
   source: "portfolio-catalog.json"
-  note: "The public catalog now contains 45 verified portfolio credits: 42 authored works, 2 book translations and 1 visual-editorial styling credit. Each credit appears in exactly one primary area and non-author roles are explicitly distinguished. The archive remains reconstructed rather than claimed exhaustive until screen credits and writer-supplied reconciliation are complete."
+  note: "The public catalog now contains 49 verified portfolio credits: 42 authored works, 2 book translations, 2 visual-editorial styling credits and 3 confirmed screen/theatre/language credits. The Teatr dla Wszystkich and YouTube references corroborate the already-counted Niedźwiedź łowca motyli translation rather than creating duplicate works. Where a confirmed identity lacks recoverable role detail, that uncertainty is stated explicitly. The archive remains reconstructed rather than claimed exhaustive."
 
 boundary:
   title: "Portfolio, not repository"

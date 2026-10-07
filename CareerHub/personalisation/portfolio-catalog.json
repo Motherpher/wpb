@@ -1,11 +1,31 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "updated": "2026-10-07",
   "scope": "public-portfolio-catalog",
   "completeness": "reconstructed-not-proven-exhaustive",
-  "work_count": 45,
-  "classification_rule": "Each public portfolio credit has exactly one primary portfolio area. Cross-cutting themes remain descriptive and do not duplicate a credit across area pages; non-author roles are explicit in credit_role.",
+  "work_count": 49,
+  "classification_rule": "Each public portfolio credit has exactly one primary portfolio area. Cross-cutting themes remain descriptive and do not duplicate a credit across area pages; non-author roles are explicit in credit_role. Writer-supplied confirmations are retained with the exact level of role certainty available and are not silently expanded.",
   "works": [
+    {
+      "id": "2005-anthem-screen-credit",
+      "date": "2005",
+      "title": "Anthem",
+      "outlet": "Filmweb",
+      "language": null,
+      "type": "screen performance / cast credit",
+      "evidence": "B",
+      "status": "verified",
+      "url": "https://www.filmweb.pl/film/Anthem-2005-209957/cast/actors",
+      "themes": [
+        "film",
+        "screen",
+        "performance"
+      ],
+      "phase": "screen-theatre",
+      "primary_area": "screen-theatre",
+      "credit_role": "cast / performer; exact character unresolved",
+      "note": "The Filmweb Anthem (2005) cast entry was confirmed by the writer-side reconciliation as Weronika Pérez Borjas. The exact character name remains unresolved and is not inferred."
+    },
     {
       "id": "2012-tako-maska-lwa",
       "date": "2012",
@@ -57,6 +77,11 @@
       "evidence": "A",
       "status": "verified",
       "url": "https://lubimyczytac.pl/ksiazka/172052/niedzwiedz-lowca-motyli",
+      "source_urls": [
+        "https://lubimyczytac.pl/ksiazka/172052/niedzwiedz-lowca-motyli",
+        "https://teatrdlawszystkich.pl/91179-2/",
+        "https://www.youtube.com/watch?v=lFioVA5AFss"
+      ],
       "themes": [
         "translation",
         "children's-literature",
@@ -66,7 +91,7 @@
       "phase": "translation-publishing",
       "primary_area": "books-translation",
       "credit_role": "translator",
-      "note": "Polish translation of Susanna Isern's Oso Cazamariposas; illustrations by Marjorie Pourchet; Tako, first Polish edition 2013; ISBN 978-83-62737-17-8."
+      "note": "Polish translation of Susanna Isern's Oso Cazamariposas; illustrations by Marjorie Pourchet; Tako, first Polish edition 2013; ISBN 978-83-62737-17-8. The Teatr dla Wszystkich production page and the writer-confirmed YouTube item corroborate the same translation credit and are not counted as separate works."
     },
     {
       "id": "2014-fspc-flayed",
@@ -843,6 +868,48 @@
       "primary_area": "transnational-reporting"
     },
     {
+      "id": "2021-stolen-fish-subtitles",
+      "date": "2021",
+      "title": "Stolen Fish",
+      "outlet": "IMDb",
+      "language": "multi",
+      "type": "documentary film subtitling",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://www.imdb.com/title/tt15114200/fullcredits/",
+      "themes": [
+        "film",
+        "documentary",
+        "translation",
+        "subtitles",
+        "migration",
+        "Gambia"
+      ],
+      "phase": "screen-theatre",
+      "primary_area": "screen-theatre",
+      "credit_role": "subtitles",
+      "note": "IMDb full credits list Weronika Perez Borjas under Additional Crew for subtitles; the IMDb person profile was confirmed in writer-side reconciliation as hers."
+    },
+    {
+      "id": "pending-encyklopedia-teatru-credit",
+      "date": null,
+      "title": "Encyklopedia Teatru archive material",
+      "outlet": "Encyklopedia Teatru Polskiego",
+      "language": "pl",
+      "type": "theatre archive credit/reference",
+      "evidence": "B",
+      "status": "verified",
+      "url": "https://encyklopediateatru.pl/pdf/article/fe04c7c02eb0bf8206a8bd6a18f0c2e1797335a6/370424.pdf",
+      "themes": [
+        "theatre",
+        "archive"
+      ],
+      "phase": "screen-theatre",
+      "primary_area": "screen-theatre",
+      "credit_role": "identity confirmed; exact credited function pending archival extraction",
+      "note": "The Weronika Pérez Borjas reference in this theatre archive material was confirmed during writer-side reconciliation. The exact function/title relationship remains unresolved and is explicitly not inferred."
+    },
+    {
       "id": "pending-krull-henry-rude",
       "date": null,
       "title": "Henry Rude – Max of Wax",
@@ -904,13 +971,36 @@
       "primary_area": "visual-editorial",
       "credit_role": "styling",
       "note": "Direct Krull editorial credit: styling WERONIKA PÉREZ BORJAS. Publication date remains unresolved."
+    },
+    {
+      "id": "pending-kaltblut-masculinity-styling",
+      "date": null,
+      "title": "Masculinity is …",
+      "outlet": "KALTBLUT Magazine",
+      "language": "en",
+      "type": "fashion editorial styling",
+      "evidence": "A",
+      "status": "verified",
+      "url": "https://www.kaltblut-magazine.com/masculinity-is/",
+      "themes": [
+        "fashion",
+        "styling",
+        "editorial",
+        "masculinity",
+        "visual-culture"
+      ],
+      "phase": "visual-editorial",
+      "primary_area": "visual-editorial",
+      "credit_role": "styling",
+      "note": "Weronika Pérez Borjas's styling credit was confirmed by direct writer-side review of the KALTBLUT page; exact publication date remains unresolved."
     }
   ],
   "credit_counts": {
-    "authored_works": 41,
-    "translations": 2,
-    "visual_editorial": 1,
-    "total_portfolio_credits": 44
+    "authored_works": 42,
+    "book_translations": 2,
+    "visual_editorial": 2,
+    "screen_theatre_language": 3,
+    "total_portfolio_credits": 49
   },
   "source_hubs": [
     {
@@ -921,7 +1011,7 @@
     {
       "label": "Krull Magazine tag",
       "url": "https://krullmag.com/blog/tag/weronika-perez-borjas/",
-      "status": "reviewed-new-styling-credit-found"
+      "status": "reviewed-styling-and-writing-credits"
     },
     {
       "label": "The Forumist tag",
@@ -931,7 +1021,7 @@
     {
       "label": "Tygodnik Powszechny author",
       "url": "https://www.tygodnikpowszechny.pl/autor/weronika-perez-borjas-18702",
-      "status": "reviewed-two-new-authored-works-found"
+      "status": "reviewed-two-authored-works-found"
     },
     {
       "label": "Lubimyczytac translator",
@@ -944,14 +1034,24 @@
       "status": "reviewed-translation-credit"
     },
     {
-      "label": "IMDb",
-      "url": "https://www.imdb.com/name/nm12788912/",
-      "status": "pending-concrete-screen-credit-extraction"
+      "label": "KALTBLUT — Masculinity is …",
+      "url": "https://www.kaltblut-magazine.com/masculinity-is/",
+      "status": "writer-confirmed-styling-credit"
     },
     {
-      "label": "Filmweb filmography",
-      "url": "https://www.filmweb.pl/person/Weronika+Perez+Borjas-725403/filmography",
-      "status": "pending-concrete-screen-credit-extraction"
+      "label": "IMDb",
+      "url": "https://www.imdb.com/name/nm12788912/",
+      "status": "writer-confirmed-person-profile-stolen-fish-subtitles-extracted"
+    },
+    {
+      "label": "Filmweb — Anthem (2005) cast",
+      "url": "https://www.filmweb.pl/film/Anthem-2005-209957/cast/actors",
+      "status": "writer-confirmed-identity-exact-character-unresolved"
+    },
+    {
+      "label": "Encyklopedia Teatru",
+      "url": "https://encyklopediateatru.pl/pdf/article/fe04c7c02eb0bf8206a8bd6a18f0c2e1797335a6/370424.pdf",
+      "status": "writer-confirmed-identity-exact-role-unresolved"
     }
   ]
 }
