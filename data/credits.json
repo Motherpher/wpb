@@ -1,51 +1,82 @@
 {
   "schema_version": "1.2",
-  "updated": "2026-09-22",
+  "updated": "2026-10-07",
   "records": [
     {
       "id": "stockholm-film-festival-press-office",
       "role": "press-office / press-secretary context",
-      "evidence": "B",
+      "evidence": "A",
       "authorship": false,
-      "note": "Stockholm Film Festival press materials identify Pérez Borjas first as press assistant and later as press secretary during the 2015 festival cycle. These records establish professional communications work, not authorship of the releases.",
+      "note": "Contemporaneous Stockholm Film Festival press releases identify Pérez Borjas in the festival press office during the 2015 cycle, including direct listings as pressekreterare (press secretary). These records establish professional communications work, not authorship of the releases.",
       "dashboard": {
         "corpus_inclusion": "keep-separate-from-authored-corpus",
-        "verification_status": "context-verified",
-        "portfolio_relevance": "possible-professional-context",
+        "verification_status": "verified-primary-source",
+        "portfolio_relevance": "professional-context",
         "rights_status": "not-assessed"
       },
       "period": "2015",
       "roles": [
         {
-          "role": "press assistant",
+          "role": "press assistant / press-office contact",
           "evidence_date_examples": [
-            "2015-10-09",
-            "2015-10-15"
+            "2015-10-09"
           ]
         },
         {
           "role": "press secretary",
           "evidence_date_examples": [
-            "2015-11-07"
+            "2015-10-15",
+            "2015-11-07",
+            "2015-11-20"
           ]
         }
       ],
       "source_urls": [
         "https://news.cision.com/stockholms-filmfestival/r/invitation-to-stockholm-film-festival-s-press-conference-october-20,c9845121",
-        "https://news.cision.com/stockholms-filmfestival/r/stockholm-film-festival-gives-accredited-journalists-access-to-all-film-screenings,c9863054"
+        "https://news.cision.com/se/stockholms-filmfestival/r/paminnelse-inbjudan-stockholms-filmfestivals-presskonferens-tisdag-20-oktober,c9849078",
+        "https://news.cision.com/stockholms-filmfestival/r/stockholm-film-festival-gives-accredited-journalists-access-to-all-film-screenings,c9863054",
+        "https://news.cision.com/se/stockholms-filmfestival/r/stockholms-filmfestivals-festivalchef-utsedd-till-manadens-stockholmare,c9871364"
+      ]
+    },
+    {
+      "id": "maska-lwa-translation",
+      "work": "Margarita del Mazo — Maska lwa",
+      "role": "Polish translation credit",
+      "evidence": "A",
+      "authorship": false,
+      "note": "Bibliographic records identify Weronika Pérez Borjas as the Polish translator of Margarita del Mazo's La máscara del león, illustrated by Paloma Valdivia and published by Tako in Toruń in 2012; ISBN 978-83-62737-08-6.",
+      "dashboard": {
+        "corpus_inclusion": "keep-separate-from-authored-corpus",
+        "verification_status": "verified-bibliographic",
+        "portfolio_relevance": "verified-other-work",
+        "rights_status": "not-assessed"
+      },
+      "title_original": "La máscara del león",
+      "author": "Margarita del Mazo",
+      "illustrator": "Paloma Valdivia",
+      "publisher_records": [
+        "Tako, Toruń"
+      ],
+      "isbns": [
+        "978-83-62737-08-6"
+      ],
+      "source_urls": [
+        "https://tako.biz.pl/p,83,maska-lwa",
+        "https://nplp.pl/artykul/tako/",
+        "https://pozarozkladem.blogspot.com/2012/04/maska-lwa.html"
       ]
     },
     {
       "id": "isern-bear-translation",
       "work": "Susanna Isern — Niedźwiedź łowca motyli",
       "role": "Polish translation credit",
-      "evidence": "B",
+      "evidence": "A",
       "authorship": false,
-      "note": "Verified Polish translation credit for Susanna Isern's book. Library catalogue also records Marjorie Pourchet as illustrator and the listed ISBNs. This is translation work, not original article authorship.",
+      "note": "Multiple bibliographic and review records identify Weronika Pérez Borjas as the Polish translator of Susanna Isern's Oso cazamariposas, illustrated by Marjorie Pourchet. The first Polish Tako edition is recorded for 2013; later editions/reprints also cite the same translation.",
       "dashboard": {
         "corpus_inclusion": "keep-separate-from-authored-corpus",
-        "verification_status": "context-verified",
-        "portfolio_relevance": "possible-other-work",
+        "verification_status": "verified-bibliographic",
+        "portfolio_relevance": "verified-other-work",
         "rights_status": "not-assessed"
       },
       "title_original": "Oso cazamariposas",
@@ -59,7 +90,13 @@
         "978-83-62737-17-8",
         "978-83-65480-65-1"
       ],
-      "source_url": "https://wip.pbp.poznan.pl/587780/Nied%C5%BAwied%C5%BA%2B%C5%82owca%2Bmotyli?review=30537"
+      "source_urls": [
+        "https://nplp.pl/artykul/tako/",
+        "https://wip.pbp.poznan.pl/587780/Nied%C5%BAwied%C5%BA%2B%C5%82owca%2Bmotyli?review=30537",
+        "https://maliczytelnicy.pl/niedzwiedz-lowca-motyli/",
+        "https://wnaszejbajce.pl/idealna-chwila-i-niedzwiedz-lowca-motyli-wydawnictwo-tako/",
+        "https://biblioteczka-apteczka.pl/ksiazki-na-konkretne-problemy/"
+      ]
     },
     {
       "id": "stolen-fish-imdb",
@@ -67,7 +104,7 @@
       "role": "unresolved",
       "evidence": "C",
       "authorship": null,
-      "note": "Name association found in public film metadata; role not established in current research.",
+      "note": "Name association found in public film metadata; role not established in current research. Do not expose as a public portfolio credit until the title-role relationship is independently verified.",
       "dashboard": {
         "corpus_inclusion": "keep-separate-from-authored-corpus",
         "verification_status": "unresolved",
@@ -80,15 +117,46 @@
       "work": "WHAT’S IN STORE?",
       "source_url": "https://krullmag.com/blog/whats-in-store/",
       "role": "styling",
-      "evidence": "B",
+      "evidence": "A",
       "authorship": false,
-      "note": "Direct Krull page credits styling to Weronika Pérez Borjas; photography by Andrea Davis Kronlund. This is a creative/professional credit, not article authorship.",
+      "note": "Direct Krull page credits styling to Weronika Pérez Borjas; photography by Andrea Davis Kronlund. This is a verified creative/professional credit, not article authorship.",
       "dashboard": {
         "corpus_inclusion": "keep-separate-from-authored-corpus",
-        "verification_status": "context-verified",
-        "portfolio_relevance": "possible-other-work",
+        "verification_status": "verified-primary-source",
+        "portfolio_relevance": "verified-other-work",
         "rights_status": "not-assessed"
       }
+    },
+    {
+      "id": "declaration-of-youth-editorial-team-2007",
+      "work": "Deklaracja Młodych — Nasze ideały są z nieba wzięte",
+      "role": "collective editorial team member",
+      "evidence": "A",
+      "authorship": "collective",
+      "note": "A contemporaneous 2007 Gość Gdański record lists Weronika Perez-Borjas among the III LO members of the editorial team that jointly prepared the youth declaration for the Day of Judaism in Gdańsk. This is early collective/civic editorial history, not a standalone authored journalism credit and is excluded from the public 44-credit portfolio count.",
+      "dashboard": {
+        "corpus_inclusion": "keep-separate-from-authored-corpus",
+        "verification_status": "verified-archival",
+        "portfolio_relevance": "career-history-context",
+        "rights_status": "not-assessed"
+      },
+      "period": "2007",
+      "source_url": "https://www.gosc.pl/files/old/gosc.pl/zalaczniki/2007/01/29/1170085144/1170085160.pdf"
+    },
+    {
+      "id": "kaltblut-masculinity-is-candidate",
+      "work": "Masculinity is …",
+      "role": "unresolved visual-editorial credit",
+      "evidence": "C",
+      "authorship": null,
+      "note": "KALTBLUT's archive confirms the editorial exists, photographed by Sandra Thorsso with model Lefteris Ballatsas, and that the page contains a styling credit. The currently accessible indexed material truncates the stylist name, so Weronika Pérez Borjas's exact role is not yet proven. Keep out of the public portfolio count until the credit line is recovered from a primary or independently cached source.",
+      "dashboard": {
+        "corpus_inclusion": "keep-separate-from-authored-corpus",
+        "verification_status": "candidate-role-unresolved",
+        "portfolio_relevance": "possible-visual-editorial-work",
+        "rights_status": "not-assessed"
+      },
+      "source_url": "https://www.kaltblut-magazine.com/masculinity-is/"
     }
   ]
 }
