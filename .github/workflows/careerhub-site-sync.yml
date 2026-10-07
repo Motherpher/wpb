@@ -1,5 +1,5 @@
 name: CareerHub Managed Site Sync
-# Fleet rollout marker: 2026-10-07 wpb-expression-palette-v4
+# Fleet rollout marker: 2026-10-07 parity-repair-v1
 
 on:
   push:
@@ -10,7 +10,6 @@ on:
       - 'CareerHub/config/**'
       - 'CareerHub/personalisation/**'
       - 'CareerHub/site/personal/**'
-      - '.github/scripts/apply_weronika_visual_override.py'
       - '.github/workflows/careerhub-site-sync.yml'
   workflow_dispatch:
   schedule:
@@ -50,17 +49,8 @@ jobs:
       - name: Sync centrally managed shell
         run: python .careerhub-zero/scripts/sync_web_shell.py CareerHub
 
-      - name: Re-attach profile-owned Weronika visual layers
-        run: python .github/scripts/apply_weronika_visual_override.py
-
-      - name: Assert visual overrides survived shell sync
-        run: |
-          test -f CareerHub/site/personal/weronika.css
-          test -f CareerHub/site/personal/weronika-v3.css
-          test -f CareerHub/site/personal/weronika-expression.css
-          grep -F "import '../personal/weronika.css';" CareerHub/site/app/layout.tsx
-          grep -F "import '../personal/weronika-v3.css';" CareerHub/site/app/layout.tsx
-          grep -F "import '../personal/weronika-expression.css';" CareerHub/site/app/layout.tsx
+      - name: Assert protected profile visual layer exists
+        run: test -f CareerHub/site/personal/profile.css
 
       - name: Build personalised site
         working-directory: CareerHub/site
@@ -74,10 +64,10 @@ jobs:
           rm -rf .careerhub-zero CareerHub/site/node_modules CareerHub/site/.next
           git add CareerHub/site
           if git diff --cached --quiet; then
-            echo 'Managed shell and profile-owned visual layers already current.'
+            echo 'Managed shell already current; profile-owned visuals remain protected.'
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'Sync CareerHub shell and re-apply Weronika visual layers'
+          git commit -m 'Sync CareerHub managed site from CareerHubZero'
           git push origin HEAD:main
