@@ -40,6 +40,7 @@ sections:
         - "2015-forumist-wildbirds"
         - "2015-forumist-wir-sind-berliner"
         - "2015-forumist-into-the-sound"
+        - "2015-forumist-seance-with-goat"
         - "2016-krull-all-that-jazz"
         - "2016-krull-fatoumata-diawara"
         - "2016-krull-mali-blues"
@@ -138,10 +139,10 @@ featured:
     href: "https://intellectdiscover.com/content/journals/10.1386/fspc.1.3.459_1"
 
 archive:
-  count: 44
+  count: 45
   label: "verified credits in the reconstructed public portfolio catalog"
   source: "portfolio-catalog.json"
-  note: "The public catalog now contains 44 verified portfolio credits: 41 authored works, 2 book translations and 1 visual-editorial styling credit. Each credit appears in exactly one primary area and non-author roles are explicitly distinguished. The archive remains reconstructed rather than claimed exhaustive until screen credits and writer-supplied reconciliation are complete."
+  note: "The public catalog now contains 45 verified portfolio credits: 42 authored works, 2 book translations and 1 visual-editorial styling credit. Each credit appears in exactly one primary area and non-author roles are explicitly distinguished. The archive remains reconstructed rather than claimed exhaustive until screen credits and writer-supplied reconciliation are complete."
 
 boundary:
   title: "Portfolio, not repository"

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.3",
-  "generated": "2026-09-22",
+  "generated": "2026-10-07",
   "source_of_truth": {
     "corpus": "data/corpus.json",
     "article_metadata": "data/article-metadata.json",
@@ -30,25 +30,25 @@
     "dashboard_status": "single-integrated-automated"
   },
   "corpus": {
-    "total_works": 38,
+    "total_works": 39,
     "featured_candidates": 12,
     "evidence": {
-      "A": 38
+      "A": 39
     },
     "languages": {
       "pl": 12,
-      "en": 26
+      "en": 27
     },
     "phases": {
       "body-fashion-research": 2,
-      "cultural-journalism": 21,
+      "cultural-journalism": 22,
       "social-observational-reporting": 10,
       "long-form-social-reportage": 5
     },
     "outlets": {
       "Kultura Współczesna": 1,
       "Fashion, Style & Popular Culture": 1,
-      "The Forumist": 12,
+      "The Forumist": 13,
       "Totally Stockholm": 2,
       "Krull Magazine": 7,
       "VICE": 4,
@@ -58,18 +58,18 @@
       "Onet Wiadomości": 1
     },
     "date_precision": {
-      "year": 20,
+      "year": 21,
       "exact-day": 16,
       "unknown": 2
     },
     "source_completeness": {
-      "verified": 31,
+      "verified": 32,
       "verified-partial-metadata": 7
     },
     "years": {
       "2013": 1,
       "2014": 1,
-      "2015": 14,
+      "2015": 15,
       "2016": 14,
       "2017": 1,
       "2018": 1,
@@ -78,8 +78,8 @@
       "unknown": 2
     },
     "unresolved_dates": 2,
-    "article_metadata_records": 38,
-    "manually_enriched_article_metadata_records": 33
+    "article_metadata_records": 39,
+    "manually_enriched_article_metadata_records": 34
   },
   "portfolio": {
     "candidate_count": 12,
@@ -154,8 +154,8 @@
         "title": "Joanna Lemnelius – Mixed Grill, Motherhood and Business"
       }
     ],
-    "article_metadata_records": 38,
-    "article_metadata_manually_enriched": 33,
+    "article_metadata_records": 39,
+    "article_metadata_manually_enriched": 34,
     "rights_status": "not-assessed-at-record-level",
     "asset_status": "not-assessed-at-record-level",
     "taxonomy_note": "Theme arrays include canonical IDs and descriptive free-form tags; no silent normalization."

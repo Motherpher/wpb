@@ -16,6 +16,7 @@ Generated from `data/corpus.json`. The JSON file is canonical; this file is the 
 | 2015 | Release Your Body with Zhala and Makode | The Forumist | cultural journalism | en | A | [source](https://theforumist.com/release-your-body-with-zhala-and-makode/) |
 | 2015 | Tales of the Unexpected | The Forumist | cultural journalism | en | A | [source](https://theforumist.com/tales-of-the-unexpected/) |
 | 2015 | Talking to Los Muertos | The Forumist | art criticism/personal essay | en | A | [source](https://theforumist.com/talking-to-los-muertos/) |
+| 2015 | Séance with Goat | The Forumist | music interview/profile | en | A | [source](https://theforumist.com/seance-with-goat/) |
 | 2015 | Tensta International | Totally Stockholm | urban/cultural journalism | en | A | [source](https://www.totallystockholm.se/tensta-international/) |
 | 2015 | The R’n’B Poltergeist | The Forumist | music journalism | en | A | [source](https://theforumist.com/the-rnb-poltergeist/) |
 | 2015 | Wildbirds & Peacedrums – Taking Care of Each Other | The Forumist | music interview | en | A | [source](https://theforumist.com/wildbirds-peacedrums-taking-care-of-each-other/) |
@@ -44,7 +45,7 @@ Generated from `data/corpus.json`. The JSON file is canonical; this file is the 
 | date pending | Joanna Lemnelius – Mixed Grill, Motherhood and Business | Krull Magazine | interview | en | A | [source](https://krullmag.com/blog/joanna-lemnelius-mixed-grill-motherhood-and-business/) |
 
 ## Notes
-- Current canonical count: **38** works.
+- Current canonical count: **39** works.
 - Missing dates remain unresolved rather than estimated.
 - Detailed publisher metadata lives in `data/article-metadata.json`.
 - This bibliography is reconstructed and not claimed to be exhaustive.
