@@ -1,0 +1,38 @@
+name: One-time portfolio role reconciliation
+
+on:
+  push:
+    branches:
+      - fix/portfolio-role-aware-expansion
+
+permissions:
+  contents: write
+
+jobs:
+  reconcile:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: fix/portfolio-role-aware-expansion
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Apply role-aware catalog expansion
+        run: python scripts/reconcile_portfolio_role_credits.py
+      - name: Remove one-time machinery
+        run: |
+          rm scripts/reconcile_portfolio_role_credits.py
+          rm .github/workflows/portfolio-role-aware-reconcile-once.yml
+      - name: Commit reconciled portfolio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No reconciliation changes to commit"
+            exit 0
+          fi
+          git commit -m "Expand Weronika portfolio with verified role-aware credits"
+          git push origin HEAD:fix/portfolio-role-aware-expansion
