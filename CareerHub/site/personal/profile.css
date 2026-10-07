@@ -1,0 +1,5 @@
+/* Weronika-owned CareerHub visual layer.
+   CHZero owns runtime structure; these profile-owned styles remain protected across motor syncs. */
+@import './weronika.css';
+@import './weronika-v3.css';
+@import './weronika-expression.css';
