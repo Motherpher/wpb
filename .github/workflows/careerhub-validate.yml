@@ -7,7 +7,6 @@ on:
       - "CareerHub/**"
       - "WriterRoom/portfolio/**"
       - "harvest/output/**"
-      - ".github/scripts/apply_weronika_visual_override.py"
       - ".github/workflows/careerhub-*.yml"
   push:
     branches: [main]
@@ -15,7 +14,6 @@ on:
       - "CareerHub/**"
       - "WriterRoom/portfolio/**"
       - "harvest/output/**"
-      - ".github/scripts/apply_weronika_visual_override.py"
       - ".github/workflows/careerhub-*.yml"
 
 permissions:
@@ -153,17 +151,18 @@ jobs:
               raise SystemExit('Missing preserved profile/state paths: ' + ', '.join(missing))
           print('Preserved profile/state paths OK:', ', '.join(required))
           PY
-      - name: Reproduce central sync and re-apply Weronika visual layers
+      - name: Reproduce central sync and verify protected profile visual layer
         run: |
           python .careerhub-zero/scripts/sync_web_shell.py CareerHub
-          python .github/scripts/apply_weronika_visual_override.py
+          test -f CareerHub/site/personal/profile.css
           test -f CareerHub/site/personal/weronika.css
           test -f CareerHub/site/personal/weronika-v3.css
           test -f CareerHub/site/personal/weronika-expression.css
-          grep -F "import '../personal/weronika.css';" CareerHub/site/app/layout.tsx
-          grep -F "import '../personal/weronika-v3.css';" CareerHub/site/app/layout.tsx
-          grep -F "import '../personal/weronika-expression.css';" CareerHub/site/app/layout.tsx
-      - name: Build personalised site with visual override
+          grep -F "import '../personal/profile.css';" CareerHub/site/app/layout.tsx
+          grep -F "@import './weronika.css';" CareerHub/site/personal/profile.css
+          grep -F "@import './weronika-v3.css';" CareerHub/site/personal/profile.css
+          grep -F "@import './weronika-expression.css';" CareerHub/site/personal/profile.css
+      - name: Build personalised site
         working-directory: CareerHub/site
         run: |
           npm install --no-package-lock --no-audit --no-fund
