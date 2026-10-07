@@ -1,5 +1,5 @@
 name: CareerHub Managed Site Sync
-# Fleet rollout marker: 2026-10-07 parity-repair-v2
+# Fleet rollout marker: 2026-10-07 parity-repair-v3
 
 on:
   push:
@@ -13,7 +13,7 @@ on:
       - '.github/workflows/careerhub-site-sync.yml'
   workflow_dispatch:
   schedule:
-    - cron: '17 3 * * *'
+    - cron: '17 * * * *'
 
 permissions:
   contents: write
